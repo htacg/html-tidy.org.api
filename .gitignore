@@ -1,0 +1,12 @@
+.DS_Store
+_site
+.idea
+build/*
+*~
+serve/*
+server/*
+test/*
+*.bak
+*~
+temp*
+*.old
