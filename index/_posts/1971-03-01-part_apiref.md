@@ -12,4 +12,8 @@ The following consists of the archives of the generated API documentation for ea
 released version of **HTML Tidy**.
 
 - [5.0.0]({{ site.baseurl }}/tidy/tidylib_api_5.0.0)
+- [5.0.0.RC1]({{ site.baseurl }}/tidy/tidylib_api_5.0.0.RC1)
+- [4.9.36]({{ site.baseurl }}/tidy/tidylib_api_4.9.36)
+- [4.9.35]({{ site.baseurl }}/tidy/tidylib_api_4.9.35)
+- [4.9.32]({{ site.baseurl }}/tidy/tidylib_api_4.9.32)
 - [4.9.30]({{ site.baseurl }}/tidy/tidylib_api_4.9.30)
