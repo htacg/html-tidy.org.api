@@ -10,4 +10,5 @@ fa-icon:  pencil
 
 These are the Quick Reference cards for each release version of **HTML Tidy**.
 
+- [5.0.0]({{ site.baseurl }}/tidy/quickref_5.0.0.html)
 - [4.9.28]({{ site.baseurl }}/tidy/quickref_4.9.28.html)
