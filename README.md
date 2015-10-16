@@ -62,3 +62,20 @@ Specifying the `baseurl` on the command line will override the base URL set in
 `_config.yml`.
 
 
+Building Documentation
+----------------------
+
+This might be a candidate for the tidy-html5 readme at a future date. In the meantime
+this is how documentation should be generated for inclusion in this repository.
+
+~~~
+cd tidy-html5-xxx/build/cmake/
+
+# The following will install into an innocuous location. Choose your own.
+cmake ../.. -DCMAKE_INSTALL_PREFIX=/Users/user_name/Desktop
+make install
+cmake ../.. -DBUILD_DOCUMENTATION=ON
+make install
+~~~
+
+Documentation files will be generated into tidy-html5-xxx/documentation/temp/.
