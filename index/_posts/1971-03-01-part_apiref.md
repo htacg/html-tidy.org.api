@@ -11,6 +11,7 @@ fa-icon:  cog
 The following consists of the archives of the generated API documentation for each
 released version of **HTML Tidy**.
 
+- [5.1.25]({{ site.baseurl }}/tidy/tidylib_api_5.1.25)
 - [5.0.0]({{ site.baseurl }}/tidy/tidylib_api_5.0.0)
 - [5.0.0.RC1]({{ site.baseurl }}/tidy/tidylib_api_5.0.0.RC1)
 - [4.9.36]({{ site.baseurl }}/tidy/tidylib_api_4.9.36)
