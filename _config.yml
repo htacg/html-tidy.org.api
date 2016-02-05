@@ -12,7 +12,6 @@ exclude: [CNAME, README.md, LICENSE.txt, .gitignore, tidy-html5]
 timezone: null
 lsi: false
 
-
 ### content configuration ###
 title:       "HTML Tidy"
 keywords:    "tidy, html tidy, html, htacg"
