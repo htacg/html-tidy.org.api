@@ -354,10 +354,15 @@
             min-width: 6.0em;
         }
         
-        code
+        code, var
         {
             color: darkgreen;
             font-size: 1.3em;
+        }
+        
+        var
+        {
+        	font-weight: bold;
         }
 		
 	</style>
@@ -365,7 +370,7 @@
 
 
 <!-- Regular Templates: -->
-<xsl:template match="a | code | em | strong | br | p">
+<xsl:template match="a | code | em | var | strong | br | p">
     <xsl:element name="{local-name(.)}">
         <xsl:copy-of select="@* | node()" />
     </xsl:element>

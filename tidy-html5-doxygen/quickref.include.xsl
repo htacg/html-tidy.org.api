@@ -236,7 +236,7 @@
 
 
 <!-- Regular Templates: -->
-<xsl:template match="a | code | em | strong | br">
+<xsl:template match="a | code | em | var | strong | br">
     <xsl:element name="{local-name(.)}">
         <xsl:copy-of select="@* | node()" />
     </xsl:element>
