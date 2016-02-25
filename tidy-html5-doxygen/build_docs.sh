@@ -20,42 +20,70 @@
 ###########################################################
 SCRIPT=$(basename $0)
 
-PATH_SUBMODULE="../tidy-html5"
+PATH_TIDY_HTML5="../tidy-html5"
 
-TIDY_PATH="$PATH_SUBMODULE/build/cmake/tidy"
+TIDY_PATH="$PATH_TIDY_HTML5/build/cmake/tidy"
 OUTP_DIR="./output"
 
 DOXY_CFG="./doxygen.cfg"
 PATH_EXAMPLES="./examples"
 
 NAME_LICENSE="LICENSE.md"
-PATH_LICENSE="$PATH_SUBMODULE/README/$NAME_LICENSE"
-PATH_SRC="$PATH_SUBMODULE/src"
-PATH_INC="$PATH_SUBMODULE/include"
+PATH_LICENSE="$PATH_TIDY_HTML5/README/$NAME_LICENSE"
+PATH_SRC="$PATH_TIDY_HTML5/src"
+PATH_INC="$PATH_TIDY_HTML5/include"
 
 
 ###########################################################
-# Try to find a suitable Tidy executable.
+# Usage
 ###########################################################
-if [ $# -eq 0 ]; then
-	# Test whether the default path is executable.
-	if [[ ! -x "$TIDY_PATH" ]]; then
-		# So, try the built-in version
-		if [[ -x "$(command -v tidy)" ]]; then
-			TIDY_PATH="tidy"
-		else
-			echo "$SCRIPT found no tidy executable at $TIDY_PATH, nor built-in."
-			exit 1
-		fi
-	fi
-else
-	if [[ -x "$1" ]]; then
-		TIDY_PATH="$1"
-	else
-		echo "Usage: $SCRIPT, or $SCRIPT <path_to_valid_tidy>"
-		echo "       $1 is not a tidy executable."
-		exit 1
-	fi
+usage()
+{
+    cat << HEREDOC
+
+Usage: $SCRIPT [tidy_path]
+
+    This script builds the API documentation for http://api.html-tidy.org,
+    and requires a version of Tidy and its source code in order to run.
+    
+    This source code MUST exist in the "html-tidy.org.api/tidy-html5"
+    directory.
+    
+    This script expects tidy to already have been built in
+    "html-tidy.org.api/tidy-html5/build/cmake/tidy"; however you can
+    optionally you can specify [tidy_path] as an argument, indicating the
+    path to Tidy in case you have built it in a differnet location or have
+    moved it.
+
+HEREDOC
+}
+
+
+###########################################################
+# Accept command line argument
+###########################################################
+if [ ! -z "$1" ]; then
+    TIDY_PATH="$1"
+fi
+
+
+###########################################################
+# Ensure that Tidy is executable.
+###########################################################
+if ! "$TIDY_PATH" -v >/dev/null 2>&1; then
+    usage
+    echo "    $TIDY_PATH is not executable!\n"
+    exit 1
+fi
+
+
+###########################################################
+# Ensure that tidy-html5 is where it's supposed to be.
+###########################################################
+if [ ! -d "$PATH_TIDY_HTML5" ]; then
+    usage
+    echo "    $PATH_TIDY_HTML5 does not exist!\n"
+    exit 1
 fi
 
 
