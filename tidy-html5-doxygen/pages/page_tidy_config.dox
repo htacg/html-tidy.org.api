@@ -40,7 +40,7 @@ You can find documentation for full set of configuration options on the \ref qui
 
 \section config_options Config Options
 <pre>
-\htmlinclude tidy5.config.txt
+\htmlinclude tidy.config.txt
 </pre>
 
 */

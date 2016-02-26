@@ -9,14 +9,13 @@ independently of this website.
 Prerequisites
 -------------
 
-### tidy-html5 Submodule
-This repository references our tidy-html5 repository as git submodule. Before
-the build tool will work, you will also have to ensure that the submodule is
-updated. You might do with is `git submodule update --init --recursive` if you
-have cloned this repository non-recursively.
+### tidy-html5
+This repository requires a `tidy-html5` source repository from which to gather
+information. In order for the build tool will work, you will have to ensure that
+it is referencing a correct version of the repository.
 
-You will know you failed to pull the submodule if the `tidy-html5` directory is
-empty.
+The `tidy-html5` directory must be install in parallel (at the same directory
+level) is this repository.
 
 ### `xsltproc`
 Our build tools require [`xsltproc`](http://xmlsoft.org/XSLT/xsltproc.html) to 
@@ -31,9 +30,8 @@ your `$PATH`.
 ### `tidy`
 Our build tool requires HTML Tidy, of course. When you use `build_docs.sh` you
 can specify a complete path to the Tidy that you wish to use. If you don't
-specify a path, then the tool will automatically try to check this project's
-`tidy-html5/build/cmake` directory (the default CMake build directory), and
-failing that use your default Tidy (as revealed with `which tidy`).
+specify a path, then the tool will automatically try to check the required
+`tidy-html5/build/cmake` directory (the default CMake build directory).
 
 
 Build
@@ -55,3 +53,18 @@ If you want to update the website with the new documentation, that will have
 to be performed manually. This is not automated in the build process because
 we don't want to accidentally overwrite our existing files.
 
+### Places the files
+
+First move or copy `output/quickref_x.x.x.html` and `output/tidylib_api_x.x.x/`
+into this repository's root-level `tidy/` directory.
+
+### Update the data source
+
+The website will be updated automatically from versions that are present in
+`_data/api_versions.yml`. Simply update this file with a new version.
+
+Versions will be displayed on the page in the same order as they are in this 
+file, so it is suggested that you maintain the newest versions on top.
+
+Also keep in mind that links are generated automatically from the version
+number. Please keep them simple instead of being creative and fancy!

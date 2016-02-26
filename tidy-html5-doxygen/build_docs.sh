@@ -1,16 +1,14 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 ################################################################################
 # This script will generate the API documentation and quick reference for our
 # http://api.html-tidy.org website.
 #
-# This repository includes the tidy-html5 repository as a git submodule for
-# convenience, and this script depends on files in this submodule!
+# Requires tidy-html5/ source project directory as per PATH_TIDY_HTML5.
 #
 # This script will attempt to find Tidy in the following locations:
 #  - command line argument
-#  - tidy-html5/build/cmake/
-#  - the currently installed tidy
+#  - ${PATH_TIDY_HTML5}/build/cmake/
 #
 ################################################################################
 
@@ -20,7 +18,7 @@
 ###########################################################
 SCRIPT=$(basename $0)
 
-PATH_TIDY_HTML5="../tidy-html5"
+PATH_TIDY_HTML5="../../tidy-html5"
 
 TIDY_PATH="$PATH_TIDY_HTML5/build/cmake/tidy"
 OUTP_DIR="./output"
@@ -46,14 +44,13 @@ Usage: $SCRIPT [tidy_path]
     This script builds the API documentation for http://api.html-tidy.org,
     and requires a version of Tidy and its source code in order to run.
     
-    This source code MUST exist in the "html-tidy.org.api/tidy-html5"
-    directory.
+    This source code MUST exist in the "../../tidy-html5" directory, i.e.,
+    in parallel to this project directory.
     
     This script expects tidy to already have been built in
-    "html-tidy.org.api/tidy-html5/build/cmake/tidy"; however you can
-    optionally you can specify [tidy_path] as an argument, indicating the
-    path to Tidy in case you have built it in a differnet location or have
-    moved it.
+    "../../tidy-html5/build/cmake/tidy"; however you can optionally
+    specify [tidy_path] as an argument, indicating the path to Tidy
+    in case you have built it in a differnet location or have moved it.
 
 HEREDOC
 }
@@ -72,7 +69,8 @@ fi
 ###########################################################
 if ! "$TIDY_PATH" -v >/dev/null 2>&1; then
     usage
-    echo "    $TIDY_PATH is not executable!\n"
+    echo "    $TIDY_PATH is not executable!"
+    echo
     exit 1
 fi
 
@@ -82,7 +80,8 @@ fi
 ###########################################################
 if [ ! -d "$PATH_TIDY_HTML5" ]; then
     usage
-    echo "    $PATH_TIDY_HTML5 does not exist!\n"
+    echo "    $PATH_TIDY_HTML5 does not exist!"
+    echo
     exit 1
 fi
 
@@ -163,8 +162,8 @@ cat << HEREDOC
   '$PATH_WEBSITE/' is the Doxygen-generated website.
   
   If you are running this script to add newer documentation to our website,
-  then you should manually move these files into './tidy', and then update the
-  './index/_posts/*' files to ensure they are included.
+  then you should manually move these files into './tidy', and then update
+  '_data/api_versions.yml' with a new version.
 
 HEREDOC
 
@@ -196,7 +195,8 @@ $TIDY_PATH -quiet -config "./tidy.cfg" -modify "$OUTP_DIR/$PATH_QUICKREF" >& /de
 # Cleanup
 rm "$OUTP_DIR/tidy-config.xml"
 
-echo "** $SCRIPT: '$PATH_QUICKREF' and '$PATH_QUICKREF_INCLUDE' have been built.\n"
+echo "** $SCRIPT: '$PATH_QUICKREF' and '$PATH_QUICKREF_INCLUDE' have been built."
+echo
 
 
 ###########################################################
@@ -234,6 +234,9 @@ rm "$PATH_EXAMPLES/tidy.config.txt"
 rm "$PATH_EXAMPLES/$NAME_LICENSE"
 
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-echo "\n** $SCRIPT: TidyLib API documentation has been built."
+echo
+echo "** $SCRIPT: TidyLib API documentation has been built."
+echo
+echo "Done."
+echo
 
-echo "\nDone.\n"

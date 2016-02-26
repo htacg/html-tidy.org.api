@@ -10,7 +10,7 @@ Running the tidy command
   - \subpage tidy_scripting
   
 <pre>
-\htmlinclude tidy5.help.txt
+\htmlinclude tidy.help.txt
 </pre>
 
 
