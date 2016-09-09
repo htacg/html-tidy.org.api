@@ -14,7 +14,7 @@ body {
     margin: 0 0 0 0;
     margin-left: 150px;
     padding: 2px 0px;
-    color: white;
+    color: black;
 }
 
 #projectnumber {
@@ -24,7 +24,7 @@ body {
 #projectbrief {
     font-family: sans-serif;
     font-size: 10pt; 
-    color: #dddddd;
+    color: black;
     margin-left: 150px;
 }
 
