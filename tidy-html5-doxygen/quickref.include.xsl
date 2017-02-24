@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    For generating the `quickref_include.html` web page from output of
+    For generating the `quickref_include.html` from output of
     `tidy -xml-config`, which is used in our Doxygen documentation
     project.
 
