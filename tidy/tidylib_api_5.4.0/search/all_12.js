@@ -5,9 +5,12 @@ var searchData=
   ['tidy_20config_20options',['Tidy Config Options',['../options.html',1,'programming']]],
   ['tidy_20html_20tags',['Tidy HTML Tags',['../tags.html',1,'programming']]],
   ['tags_2emd',['TAGS.md',['../TAGS_8md.html',1,'']]],
+  ['tchar',['tchar',['../tidyplatform_8h.html#a60b5a0768544842885a9982025c93c5f',1,'tidyplatform.h']]],
   ['tidy_2eh',['tidy.h',['../tidy_8h.html',1,'']]],
+  ['tidy_5fcall',['TIDY_CALL',['../tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0',1,'tidyplatform.h']]],
   ['tidy_20options_20and_20configuration',['Tidy Options and Configuration',['../tidy_config.html',1,'general']]],
   ['tidy_5fquickref_2emd',['tidy_quickref.md',['../tidy__quickref_8md.html',1,'']]],
+  ['tidy_5fstruct',['TIDY_STRUCT',['../tidyplatform_8h.html#a758afad615b3408ec0aa785278cd10ce',1,'tidyplatform.h']]],
   ['tidyaccess',['TidyAccess',['../tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531ea373757a531ea6ffdf7729674c57ad1f4',1,'tidyenum.h']]],
   ['tidyaccessibilitychecklevel',['TidyAccessibilityCheckLevel',['../tidyenum_8h.html#a3a1401652599150188a168dade7dc150ab10f14bb8664ed679b01b2c1883b7bd5',1,'tidyenum.h']]],
   ['tidyaccessstring',['TidyAccessString',['../tidyenum_8h.html#a33ddd2273ce54b5dc4f9831324134b9ba6f1515bace9a4f75c216ad36e6d58a7c',1,'tidyenum.h']]],
@@ -745,6 +748,7 @@ var searchData=
   ['tidyparsesource',['tidyParseSource',['../group__Parse.html#gaa65dad2a4ca5fa97d267ddefe1180e0e',1,'tidy.h']]],
   ['tidyparsestdin',['tidyParseStdin',['../group__Parse.html#ga96b41ff6e6a7f9d0b9b0e901e33ad31d',1,'tidy.h']]],
   ['tidyparsestring',['tidyParseString',['../group__Parse.html#ga50c02fa244dcd120ae339719c2132ff9',1,'tidy.h']]],
+  ['tidyplatform_2eh',['tidyplatform.h',['../tidyplatform_8h.html',1,'']]],
   ['tidyppprogress',['TidyPPProgress',['../group__IO.html#ga670db9238fab3919248238737512d6be',1,'tidy.h']]],
   ['tidypprinttabs',['TidyPPrintTabs',['../tidyenum_8h.html#a3a1401652599150188a168dade7dc150a3ddd0a4b9afc340dad637e4f60ace56b',1,'tidyenum.h']]],
   ['tidypreserveentities',['TidyPreserveEntities',['../tidyenum_8h.html#a3a1401652599150188a168dade7dc150a2fb0aa29d36ce68051daadb759c9cb8c',1,'tidyenum.h']]],
@@ -979,5 +983,8 @@ var searchData=
   ['tidyxmlpis',['TidyXmlPIs',['../tidyenum_8h.html#a3a1401652599150188a168dade7dc150a6c1565890b678d4f8044fbf504e60ed6',1,'tidyenum.h']]],
   ['tidyxmlspace',['TidyXmlSpace',['../tidyenum_8h.html#a3a1401652599150188a168dade7dc150ae5060c059374e7d63b795364af3817f2',1,'tidyenum.h']]],
   ['tidyxmltags',['TidyXmlTags',['../tidyenum_8h.html#a3a1401652599150188a168dade7dc150ac3ba5b9fd61bb9ece3c2d828927e52fd',1,'tidyenum.h']]],
-  ['tidyyesstate',['TidyYesState',['../tidyenum_8h.html#a43f1adcf856d4da325284770e707ef91acf168817bc2e1571feff4ca37cbfc2f3',1,'tidyenum.h']]]
+  ['tidyyesstate',['TidyYesState',['../tidyenum_8h.html#a43f1adcf856d4da325284770e707ef91acf168817bc2e1571feff4ca37cbfc2f3',1,'tidyenum.h']]],
+  ['tmbchar',['tmbchar',['../tidyplatform_8h.html#a9edf7028f613e128fa6eaf121a439f25',1,'tidyplatform.h']]],
+  ['tmbstr',['tmbstr',['../tidyplatform_8h.html#af8d7b7e8f07a0c1fc5e48ba4142bbe26',1,'tidyplatform.h']]],
+  ['tmbstr_5fdefined',['TMBSTR_DEFINED',['../tidyplatform_8h.html#ab22d578c4ca7a544fb6da0fd34e0d9c4',1,'tidyplatform.h']]]
 ];

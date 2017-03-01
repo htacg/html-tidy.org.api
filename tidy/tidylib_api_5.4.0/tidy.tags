@@ -115,6 +115,7 @@
     <name>platform.h</name>
     <path>/Users/jderry/Development/htacg/tidy-html5/include/</path>
     <filename>platform_8h</filename>
+    <includes id="tidyplatform_8h" name="tidyplatform.h" local="yes" imported="no">tidyplatform.h</includes>
   </compound>
   <compound kind="file">
     <name>TAGS.md</name>
@@ -125,6 +126,7 @@
     <name>tidy.h</name>
     <path>/Users/jderry/Development/htacg/tidy-html5/include/</path>
     <filename>tidy_8h</filename>
+    <includes id="tidyplatform_8h" name="tidyplatform.h" local="yes" imported="no">tidyplatform.h</includes>
     <includes id="tidyenum_8h" name="tidyenum.h" local="yes" imported="no">tidyenum.h</includes>
     <class kind="struct">_TidyAllocator</class>
     <class kind="struct">_TidyAllocatorVtbl</class>
@@ -2345,6 +2347,7 @@
     <name>tidybuffio.h</name>
     <path>/Users/jderry/Development/htacg/tidy-html5/include/</path>
     <filename>tidybuffio_8h</filename>
+    <includes id="tidyplatform_8h" name="tidyplatform.h" local="yes" imported="no">tidyplatform.h</includes>
     <includes id="tidy_8h" name="tidy.h" local="yes" imported="no">tidy.h</includes>
     <class kind="struct">_TidyBuffer</class>
     <member kind="function">
@@ -6341,6 +6344,191 @@
       <anchorfile>tidyenum_8h.html</anchorfile>
       <anchor>a43f1adcf856d4da325284770e707ef91a9f1295c4740f1e77d008ba4f718ca3e8</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tidyplatform.h</name>
+    <path>/Users/jderry/Development/htacg/tidy-html5/include/</path>
+    <filename>tidyplatform_8h</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>ARG_UNUSED</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ac712c76eb5722d446b34bb5eb963dd29</anchor>
+      <arglist>(x)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>FILENAMES_CASE_SENSITIVE</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ae7c6ef8e379714064db2f291c9968f93</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>HAS_FUTIME</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a6da74cb1212ca7f823e294c205639025</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>HAS_VSNPRINTF</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ab8e069158661d14d4d616a5d9a100923</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>NULLSTR</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a821925a758098bed6c7ee0ddc7a2bc36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>opaque_type</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a726579837b45614e05458b0e20725fe6</anchor>
+      <arglist>(typenam)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>PRESERVE_FILE_TIMES</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ae37d846fdb3bc77dfb3811ba5a67d9df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SUPPORT_ACCESSIBILITY_CHECKS</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a61816b4ec46e3dfd20563c6ec96015a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SUPPORT_ASIAN_ENCODINGS</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a84d44733c9c51ad545d3b7b4e19e648a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SUPPORT_LOCALIZATIONS</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>af8d7b180618e09812d4a3997dba66243</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SUPPORT_POSIX_MAPPED_FILES</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ad9f608f417a997f4973e218d859381d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SUPPORT_UTF16_ENCODINGS</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a54bf40694fba6ff5327e7caaca3f08ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TIDY_CALL</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a8d6cbd2c86fd90a688bf906914033ba0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TIDY_STRUCT</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a758afad615b3408ec0aa785278cd10ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TMBSTR_DEFINED</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ab22d578c4ca7a544fb6da0fd34e0d9c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>UTIME_NEEDS_CLOSED_FILE</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a4f36fecba412d59bb488fe1cef855ca5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>unsigned char</type>
+      <name>byte</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a0c8186d9b9b7880309c27230bbb5e69d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>const tmbchar *</type>
+      <name>ctmbstr</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>ab79be1eeb8c1b64feac28be54d28ba70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>uint</type>
+      <name>tchar</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a60b5a0768544842885a9982025c93c5f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>char</type>
+      <name>tmbchar</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a9edf7028f613e128fa6eaf121a439f25</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>tmbchar *</type>
+      <name>tmbstr</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>af8d7b7e8f07a0c1fc5e48ba4142bbe26</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>unsigned int</type>
+      <name>uint</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a91ad9478d81a7aaf2593e8d9c3d06a14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Bool</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a39db6982619d623273fad8a383489309</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>no</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a39db6982619d623273fad8a383489309a8fe4a05f1addc1b9a4aae17d7b166646</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>yes</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a39db6982619d623273fad8a383489309aa447884a6b7ce069acc4b7eb98acdb92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>opaque_type</name>
+      <anchorfile>tidyplatform_8h.html</anchorfile>
+      <anchor>a80eb302731e6c99e11501e913479116c</anchor>
+      <arglist>(TidyIterator)</arglist>
     </member>
   </compound>
   <compound kind="file">

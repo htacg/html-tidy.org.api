@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"group__NodeIsElementName.html#ga41c2551e386adc53cd9ab0e00f707558":[9,0,2,212],
+"group__NodeIsElementName.html#ga41c2551e386adc53cd9ab0e00f707558":[7,10,0,49],
+"group__NodeIsElementName.html#ga445b2216e08962ebc2cf2013dd911969":[9,0,2,230],
+"group__NodeIsElementName.html#ga445b2216e08962ebc2cf2013dd911969":[7,10,0,66],
+"group__NodeIsElementName.html#ga445cccfc6c19f8f3b73ebd06a361bd48":[9,0,2,184],
+"group__NodeIsElementName.html#ga445cccfc6c19f8f3b73ebd06a361bd48":[7,10,0,22],
+"group__NodeIsElementName.html#ga4638800893b9ae5a70cdb74c06c6a79c":[9,0,2,176],
+"group__NodeIsElementName.html#ga4638800893b9ae5a70cdb74c06c6a79c":[7,10,0,14],
+"group__NodeIsElementName.html#ga48067f28cfe217c9fc060650d0e3aca4":[9,0,2,222],
+"group__NodeIsElementName.html#ga48067f28cfe217c9fc060650d0e3aca4":[7,10,0,59],
 "group__NodeIsElementName.html#ga48af9e160f669f778de274336096e2eb":[9,0,2,229],
 "group__NodeIsElementName.html#ga48af9e160f669f778de274336096e2eb":[7,10,0,65],
 "group__NodeIsElementName.html#ga4b3bad82463198c3893c901aa20af219":[9,0,2,195],
@@ -239,15 +249,5 @@ var NAVTREEINDEX2 =
 "tidybuffio_8h.html#af48af586ada5ff264501fe9ef4c67dd1":[9,0,3,14],
 "tidybuffio_8h.html#af607eaeb44ae6d8f2371e1e05b016caf":[9,0,3,0,3],
 "tidybuffio_8h.html#af8b1e8fbe3c29d08250794d7e4925ea6":[9,0,3,13],
-"tidybuffio_8h.html#aff43ddd9fc78532617d88db55b164f5e":[9,0,3,12],
-"tidybuffio_8h.html#struct__TidyBuffer":[9,0,3,0],
-"tidybuffio_8h_source.html":[9,0,3],
-"tidyenum_8h.html":[9,0,4],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531e":[9,0,4,9],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531ea1233c06568c5f9f6bc27ad8910a84af6":[9,0,4,9,1],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531ea373757a531ea6ffdf7729674c57ad1f4":[9,0,4,9,3],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531ea59437255941a0df55eb185d8d93e5e8e":[9,0,4,9,6],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531ea9689b979eb0d11c9029ce5b817c98c71":[9,0,4,9,0],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531eaa683b86fb57933a561fa7b2d76bd9294":[9,0,4,9,5],
-"tidyenum_8h.html#a2a05b6d387bd5d4732df061585c0531eabc122e7e9ebdff282bdeb4dc3c17c95b":[9,0,4,9,4]
+"tidybuffio_8h.html#aff43ddd9fc78532617d88db55b164f5e":[9,0,3,12]
 };

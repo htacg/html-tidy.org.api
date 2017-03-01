@@ -199,7 +199,6 @@ echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 ( cat "$DOXY_CFG"; \
   echo "INPUT=\"$PATH_INC\" \"./\" \"./pages/\" \"./pages/general\" \"./pages/libtidy\" \"./pages/programming\""
   echo "INCLUDE_PATH=\"$PATH_SRC\""; \
-  echo "EXCLUDE=\"$PATH_INC/tidyplatform.h\""
   echo "OUTPUT_DIRECTORY=\"$OUTP_DIR\""
   echo "EXAMPLE_PATH=\"$OUTP_DIR\""
   echo "PROJECT_NUMBER=$TIDY_VERSION"; \
