@@ -4,6 +4,7 @@ var searchData=
   ['allocated',['allocated',['../tidybuffio_8h.html#a523a1f5f2a1b0333d70b9d8a5a52de13',1,'_TidyBuffer']]],
   ['allocator',['allocator',['../tidybuffio_8h.html#ab6655c52ed81490e8016976a4810a330',1,'_TidyBuffer']]],
   ['api_5fand_5fnamespace_2emd',['API_AND_NAMESPACE.md',['../API__AND__NAMESPACE_8md.html',1,'']]],
+  ['arg_5funused',['ARG_UNUSED',['../tidyplatform_8h.html#ac712c76eb5722d446b34bb5eb963dd29',1,'tidyplatform.h']]],
   ['attribute_20retrieval',['Attribute Retrieval',['../group__AttrGet.html',1,'']]],
   ['attribute_20interrogation',['Attribute Interrogation',['../group__Attribute.html',1,'']]],
   ['attributes_2emd',['ATTRIBUTES.md',['../ATTRIBUTES_8md.html',1,'']]],
