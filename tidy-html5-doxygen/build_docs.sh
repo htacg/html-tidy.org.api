@@ -24,10 +24,7 @@ TIDY_PATH="$PATH_TIDY_HTML5/build/cmake/tidy"
 OUTP_DIR="./output"
 
 DOXY_CFG="./doxygen.cfg"
-PATH_EXAMPLES="./examples"
 
-NAME_LICENSE="LICENSE.md"
-PATH_LICENSE="$PATH_TIDY_HTML5/README/$NAME_LICENSE"
 PATH_SRC="$PATH_TIDY_HTML5/src"
 PATH_INC="$PATH_TIDY_HTML5/include"
 
@@ -108,17 +105,6 @@ if [ ! -f "$DOXY_CFG" ]; then
 	exit 1
 fi
 
-if [ ! -d "$PATH_EXAMPLES" ]; then
-	echo "Aborting: Directory '$PATH_EXAMPLES' not found. It is required to run doxygen."
-	exit 1
-fi
-
-if [ ! -f "$PATH_LICENSE" ]; then
-	echo "Aborting: '$PATH_LICENSE' not found. It is required to run doxygen."
-	echo "          Are you sure the tidy-html5 submodule has been included?"
-	exit 1
-fi
-
 if [ ! -d "$PATH_SRC" ]; then
 	echo "Aborting: Directory '$PATH_SRC' not found. It is required to run doxygen."
 	echo "          Are you sure the tidy-html5 submodule has been included?"
@@ -144,7 +130,7 @@ TIDY_VERSION="$(echo $TIDY_VERSION_STRING | sed 's/.*\([[:digit:]]\.[[:digit:]]\
 ###########################################################
 PATH_QUICKREF="quickref_$TIDY_VERSION.html"
 PATH_WEBSITE="tidylib_api_$TIDY_VERSION"
-PATH_QUICKREF_INCLUDE="$PATH_EXAMPLES/quickref_include.html"
+PATH_QUICKREF_INCLUDE="$OUTP_DIR/quickref_include.html"
 
 
 ###########################################################
@@ -190,7 +176,7 @@ xsltproc "./quickref.xsl" "$OUTP_DIR/tidy-config.xml" > "$OUTP_DIR/$PATH_QUICKRE
 xsltproc "./quickref.include.xsl" "$OUTP_DIR/tidy-config.xml" > "$PATH_QUICKREF_INCLUDE"
 
 # Tidy quickref.html
-$TIDY_PATH -quiet -config "./tidy.cfg" -modify "$OUTP_DIR/$PATH_QUICKREF" >& /dev/null
+$TIDY_PATH -quiet -config "./tidy-quickref.cfg" -modify "$OUTP_DIR/$PATH_QUICKREF" >& /dev/null
 
 # Cleanup
 rm "$OUTP_DIR/tidy-config.xml"
@@ -206,32 +192,24 @@ echo "  The following block contains doxygen's stderr output and does not"
 echo "  indicate errors with this $SCRIPT script:"
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-# echo the output of `tidy --help` so we can include
-$TIDY_PATH -h > "$PATH_EXAMPLES/tidy.help.txt"
-$TIDY_PATH -help-config > "$PATH_EXAMPLES/tidy.config.txt"
-
-# copy license file to examples for including
-cp "$PATH_LICENSE" "$PATH_EXAMPLES"
-
 ## this lot 
 # - echoes and catches output of the doxygen config
 # - overwrites some vars but appending some to config at end
 # - which are then passed to doxygen as stdin (instead of the path to a config.file)
 ( cat "$DOXY_CFG"; \
-  echo "INPUT=\"$PATH_INC\" \"./\" \"./pages\""
+  echo "INPUT=\"$PATH_INC\" \"./\" \"./pages/\" \"./pages/general\" \"./pages/libtidy\" \"./pages/programming\""
   echo "INCLUDE_PATH=\"$PATH_SRC\""; \
   echo "EXCLUDE=\"$PATH_INC/tidyplatform.h\""
   echo "OUTPUT_DIRECTORY=\"$OUTP_DIR\""
+  echo "EXAMPLE_PATH=\"$OUTP_DIR\""
   echo "PROJECT_NUMBER=$TIDY_VERSION"; \
   echo "HTML_OUTPUT=\"$PATH_WEBSITE\""
   echo "GENERATE_TAGFILE=\"$OUTP_DIR/$PATH_WEBSITE/tidy.tags\""; \
-  echo "HTML_EXTRA_FILES= $PATH_EXAMPLES/tidy.help.txt $PATH_EXAMPLES/tidy.config.txt"; ) \
+  echo "HTML_EXTRA_FILES= sun_blast.svg"; ) \
 | doxygen - > /dev/null
 
 # cleanup
-rm "$PATH_EXAMPLES/tidy.help.txt"
-rm "$PATH_EXAMPLES/tidy.config.txt"
-rm "$PATH_EXAMPLES/$NAME_LICENSE"
+rm "$PATH_QUICKREF_INCLUDE"
 
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 echo

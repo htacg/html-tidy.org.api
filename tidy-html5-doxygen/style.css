@@ -4,17 +4,17 @@ body {
 }
 
 #titlearea {
-    background-image: url(http://www.html-tidy.org/assets/images/green-abstract-background.jpg);
-    background-size: cover;
+    background-image: url(sun_blast.svg);
+    background-size: 100% auto;
 }
 
 #projectname {
     font-family: sans-serif;
     font-size: 22pt; 
     margin: 0 0 0 0;
-    margin-left: 150px;
+/*     margin-left: 50px; */
     padding: 2px 0px;
-    color: white;
+    color: red;
 }
 
 #projectnumber {
@@ -24,8 +24,8 @@ body {
 #projectbrief {
     font-family: sans-serif;
     font-size: 10pt; 
-    color: #dddddd;
-    margin-left: 150px;
+    color: red;
+/*     margin-left: 50px; */
 }
 
 
@@ -85,7 +85,8 @@ body {
 }
 .contents .textblock code{
     font-family: monospace;
-    font-size: 9pt;
+    font-size: 12pt;
+    background-color: aliceblue;
 }
 .contents .todo{
     font-size: 11pt;
