@@ -78,14 +78,14 @@ And in `CMakeLists.txt` there is the posibility to define another macro, when an
 
 These macros are put in `static const char` strings in **libTidys**’s internal- only `src/version.h` file:
 
-```
+~~~
 static const char TY_(release_date)[] = RELEASE_DATE;
 #ifdef RC_NUMBER
 static const char TY_(library_version)[] = LIBTIDY_VERSION "." RC_NUMBER;
 #else
 static const char TY_(library_version)[] = LIBTIDY_VERSION;
 #endif
-```
+~~~
 
 These strings are returned respectively by the **libTidy** API functions:
 
