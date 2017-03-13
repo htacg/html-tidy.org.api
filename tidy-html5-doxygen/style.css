@@ -309,3 +309,10 @@ td.qdescription br {
     display: block;
     margin: 10px 0;
 }
+
+/* Eliminate stupid more links */
+
+td.mdescRight a
+{
+    display: none;
+}
