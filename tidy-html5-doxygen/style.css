@@ -309,3 +309,7 @@ td.qdescription br {
     display: block;
     margin: 10px 0;
 }
+
+td.mdescRight a {
+    display: none;
+}
