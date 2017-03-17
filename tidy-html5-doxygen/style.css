@@ -309,6 +309,6 @@ td.qdescription br {
     margin: 10px 0;
 }
 
-td.mdescRight a {
+td.mdescRight a[href^="#"] {
     display: none;
 }
