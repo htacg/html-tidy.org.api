@@ -197,13 +197,12 @@ echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 # - overwrites some vars but appending some to config at end
 # - which are then passed to doxygen as stdin (instead of the path to a config.file)
 ( cat "$DOXY_CFG"; \
-  echo "INPUT=\"$PATH_INC\" \"./\" \"./pages/\" \"./pages/general\" \"./pages/libtidy\" \"./pages/programming\""
-  echo "INCLUDE_PATH=\"$PATH_SRC\""; \
+  echo "INPUT=\"$PATH_INC\" \"$PATH_SRC\" \"./\" \"./pages/\" \"./pages/general\" \"./pages/libtidy\" \"./pages/programming\""
+  echo "INCLUDE_PATH=\"$PATH_SRC\""
   echo "OUTPUT_DIRECTORY=\"$OUTP_DIR\""
   echo "EXAMPLE_PATH=\"$OUTP_DIR\""
-  echo "PROJECT_NUMBER=$TIDY_VERSION"; \
+  echo "PROJECT_NUMBER=$TIDY_VERSION"
   echo "HTML_OUTPUT=\"$PATH_WEBSITE\""
-  echo "GENERATE_TAGFILE=\"$OUTP_DIR/$PATH_WEBSITE/tidy.tags\""; \
   echo "HTML_EXTRA_FILES= sun_blast.svg"; ) \
 | doxygen - > /dev/null
 

@@ -113,10 +113,9 @@ dl.note
 {
         margin: 5px 10% 5px 30px;
         padding: 10px;
-        border-left: 4px solid;
-        border-color: #D0C000;
+        border: none;
         background-color: #FFFAC5;
-        border-radius: 10px;
+        box-shadow: 2px 2px 20px 0px rgba(170,170,170,0.75);
 }
 
 ul dl.note{
@@ -310,9 +309,6 @@ td.qdescription br {
     margin: 10px 0;
 }
 
-/* Eliminate stupid more links */
-
-td.mdescRight a
-{
+td.mdescRight a[href^="#"] {
     display: none;
 }
