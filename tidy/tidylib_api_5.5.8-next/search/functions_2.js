@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['charencodingid',['CharEncodingId',['../config_8h.html#abdb1b33e0894356cd6c66f0859fbb285',1,'config.h']]],
+  ['charencodingname',['CharEncodingName',['../config_8h.html#a2ff06020289044ec093e4efa8ff6c572',1,'config.h']]],
+  ['charencodingoptname',['CharEncodingOptName',['../config_8h.html#a5bf6d421a247303e4236b706c939b5f5',1,'config.h']]],
+  ['checkattribute',['CheckAttribute',['../attrs_8h.html#a5846de280b026033cfb4460b8d00b5a6',1,'attrs.h']]],
+  ['checknodeintegrity',['CheckNodeIntegrity',['../parser_8h.html#a29d1f4cbeea672dff3f126c7a032efef',1,'parser.h']]],
+  ['cleandocument',['CleanDocument',['../clean_8h.html#ab780c96aa4125a008a0fe9996322fdbd',1,'clean.h']]],
+  ['cleangoogledocument',['CleanGoogleDocument',['../gdoc_8h.html#adb27c3a764228b6a8e00e87537eac0e2',1,'gdoc.h']]],
+  ['cleanword2000',['CleanWord2000',['../clean_8h.html#ae8965fa2ae5159e9be289d6682188ed7',1,'clean.h']]],
+  ['clonenode',['CloneNode',['../lexer_8h.html#a5b06f6c21578df687aa544df9d850f9a',1,'lexer.h']]],
+  ['close_5flog_5ffile',['close_log_file',['../sprtf_8h.html#a32f684e2d9d47ca24806b88e58498931',1,'sprtf.h']]],
+  ['coercenode',['CoerceNode',['../parser_8h.html#a0fba2ba79ae3d0448f7792a6ec4996cc',1,'parser.h']]],
+  ['combinesurrogatepair',['CombineSurrogatePair',['../utf8_8h.html#ad07f27818bfbc91209fa090d3498cdc8',1,'utf8.h']]],
+  ['configdiffthandefault',['ConfigDiffThanDefault',['../config_8h.html#afe84a1bc6dcb045c9e8fc2b515675716',1,'config.h']]],
+  ['configdiffthansnapshot',['ConfigDiffThanSnapshot',['../config_8h.html#a727047d5ef9e6784b9a8fcb495679e29',1,'config.h']]],
+  ['constrainversion',['ConstrainVersion',['../lexer_8h.html#aa8f648f4596df25b370b5c4b4377252a',1,'lexer.h']]],
+  ['convertcdatanodes',['ConvertCDATANodes',['../clean_8h.html#a65dcdb3db54714f7a70b98b045a94498',1,'clean.h']]],
+  ['copyconfig',['CopyConfig',['../config_8h.html#aac5000108b1d53750115278dded06f3b',1,'config.h']]]
+];

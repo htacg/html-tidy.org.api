@@ -1,0 +1,27 @@
+var clean_8h =
+[
+    [ "AddStyleAsClass", "clean_8h.html#ad701c64c2ea514dfc119c104788f2192", null ],
+    [ "AddStyleProperty", "clean_8h.html#a97258e945168916e40c41bd630589f35", null ],
+    [ "BQ2Div", "clean_8h.html#a461fac9246fd36b9a27c36ab8c70e919", null ],
+    [ "BumpObject", "clean_8h.html#a672b6ee913167e1ad823ec478d71a403", null ],
+    [ "CleanDocument", "clean_8h.html#ab780c96aa4125a008a0fe9996322fdbd", null ],
+    [ "CleanWord2000", "clean_8h.html#ae8965fa2ae5159e9be289d6682188ed7", null ],
+    [ "ConvertCDATANodes", "clean_8h.html#a65dcdb3db54714f7a70b98b045a94498", null ],
+    [ "DowngradeTypography", "clean_8h.html#a97a8dd576a521d328710b2a2c7efe737", null ],
+    [ "DropComments", "clean_8h.html#a1c9028cb75f8367baa37e6ced46e2419", null ],
+    [ "DropFontElements", "clean_8h.html#aaf07d92bf93523ce4992358ed8397db1", null ],
+    [ "DropSections", "clean_8h.html#aa1b85155b2089bb83da91025b66bb431", null ],
+    [ "EmFromI", "clean_8h.html#a9362dcaa122c4249301604da1406654d", null ],
+    [ "FixAnchors", "clean_8h.html#aa0d72e0a37e46b544c8bff85bd106225", null ],
+    [ "FixLanguageInformation", "clean_8h.html#a46ae7025930835a13ea963a280084637", null ],
+    [ "FixNodeLinks", "clean_8h.html#abe46718fc644551f5a242e082786aced", null ],
+    [ "FixXhtmlNamespace", "clean_8h.html#ad1ac44cf1e71e4657a46c4fa101955bc", null ],
+    [ "FreeStyles", "clean_8h.html#a565fed8b0cd5d401314fc12029b41c39", null ],
+    [ "IsWord2000", "clean_8h.html#a8c14bc54989ad41ecd309a3fa63baac5", null ],
+    [ "List2BQ", "clean_8h.html#a4537b6ee760872e893fe2eba7547e449", null ],
+    [ "NestedEmphasis", "clean_8h.html#ab161d3614fab4ac954634f40f775ec6d", null ],
+    [ "NormalizeSpaces", "clean_8h.html#a797883e3179ef8e70ea348bfcb557ea6", null ],
+    [ "ReplacePreformattedSpaces", "clean_8h.html#ad717f0b1ed9f24bd21d1345038f19e31", null ],
+    [ "VerifyHTTPEquiv", "clean_8h.html#a0f19c7aea396e47c298effcdd9109ab0", null ],
+    [ "WbrToSpace", "clean_8h.html#ab29872ff2760abf3c0f6a78645d9d44d", null ]
+];
