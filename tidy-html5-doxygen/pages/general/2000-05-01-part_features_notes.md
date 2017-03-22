@@ -173,4 +173,4 @@ doesn't yet recognize all XML features, though; for example, it doesn't
 understand CDATA sections or DTD subsets.
 
 
- [1]: {{ site.baseurl }}/accessibility/
+ [1]: http://www.html-tidy.org/accessibility/

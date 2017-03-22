@@ -36,6 +36,18 @@ The `TIDY_EXPORT` call clearly indicates that this function prototype is meant t
 
 Although this makes things obvious from the documentation perspective, the truth is a little murkier. In some environments one might define `TIDY_EXPORT` and `TIDY_CALL` differently in order to control compiler behavior, especially in environments that have special requirements for dynamic libraries. In general, though, you shouldn't have to worry about this.
 
+The preferred use of pointer operators when documenting with macros is this:
+
+~~~
+const tidyLocaleMapItem* TIDY_CALL getNextWindowsLanguage( TidyIterator* iter )
+~~~
+
+…instead of this:
+
+~~~
+const tidyLocaleMapItem TIDY_CALL *getNextWindowsLanguage( TidyIterator* iter )
+~~~
+
 
 # External types are opaque
 
@@ -54,7 +66,7 @@ All of the information above is useful for anyone who wants to browse Tidy's sou
 
 ## Behind the scenes
 
-The first thing we need to do is have the internal version of the function that we want to add. Tidy has module that handles localization: `language.h/c`. In the header is where we define the interface to LibTidy, which should be namespaced according to the discussion above. We can declare:
+The first thing we need to do is have the internal version of the function that we want to add. Tidy has a module that handles localization: `language.h/c`. In the header is where we define the interface to LibTidy, which should be namespaced according to the discussion above. We can declare:
 
 ~~~
 ctmbstr TY_(tidyLocalizedString)( uint messageType );
@@ -66,7 +78,7 @@ Now you have a decision to make: if you plan to use this function internally, yo
 
 ## The API
 
-Once implemented, we want a pretty, public-facing name for our `tidyLocalizedString()` function, which appropriate is `tidyLocalizedString()`. Add the declaration to `tidy.h`:
+Once implemented, we want a pretty, public-facing name for our `tidyLocalizedString()` function, which appropriately is `tidyLocalizedString()`. Add the declaration to `tidy.h`:
 
 ~~~
 TIDY_EXPORT ctmbstr TIDY_CALL tidyLocalizedString( uint messageType );
@@ -90,4 +102,3 @@ For a more complicated example that demonstrates how to use opaque types (and al
   - implement iteration for structures with multiple records.
   - write a function in `tidylib.c` that converts between the exposed, opaque type and the internal, implementation type.
   - further reinforce how functionality is added to the API.
-

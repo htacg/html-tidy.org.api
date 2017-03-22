@@ -15,13 +15,13 @@ This file indicates how to add a new option to tidy, here adding an option `Tidy
  
 #### 1. Option ID
 
-In `tidyenum.h` the `TidyOptionId` can be in any order, but normally a new option would be added just before the last `N_TIDY_OPTIONS`, which must remain the last. Choosing the id name can be any string, but by convention it will commence with `Tidy` followed by brief descriptive text.
+In `tidyenum.h` the `TidyOptionId` can be in any order, but please try to keep things alphabetical, and keep in mind that `N_TIDY_OPTIONS` must remain the last. Choosing the id name can be any string, but by convention it will commence with `Tidy` followed by brief descriptive text.
 
 Naturally it can not be the same as any exisitng option. That is, it must be unique. And it will be followed by a brief descriptive special doxygen formatted comment. So for this new option I have chosen -
 
-```
+~~~
   TidyEscapeScripts,       /**< Escape items that look like closing tags */
-```
+~~~
 
 #### 2. Table Definition
 
@@ -29,7 +29,7 @@ In `config.c`, added in `TidyOptionImpl option_defs[]`. Again it can be in any o
 
 The structure definition of the table entries is simple -
 
-```
+~~~
 struct _tidy_option
 {
     TidyOptionId        id;
@@ -41,22 +41,23 @@ struct _tidy_option
     const ctmbstr*      pickList;   /* pick list */
     ctmbstr             pdflt;      /* default for TidyString */
 };
-```
+~~~
 
 Naturally it will commence with the above chosen unique `id`.
 
 The `category` will be one of this enumeration -
 
-```
+~~~
 typedef enum
 {
   TidyMarkup,          /**< Markup options: (X)HTML version, etc */
   TidyDiagnostics,     /**< Diagnostics */
   TidyPrettyPrint,     /**< Output layout */
   TidyEncoding,        /**< Character encodings */
-  TidyMiscellaneous    /**< File handling, message format, etc. */
+  TidyMiscellaneous,   /**< File handling, message format, etc. */
+  TidyInternalCategory /**< Option is internal only. */
 } TidyConfigCategory;
-```
+~~~
 
 Care, each of these enumeration strings have been equated to 2 uppercase letters. If you feel there should be another `category` or group then this can be discussed, and added.
 
@@ -64,14 +65,14 @@ The `name` can be anything, but should try to be somewhat descriptive of the opt
 
 The `type` is one of the following enumeration items -
 
-```
+~~~
 typedef enum
 {
   TidyString,          /**< String */
   TidyInteger,         /**< Integer or enumeration */
   TidyBoolean          /**< Boolean flag */
 } TidyOptionType;
-```
+~~~
 
 Care, each of these enumeration strings have been equated to two uppercase letters. If you feel there should be another `type` then this can be discussed, but would require other additional things. And also note the `TidyTriState` is the same as a `TidyInteger` except uses its own parser.
 
@@ -83,22 +84,22 @@ Presently no options have the final `default` string, and it is left out of the 
 
 The final table entry added. Note in here the spacing has been compressed, but in the actual code the current column settings should be maintained if possible -
 
-```
+~~~
   { TidyEscapeScripts, PP, "escape-scripts", BL, yes, ParseBool, boolPicks[, NULL] }, /* 20160227 - Issue #348 */
-```
+~~~
 
 #### 3. Option Description
 
-In `language_en.h`, in the section labelled **Options Documentation**. It can be anywhere, but usually a new option would be added just before the next section labelled **Console Application**.
+In `language_en.h`, in the section labelled **Options Documentation**. Please try to keep this in alphabetical order.
 
 Each entry is a structure with 3 members -
-```
+~~~
 typedef struct languageDictionaryEntry {
     uint key;
     uint pluralForm;
     ctmbstr value;
 } languageDictionaryEntry;
-```
+~~~
 
 The `key` is the option `ID`; The `pluralForm` is not used for options, and should be `0`; The `value` is the description string.
 
@@ -106,25 +107,25 @@ Some care has to be taken with the description string. The only html allowed her
 
 This is the desription added for this new option.
 
-```
+~~~
     {
       TidyEscapeScripts,          0,
         "This option causes items that look like closing tags, like <code>&lt;/g</code> to be "
         "escaped to <code>&lt;\\/g</code>. Set this option to 'no' if you do not want this."
     },
-```
+~~~
 
 #### 4. Use in Code
 
 This can be added anywhere in the code to change the current code action. While the testing of the option depends on the option type, the most common is `cfgBool( doc, id )`. Here is an example of where this new option is used -
 
-```
+~~~
     /*\ if javascript insert backslash before / 
      *  Issue #348 - Add option, escape-scripts, to skip
     \*/
     if ((TY_(IsJavaScript)(container)) && cfgBool(doc, TidyEscapeScripts))
     {
-```
+~~~
 
 #### Summary
 

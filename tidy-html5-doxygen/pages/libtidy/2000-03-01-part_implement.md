@@ -1,4 +1,4 @@
-## Implement **LibTidy** {#libtidy_03}
+## Implement LibTidy {#libtidy_03}
 
 Once you’ve built **LibTidy** following the README instructions for `CMake` in
 **HTML Tidy’s** repository, you can get started using **LibTidy**. `CMake` will
