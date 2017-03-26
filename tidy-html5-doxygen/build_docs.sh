@@ -27,6 +27,7 @@ DOXY_CFG="./doxygen.cfg"
 
 PATH_SRC="$PATH_TIDY_HTML5/src"
 PATH_INC="$PATH_TIDY_HTML5/include"
+PATH_CONSOLE="$PATH_TIDY_HTML5/console/tidy.c"
 
 
 ###########################################################
@@ -197,7 +198,7 @@ echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 # - overwrites some vars but appending some to config at end
 # - which are then passed to doxygen as stdin (instead of the path to a config.file)
 ( cat "$DOXY_CFG"; \
-  echo "INPUT=\"$PATH_INC\" \"$PATH_SRC\" \"./\" \"./pages/\" \"./pages/general\" \"./pages/libtidy\" \"./pages/programming\""
+  echo "INPUT=\"$PATH_INC\" \"$PATH_SRC\" \"$PATH_CONSOLE\" \"./\" \"./pages/\" \"./pages/general\" \"./pages/libtidy\" \"./pages/programming\""
   echo "INCLUDE_PATH=\"$PATH_SRC\""
   echo "OUTPUT_DIRECTORY=\"$OUTP_DIR\""
   echo "EXAMPLE_PATH=\"$OUTP_DIR\""
