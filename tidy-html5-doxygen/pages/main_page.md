@@ -36,7 +36,7 @@ Consumer documentation can be referenced from `tidy -help` on all platforms, and
 via `man tidy` on Unix platforms.
 
 In addition to the automatically generated documentation from Tidy’s source
-code, these three major sections provide practical information about using Tidy,
+code, these four major sections provide practical information about using Tidy,
 how to contribute, and how LibTidy works:
 
 - \ref general
@@ -53,6 +53,20 @@ how to contribute, and how LibTidy works:
   - These articles detail how to work with the HTML Tidy source code. If you
     plan to work with HTACG and donate your own contributions, please have a
     look at these articles so that you have an easy transition to our team!
+    
+- <a class="el" href="modules.html">Modules</a>
+  - **External Public API** If you are a user of LibTidy, then this is all of
+    the documentation that is of use to you in order to implement LibTidy in
+    any language that can link to a C library.
+  - **Internal API** New developers of LibTidy may find browsing this section
+    useful in order to become more familiar with the organization of the source
+    code and the files. Note that this Doxygen project is _not_ a source code
+    viewer, this internal documentation is incomplete, and this is not meant to
+    be a substitute for examining the source code.
+  - **Tidy Console Application** We've also organized the console application as
+    its own Doxygen project. This can be useful to new console application
+    tinkers, and also provide insight on how to use LibTidy in your own
+    programs.
 
 # Components
 

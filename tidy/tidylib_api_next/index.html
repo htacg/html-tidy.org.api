@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;h1&gt;&lt;hr&gt;heading&lt;/h1&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;h2&gt;sub&lt;hr&gt;heading&lt;/h2&gt;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;a href=&quot;#refs&quot;&gt;References&lt;a&gt;</div></div><!-- fragment --><p> …can be converted to </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;hr&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;h1&gt;heading&lt;/h1&gt;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;h2&gt;sub&lt;/h2&gt;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;hr&gt;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;h2&gt;heading&lt;/h2&gt;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;a href=&quot;#refs&quot;&gt;References&lt;/a&gt;</div></div><!-- fragment --><h1>About this Documentation</h1>
 <p>This documentation is intended to serve as reference materials for both <b>developers</b> and <b>LibTidy implementers</b> so that they can have a reference for troubleshooting code, fixing issues with Tidy, and for implementing their own programs with LibTidy’s API.</p>
 <p>Consumer documentation can be referenced from <code>tidy -help</code> on all platforms, and via <code>man tidy</code> on Unix platforms.</p>
-<p>In addition to the automatically generated documentation from Tidy’s source code, these three major sections provide practical information about using Tidy, how to contribute, and how LibTidy works:</p>
+<p>In addition to the automatically generated documentation from Tidy’s source code, these four major sections provide practical information about using Tidy, how to contribute, and how LibTidy works:</p>
 <ul>
 <li><a class="el" href="general.html">General</a><ul>
 <li>These articles show how HTML Tidy works from a user perspective. Although the console program is described, keep in mind that all of these articles apply to LibTidy, too, as the console is simply one type of clients to the library.</li>
@@ -113,6 +113,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 </li>
 <li><a class="el" href="programming.html">Programming</a><ul>
 <li>These articles detail how to work with the HTML Tidy source code. If you plan to work with HTACG and donate your own contributions, please have a look at these articles so that you have an easy transition to our team!</li>
+</ul>
+</li>
+<li><a href="modules.html" class="el">Modules</a><ul>
+<li><b>External Public API</b> If you are a user of LibTidy, then this is all of the documentation that is of use to you in order to implement LibTidy in any language that can link to a C library.</li>
+<li><b>Internal API</b> New developers of LibTidy may find browsing this section useful in order to become more familiar with the organization of the source code and the files. Note that this Doxygen project is <em>not</em> a source code viewer, this internal documentation is incomplete, and this is not meant to be a substitute for examining the source code.</li>
+<li><b>Tidy Console Application</b> We've also organized the console application as its own Doxygen project. This can be useful to new console application tinkers, and also provide insight on how to use LibTidy in your own programs.</li>
 </ul>
 </li>
 </ul>
@@ -129,7 +135,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:20:08 for HTML Tidy by
+    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
