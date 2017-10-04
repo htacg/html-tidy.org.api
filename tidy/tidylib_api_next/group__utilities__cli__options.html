@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -137,9 +137,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga85d92d3d7f1a710213327cef40b92faa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#ga85d92d3d7f1a710213327cef40b92faa">getSortedOption</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="group__utilities__cli__options.html#structAllOption__t">AllOption_t</a> *tOption)</td></tr>
 <tr class="memdesc:ga85d92d3d7f1a710213327cef40b92faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns options sorted.  <a href="#ga85d92d3d7f1a710213327cef40b92faa">More...</a><br /></td></tr>
 <tr class="separator:ga85d92d3d7f1a710213327cef40b92faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace6af4c1b79519c58f39c68a6158dbbd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#gace6af4c1b79519c58f39c68a6158dbbd">isAutoBool</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt)</td></tr>
-<tr class="memdesc:gace6af4c1b79519c58f39c68a6158dbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to determine if an option is an AutoBool.  <a href="#gace6af4c1b79519c58f39c68a6158dbbd">More...</a><br /></td></tr>
-<tr class="separator:gace6af4c1b79519c58f39c68a6158dbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2005b8c7367c6b866cf3ac78e0410cfa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#ga2005b8c7367c6b866cf3ac78e0410cfa">hasPickList</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt)</td></tr>
+<tr class="memdesc:ga2005b8c7367c6b866cf3ac78e0410cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to determine if an option has a picklist.  <a href="#ga2005b8c7367c6b866cf3ac78e0410cfa">More...</a><br /></td></tr>
+<tr class="separator:ga2005b8c7367c6b866cf3ac78e0410cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2915f0fdb2ea7a578e340854e7494fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#gaa2915f0fdb2ea7a578e340854e7494fc">PrintAllowedValues</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt, const <a class="el" href="group__utilities__cli__options.html#structOptionDesc">OptionDesc</a> *d)</td></tr>
 <tr class="memdesc:gaa2915f0fdb2ea7a578e340854e7494fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints an option's allowed values.  <a href="#gaa2915f0fdb2ea7a578e340854e7494fc">More...</a><br /></td></tr>
 <tr class="separator:gaa2915f0fdb2ea7a578e340854e7494fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,7 +516,7 @@ Potential values. <p>If NULL, use an external function </p>
 
 </div>
 </div>
-<a class="anchor" id="gace6af4c1b79519c58f39c68a6158dbbd"></a>
+<a class="anchor" id="ga2005b8c7367c6b866cf3ac78e0410cfa"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -524,7 +524,7 @@ Potential values. <p>If NULL, use an external function </p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> isAutoBool </td>
+          <td class="memname">static <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> hasPickList </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a>&#160;</td>
           <td class="paramname"><em>topt</em></td><td>)</td>
@@ -538,14 +538,14 @@ Potential values. <p>If NULL, use an external function </p>
 </table>
 </div><div class="memdoc">
 
-<p>Utility to determine if an option is an AutoBool. </p>
+<p>Utility to determine if an option has a picklist. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">topt</td><td>The option to check. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns a Bool indicating whether the option is an Autobool or not. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a Bool indicating whether the option has a picklist or not. </dd></dl>
 
 </div>
 </div>
@@ -629,7 +629,7 @@ Potential values. <p>If NULL, use an external function </p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

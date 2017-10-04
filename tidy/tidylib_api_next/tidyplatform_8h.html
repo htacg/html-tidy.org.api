@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -101,11 +101,20 @@ $(document).ready(function(){initNavTree('tidyplatform_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><ul>
-<li>Platform specifics </li>
-</ul>
-<p>(c) 1998-2016 (W3C) MIT, ERCIM, Keio University See <a class="el" href="tidy_8h.html" title="Defines HTML Tidy public API implemented by LibTidy. ">tidy.h</a> for the copyright notice.</p>
-<p>This file is included by <a class="el" href="tidy_8h.html" title="Defines HTML Tidy public API implemented by LibTidy. ">tidy.h</a>, and need not be included sepearately. It sets a number of default defines, and a PLATFORM_NAME, and includes the most common system headers. </p>
+<div class="textblock"><p>Platform specific definitions, specifics, and headers. </p>
+<p>This file is included by <code><a class="el" href="tidy_8h.html" title="Defines HTML Tidy public API implemented by LibTidy. ">tidy.h</a></code> already, and need not be included separately. Among other things, the PLATFORM_NAME is defined and the most common systems headers are included.</p>
+<dl class="section note"><dt>Note</dt><dd>It should be largely unnecessary to modify this file unless adding support for a completely new architecture. Most options defined in this file specify defaults that can be overriden by the build system; for example, passing -D flags to CMake.</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Charles Reitzel [<a href="#" onclick="location.href='mai'+'lto:'+'cre'+'it'+'zel'+'@r'+'cn.'+'co'+'m'; return false;">creit<span style="display: none;">.nosp@m.</span>zel@<span style="display: none;">.nosp@m.</span>rcn.c<span style="display: none;">.nosp@m.</span>om</a>] </dd>
+<dd>
+HTACG, et al (consult git log)</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 1998-2017 World Wide Web Consortium (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University). </dd>
+<dd>
+See <a class="el" href="tidy_8h.html" title="Defines HTML Tidy public API implemented by LibTidy. ">tidy.h</a> for license.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Created 2001-05-20 by Charles Reitzel </dd>
+<dd>
+Updated 2002-07-01 by Charles Reitzel </dd>
+<dd>
+Further modifications: consult git log. </dd></dl>
 </div>
 <p><a href="tidyplatform_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -127,6 +136,8 @@ Macros</h2></td></tr>
 <tr class="separator:a726579837b45614e05458b0e20725fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37d846fdb3bc77dfb3811ba5a67d9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tidyplatform_8h.html#ae37d846fdb3bc77dfb3811ba5a67d9df">PRESERVE_FILE_TIMES</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ae37d846fdb3bc77dfb3811ba5a67d9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0b1339dbff30eaad99793f4a05fab4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tidyplatform_8h.html#aab0b1339dbff30eaad99793f4a05fab4">SPRTF</a>&#160;&#160;&#160;printf</td></tr>
+<tr class="separator:aab0b1339dbff30eaad99793f4a05fab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d7b180618e09812d4a3997dba66243"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tidyplatform_8h.html#af8d7b180618e09812d4a3997dba66243">SUPPORT_LOCALIZATIONS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:af8d7b180618e09812d4a3997dba66243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9f608f417a997f4973e218d859381d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tidyplatform_8h.html#ad9f608f417a997f4973e218d859381d6">SUPPORT_POSIX_MAPPED_FILES</a>&#160;&#160;&#160;1</td></tr>
@@ -269,6 +280,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PRESERVE_FILE_TIMES&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab0b1339dbff30eaad99793f4a05fab4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPRTF&#160;&#160;&#160;printf</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -462,7 +485,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_347ffb9558b54b31166949a03b842226.html">include</a></li><li class="navelem"><a class="el" href="tidyplatform_8h.html">tidyplatform.h</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

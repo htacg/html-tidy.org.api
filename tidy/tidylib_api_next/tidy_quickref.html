@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -97,19 +97,37 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
 <div class="contents">
 <div class="textblock"><a xmlns="http://www.w3.org/1999/xhtml" name="qtop"/><h2 xmlns="http://www.w3.org/1999/xhtml" id="top">Option Groups</h2><ul xmlns="http://www.w3.org/1999/xhtml">
   <li>
-    <a class="h3" href="#MarkupHeader">HTML, XHTML, XML</a>
+    <a class="h3" href="#DisplayHeader">Document Display</a>
+  </li>
+  <li>
+    <a class="h3" href="#DocumentIOHeader">Document In and Out</a>
+  </li>
+  <li>
+    <a class="h3" href="#FileIOHeader">File Input-Output</a>
   </li>
   <li>
     <a class="h3" href="#DiagnosticsHeader">Diagnostics</a>
   </li>
   <li>
+    <a class="h3" href="#EncodingHeader">Encoding</a>
+  </li>
+  <li>
+    <a class="h3" href="#MarkupCleanupHeader">Cleanup</a>
+  </li>
+  <li>
+    <a class="h3" href="#MarkupEntitiesHeader">Entities</a>
+  </li>
+  <li>
+    <a class="h3" href="#MarkupRepairHeader">Repair</a>
+  </li>
+  <li>
+    <a class="h3" href="#MarkupXFormHeader">Transformation</a>
+  </li>
+  <li>
+    <a class="h3" href="#MarkupTeachHeader">Teaching Tidy</a>
+  </li>
+  <li>
     <a class="h3" href="#PrettyPrintHeader">Pretty Print</a>
-  </li>
-  <li>
-    <a class="h3" href="#EncodingHeader">Character Encoding</a>
-  </li>
-  <li>
-    <a class="h3" href="#MiscellaneousHeader">Miscellaneous</a>
   </li>
 </ul><table xmlns="http://www.w3.org/1999/xhtml" summary="Options Quick Reference Index Section" border="0" cellpadding="3" cellspacing="0" class="quickref">
   <colgroup>
@@ -118,7 +136,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <col width="33%"/>
   </colgroup>
   <tr valign="bottom">
-    <td class="h3" colspan="2" id="MarkupHeader">HTML, XHTML, XML Options</td>
+    <td class="h3" colspan="2" id="DisplayHeader">Document Display Options</td>
     <td valign="top" class="h3top">
       <a href="#qtop" class="h3topa">Top</a>
     </td>
@@ -127,6 +145,76 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="tabletitle">Option</td>
     <td class="tabletitle">Type</td>
     <td class="tabletitle">Default</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#gnu-emacs">gnu-emacs</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#markup">markup</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#quiet">quiet</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#show-body-only">show-body-only</a>
+    </td>
+    <td class="qrow">Enum</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#show-errors">show-errors</a>
+    </td>
+    <td class="qrow">Integer</td>
+    <td class="qrow">6</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#show-info">show-info</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#show-warnings">show-warnings</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="DocumentIOHeader">Document In and Out Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#add-meta-charset">add-meta-charset</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
@@ -144,7 +232,56 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#alt-text">alt-text</a>
+      <a href="#doctype">doctype</a>
+    </td>
+    <td class="qrow">DocType</td>
+    <td class="qrow">auto</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#input-xml">input-xml</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#output-html">output-html</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#output-xhtml">output-xhtml</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#output-xml">output-xml</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="FileIOHeader">File Input-Output Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#error-file">error-file</a>
     </td>
     <td class="qrow">String</td>
     <td class="qrow">
@@ -153,17 +290,131 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#anchor-as-name">anchor-as-name</a>
+      <a href="#keep-time">keep-time</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#output-file">output-file</a>
+    </td>
+    <td class="qrow">String</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#write-back">write-back</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="DiagnosticsHeader">Diagnostics Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#accessibility-check">accessibility-check</a>
+    </td>
+    <td class="qrow">Enum</td>
+    <td class="qrow">0 (Tidy Classic)</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#force-output">force-output</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#show-meta-change">show-meta-change</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#warn-proprietary-attributes">warn-proprietary-attributes</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">yes</td>
   </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="EncodingHeader">Encoding Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
+  </tr>
   <tr>
     <td class="qrow">
-      <a href="#assume-xml-procins">assume-xml-procins</a>
+      <a href="#char-encoding">char-encoding</a>
     </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
+    <td class="qrow">Encoding</td>
+    <td class="qrow">utf8</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#input-encoding">input-encoding</a>
+    </td>
+    <td class="qrow">Encoding</td>
+    <td class="qrow">utf8</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#newline">newline</a>
+    </td>
+    <td class="qrow">Enum</td>
+    <td class="qrow">LF</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#output-bom">output-bom</a>
+    </td>
+    <td class="qrow">Enum</td>
+    <td class="qrow">auto</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#output-encoding">output-encoding</a>
+    </td>
+    <td class="qrow">Encoding</td>
+    <td class="qrow">utf8</td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="MarkupCleanupHeader">Cleanup Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
   </tr>
   <tr>
     <td class="qrow">
@@ -178,43 +429,6 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#coerce-endtags">coerce-endtags</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#css-prefix">css-prefix</a>
-    </td>
-    <td class="qrow">String</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#custom-tags">custom-tags</a>
-    </td>
-    <td class="qrow">enum</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#decorate-inferred-ul">decorate-inferred-ul</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#doctype">doctype</a>
-    </td>
-    <td class="qrow">DocType</td>
-    <td class="qrow">auto</td>
   </tr>
   <tr>
     <td class="qrow">
@@ -239,91 +453,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#enclose-block-text">enclose-block-text</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#enclose-text">enclose-text</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#escape-cdata">escape-cdata</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#fix-backslash">fix-backslash</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#fix-bad-comments">fix-bad-comments</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#fix-uri">fix-uri</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
       <a href="#gdoc">gdoc</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#hide-comments">hide-comments</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#indent-cdata">indent-cdata</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#input-xml">input-xml</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#join-classes">join-classes</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#join-styles">join-styles</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#literal-attributes">literal-attributes</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
@@ -337,31 +467,45 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#lower-literals">lower-literals</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
       <a href="#merge-divs">merge-divs</a>
     </td>
-    <td class="qrow">AutoBool</td>
+    <td class="qrow">Enum</td>
     <td class="qrow">auto</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#merge-emphasis">merge-emphasis</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
   </tr>
   <tr>
     <td class="qrow">
       <a href="#merge-spans">merge-spans</a>
     </td>
-    <td class="qrow">AutoBool</td>
+    <td class="qrow">Enum</td>
     <td class="qrow">auto</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#word-2000">word-2000</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="MarkupEntitiesHeader">Entities Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#ascii-chars">ascii-chars</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
@@ -372,71 +516,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#new-blocklevel-tags">new-blocklevel-tags</a>
-    </td>
-    <td class="qrow">Tag names</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#new-empty-tags">new-empty-tags</a>
-    </td>
-    <td class="qrow">Tag names</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#new-inline-tags">new-inline-tags</a>
-    </td>
-    <td class="qrow">Tag names</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#new-pre-tags">new-pre-tags</a>
-    </td>
-    <td class="qrow">Tag names</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
       <a href="#numeric-entities">numeric-entities</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#omit-optional-tags">omit-optional-tags</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#output-html">output-html</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#output-xhtml">output-xhtml</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#output-xml">output-xml</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
@@ -469,26 +549,135 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="qrow">Boolean</td>
     <td class="qrow">yes</td>
   </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#repeated-attributes">repeated-attributes</a>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="MarkupRepairHeader">Repair Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
     </td>
-    <td class="qrow">enum</td>
-    <td class="qrow">keep-last</td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#replace-color">replace-color</a>
+      <a href="#alt-text">alt-text</a>
+    </td>
+    <td class="qrow">String</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#anchor-as-name">anchor-as-name</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#assume-xml-procins">assume-xml-procins</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#show-body-only">show-body-only</a>
+      <a href="#coerce-endtags">coerce-endtags</a>
     </td>
-    <td class="qrow">AutoBool</td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#css-prefix">css-prefix</a>
+    </td>
+    <td class="qrow">String</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#custom-tags">custom-tags</a>
+    </td>
+    <td class="qrow">Enum</td>
     <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#enclose-block-text">enclose-block-text</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#enclose-text">enclose-text</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#escape-scripts">escape-scripts</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#fix-backslash">fix-backslash</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#fix-bad-comments">fix-bad-comments</a>
+    </td>
+    <td class="qrow">Enum</td>
+    <td class="qrow">auto</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#fix-style-tags">fix-style-tags</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#fix-uri">fix-uri</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#literal-attributes">literal-attributes</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#lower-literals">lower-literals</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#repeated-attributes">repeated-attributes</a>
+    </td>
+    <td class="qrow">Enum</td>
+    <td class="qrow">keep-last</td>
   </tr>
   <tr>
     <td class="qrow">
@@ -508,7 +697,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="qrow">
       <a href="#uppercase-attributes">uppercase-attributes</a>
     </td>
-    <td class="qrow">Boolean</td>
+    <td class="qrow">Enum</td>
     <td class="qrow">no</td>
   </tr>
   <tr>
@@ -518,25 +707,11 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
   </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#warn-proprietary-attributes">warn-proprietary-attributes</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#word-2000">word-2000</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
   <tr valign="bottom">
     <td colspan="3"> </td>
   </tr>
   <tr valign="bottom">
-    <td class="h3" colspan="2" id="DiagnosticsHeader">Diagnostics Options</td>
+    <td class="h3" colspan="2" id="MarkupXFormHeader">Transformation Options</td>
     <td valign="top" class="h3top">
       <a href="#qtop" class="h3topa">Top</a>
     </td>
@@ -548,31 +723,102 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#accessibility-check">accessibility-check</a>
+      <a href="#decorate-inferred-ul">decorate-inferred-ul</a>
     </td>
-    <td class="qrow">enum</td>
-    <td class="qrow">0 (Tidy Classic)</td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#show-errors">show-errors</a>
+      <a href="#escape-cdata">escape-cdata</a>
     </td>
-    <td class="qrow">Integer</td>
-    <td class="qrow">6</td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#show-info">show-info</a>
+      <a href="#hide-comments">hide-comments</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#join-classes">join-classes</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#join-styles">join-styles</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">yes</td>
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#show-warnings">show-warnings</a>
+      <a href="#merge-emphasis">merge-emphasis</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#replace-color">replace-color</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td class="h3" colspan="2" id="MarkupTeachHeader">Teaching Tidy Options</td>
+    <td valign="top" class="h3top">
+      <a href="#qtop" class="h3topa">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tabletitle">Option</td>
+    <td class="tabletitle">Type</td>
+    <td class="tabletitle">Default</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#new-blocklevel-tags">new-blocklevel-tags</a>
+    </td>
+    <td class="qrow">Tag Names</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#new-empty-tags">new-empty-tags</a>
+    </td>
+    <td class="qrow">Tag Names</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#new-inline-tags">new-inline-tags</a>
+    </td>
+    <td class="qrow">Tag Names</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#new-pre-tags">new-pre-tags</a>
+    </td>
+    <td class="qrow">Tag Names</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
   </tr>
   <tr valign="bottom">
     <td colspan="3"> </td>
@@ -597,21 +843,21 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#escape-scripts">escape-scripts</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
       <a href="#indent">indent</a>
     </td>
-    <td class="qrow">AutoBool</td>
+    <td class="qrow">Enum</td>
     <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
       <a href="#indent-attributes">indent-attributes</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#indent-cdata">indent-cdata</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
@@ -632,10 +878,19 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
-      <a href="#markup">markup</a>
+      <a href="#omit-optional-tags">omit-optional-tags</a>
     </td>
     <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#priority-attributes">priority-attributes</a>
+    </td>
+    <td class="qrow">Attributes Names</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
   </tr>
   <tr>
     <td class="qrow">
@@ -648,7 +903,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="qrow">
       <a href="#sort-attributes">sort-attributes</a>
     </td>
-    <td class="qrow">enum</td>
+    <td class="qrow">Enum</td>
     <td class="qrow">none</td>
   </tr>
   <tr>
@@ -660,9 +915,16 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td class="qrow">
+      <a href="#tidy-mark">tidy-mark</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
       <a href="#vertical-space">vertical-space</a>
     </td>
-    <td class="qrow">AutoBool</td>
+    <td class="qrow">Enum</td>
     <td class="qrow">no</td>
   </tr>
   <tr>
@@ -717,179 +979,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   <tr valign="bottom">
     <td colspan="3"> </td>
   </tr>
-  <tr valign="bottom">
-    <td class="h3" colspan="2" id="EncodingHeader">Character Encoding Options</td>
-    <td valign="top" class="h3top">
-      <a href="#qtop" class="h3topa">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td class="tabletitle">Option</td>
-    <td class="tabletitle">Type</td>
-    <td class="tabletitle">Default</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#ascii-chars">ascii-chars</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#char-encoding">char-encoding</a>
-    </td>
-    <td class="qrow">Encoding</td>
-    <td class="qrow">utf8</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#input-encoding">input-encoding</a>
-    </td>
-    <td class="qrow">Encoding</td>
-    <td class="qrow">utf8</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#newline">newline</a>
-    </td>
-    <td class="qrow">enum</td>
-    <td class="qrow">LF</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#output-bom">output-bom</a>
-    </td>
-    <td class="qrow">AutoBool</td>
-    <td class="qrow">auto</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#output-encoding">output-encoding</a>
-    </td>
-    <td class="qrow">Encoding</td>
-    <td class="qrow">utf8</td>
-  </tr>
-  <tr valign="bottom">
-    <td colspan="3"> </td>
-  </tr>
-  <tr valign="bottom">
-    <td class="h3" colspan="2" id="MiscellaneousHeader">Miscellaneous Options</td>
-    <td valign="top" class="h3top">
-      <a href="#qtop" class="h3topa">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td class="tabletitle">Option</td>
-    <td class="tabletitle">Type</td>
-    <td class="tabletitle">Default</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#error-file">error-file</a>
-    </td>
-    <td class="qrow">String</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#force-output">force-output</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#gnu-emacs">gnu-emacs</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#keep-time">keep-time</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#output-file">output-file</a>
-    </td>
-    <td class="qrow">String</td>
-    <td class="qrow">
-      <strong>-</strong>
-    </td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#quiet">quiet</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#tidy-mark">tidy-mark</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">yes</td>
-  </tr>
-  <tr>
-    <td class="qrow">
-      <a href="#write-back">write-back</a>
-    </td>
-    <td class="qrow">Boolean</td>
-    <td class="qrow">no</td>
-  </tr>
-  <tr valign="bottom">
-    <td colspan="3"> </td>
-  </tr>
 </table><table xmlns="http://www.w3.org/1999/xhtml" summary="Tidy Options Quick Reference Detail Section" border="0" cellpadding="3" cellspacing="0">
   <tr>
     <td colspan="3"> </td>
   </tr>
   <tr valign="bottom">
-    <td valign="top" colspan="3" class="h2" id="MarkupReference">
-      <h2 class="qh2">HTML, XHTML, XML</h2>
+    <td valign="top" colspan="3" class="h2" id="DisplayReference">
+      <h2 class="qh2">Document Display</h2>
     </td>
   </tr>
   <tr>
-    <td valign="top" id="add-xml-decl" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">add-xml-decl</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#char-encoding">char-encoding</a>, <a href="#output-encoding">output-encoding</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should add the XML declaration when outputting XML or XHTML. <br xmlns=""/>Note that if the input already includes an <code xmlns="">&lt;?xml ... ?&gt;</code> declaration then this option will be ignored. <br xmlns=""/>If the encoding for the output is different from <var xmlns="">ascii</var>, one of the <var xmlns="">utf*</var> encodings, or <var xmlns="">raw</var>, then the declaration is always added as required by the XML standard. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="add-xml-space" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">add-xml-space</h4>
+    <td valign="top" id="gnu-emacs" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">gnu-emacs</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -905,45 +1006,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should add <code xmlns="">xml:space="preserve"</code> to elements such as <code xmlns="">&lt;pre&gt;</code>, <code xmlns="">&lt;style&gt;</code> and <code xmlns="">&lt;script&gt;</code> when generating XML. <br xmlns=""/>This is needed if the whitespace in such elements is to be parsed appropriately without having access to the DTD. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should change the format for reporting errors and warnings to a format that is more easily parsed by GNU Emacs. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="alt-text" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">alt-text</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">String</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies the default <code xmlns="">alt=</code> text Tidy uses for <code xmlns="">&lt;img&gt;</code> attributes when the <code xmlns="">alt=</code> attribute is missing. <br xmlns=""/>Use with care, as it is your responsibility to make your documents accessible to people who cannot see the images. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="anchor-as-name" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">anchor-as-name</h4>
+    <td valign="top" id="markup" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">markup</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -959,18 +1033,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option controls the deletion or addition of the <code xmlns="">name</code> attribute in elements where it can serve as anchor. <br xmlns=""/>If set to <var xmlns="">yes</var> a <code xmlns="">name</code> attribute, if not already existing, is added along an existing <code xmlns="">id</code> attribute if the DTD allows it. <br xmlns=""/>If set to <var xmlns="">no</var> any existing name attribute is removed if an <code xmlns="">id</code> attribute exists or has been added. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should generate a pretty printed version of the markup. Note that Tidy won't generate a pretty printed version if it finds significant errors (see <code xmlns="">force-output</code>). </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="assume-xml-procins" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">assume-xml-procins</h4>
+    <td valign="top" id="quiet" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">quiet</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -986,1235 +1060,11 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should change the parsing of processing instructions to require <code xmlns="">?&gt;</code> as the terminator rather than <code xmlns="">&gt;</code>. <br xmlns=""/>This option is automatically set if the input is in XML. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="bare" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">bare</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should strip Microsoft specific HTML from Word 2000 documents, and output spaces rather than non-breaking spaces where they exist in the input. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="clean" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">clean</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should perform cleaning of some legacy presentational tags (currently <code xmlns="">&lt;i&gt;</code>, <code xmlns="">&lt;b&gt;</code>, <code xmlns="">&lt;center&gt;</code> when enclosed within appropriate inline tags, and <code xmlns="">&lt;font&gt;</code>). If set to <var xmlns="">yes</var> then legacy tags will be replaced with CSS <code xmlns="">&lt;style&gt;</code> tags and structural markup as appropriate. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="coerce-endtags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">coerce-endtags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should coerce a start tag into an end tag in cases where it looks like an end tag was probably intended; for example, given <br xmlns=""/><code xmlns="">&lt;span&gt;foo &lt;b&gt;bar&lt;b&gt; baz&lt;/span&gt;</code> <br xmlns=""/>Tidy will output <br xmlns=""/><code xmlns="">&lt;span&gt;foo &lt;b&gt;bar&lt;/b&gt; baz&lt;/span&gt;</code> </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="css-prefix" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">css-prefix</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">String</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies the prefix that Tidy uses for styles rules. <br xmlns=""/>By default, <var xmlns="">c</var> will be used. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="custom-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">custom-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">enum</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">no, blocklevel, empty, inline, pre</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option enables the use of tags for autonomous custom elements, e.g. &lt;flag-icon&gt; with Tidy. Custom tags are disabled if this value is <var xmlns="">no</var>. Other settings - <var xmlns="">blocklevel</var>, <var xmlns="">empty</var>, <var xmlns="">inline</var>, and <var xmlns="">pre</var> will treat <em xmlns="">all</em> detected custom tags accordingly. <br xmlns=""/>The use of <code xmlns="">new-blocklevel-tags</code>, <code xmlns="">new-empty-tags</code>, <code xmlns="">new-inline-tags</code>, or <code xmlns="">new-pre-tags</code> will override the treatment of custom tags by this configuration option. This may be useful if you have different types of custom tags.<br xmlns=""/>When enabled these tags are determined during the processing of your document using opening tags; matching closing tags will be recognized accordingly, and unknown closing tags will be discarded. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="decorate-inferred-ul" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">decorate-inferred-ul</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should decorate inferred <code xmlns="">&lt;ul&gt;</code> elements with some CSS markup to avoid indentation to the right. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="doctype" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">doctype</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">DocType</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">auto</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">html5, omit, auto, strict, transitional, user</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies the DOCTYPE declaration generated by Tidy. <br xmlns=""/>If set to <var xmlns="">omit</var> the output won't contain a DOCTYPE declaration. Note this this also implies <code xmlns="">numeric-entities</code> is set to <var xmlns="">yes</var>.<br xmlns=""/>If set to <var xmlns="">html5</var> the DOCTYPE is set to <code xmlns="">&lt;!DOCTYPE html&gt;</code>.<br xmlns=""/>If set to <var xmlns="">auto</var> (the default) Tidy will use an educated guess based upon the contents of the document.<br xmlns=""/>If set to <var xmlns="">strict</var>, Tidy will set the DOCTYPE to the HTML4 or XHTML1 strict DTD.<br xmlns=""/>If set to <var xmlns="">loose</var>, the DOCTYPE is set to the HTML4 or XHTML1 loose (transitional) DTD.<br xmlns=""/>Alternatively, you can supply a string for the formal public identifier (FPI).<br xmlns=""/>For example: <br xmlns=""/><code xmlns="">doctype: "-//ACME//DTD HTML 3.14159//EN"</code><br xmlns=""/>If you specify the FPI for an XHTML document, Tidy will set the system identifier to an empty string. For an HTML document, Tidy adds a system identifier only if one was already present in order to preserve the processing mode of some browsers. Tidy leaves the DOCTYPE for generic XML documents unchanged. <br xmlns=""/>This option does not offer a validation of document conformance. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="drop-empty-elements" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">drop-empty-elements</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should discard empty elements. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="drop-empty-paras" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">drop-empty-paras</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should discard empty paragraphs. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="drop-proprietary-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">drop-proprietary-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should strip out proprietary attributes, such as Microsoft data binding attributes. Additionally attributes that aren't permitted in the output version of HTML will be dropped if used with <code xmlns="">strict-tags-attributes</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="enclose-block-text" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">enclose-block-text</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should insert a <code xmlns="">&lt;p&gt;</code> element to enclose any text it finds in any element that allows mixed content for HTML transitional but not HTML strict. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="enclose-text" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">enclose-text</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should enclose any text it finds in the body element within a <code xmlns="">&lt;p&gt;</code> element.<br xmlns=""/>This is useful when you want to take existing HTML and use it with a style sheet. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="escape-cdata" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">escape-cdata</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should convert <code xmlns="">&lt;![CDATA[]]&gt;</code> sections to normal text. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="fix-backslash" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">fix-backslash</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should replace backslash characters <code xmlns="">\</code> in URLs with forward slashes <code xmlns="">/</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="fix-bad-comments" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">fix-bad-comments</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should replace unexpected hyphens with <code xmlns="">=</code> characters when it comes across adjacent hyphens. <br xmlns=""/>The default is <var xmlns="">yes</var>. <br xmlns=""/>This option is provided for users of Cold Fusion which uses the comment syntax: <code xmlns="">&lt;!--- ---&gt;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="fix-uri" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">fix-uri</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should check attribute values that carry URIs for illegal characters and if such are found, escape them as HTML4 recommends. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="gdoc" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">gdoc</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should enable specific behavior for cleaning up HTML exported from Google Docs. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="hide-comments" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">hide-comments</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should print out comments. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="indent-cdata" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">indent-cdata</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should indent <code xmlns="">&lt;![CDATA[]]&gt;</code> sections. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="input-xml" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">input-xml</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should use the XML parser rather than the error correcting HTML parser. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="join-classes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">join-classes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should combine class names to generate a single, new class name if multiple class assignments are detected on an element. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="join-styles" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">join-styles</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should combine styles to generate a single, new style if multiple style values are detected on an element. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="literal-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">literal-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies how Tidy deals with whitespace characters within attribute values. <br xmlns=""/>If the value is <var xmlns="">no</var> Tidy normalizes attribute values by replacing any newline or tab with a single space, and further by replacing any contiguous whitespace with a single space. <br xmlns=""/>To force Tidy to preserve the original, literal values of all attributes and ensure that whitespace within attribute values is passed through unchanged, set this option to <var xmlns="">yes</var>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="logical-emphasis" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">logical-emphasis</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should replace any occurrence of <code xmlns="">&lt;i&gt;</code> with <code xmlns="">&lt;em&gt;</code> and any occurrence of <code xmlns="">&lt;b&gt;</code> with <code xmlns="">&lt;strong&gt;</code>. Any attributes are preserved unchanged. <br xmlns=""/>This option can be set independently of the <code xmlns="">clean</code> option. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="lower-literals" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">lower-literals</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should convert the value of an attribute that takes a list of predefined values to lower case. <br xmlns=""/>This is required for XHTML documents. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="merge-divs" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">merge-divs</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">AutoBool</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">auto</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">auto, y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#clean">clean</a>, <a href="#merge-spans">merge-spans</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option can be used to modify the behavior of <code xmlns="">clean</code> when set to <var xmlns="">yes</var>.<br xmlns=""/>This option specifies if Tidy should merge nested <code xmlns="">&lt;div&gt;</code> such as <code xmlns="">&lt;div&gt;&lt;div&gt;...&lt;/div&gt;&lt;/div&gt;</code>. <br xmlns=""/>If set to <var xmlns="">auto</var> the attributes of the inner <code xmlns="">&lt;div&gt;</code> are moved to the outer one. Nested <code xmlns="">&lt;div&gt;</code> with <code xmlns="">id</code> attributes are <em xmlns="">not</em> merged. <br xmlns=""/>If set to <var xmlns="">yes</var> the attributes of the inner <code xmlns="">&lt;div&gt;</code> are discarded with the exception of <code xmlns="">class</code> and <code xmlns="">style</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="merge-emphasis" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">merge-emphasis</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should merge nested <code xmlns="">&lt;b&gt;</code> and <code xmlns="">&lt;i&gt;</code> elements; for example, for the case <br xmlns=""/><code xmlns="">&lt;b class="rtop-2"&gt;foo &lt;b class="r2-2"&gt;bar&lt;/b&gt; baz&lt;/b&gt;</code>, <br xmlns=""/>Tidy will output <code xmlns="">&lt;b class="rtop-2"&gt;foo bar baz&lt;/b&gt;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="merge-spans" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">merge-spans</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">AutoBool</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">auto</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">auto, y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#clean">clean</a>, <a href="#merge-divs">merge-divs</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option can be used to modify the behavior of <code xmlns="">clean</code> when set to <var xmlns="">yes</var>.<br xmlns=""/>This option specifies if Tidy should merge nested <code xmlns="">&lt;span&gt;</code> such as <code xmlns="">&lt;span&gt;&lt;span&gt;...&lt;/span&gt;&lt;/span&gt;</code>. <br xmlns=""/>The algorithm is identical to the one used by <code xmlns="">merge-divs</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="ncr" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">ncr</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should allow numeric character references. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="new-blocklevel-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">new-blocklevel-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Tag names</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">tagX, tagY, ...</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>, <a href="#custom-tags">custom-tags</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies new block-level tags. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>Note you can't change the content model for elements such as <code xmlns="">&lt;table&gt;</code>, <code xmlns="">&lt;ul&gt;</code>, <code xmlns="">&lt;ol&gt;</code> and <code xmlns="">&lt;dl&gt;</code>. <br xmlns=""/>This option is ignored in XML mode. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="new-empty-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">new-empty-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Tag names</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">tagX, tagY, ...</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>, <a href="#custom-tags">custom-tags</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies new empty inline tags. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>Remember to also declare empty tags as either inline or blocklevel. <br xmlns=""/>This option is ignored in XML mode. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="new-inline-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">new-inline-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Tag names</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">tagX, tagY, ...</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>, <a href="#custom-tags">custom-tags</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies new non-empty inline tags. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>This option is ignored in XML mode. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="new-pre-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">new-pre-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Tag names</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">-</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">tagX, tagY, ...</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#custom-tags">custom-tags</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies new tags that are to be processed in exactly the same way as HTML's <code xmlns="">&lt;pre&gt;</code> element. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>Note you cannot as yet add new CDATA elements. <br xmlns=""/>This option is ignored in XML mode. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="numeric-entities" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">numeric-entities</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#doctype">doctype</a>, <a href="#preserve-entities">preserve-entities</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output entities other than the built-in HTML entities (<code xmlns="">&amp;amp;</code>, <code xmlns="">&amp;lt;</code>, <code xmlns="">&amp;gt;</code>, and <code xmlns="">&amp;quot;</code>) in the numeric rather than the named entity form. <br xmlns=""/>Only entities compatible with the DOCTYPE declaration generated are used. <br xmlns=""/>Entities that can be represented in the output encoding are translated correspondingly. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="omit-optional-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">omit-optional-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should omit optional start tags and end tags when generating output. <br xmlns=""/>Setting this option causes all tags for the <code xmlns="">&lt;html&gt;</code>, <code xmlns="">&lt;head&gt;</code>, and <code xmlns="">&lt;body&gt;</code> elements to be omitted from output, as well as such end tags as <code xmlns="">&lt;/p&gt;</code>, <code xmlns="">&lt;/li&gt;</code>, <code xmlns="">&lt;/dt&gt;</code>, <code xmlns="">&lt;/dd&gt;</code>, <code xmlns="">&lt;/option&gt;</code>, <code xmlns="">&lt;/tr&gt;</code>, <code xmlns="">&lt;/td&gt;</code>, and <code xmlns="">&lt;/th&gt;</code>. <br xmlns=""/>This option is ignored for XML output. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="output-html" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">output-html</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should generate pretty printed output, writing it as HTML. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="output-xhtml" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">output-xhtml</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should generate pretty printed output, writing it as extensible HTML. <br xmlns=""/>This option causes Tidy to set the DOCTYPE and default namespace as appropriate to XHTML, and will use the corrected value in output regardless of other sources. <br xmlns=""/>For XHTML, entities can be written as named or numeric entities according to the setting of <code xmlns="">numeric-entities</code>. <br xmlns=""/>The original case of tags and attributes will be preserved, regardless of other options. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="output-xml" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">output-xml</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should pretty print output, writing it as well-formed XML. <br xmlns=""/>Any entities not defined in XML 1.0 will be written as numeric entities to allow them to be parsed by an XML parser. <br xmlns=""/>The original case of tags and attributes will be preserved, regardless of other options. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="preserve-entities" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">preserve-entities</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should preserve well-formed entities as found in the input. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="quote-ampersand" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">quote-ampersand</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output unadorned <code xmlns="">&amp;</code> characters as <code xmlns="">&amp;amp;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="quote-marks" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">quote-marks</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output <code xmlns="">"</code> characters as <code xmlns="">&amp;quot;</code> as is preferred by some editing environments. <br xmlns=""/>The apostrophe character <code xmlns="">'</code> is written out as <code xmlns="">&amp;#39;</code> since many web browsers don't yet support <code xmlns="">&amp;apos;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="quote-nbsp" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">quote-nbsp</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output non-breaking space characters as entities, rather than as the Unicode character value 160 (decimal). </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="repeated-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">repeated-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">enum</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">keep-last</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">keep-first, keep-last</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#join-classes">join-classes</a>, <a href="#join-styles">join-styles</a></td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should keep the first or last attribute, if an attribute is repeated, e.g. has two <code xmlns="">align</code> attributes. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="replace-color" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">replace-color</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should replace numeric values in color attributes with HTML/XHTML color names where defined, e.g. replace <code xmlns="">#ffffff</code> with <code xmlns="">white</code>. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output the summary of the numbers of errors and warnings, or the welcome or informational messages. </td>
   </tr>
   <tr>
     <td> </td>
@@ -2229,7 +1079,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">AutoBool</td>
+    <td class="qvalu">Enum</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
@@ -2237,208 +1087,11 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">auto, y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes, auto</td>
   </tr>
   <tr>
     <td/>
     <td colspan="1" class="qdescription">This option specifies if Tidy should print only the contents of the body tag as an HTML fragment. <br xmlns=""/>If set to <var xmlns="">auto</var>, this is performed only if the body tag has been inferred. <br xmlns=""/>Useful for incorporating existing whole pages as a portion of another page. <br xmlns=""/>This option has no effect if XML output is requested. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="skip-nested" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">skip-nested</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies that Tidy should skip nested tags when parsing script and style data. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="strict-tags-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">strict-tags-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This options ensures that tags and attributes are applicable for the version of HTML that Tidy outputs. When set to <var xmlns="">yes</var> and the output document type is a strict doctype, then Tidy will report errors. If the output document type is a loose or transitional doctype, then Tidy will report warnings. <br xmlns=""/>Additionally if <code xmlns="">drop-proprietary-attributes</code> is enabled, then not applicable attributes will be dropped, too. <br xmlns=""/>When set to <var xmlns="">no</var>, these checks are not performed. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="uppercase-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">uppercase-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output attribute names in upper case. <br xmlns=""/>The default is <var xmlns="">no</var>, which results in lower case attribute names, except for XML input, where the original case is preserved. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="uppercase-tags" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">uppercase-tags</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output tag names in upper case. <br xmlns=""/>The default is <var xmlns="">no</var> which results in lower case tag names, except for XML input where the original case is preserved. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="warn-proprietary-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">warn-proprietary-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should warn on proprietary attributes.</td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="word-2000" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">word-2000</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should go to great pains to strip out all the surplus stuff Microsoft Word 2000 inserts when you save Word documents as "Web pages". It doesn't handle embedded images or VML. <br xmlns=""/>You should consider using Word's "Save As: Web Page, Filtered". </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td colspan="3"> </td>
-  </tr>
-  <tr valign="bottom">
-    <td valign="top" colspan="3" class="h2" id="DiagnosticsReference">
-      <h2 class="qh2">Diagnostics</h2>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" id="accessibility-check" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">accessibility-check</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">enum</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">0 (Tidy Classic)</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">0 (Tidy Classic), 1 (Priority 1 Checks), 2 (Priority 2 Checks), 3 (Priority 3 Checks)</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies what level of accessibility checking, if any, that Tidy should perform. <br xmlns=""/>Level <var xmlns="">0 (Tidy Classic)</var> is equivalent to Tidy Classic's accessibility checking. <br xmlns=""/>For more information on Tidy's accessibility checking, visit <a xmlns="" href="http://www.html-tidy.org/accessibility/"> Tidy's Accessibility Page</a>. </td>
   </tr>
   <tr>
     <td> </td>
@@ -2488,7 +1141,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
@@ -2515,7 +1168,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
@@ -2528,13 +1181,13 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td colspan="3"> </td>
   </tr>
   <tr valign="bottom">
-    <td valign="top" colspan="3" class="h2" id="PrettyPrintReference">
-      <h2 class="qh2">Pretty Print</h2>
+    <td valign="top" colspan="3" class="h2" id="DocumentIOReference">
+      <h2 class="qh2">Document In and Out</h2>
     </td>
   </tr>
   <tr>
-    <td valign="top" id="break-before-br" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">break-before-br</h4>
+    <td valign="top" id="add-meta-charset" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">add-meta-charset</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2550,18 +1203,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output a line break before each <code xmlns="">&lt;br&gt;</code> element. </td>
+    <td colspan="1" class="qdescription">This option, when enabled, adds a <code xmlns="">&lt;meta&gt;</code> element and sets the <code xmlns="">charset</code> attribute to the encoding of the document. Set this option to <var xmlns="">yes</var> to enable it. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="escape-scripts" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">escape-scripts</h4>
+    <td valign="top" id="add-xml-decl" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">add-xml-decl</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2573,22 +1226,26 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
+    <td class="qvalu">no</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#char-encoding">char-encoding</a>, <a href="#output-encoding">output-encoding</a></td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option causes items that look like closing tags, like <code xmlns="">&lt;/g</code> to be escaped to <code xmlns="">&lt;\/g</code>. Set this option to <var xmlns="">no</var> if you do not want this.</td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should add the XML declaration when outputting XML or XHTML. <br xmlns=""/>Note that if the input already includes an <code xmlns="">&lt;?xml ... ?&gt;</code> declaration then this option will be ignored. <br xmlns=""/>If the encoding for the output is different from <var xmlns="">ascii</var>, one of the <var xmlns="">utf*</var> encodings, or <var xmlns="">raw</var>, then the declaration is always added as required by the XML standard. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="indent" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">indent</h4>
+    <td valign="top" id="add-xml-space" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">add-xml-space</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2596,7 +1253,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">AutoBool</td>
+    <td class="qvalu">Boolean</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
@@ -2604,24 +1261,194 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">auto, y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should add <code xmlns="">xml:space="preserve"</code> to elements such as <code xmlns="">&lt;pre&gt;</code>, <code xmlns="">&lt;style&gt;</code> and <code xmlns="">&lt;script&gt;</code> when generating XML. <br xmlns=""/>This is needed if the whitespace in such elements is to be parsed appropriately without having access to the DTD. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="doctype" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">doctype</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">DocType</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">html5, omit, auto, strict, transitional, user</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies the DOCTYPE declaration generated by Tidy. <br xmlns=""/>If set to <var xmlns="">omit</var> the output won't contain a DOCTYPE declaration. Note this this also implies <code xmlns="">numeric-entities</code> is set to <var xmlns="">yes</var>.<br xmlns=""/>If set to <var xmlns="">html5</var> the DOCTYPE is set to <code xmlns="">&lt;!DOCTYPE html&gt;</code>.<br xmlns=""/>If set to <var xmlns="">auto</var> (the default) Tidy will use an educated guess based upon the contents of the document. Note that selecting this option will <em xmlns="">not</em> change the current document's DOCTYPE on output. <br xmlns=""/>If set to <var xmlns="">strict</var>, Tidy will set the DOCTYPE to the HTML4 or XHTML1 strict DTD.<br xmlns=""/>If set to <var xmlns="">loose</var>, the DOCTYPE is set to the HTML4 or XHTML1 loose (transitional) DTD.<br xmlns=""/>Alternatively, you can supply a string for the formal public identifier (FPI).<br xmlns=""/>For example: <br xmlns=""/><code xmlns="">doctype: "-//ACME//DTD HTML 3.14159//EN"</code><br xmlns=""/>If you specify the FPI for an XHTML document, Tidy will set the system identifier to an empty string. For an HTML document, Tidy adds a system identifier only if one was already present in order to preserve the processing mode of some browsers. Tidy leaves the DOCTYPE for generic XML documents unchanged. <br xmlns=""/>This option does not offer a validation of document conformance. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="input-xml" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">input-xml</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should use the XML parser rather than the error correcting HTML parser. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="output-html" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">output-html</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should generate pretty printed output, writing it as HTML. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="output-xhtml" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">output-xhtml</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should generate pretty printed output, writing it as extensible HTML. <br xmlns=""/>This option causes Tidy to set the DOCTYPE and default namespace as appropriate to XHTML, and will use the corrected value in output regardless of other sources. <br xmlns=""/>For XHTML, entities can be written as named or numeric entities according to the setting of <code xmlns="">numeric-entities</code>. <br xmlns=""/>The original case of tags and attributes will be preserved, regardless of other options. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="output-xml" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">output-xml</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should pretty print output, writing it as well-formed XML. <br xmlns=""/>Any entities not defined in XML 1.0 will be written as numeric entities to allow them to be parsed by an XML parser. <br xmlns=""/>The original case of tags and attributes will be preserved, regardless of other options. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="FileIOReference">
+      <h2 class="qh2">File Input-Output</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="error-file" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">error-file</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">String</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">-</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">See Also:</td>
     <td valign="top" class="qvalu">
-      <a href="#indent-spaces">indent-spaces</a>
+      <a href="#output-file">output-file</a>
     </td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should indent block-level tags. <br xmlns=""/>If set to <var xmlns="">auto</var> Tidy will decide whether or not to indent the content of tags such as <code xmlns="">&lt;title&gt;</code>, <code xmlns="">&lt;h1&gt;</code>-<code xmlns="">&lt;h6&gt;</code>, <code xmlns="">&lt;li&gt;</code>, <code xmlns="">&lt;td&gt;</code>, or <code xmlns="">&lt;p&gt;</code> based on the content including a block-level element. <br xmlns=""/>Setting <code xmlns="">indent</code> to <var xmlns="">yes</var> can expose layout bugs in some browsers. <br xmlns=""/>Use the option <code xmlns="">indent-spaces</code> to control the number of spaces or tabs output per level of indent, and <code xmlns="">indent-with-tabs</code> to specify whether spaces or tabs are used. </td>
+    <td colspan="1" class="qdescription">This option specifies the error file Tidy uses for errors and warnings. Normally errors and warnings are output to <code xmlns="">stderr</code>. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="indent-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">indent-attributes</h4>
+    <td valign="top" id="keep-time" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">keep-time</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2637,18 +1464,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should begin each attribute on a new line. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should keep the original modification time of files that Tidy modifies in place. <br xmlns=""/>Setting the option to <var xmlns="">yes</var> allows you to tidy files without changing the file modification date, which may be useful with certain tools that use the modification date for things such as automatic server deployment.<br xmlns=""/>Note this feature is not supported on some platforms. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="indent-spaces" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">indent-spaces</h4>
+    <td valign="top" id="output-file" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">output-file</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2656,32 +1483,32 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Integer</td>
+    <td class="qvalu">String</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">2</td>
+    <td class="qvalu">-</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">0, 1, 2, ...</td>
+    <td class="qvalu">-</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">See Also:</td>
     <td valign="top" class="qvalu">
-      <a href="#indent">indent</a>
+      <a href="#error-file">error-file</a>
     </td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies the number of spaces or tabs that Tidy uses to indent content when <code xmlns="">indent</code> is enabled. <br xmlns=""/>Note that the default value for this option is dependent upon the value of <code xmlns="">indent-with-tabs</code> (see also). </td>
+    <td colspan="1" class="qdescription">This option specifies the output file Tidy uses for markup. Normally markup is written to <code xmlns="">stdout</code>. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="indent-with-tabs" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">indent-with-tabs</h4>
+    <td valign="top" id="write-back" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">write-back</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2697,18 +1524,26 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should indent with tabs instead of spaces, assuming <code xmlns="">indent</code> is <var xmlns="">yes</var>. <br xmlns=""/>Set it to <var xmlns="">yes</var> to indent using tabs instead of the default spaces. <br xmlns=""/>Use the option <code xmlns="">indent-spaces</code> to control the number of tabs output per level of indent. Note that when <code xmlns="">indent-with-tabs</code> is enabled the default value of <code xmlns="">indent-spaces</code> is reset to <var xmlns="">1</var>. <br xmlns=""/>Note <code xmlns="">tab-size</code> controls converting input tabs to spaces. Set it to zero to retain input tabs. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should write back the tidied markup to the same file it read from. <br xmlns=""/>You are advised to keep copies of important files before tidying them, as on rare occasions the result may not be what you expect. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="markup" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">markup</h4>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="DiagnosticsReference">
+      <h2 class="qh2">Diagnostics</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="accessibility-check" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">accessibility-check</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2716,188 +1551,26 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
+    <td class="qvalu">Enum</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
+    <td class="qvalu">0 (Tidy Classic)</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">0 (Tidy Classic), 1 (Priority 1 Checks), 2 (Priority 2 Checks), 3 (Priority 3 Checks)</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should generate a pretty printed version of the markup. Note that Tidy won't generate a pretty printed version if it finds significant errors (see <code xmlns="">force-output</code>). </td>
+    <td colspan="1" class="qdescription">This option specifies what level of accessibility checking, if any, that Tidy should perform. <br xmlns=""/>Level <var xmlns="">0 (Tidy Classic)</var> is equivalent to Tidy Classic's accessibility checking. <br xmlns=""/>For more information on Tidy's accessibility checking, visit <a xmlns="" href="http://www.html-tidy.org/accessibility/"> Tidy's Accessibility Page</a>. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="punctuation-wrap" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">punctuation-wrap</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap after some Unicode or Chinese punctuation characters. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="sort-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">sort-attributes</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">enum</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">none</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">none, alpha</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies that Tidy should sort attributes within an element using the specified sort algorithm. If set to <var xmlns="">alpha</var>, the algorithm is an ascending alphabetic sort. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="tab-size" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">tab-size</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Integer</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">8</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">0, 1, 2, ...</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies the number of columns that Tidy uses between successive tab stops. It is used to map tabs to spaces when reading the input. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="vertical-space" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">vertical-space</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">AutoBool</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">auto, y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should add some extra empty lines for readability. <br xmlns=""/>The default is <var xmlns="">no</var>. <br xmlns=""/>If set to <var xmlns="">auto</var> Tidy will eliminate nearly all newline characters.</td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="wrap" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Integer</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">68</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">0 (no wrapping), 1, 2, ...</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies the right margin Tidy uses for line wrapping. <br xmlns=""/>Tidy tries to wrap lines so that they do not exceed this length. <br xmlns=""/>Set <code xmlns="">wrap</code> to <var xmlns="">0</var>(zero) if you want to disable line wrapping. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="wrap-asp" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap-asp</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within ASP pseudo elements, which look like: <code xmlns="">&lt;% ... %&gt;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="wrap-attributes" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap-attributes</h4>
+    <td valign="top" id="force-output" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">force-output</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2913,76 +1586,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu"><a href="#wrap-script-literals">wrap-script-literals</a>, <a href="#literal-attributes">literal-attributes</a></td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line-wrap attribute values, meaning that if the value of an attribute causes a line to exceed the width specified by <code xmlns="">wrap</code>, Tidy will add one or more line breaks to the value, causing it to be wrapped into multiple lines. <br xmlns=""/>Note that this option can be set independently of <code xmlns="">wrap-script-literals</code>. By default Tidy replaces any newline or tab with a single space and replaces any sequences of whitespace with a single space. <br xmlns=""/>To force Tidy to preserve the original, literal values of all attributes, and ensure that whitespace characters within attribute values are passed through unchanged, set <code xmlns="">literal-attributes</code> to <var xmlns="">yes</var>. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should produce output even if errors are encountered. <br xmlns=""/>Use this option with care; if Tidy reports an error, this means Tidy was not able to (or is not sure how to) fix the error, so the resulting output may not reflect your intention. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="wrap-jste" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap-jste</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within JSTE pseudo elements, which look like: <code xmlns="">&lt;# ... #&gt;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="wrap-php" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap-php</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">yes</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within PHP pseudo elements, which look like: <code xmlns="">&lt;?php ... ?&gt;</code>. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="wrap-script-literals" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap-script-literals</h4>
+    <td valign="top" id="show-meta-change" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">show-meta-change</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -2998,24 +1613,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu">
-      <a href="#wrap-attributes">wrap-attributes</a>
-    </td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap string literals that appear in script attributes. <br xmlns=""/>Tidy wraps long script string literals by inserting a backslash character before the line break. </td>
+    <td colspan="1" class="qdescription">This option enables a message whenever Tidy changes the <code xmlns="">content</code> attribute of a meta charset declaration to match the encoding of the document. Set this option to <var xmlns="">yes</var> to enable it. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="wrap-sections" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">wrap-sections</h4>
+    <td valign="top" id="warn-proprietary-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">warn-proprietary-attributes</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3031,11 +1640,11 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within <code xmlns="">&lt;![ ... ]&gt;</code> section tags. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should warn on proprietary attributes.</td>
   </tr>
   <tr>
     <td> </td>
@@ -3045,41 +1654,8 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr valign="bottom">
     <td valign="top" colspan="3" class="h2" id="EncodingReference">
-      <h2 class="qh2">Character Encoding</h2>
+      <h2 class="qh2">Encoding</h2>
     </td>
-  </tr>
-  <tr>
-    <td valign="top" id="ascii-chars" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">ascii-chars</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu">
-      <a href="#clean">clean</a>
-    </td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">Can be used to modify behavior of the <code xmlns="">clean</code> option when set to <var xmlns="">yes</var>. <br xmlns=""/>If set to <var xmlns="">yes</var> when using <code xmlns="">clean</code>, <code xmlns="">&amp;emdash;</code>, <code xmlns="">&amp;rdquo;</code>, and other named character entities are downgraded to their closest ASCII equivalents. </td>
-  </tr>
-  <tr>
-    <td> </td>
   </tr>
   <tr>
     <td valign="top" id="char-encoding" colspan="2" class="qoptiontitletd">
@@ -3155,7 +1731,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">enum</td>
+    <td class="qvalu">Enum</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
@@ -3182,7 +1758,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">AutoBool</td>
+    <td class="qvalu">Enum</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
@@ -3190,7 +1766,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">auto, y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes, auto</td>
   </tr>
   <tr>
     <td/>
@@ -3236,13 +1812,506 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td colspan="3"> </td>
   </tr>
   <tr valign="bottom">
-    <td valign="top" colspan="3" class="h2" id="MiscellaneousReference">
-      <h2 class="qh2">Miscellaneous</h2>
+    <td valign="top" colspan="3" class="h2" id="MarkupCleanupReference">
+      <h2 class="qh2">Cleanup</h2>
     </td>
   </tr>
   <tr>
-    <td valign="top" id="error-file" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">error-file</h4>
+    <td valign="top" id="bare" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">bare</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should strip Microsoft specific HTML from Word 2000 documents, and output spaces rather than non-breaking spaces where they exist in the input. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="clean" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">clean</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should perform cleaning of some legacy presentational tags (currently <code xmlns="">&lt;i&gt;</code>, <code xmlns="">&lt;b&gt;</code>, <code xmlns="">&lt;center&gt;</code> when enclosed within appropriate inline tags, and <code xmlns="">&lt;font&gt;</code>). If set to <var xmlns="">yes</var> then legacy tags will be replaced with CSS <code xmlns="">&lt;style&gt;</code> tags and structural markup as appropriate. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="drop-empty-elements" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">drop-empty-elements</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should discard empty elements. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="drop-empty-paras" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">drop-empty-paras</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should discard empty paragraphs. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="drop-proprietary-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">drop-proprietary-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should strip out proprietary attributes, such as Microsoft data binding attributes. Additionally attributes that aren't permitted in the output version of HTML will be dropped if used with <code xmlns="">strict-tags-attributes</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="gdoc" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">gdoc</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should enable specific behavior for cleaning up HTML exported from Google Docs. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="logical-emphasis" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">logical-emphasis</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should replace any occurrence of <code xmlns="">&lt;i&gt;</code> with <code xmlns="">&lt;em&gt;</code> and any occurrence of <code xmlns="">&lt;b&gt;</code> with <code xmlns="">&lt;strong&gt;</code>. Any attributes are preserved unchanged. <br xmlns=""/>This option can be set independently of the <code xmlns="">clean</code> option. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="merge-divs" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">merge-divs</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes, auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#clean">clean</a>, <a href="#merge-spans">merge-spans</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option can be used to modify the behavior of <code xmlns="">clean</code> when set to <var xmlns="">yes</var>.<br xmlns=""/>This option specifies if Tidy should merge nested <code xmlns="">&lt;div&gt;</code> such as <code xmlns="">&lt;div&gt;&lt;div&gt;...&lt;/div&gt;&lt;/div&gt;</code>. <br xmlns=""/>If set to <var xmlns="">auto</var> the attributes of the inner <code xmlns="">&lt;div&gt;</code> are moved to the outer one. Nested <code xmlns="">&lt;div&gt;</code> with <code xmlns="">id</code> attributes are <em xmlns="">not</em> merged. <br xmlns=""/>If set to <var xmlns="">yes</var> the attributes of the inner <code xmlns="">&lt;div&gt;</code> are discarded with the exception of <code xmlns="">class</code> and <code xmlns="">style</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="merge-spans" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">merge-spans</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes, auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#clean">clean</a>, <a href="#merge-divs">merge-divs</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option can be used to modify the behavior of <code xmlns="">clean</code> when set to <var xmlns="">yes</var>.<br xmlns=""/>This option specifies if Tidy should merge nested <code xmlns="">&lt;span&gt;</code> such as <code xmlns="">&lt;span&gt;&lt;span&gt;...&lt;/span&gt;&lt;/span&gt;</code>. <br xmlns=""/>The algorithm is identical to the one used by <code xmlns="">merge-divs</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="word-2000" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">word-2000</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should go to great pains to strip out all the surplus stuff Microsoft Word 2000 inserts when you save Word documents as "Web pages". It doesn't handle embedded images or VML. <br xmlns=""/>You should consider using Word's "Save As: Web Page, Filtered". </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="MarkupEntitiesReference">
+      <h2 class="qh2">Entities</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="ascii-chars" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">ascii-chars</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu">
+      <a href="#clean">clean</a>
+    </td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">Can be used to modify behavior of the <code xmlns="">clean</code> option when set to <var xmlns="">yes</var>. <br xmlns=""/>If set to <var xmlns="">yes</var> when using <code xmlns="">clean</code>, <code xmlns="">&amp;emdash;</code>, <code xmlns="">&amp;rdquo;</code>, and other named character entities are downgraded to their closest ASCII equivalents. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="ncr" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">ncr</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should allow numeric character references. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="numeric-entities" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">numeric-entities</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#doctype">doctype</a>, <a href="#preserve-entities">preserve-entities</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output entities other than the built-in HTML entities (<code xmlns="">&amp;amp;</code>, <code xmlns="">&amp;lt;</code>, <code xmlns="">&amp;gt;</code>, and <code xmlns="">&amp;quot;</code>) in the numeric rather than the named entity form. <br xmlns=""/>Only entities compatible with the DOCTYPE declaration generated are used. <br xmlns=""/>Entities that can be represented in the output encoding are translated correspondingly. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="preserve-entities" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">preserve-entities</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should preserve well-formed entities as found in the input. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="quote-ampersand" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">quote-ampersand</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output unadorned <code xmlns="">&amp;</code> characters as <code xmlns="">&amp;amp;</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="quote-marks" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">quote-marks</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output <code xmlns="">"</code> characters as <code xmlns="">&amp;quot;</code> as is preferred by some editing environments. <br xmlns=""/>The apostrophe character <code xmlns="">'</code> is written out as <code xmlns="">&amp;#39;</code> since many web browsers don't yet support <code xmlns="">&amp;apos;</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="quote-nbsp" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">quote-nbsp</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output non-breaking space characters as entities, rather than as the Unicode character value 160 (decimal). </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="MarkupRepairReference">
+      <h2 class="qh2">Repair</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="alt-text" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">alt-text</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3261,21 +2330,42 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="qvalu">-</td>
   </tr>
   <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu">
-      <a href="#output-file">output-file</a>
-    </td>
-  </tr>
-  <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies the error file Tidy uses for errors and warnings. Normally errors and warnings are output to <code xmlns="">stderr</code>. </td>
+    <td colspan="1" class="qdescription">This option specifies the default <code xmlns="">alt=</code> text Tidy uses for <code xmlns="">&lt;img&gt;</code> attributes when the <code xmlns="">alt=</code> attribute is missing. <br xmlns=""/>Use with care, as it is your responsibility to make your documents accessible to people who cannot see the images. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="force-output" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">force-output</h4>
+    <td valign="top" id="anchor-as-name" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">anchor-as-name</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option controls the deletion or addition of the <code xmlns="">name</code> attribute in elements where it can serve as anchor. <br xmlns=""/>If set to <var xmlns="">yes</var> a <code xmlns="">name</code> attribute, if not already existing, is added along an existing <code xmlns="">id</code> attribute if the DTD allows it. <br xmlns=""/>If set to <var xmlns="">no</var> any existing name attribute is removed if an <code xmlns="">id</code> attribute exists or has been added. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="assume-xml-procins" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">assume-xml-procins</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3291,18 +2381,18 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should produce output even if errors are encountered. <br xmlns=""/>Use this option with care; if Tidy reports an error, this means Tidy was not able to (or is not sure how to) fix the error, so the resulting output may not reflect your intention. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should change the parsing of processing instructions to require <code xmlns="">?&gt;</code> as the terminator rather than <code xmlns="">&gt;</code>. <br xmlns=""/>This option is automatically set if the input is in XML. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="gnu-emacs" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">gnu-emacs</h4>
+    <td valign="top" id="coerce-endtags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">coerce-endtags</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3314,49 +2404,22 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
+    <td class="qvalu">yes</td>
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should change the format for reporting errors and warnings to a format that is more easily parsed by GNU Emacs. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should coerce a start tag into an end tag in cases where it looks like an end tag was probably intended; for example, given <br xmlns=""/><code xmlns="">&lt;span&gt;foo &lt;b&gt;bar&lt;b&gt; baz&lt;/span&gt;</code> <br xmlns=""/>Tidy will output <br xmlns=""/><code xmlns="">&lt;span&gt;foo &lt;b&gt;bar&lt;/b&gt; baz&lt;/span&gt;</code> </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="keep-time" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">keep-time</h4>
-    </td>
-    <td class="tabletitlelink" valign="top" align="right">
-      <a href="#qtop">Top</a>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Type:</td>
-    <td class="qvalu">Boolean</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Default:</td>
-    <td class="qvalu">no</td>
-  </tr>
-  <tr>
-    <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
-  </tr>
-  <tr>
-    <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should keep the original modification time of files that Tidy modifies in place. <br xmlns=""/>Setting the option to <var xmlns="">yes</var> allows you to tidy files without changing the file modification date, which may be useful with certain tools that use the modification date for things such as automatic server deployment.<br xmlns=""/>Note this feature is not supported on some platforms. </td>
-  </tr>
-  <tr>
-    <td> </td>
-  </tr>
-  <tr>
-    <td valign="top" id="output-file" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">output-file</h4>
+    <td valign="top" id="css-prefix" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">css-prefix</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3375,21 +2438,46 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td class="qvalu">-</td>
   </tr>
   <tr>
-    <td valign="top" class="qlabel">See Also:</td>
-    <td valign="top" class="qvalu">
-      <a href="#error-file">error-file</a>
-    </td>
-  </tr>
-  <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies the output file Tidy uses for markup. Normally markup is written to <code xmlns="">stdout</code>. </td>
+    <td colspan="1" class="qdescription">This option specifies the prefix that Tidy uses for styles rules. <br xmlns=""/>By default, <var xmlns="">c</var> will be used. </td>
   </tr>
   <tr>
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="quiet" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">quiet</h4>
+    <td valign="top" id="custom-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">custom-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, blocklevel, empty, inline, pre</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option enables the use of tags for autonomous custom elements, e.g. &lt;flag-icon&gt; with Tidy. Custom tags are disabled if this value is <var xmlns="">no</var>. Other settings - <var xmlns="">blocklevel</var>, <var xmlns="">empty</var>, <var xmlns="">inline</var>, and <var xmlns="">pre</var> will treat <em xmlns="">all</em> detected custom tags accordingly. <br xmlns=""/>The use of <code xmlns="">new-blocklevel-tags</code>, <code xmlns="">new-empty-tags</code>, <code xmlns="">new-inline-tags</code>, or <code xmlns="">new-pre-tags</code> will override the treatment of custom tags by this configuration option. This may be useful if you have different types of custom tags.<br xmlns=""/>When enabled these tags are determined during the processing of your document using opening tags; matching closing tags will be recognized accordingly, and unknown closing tags will be discarded. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="enclose-block-text" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">enclose-block-text</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3405,11 +2493,1018 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should output the summary of the numbers of errors and warnings, or the welcome or informational messages. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should insert a <code xmlns="">&lt;p&gt;</code> element to enclose any text it finds in any element that allows mixed content for HTML transitional but not HTML strict. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="enclose-text" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">enclose-text</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should enclose any text it finds in the body element within a <code xmlns="">&lt;p&gt;</code> element.<br xmlns=""/>This is useful when you want to take existing HTML and use it with a style sheet. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="escape-scripts" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">escape-scripts</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option causes items that look like closing tags, like <code xmlns="">&lt;/g</code> to be escaped to <code xmlns="">&lt;\/g</code>. Set this option to <var xmlns="">no</var> if you do not want this.</td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="fix-backslash" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">fix-backslash</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should replace backslash characters <code xmlns="">\</code> in URLs with forward slashes <code xmlns="">/</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="fix-bad-comments" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">fix-bad-comments</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes, auto</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should replace unexpected hyphens with <code xmlns="">=</code> characters when it comes across adjacent hyphens. <br xmlns=""/>The default is <var xmlns="">auto</var> will which will act as <var xmlns="">no</var> for HTML5 document types, and <var xmlns="">yes</var> for all other document types. <br xmlns=""/>HTML has abandonded SGML comment syntax, and allows adjacent hypens for all versions of HTML, although XML and XHTML do not. If you plan to support older browsers that require SGML comment syntax, then consider setting this value to <var xmlns="">yes</var>.</td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="fix-style-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">fix-style-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should move all style tags to the head of the document. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="fix-uri" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">fix-uri</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should check attribute values that carry URIs for illegal characters and if such are found, escape them as HTML4 recommends. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="literal-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">literal-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies how Tidy deals with whitespace characters within attribute values. <br xmlns=""/>If the value is <var xmlns="">no</var> Tidy normalizes attribute values by replacing any newline or tab with a single space, and further by replacing any contiguous whitespace with a single space. <br xmlns=""/>To force Tidy to preserve the original, literal values of all attributes and ensure that whitespace within attribute values is passed through unchanged, set this option to <var xmlns="">yes</var>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="lower-literals" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">lower-literals</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should convert the value of an attribute that takes a list of predefined values to lower case. <br xmlns=""/>This is required for XHTML documents. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="repeated-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">repeated-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">keep-last</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">keep-first, keep-last</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#join-classes">join-classes</a>, <a href="#join-styles">join-styles</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should keep the first or last attribute, if an attribute is repeated, e.g. has two <code xmlns="">align</code> attributes. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="skip-nested" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">skip-nested</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies that Tidy should skip nested tags when parsing script and style data. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="strict-tags-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">strict-tags-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This options ensures that tags and attributes are applicable for the version of HTML that Tidy outputs. When set to <var xmlns="">yes</var> and the output document type is a strict doctype, then Tidy will report errors. If the output document type is a loose or transitional doctype, then Tidy will report warnings. <br xmlns=""/>Additionally if <code xmlns="">drop-proprietary-attributes</code> is enabled, then not applicable attributes will be dropped, too. <br xmlns=""/>When set to <var xmlns="">no</var>, these checks are not performed. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="uppercase-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">uppercase-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes, preserve</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output attribute names in upper case. <br xmlns=""/>When set to <var xmlns="">no</var>, attribute names will be written in lower case. Specifying <var xmlns="">yes</var> will output attribute names in upper case, and <var xmlns="">preserve</var> can used to leave attribute names untouched. <br xmlns=""/>When using XML input, the original case is always preserved. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="uppercase-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">uppercase-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output tag names in upper case. <br xmlns=""/>The default is <var xmlns="">no</var> which results in lower case tag names, except for XML input where the original case is preserved. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="MarkupXFormReference">
+      <h2 class="qh2">Transformation</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="decorate-inferred-ul" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">decorate-inferred-ul</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should decorate inferred <code xmlns="">&lt;ul&gt;</code> elements with some CSS markup to avoid indentation to the right. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="escape-cdata" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">escape-cdata</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should convert <code xmlns="">&lt;![CDATA[]]&gt;</code> sections to normal text. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="hide-comments" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">hide-comments</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should print out comments. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="join-classes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">join-classes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should combine class names to generate a single, new class name if multiple class assignments are detected on an element. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="join-styles" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">join-styles</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should combine styles to generate a single, new style if multiple style values are detected on an element. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="merge-emphasis" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">merge-emphasis</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should merge nested <code xmlns="">&lt;b&gt;</code> and <code xmlns="">&lt;i&gt;</code> elements; for example, for the case <br xmlns=""/><code xmlns="">&lt;b class="rtop-2"&gt;foo &lt;b class="r2-2"&gt;bar&lt;/b&gt; baz&lt;/b&gt;</code>, <br xmlns=""/>Tidy will output <code xmlns="">&lt;b class="rtop-2"&gt;foo bar baz&lt;/b&gt;</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="replace-color" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">replace-color</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should replace numeric values in color attributes with HTML/XHTML color names where defined, e.g. replace <code xmlns="">#ffffff</code> with <code xmlns="">white</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="MarkupTeachReference">
+      <h2 class="qh2">Teaching Tidy</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="new-blocklevel-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">new-blocklevel-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Tag Names</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">tagX, tagY, ...</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>, <a href="#custom-tags">custom-tags</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies new block-level tags. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>Note you can't change the content model for elements such as <code xmlns="">&lt;table&gt;</code>, <code xmlns="">&lt;ul&gt;</code>, <code xmlns="">&lt;ol&gt;</code> and <code xmlns="">&lt;dl&gt;</code>. <br xmlns=""/>This option is ignored in XML mode. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="new-empty-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">new-empty-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Tag Names</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">tagX, tagY, ...</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>, <a href="#custom-tags">custom-tags</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies new empty inline tags. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>Remember to also declare empty tags as either inline or blocklevel. <br xmlns=""/>This option is ignored in XML mode. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="new-inline-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">new-inline-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Tag Names</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">tagX, tagY, ...</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>, <a href="#custom-tags">custom-tags</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies new non-empty inline tags. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>This option is ignored in XML mode. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="new-pre-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">new-pre-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Tag Names</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">tagX, tagY, ...</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#custom-tags">custom-tags</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies new tags that are to be processed in exactly the same way as HTML's <code xmlns="">&lt;pre&gt;</code> element. This option takes a space or comma separated list of tag names. <br xmlns=""/>Unless you declare new tags, Tidy will refuse to generate a tidied file if the input includes previously unknown tags. <br xmlns=""/>Note you cannot as yet add new CDATA elements. <br xmlns=""/>This option is ignored in XML mode. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr valign="bottom">
+    <td valign="top" colspan="3" class="h2" id="PrettyPrintReference">
+      <h2 class="qh2">Pretty Print</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" id="break-before-br" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">break-before-br</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should output a line break before each <code xmlns="">&lt;br&gt;</code> element. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="indent" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">indent</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes, auto</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu">
+      <a href="#indent-spaces">indent-spaces</a>
+    </td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should indent block-level tags. <br xmlns=""/>If set to <var xmlns="">auto</var> Tidy will decide whether or not to indent the content of tags such as <code xmlns="">&lt;title&gt;</code>, <code xmlns="">&lt;h1&gt;</code>-<code xmlns="">&lt;h6&gt;</code>, <code xmlns="">&lt;li&gt;</code>, <code xmlns="">&lt;td&gt;</code>, or <code xmlns="">&lt;p&gt;</code> based on the content including a block-level element. <br xmlns=""/>Setting <code xmlns="">indent</code> to <var xmlns="">yes</var> can expose layout bugs in some browsers. <br xmlns=""/>Use the option <code xmlns="">indent-spaces</code> to control the number of spaces or tabs output per level of indent, and <code xmlns="">indent-with-tabs</code> to specify whether spaces or tabs are used. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="indent-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">indent-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should begin each attribute on a new line. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="indent-cdata" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">indent-cdata</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should indent <code xmlns="">&lt;![CDATA[]]&gt;</code> sections. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="indent-spaces" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">indent-spaces</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Integer</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">2</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">0, 1, 2, ...</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu">
+      <a href="#indent">indent</a>
+    </td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies the number of spaces or tabs that Tidy uses to indent content when <code xmlns="">indent</code> is enabled. <br xmlns=""/>Note that the default value for this option is dependent upon the value of <code xmlns="">indent-with-tabs</code> (see also). </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="indent-with-tabs" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">indent-with-tabs</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should indent with tabs instead of spaces, assuming <code xmlns="">indent</code> is <var xmlns="">yes</var>. <br xmlns=""/>Set it to <var xmlns="">yes</var> to indent using tabs instead of the default spaces. <br xmlns=""/>Use the option <code xmlns="">indent-spaces</code> to control the number of tabs output per level of indent. Note that when <code xmlns="">indent-with-tabs</code> is enabled the default value of <code xmlns="">indent-spaces</code> is reset to <var xmlns="">1</var>. <br xmlns=""/>Note <code xmlns="">tab-size</code> controls converting input tabs to spaces. Set it to zero to retain input tabs. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="omit-optional-tags" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">omit-optional-tags</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should omit optional start tags and end tags when generating output. <br xmlns=""/>Setting this option causes all tags for the <code xmlns="">&lt;html&gt;</code>, <code xmlns="">&lt;head&gt;</code>, and <code xmlns="">&lt;body&gt;</code> elements to be omitted from output, as well as such end tags as <code xmlns="">&lt;/p&gt;</code>, <code xmlns="">&lt;/li&gt;</code>, <code xmlns="">&lt;/dt&gt;</code>, <code xmlns="">&lt;/dd&gt;</code>, <code xmlns="">&lt;/option&gt;</code>, <code xmlns="">&lt;/tr&gt;</code>, <code xmlns="">&lt;/td&gt;</code>, and <code xmlns="">&lt;/th&gt;</code>. <br xmlns=""/>This option is ignored for XML output. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="priority-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">priority-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Attributes Names</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">attributeX, attributeY, ...</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option allows prioritizing the writing of attributes in tidied documents, allowing them to written before the other attributes of an element. For example, you might specify that <var xmlns="">id</var> and <var xmlns="">name</var> are written before every other attribute. <br xmlns=""/>This option takes a space or comma separated list of attribute names. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="punctuation-wrap" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">punctuation-wrap</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap after some Unicode or Chinese punctuation characters. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="sort-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">sort-attributes</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">none</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">none, alpha</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu">
+      <a href="#priority-attributes">priority-attributes</a>
+    </td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies that Tidy should sort attributes within an element using the specified sort algorithm. If set to <var xmlns="">alpha</var>, the algorithm is an ascending alphabetic sort. <br xmlns=""/>When used while sorting with <code xmlns="">priority-attributes</code>, any attribute sorting will take place after the priority attributes have been output. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="tab-size" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">tab-size</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Integer</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">8</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">0, 1, 2, ...</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies the number of columns that Tidy uses between successive tab stops. It is used to map tabs to spaces when reading the input. </td>
   </tr>
   <tr>
     <td> </td>
@@ -3432,7 +3527,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
   </tr>
   <tr>
     <td/>
@@ -3442,8 +3537,89 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td> </td>
   </tr>
   <tr>
-    <td valign="top" id="write-back" colspan="2" class="qoptiontitletd">
-      <h4 class="qoptiontitle">write-back</h4>
+    <td valign="top" id="vertical-space" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">vertical-space</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Enum</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes, auto</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should add some extra empty lines for readability. <br xmlns=""/>The default is <var xmlns="">no</var>. <br xmlns=""/>If set to <var xmlns="">auto</var> Tidy will eliminate nearly all newline characters.</td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Integer</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">68</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">0 (no wrapping), 1, 2, ...</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies the right margin Tidy uses for line wrapping. <br xmlns=""/>Tidy tries to wrap lines so that they do not exceed this length. <br xmlns=""/>Set <code xmlns="">wrap</code> to <var xmlns="">0</var>(zero) if you want to disable line wrapping. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap-asp" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap-asp</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within ASP pseudo elements, which look like: <code xmlns="">&lt;% ... %&gt;</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap-attributes" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap-attributes</h4>
     </td>
     <td class="tabletitlelink" valign="top" align="right">
       <a href="#qtop">Top</a>
@@ -3459,11 +3635,129 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   </tr>
   <tr>
     <td valign="top" class="qlabel">Example:</td>
-    <td class="qvalu">y/n, yes/no, t/f, true/false, 1/0</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#wrap-script-literals">wrap-script-literals</a>, <a href="#literal-attributes">literal-attributes</a></td>
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should write back the tidied markup to the same file it read from. <br xmlns=""/>You are advised to keep copies of important files before tidying them, as on rare occasions the result may not be what you expect. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line-wrap attribute values, meaning that if the value of an attribute causes a line to exceed the width specified by <code xmlns="">wrap</code>, Tidy will add one or more line breaks to the value, causing it to be wrapped into multiple lines. <br xmlns=""/>Note that this option can be set independently of <code xmlns="">wrap-script-literals</code>. By default Tidy replaces any newline or tab with a single space and replaces any sequences of whitespace with a single space. <br xmlns=""/>To force Tidy to preserve the original, literal values of all attributes, and ensure that whitespace characters within attribute values are passed through unchanged, set <code xmlns="">literal-attributes</code> to <var xmlns="">yes</var>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap-jste" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap-jste</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within JSTE pseudo elements, which look like: <code xmlns="">&lt;# ... #&gt;</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap-php" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap-php</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within PHP pseudo elements, which look like: <code xmlns="">&lt;?php ... ?&gt;</code>. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap-script-literals" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap-script-literals</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu">
+      <a href="#wrap-attributes">wrap-attributes</a>
+    </td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap string literals that appear in script attributes. <br xmlns=""/>Tidy wraps long script string literals by inserting a backslash character before the line break. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="wrap-sections" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">wrap-sections</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap text contained within <code xmlns="">&lt;![ ... ]&gt;</code> section tags. </td>
   </tr>
   <tr>
     <td> </td>
@@ -3474,7 +3768,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

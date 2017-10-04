@@ -2,7 +2,7 @@ var searchData=
 [
   ['v',['v',['../config_8h.html#a9a595f0fb3e4dd34782e38d3896f7ba5',1,'TidyOptionValue']]],
   ['vals',['vals',['../group__utilities__cli__options.html#a7d9c845abe423372a49aa7f022e1dac5',1,'OptionDesc']]],
-  ['value',['value',['../config_8h.html#a3f44bd1e57dec6d3ee71d48e2660b52d',1,'TidyConfigImpl::value()'],['../language_8h.html#a41e9ebbca0cda68325314d55d795576b',1,'languageDictionaryEntry::value()'],['../lexer_8h.html#a8b2c35ecdca03fdb7c957aa454d06883',1,'_StyleProp::value()'],['../lexer_8h.html#a8b2c35ecdca03fdb7c957aa454d06883',1,'_AttVal::value()']]],
+  ['value',['value',['../config_8h.html#a679d27cc04d873a03221ea2a89b8c6d8',1,'PickListItem::value()'],['../config_8h.html#a3f44bd1e57dec6d3ee71d48e2660b52d',1,'TidyConfigImpl::value()'],['../language_8h.html#a41e9ebbca0cda68325314d55d795576b',1,'languageDictionaryEntry::value()'],['../lexer_8h.html#a8b2c35ecdca03fdb7c957aa454d06883',1,'_StyleProp::value()'],['../lexer_8h.html#a8b2c35ecdca03fdb7c957aa454d06883',1,'_AttVal::value()']]],
   ['vendor_5fspecific_5fchars',['VENDOR_SPECIFIC_CHARS',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a48e4f1af0c4cfe8ebf19258713c8c98e',1,'tidyenum.h']]],
   ['vers_5fall',['VERS_ALL',['../lexer_8h.html#adb0ffd0798c7e7b7b3ef6acfacd31c7c',1,'lexer.h']]],
   ['vers_5fbasic',['VERS_BASIC',['../lexer_8h.html#adeb3ad36607bad607e4622ec1a47b986',1,'lexer.h']]],

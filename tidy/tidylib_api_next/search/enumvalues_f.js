@@ -15,7 +15,6 @@ var searchData=
   ['space_5fpreceding_5fxmldecl',['SPACE_PRECEDING_XMLDECL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aec47c91cc6b1a8643baac10a14bb11f0',1,'tidyenum.h']]],
   ['startendtag',['StartEndTag',['../lexer_8h.html#acac9cbaeea226ed297804c012dc12b16a261523e73a9aca71fdd26a87af4458cc',1,'lexer.h']]],
   ['starttag',['StartTag',['../lexer_8h.html#acac9cbaeea226ed297804c012dc12b16a94df1116ca3a7e0a2165cc4e8dd6e483',1,'lexer.h']]],
-  ['string_5fcontent_5flooks',['STRING_CONTENT_LOOKS',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a6dece91adfb4efcd25d747863805deb3',1,'tidyenum.h']]],
   ['string_5fdiscarding',['STRING_DISCARDING',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ab15e384128dff83742838c7be62dd3cd',1,'tidyenum.h']]],
   ['string_5fdoctype_5fgiven',['STRING_DOCTYPE_GIVEN',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7dd6be3c59d384bf89a04f1de45d654f',1,'tidyenum.h']]],
   ['string_5ferror_5fcount',['STRING_ERROR_COUNT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7f58526e55e5f53056ecaed87e072180',1,'tidyenum.h']]],

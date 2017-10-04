@@ -5,6 +5,7 @@ var searchData=
   ['tidyconfigcategory',['TidyConfigCategory',['../group__public__enumerations.html#ga3812a124fc3e26e59b5a4312dabcc4a7',1,'tidyenum.h']]],
   ['tidydoctypemodes',['TidyDoctypeModes',['../group__public__enumerations.html#gac38145ebf561df337bc93a3274f46fb8',1,'tidyenum.h']]],
   ['tidydupattrmodes',['TidyDupAttrModes',['../group__public__enumerations.html#gaa64d529fcc0973e9adffcfb1d356b02a',1,'tidyenum.h']]],
+  ['tidyencodingoptions',['TidyEncodingOptions',['../group__public__enumerations.html#gabc788f83b6a060e177705b4eafeecd5f',1,'tidyenum.h']]],
   ['tidyformatparametertype',['TidyFormatParameterType',['../group__public__enumerations.html#gaf4e3aa9ae9047c3ba757664ad00fb647',1,'tidyenum.h']]],
   ['tidylanguage',['tidyLanguage',['../language_8h.html#a38a3adc9b48bbc2bf9414408709b1e8d',1,'language.h']]],
   ['tidylineending',['TidyLineEnding',['../group__public__enumerations.html#gaaa376ace67736e42cb913b7ff1a06bf9',1,'tidyenum.h']]],
@@ -15,5 +16,6 @@ var searchData=
   ['tidystrings',['tidyStrings',['../group__public__enumerations.html#ga1686318b9a8c2aa6e60e341af7145c00',1,'tidyenum.h']]],
   ['tidytagid',['TidyTagId',['../group__public__enumerations.html#gae5b597c0999422ff383f08ab595ef5e8',1,'tidyenum.h']]],
   ['tidytristate',['TidyTriState',['../group__public__enumerations.html#ga43f1adcf856d4da325284770e707ef91',1,'tidyenum.h']]],
+  ['tidyuppercase',['TidyUppercase',['../group__public__enumerations.html#ga6ed18f2b2401a47ccb92ccf7c56174f2',1,'tidyenum.h']]],
   ['tidyusecustomtagsstate',['TidyUseCustomTagsState',['../group__public__enumerations.html#ga303cb000ee9e00d90526118b4bacd7dd',1,'tidyenum.h']]]
 ];

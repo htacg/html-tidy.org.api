@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localization_20support',['Localization Support',['../group__Localization.html',1,'']]]
+  ['key_20discovery',['Key Discovery',['../group__message__keydiscovery.html',1,'']]]
 ];

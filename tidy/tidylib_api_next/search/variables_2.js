@@ -1,6 +1,7 @@
 var searchData=
 [
   ['c',['c',['../config_8h.html#a1fa1bc6482837324f98667a012839afd',1,'TidyConfigImpl']]],
+  ['capacity',['capacity',['../attrs_8h.html#a8c5dc625aaaa0bf41017fa5d5510b9b9',1,'PriorityAttribs']]],
   ['cat',['cat',['../group__options__cli.html#af53206e0ab9f5d13a08b154f1267e429',1,'CmdOptDesc::cat()'],['../group__utilities__cli__options.html#a2f7b6e3364fc842f8b3896c17d651c55',1,'OptionDesc::cat()']]],
   ['category',['category',['../config_8h.html#ab2184a7c49c7e1c114362af850d86fa0',1,'_tidy_option']]],
   ['catid',['catid',['../group__utilities__cli__options.html#a95bfa89dd612e5a6677b8bb0a2bb25f6',1,'OptionDesc']]],
@@ -16,6 +17,7 @@ var searchData=
   ['columns',['columns',['../lexer_8h.html#a4c9a37b466f40775ef107241d72776d7',1,'_Lexer']]],
   ['config',['config',['../tidy-int_8h.html#a0a6a7ec779151327e23de6bdf7c43bd6',1,'_TidyDocImpl']]],
   ['content',['content',['../lexer_8h.html#afe991cfe94ce37df6a9487ccdb4a5974',1,'_Node']]],
+  ['count',['count',['../attrs_8h.html#ab77ade2208ba49f6e2b934ef32622c48',1,'PriorityAttribs']]],
   ['counter',['counter',['../access_8h.html#a617a47c70795bcff659815ad0efd2266',1,'_TidyAccessImpl']]],
   ['curcol',['curcol',['../streamio_8h.html#a32e89ea1aab32cbb2b59ef4274b0f610',1,'_StreamIn']]],
   ['curlastpos',['curlastpos',['../streamio_8h.html#a934ee92f2d4cba28443b352cd8a1e945',1,'_StreamIn']]],

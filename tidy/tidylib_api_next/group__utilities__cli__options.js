@@ -20,7 +20,7 @@ var group__utilities__cli__options =
     [ "ForEachSortedOption", "group__utilities__cli__options.html#gaefc73b8c2bd74b86598744e4710b7b98", null ],
     [ "GetOption", "group__utilities__cli__options.html#gaa987b8e399763dc0a374637d6373099e", null ],
     [ "getSortedOption", "group__utilities__cli__options.html#ga85d92d3d7f1a710213327cef40b92faa", null ],
-    [ "isAutoBool", "group__utilities__cli__options.html#gace6af4c1b79519c58f39c68a6158dbbd", null ],
+    [ "hasPickList", "group__utilities__cli__options.html#ga2005b8c7367c6b866cf3ac78e0410cfa", null ],
     [ "PrintAllowedValues", "group__utilities__cli__options.html#gaa2915f0fdb2ea7a578e340854e7494fc", null ],
     [ "PrintAllowedValuesFromPick", "group__utilities__cli__options.html#ga079031095797d77c3fbc6a2e92cfac7a", null ]
 ];

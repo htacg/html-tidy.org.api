@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['label_5fneeds_5frepositioning_5fafter_5finput',['LABEL_NEEDS_REPOSITIONING_AFTER_INPUT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00af195499dc8cb1278a115ddc214a244b0',1,'tidyenum.h']]],
-  ['label_5fneeds_5frepositioning_5fbefore_5finput',['LABEL_NEEDS_REPOSITIONING_BEFORE_INPUT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a22e2a9855e107e3fef14bf353f8d3abd',1,'tidyenum.h']]],
   ['language_5finvalid',['LANGUAGE_INVALID',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abffe1862ee4b46bbad21088c90b74c34',1,'tidyenum.h']]],
   ['language_5fnot_5fidentified',['LANGUAGE_NOT_IDENTIFIED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ab92065598c79c0fdc482779364f2374f',1,'tidyenum.h']]],
   ['lastpos_5fsize',['LASTPOS_SIZE',['../streamio_8h.html#abc6126af1d45847bc59afa0aa3216b04ae86ebced52b553d2a6cfd4f0a1077ff6',1,'streamio.h']]],
@@ -24,11 +22,8 @@ var searchData=
   ['link_5ftext_5fmissing',['LINK_TEXT_MISSING',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a49193a68e3b479b481d14a542ebba1fc',1,'tidyenum.h']]],
   ['link_5ftext_5fnot_5fmeaningful',['LINK_TEXT_NOT_MEANINGFUL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a3d33ca945223f32be4891d7ec48d9076',1,'tidyenum.h']]],
   ['link_5ftext_5fnot_5fmeaningful_5fclick_5fhere',['LINK_TEXT_NOT_MEANINGFUL_CLICK_HERE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a13032ec87b01e398a4d4186799e3a08f',1,'tidyenum.h']]],
-  ['link_5ftext_5fnot_5fmeaningful_5ffollow_5fthis',['LINK_TEXT_NOT_MEANINGFUL_FOLLOW_THIS',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ac0c0ea91188a0fd7bfde7cb69a118033',1,'tidyenum.h']]],
-  ['link_5ftext_5fnot_5fmeaningful_5fmore',['LINK_TEXT_NOT_MEANINGFUL_MORE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a20ac8787b4fe70cdcba456c8df9f8af8',1,'tidyenum.h']]],
   ['link_5ftext_5ftoo_5flong',['LINK_TEXT_TOO_LONG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a0800f87a9c6f5de629966408c143fc07',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5fli',['LIST_USAGE_INVALID_LI',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a8fe760ec766f9346efe41f78efc26071',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5fol',['LIST_USAGE_INVALID_OL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a56a0166615408bdfa6d2d6e04a5efddd',1,'tidyenum.h']]],
-  ['list_5fusage_5finvalid_5ful',['LIST_USAGE_INVALID_UL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aa0443bdcef430b36e016474617958bdb',1,'tidyenum.h']]],
-  ['longdesc_5fnot_5frequired',['LONGDESC_NOT_REQUIRED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aeb505acb91a7cc2645c45801853925ed',1,'tidyenum.h']]]
+  ['list_5fusage_5finvalid_5ful',['LIST_USAGE_INVALID_UL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aa0443bdcef430b36e016474617958bdb',1,'tidyenum.h']]]
 ];

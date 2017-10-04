@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tidy_20console_20application',['Tidy Console Application',['../group__console__application.html',1,'']]],
-  ['tidy_20strings_20generation_20macros',['Tidy Strings Generation Macros',['../group__public__enum__gen.html',1,'']]]
+  ['report_20and_20dialogue_20writing_20functions',['Report and Dialogue Writing Functions',['../group__message__reporting.html',1,'']]],
+  ['report_20arguments_20interrogation_20api',['Report Arguments Interrogation API',['../group__messageobj__args__api.html',1,'']]],
+  ['report_20and_20dialogue_20api',['Report and Dialogue API',['../group__messageobj__message__api.html',1,'']]]
 ];

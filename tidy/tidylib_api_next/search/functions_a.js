@@ -9,6 +9,7 @@ var searchData=
   ['printallowedvalues',['PrintAllowedValues',['../group__utilities__cli__options.html#gaa2915f0fdb2ea7a578e340854e7494fc',1,'tidy.c']]],
   ['printallowedvaluesfrompick',['PrintAllowedValuesFromPick',['../group__utilities__cli__options.html#ga079031095797d77c3fbc6a2e92cfac7a',1,'tidy.c']]],
   ['printoption',['printOption',['../group__service__help__config.html#gad88e8270a9c5a3acb92bbac320efbf1d',1,'tidy.c']]],
+  ['printoptionexportvalues',['printOptionExportValues',['../group__service__export__config.html#gae66a49300b864377ceaa91a95e3db731',1,'tidy.c']]],
   ['printoptionvalues',['printOptionValues',['../group__service__show__config.html#ga79bd8a3a907394bab70c5446f77e2044',1,'tidy.c']]],
   ['printxmlcrossref',['printXMLCrossRef',['../group__service__xml__config.html#ga4c9cd1e82395de2443c808e5acc0e2f9',1,'tidy.c']]],
   ['printxmlcrossrefeqconsole',['printXMLCrossRefEqConsole',['../group__service__xml__config.html#ga49638ca960cec7e9420c9e681d561c5c',1,'tidy.c']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['c',['c',['../config_8h.html#a1fa1bc6482837324f98667a012839afd',1,'TidyConfigImpl']]],
   ['cant_5fbe_5fnested',['CANT_BE_NESTED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ae269ea3bbfd2f0ddaf85be197fe4573b',1,'tidyenum.h']]],
+  ['capacity',['capacity',['../attrs_8h.html#a8c5dc625aaaa0bf41017fa5d5510b9b9',1,'PriorityAttribs']]],
   ['cat',['cat',['../group__options__cli.html#af53206e0ab9f5d13a08b154f1267e429',1,'CmdOptDesc::cat()'],['../group__utilities__cli__options.html#a2f7b6e3364fc842f8b3896c17d651c55',1,'OptionDesc::cat()']]],
   ['category',['category',['../config_8h.html#ab2184a7c49c7e1c114362af850d86fa0',1,'_tidy_option']]],
   ['catid',['catid',['../group__utilities__cli__options.html#a95bfa89dd612e5a6677b8bb0a2bb25f6',1,'OptionDesc']]],
@@ -61,7 +62,6 @@ var searchData=
   ['code',['code',['../tidy-int_8h.html#a3acec039d28bf29bc3e9c630be0eeb61',1,'_TidyMessageImpl']]],
   ['codestyle_2emd',['CODESTYLE.md',['../CODESTYLE_8md.html',1,'']]],
   ['coerce_5fto_5fendtag',['COERCE_TO_ENDTAG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a2875360b8a43232f15a754b3701fe9a6',1,'tidyenum.h']]],
-  ['coerce_5fto_5fendtag_5fwarn',['COERCE_TO_ENDTAG_WARN',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a77abae267e6b4757e127615dbb60fae7',1,'tidyenum.h']]],
   ['color_5fcontrast_5factive_5flink',['COLOR_CONTRAST_ACTIVE_LINK',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a2ac9f1ce4a9d12e7db704c4667eef79e',1,'tidyenum.h']]],
   ['color_5fcontrast_5flink',['COLOR_CONTRAST_LINK',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00adbc2909a62af111efdef755722fa71a4',1,'tidyenum.h']]],
   ['color_5fcontrast_5ftext',['COLOR_CONTRAST_TEXT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a1c64b662862010e61af058e67d1f3db6',1,'tidyenum.h']]],
@@ -79,6 +79,7 @@ var searchData=
   ['continuetraversal',['ContinueTraversal',['../tidy-int_8h.html#a51a31ff322e62768ea43e47fe713c541a16af16abe61c357c109deaedb5e6064c',1,'tidy-int.h']]],
   ['contributing_20to_20html_20tidy',['Contributing to HTML Tidy',['../contributing.html',1,'programming']]],
   ['contributing_2emd',['CONTRIBUTING.md',['../CONTRIBUTING_8md.html',1,'']]],
+  ['count',['count',['../attrs_8h.html#ab77ade2208ba49f6e2b934ef32622c48',1,'PriorityAttribs']]],
   ['counter',['counter',['../access_8h.html#a617a47c70795bcff659815ad0efd2266',1,'_TidyAccessImpl']]],
   ['cr',['CR',['../streamio_8h.html#a876ce77f3c672c7162658151e648389e',1,'streamio.h']]],
   ['ctmbstr',['ctmbstr',['../tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70',1,'tidyplatform.h']]],

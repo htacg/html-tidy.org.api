@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['added_5fmissing_5fcharset',['ADDED_MISSING_CHARSET',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a1df7a8e0ee431706a90f52cb41fc3d4a',1,'tidyenum.h']]],
   ['anchor_5fhash_5fsize',['ANCHOR_HASH_SIZE',['../attrs_8h.html#a99fb83031ce9923c84392b4e92f956b5a8fd40b68664fb79d83dc6cfb7299cd94',1,'attrs.h']]],
   ['anchor_5fnot_5funique',['ANCHOR_NOT_UNIQUE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7787f1717100846882aaf46fc228d046',1,'tidyenum.h']]],
   ['apos_5fundefined',['APOS_UNDEFINED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a4ffef9f1df22cb7876f7f61d2fd931a3',1,'tidyenum.h']]],
@@ -13,6 +14,7 @@ var searchData=
   ['attr_5fvalue_5fnot_5flcase',['ATTR_VALUE_NOT_LCASE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aa2ca794f738888abd00f2c30bf2ed7fc',1,'tidyenum.h']]],
   ['attribute_5fhash_5fsize',['ATTRIBUTE_HASH_SIZE',['../attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa48809e9ebe9a343cf2641dd07bbda60',1,'attrs.h']]],
   ['attribute_5fis_5fnot_5fallowed',['ATTRIBUTE_IS_NOT_ALLOWED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a57e338c351070ce97913ab7e243f8bfe',1,'tidyenum.h']]],
+  ['attribute_5fvalue_5freplaced',['ATTRIBUTE_VALUE_REPLACED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7bf3ed0b189bd108edb137f44e9a3439',1,'tidyenum.h']]],
   ['audio_5fmissing_5ftext_5faiff',['AUDIO_MISSING_TEXT_AIFF',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7fe87f9a9ae552b0e3fa0e455d9e82e3',1,'tidyenum.h']]],
   ['audio_5fmissing_5ftext_5fau',['AUDIO_MISSING_TEXT_AU',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a6d70bad1f7f81bc975a972252f7c78f4',1,'tidyenum.h']]],
   ['audio_5fmissing_5ftext_5fra',['AUDIO_MISSING_TEXT_RA',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a6372a2c073f7c5c82f4f687adb3422ad',1,'tidyenum.h']]],

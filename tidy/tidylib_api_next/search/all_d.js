@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['label_5fneeds_5frepositioning_5fafter_5finput',['LABEL_NEEDS_REPOSITIONING_AFTER_INPUT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00af195499dc8cb1278a115ddc214a244b0',1,'tidyenum.h']]],
-  ['label_5fneeds_5frepositioning_5fbefore_5finput',['LABEL_NEEDS_REPOSITIONING_BEFORE_INPUT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a22e2a9855e107e3fef14bf353f8d3abd',1,'tidyenum.h']]],
+  ['label',['label',['../config_8h.html#a8f312608fe59cf2a43a083b2f75d2028',1,'PickListItem']]],
   ['lang_5fhelp',['lang_help',['../group__service__lang__help.html#gada01e757207f983846fbc04abfd54363',1,'tidy.c']]],
   ['language_2eh',['language.h',['../language_8h.html',1,'']]],
   ['language_5fen',['language_en',['../language__en_8h.html#acf45f0e561099b6ff17038f78ead9bc7',1,'language_en.h']]],
@@ -16,6 +15,8 @@ var searchData=
   ['language_5ffr_2eh',['language_fr.h',['../language__fr_8h.html',1,'']]],
   ['language_5finvalid',['LANGUAGE_INVALID',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abffe1862ee4b46bbad21088c90b74c34',1,'tidyenum.h']]],
   ['language_5fnot_5fidentified',['LANGUAGE_NOT_IDENTIFIED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ab92065598c79c0fdc482779364f2374f',1,'tidyenum.h']]],
+  ['language_5fpt_5fbr',['language_pt_br',['../language__pt__br_8h.html#a37048afcea11d323097e6a6172206ca6',1,'language_pt_br.h']]],
+  ['language_5fpt_5fbr_2eh',['language_pt_br.h',['../language__pt__br_8h.html',1,'']]],
   ['language_5fzh_5fcn',['language_zh_cn',['../language__zh__cn_8h.html#a651470d7ef0bf38658959712c6435e63',1,'language_zh_cn.h']]],
   ['language_5fzh_5fcn_2eh',['language_zh_cn.h',['../language__zh__cn_8h.html',1,'']]],
   ['languagedefinition',['languageDefinition',['../structlanguageDefinition.html',1,'']]],
@@ -62,10 +63,9 @@ var searchData=
   ['link_5ftext_5fmissing',['LINK_TEXT_MISSING',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a49193a68e3b479b481d14a542ebba1fc',1,'tidyenum.h']]],
   ['link_5ftext_5fnot_5fmeaningful',['LINK_TEXT_NOT_MEANINGFUL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a3d33ca945223f32be4891d7ec48d9076',1,'tidyenum.h']]],
   ['link_5ftext_5fnot_5fmeaningful_5fclick_5fhere',['LINK_TEXT_NOT_MEANINGFUL_CLICK_HERE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a13032ec87b01e398a4d4186799e3a08f',1,'tidyenum.h']]],
-  ['link_5ftext_5fnot_5fmeaningful_5ffollow_5fthis',['LINK_TEXT_NOT_MEANINGFUL_FOLLOW_THIS',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ac0c0ea91188a0fd7bfde7cb69a118033',1,'tidyenum.h']]],
-  ['link_5ftext_5fnot_5fmeaningful_5fmore',['LINK_TEXT_NOT_MEANINGFUL_MORE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a20ac8787b4fe70cdcba456c8df9f8af8',1,'tidyenum.h']]],
   ['link_5ftext_5ftoo_5flong',['LINK_TEXT_TOO_LONG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a0800f87a9c6f5de629966408c143fc07',1,'tidyenum.h']]],
   ['links',['links',['../config_8h.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
+  ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs']]],
   ['list_5fusage_5finvalid_5fli',['LIST_USAGE_INVALID_LI',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a8fe760ec766f9346efe41f78efc26071',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5fol',['LIST_USAGE_INVALID_OL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a56a0166615408bdfa6d2d6e04a5efddd',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5ful',['LIST_USAGE_INVALID_UL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aa0443bdcef430b36e016474617958bdb',1,'tidyenum.h']]],
@@ -74,7 +74,6 @@ var searchData=
   ['localize_20html_20tidy',['Localize HTML Tidy',['../localize.html',1,'programming']]],
   ['localize_5foption_5fnames',['localize_option_names',['../group__options__cli.html#gadd1dcc01631e78dc2ffd8ffa0e13bc9e',1,'tidy.c']]],
   ['localize_5freadme_2emd',['LOCALIZE_README.md',['../LOCALIZE__README_8md.html',1,'']]],
-  ['longdesc_5fnot_5frequired',['LONGDESC_NOT_REQUIRED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aeb505acb91a7cc2645c45801853925ed',1,'tidyenum.h']]],
   ['lowercase',['lowercase',['../lexer_8h.html#a1adb52af9138340af77d1fb03298f47d',1,'lexer.h']]],
   ['license',['License',['../md_pages_LICENSE.html',1,'']]]
 ];

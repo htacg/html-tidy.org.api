@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('md_pages_BUILD.html','');});
 <p>If you do <b>not</b> need the tidy library built as a 'shared' (DLL) library, then in 2. add the command <code>-DBUILD_SHARED_LIB:BOOL=OFF</code>. This option is <b>ON</b> by default. The static library is always built and linked with the command line tool for convenience in Windows, and so the binary can be run as part of the man page build without the shared library being installed in unix.</p>
 <p>See the <code>CMakeLists.txt</code> file for other CMake <b>options</b> offered.</p>
 <h2>Build PHP with the tidy-html5 library</h2>
-<p>Due to API changes in the PHP source, <code><a class="el" href="buffio_8h.html" title="Deprecated compatibility header. ">buffio.h</a></code> needs to be renamed to <code><a class="el" href="tidybuffio_8h.html" title="Treat buffer as an I/O stream. ">tidybuffio.h</a></code> in the file <code>ext/tidy/tidy.c</code> in PHP's source.</p>
+<p>Due to API changes in the PHP source, <code><a class="el" href="buffio_8h.html" title="Deprecated compatibility header. ">buffio.h</a></code> needs to be renamed to <code><a class="el" href="tidybuffio_8h.html" title="Treat buffer as a stream that Tidy can use for I/O operations. ">tidybuffio.h</a></code> in the file <code>ext/tidy/tidy.c</code> in PHP's source.</p>
 <p>That is - prior to configuring PHP run this in the PHP source directory: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;sed -i &#39;s/buffio.h/tidybuffio.h/&#39; ext/tidy/*.c</div></div><!-- fragment --><p>And then continue with (just an example here, use your own PHP config options):</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;./configure --with-tidy=/usr/local</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;make</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;make test</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;make install</div></div><!-- fragment --><p>; eof </p>
 </div></div><!-- contents -->
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('md_pages_BUILD.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

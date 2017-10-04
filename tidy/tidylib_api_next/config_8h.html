@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -100,13 +100,27 @@ $(document).ready(function(){initNavTree('config_8h.html','');});
 <div class="title">config.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Read configuration files and manage configuration properties. </p>
+<p>Config files associate a property name with a value.</p>
+<p>// comments can start at the beginning of a line </p><h1>comments can start at the beginning of a line</h1>
+<p>name: short values fit onto one line name: a really long value that continues on the next line</p>
+<p>Property names are case insensitive and should be less than 60 characters in length, and must start at the begining of the line, as whitespace at the start of a line signifies a line continuation.</p>
+<dl class="section author"><dt>Author</dt><dd>HTACG, et al (consult git log)</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 1998-2017 World Wide Web Consortium (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University) and HTACG. </dd></dl>
+<dl class="section user"><dt></dt><dd>All Rights Reserved. </dd></dl>
+<dl class="section user"><dt></dt><dd>See <code><a class="el" href="tidy_8h.html" title="Defines HTML Tidy public API implemented by LibTidy. ">tidy.h</a></code> for the complete license.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Additional updates: consult git log </dd></dl>
+</div>
 <p><a href="config_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:struct__tidy__option"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#struct__tidy__option">TidyOptionImpl</a></td></tr>
 <tr class="separator:struct__tidy__option"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structPickListItem"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#structPickListItem">PickListItem</a></td></tr>
+<tr class="memdesc:structPickListItem"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structs of this type contain information needed in order to present pick lists, relate pick list entries to public enum values, and parse strings that are accepted in order to assign the value.  <a href="config_8h.html#structPickListItem">More...</a><br /></td></tr>
+<tr class="separator:structPickListItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structTidyConfigImpl"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#structTidyConfigImpl">TidyConfigImpl</a></td></tr>
 <tr class="separator:structTidyConfigImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structTidyOptionDoc"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#structTidyOptionDoc">TidyOptionDoc</a></td></tr>
@@ -124,11 +138,17 @@ Macros</h2></td></tr>
 <tr class="separator:a855c6bcc6f3076c6774e03ac16f1a3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd94e3fc33c415d20a1315dd0441012"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#addd94e3fc33c415d20a1315dd0441012">cfgStr</a>(doc,  id)              &#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>) (doc)-&gt;config.value[ (id) ].p)</td></tr>
 <tr class="separator:addd94e3fc33c415d20a1315dd0441012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455f998ab0d80cee91d18965756e3f58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:a455f998ab0d80cee91d18965756e3f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">PickLists may have up to 16 items.  <a href="#a455f998ab0d80cee91d18965756e3f58">More...</a><br /></td></tr>
+<tr class="separator:a455f998ab0d80cee91d18965756e3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a83b9884672316d66cc29b41b2f228903"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a83b9884672316d66cc29b41b2f228903">ParseProperty</a>) (TidyDocImpl *doc, const TidyOptionImpl *opt)</td></tr>
 <tr class="separator:a83b9884672316d66cc29b41b2f228903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafea9d2a1576b6e37a6f28eb90ed14c0"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="config_8h.html#structPickListItem">PickListItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aafea9d2a1576b6e37a6f28eb90ed14c0">PickListItems</a>[<a class="el" href="config_8h.html#a455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>]</td></tr>
+<tr class="memdesc:aafea9d2a1576b6e37a6f28eb90ed14c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of PickListItems, fixed in size for in-code declarations.  <a href="#aafea9d2a1576b6e37a6f28eb90ed14c0">More...</a><br /></td></tr>
+<tr class="separator:aafea9d2a1576b6e37a6f28eb90ed14c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -240,7 +260,7 @@ pdflt</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3a231887a36a13cd06cdda2b5997aef5"></a>const <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> *</td>
+<a class="anchor" id="ac17a5cdf76b9bf15a537de4b78a5c3d4"></a><a class="el" href="config_8h.html#aafea9d2a1576b6e37a6f28eb90ed14c0">PickListItems</a> *</td>
 <td class="fieldname">
 pickList</td>
 <td class="fielddoc">
@@ -251,6 +271,40 @@ pickList</td>
 type</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structPickListItem" id="structPickListItem"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct PickListItem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Structs of this type contain information needed in order to present pick lists, relate pick list entries to public enum values, and parse strings that are accepted in order to assign the value. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3dc1e88129b8d6a8e42b28af5d0ed4aa"></a><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></td>
+<td class="fieldname">
+inputs[10]</td>
+<td class="fielddoc">
+String values that can select this value. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8f312608fe59cf2a43a083b2f75d2028"></a><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></td>
+<td class="fieldname">
+label</td>
+<td class="fielddoc">
+PickList label for this item. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a679d27cc04d873a03221ea2a89b8c6d8"></a>const int</td>
+<td class="fieldname">
+value</td>
+<td class="fielddoc">
+The option value represented by this label. </td></tr>
 </table>
 
 </div>
@@ -460,6 +514,21 @@ v</td>
 
 </div>
 </div>
+<a class="anchor" id="a455f998ab0d80cee91d18965756e3f58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIDY_PL_SIZE&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PickLists may have up to 16 items. </p>
+<p>For some reason, this limit has always been hard-coded into Tidy. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a83b9884672316d66cc29b41b2f228903"></a>
 <div class="memitem">
@@ -470,6 +539,21 @@ v</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aafea9d2a1576b6e37a6f28eb90ed14c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="config_8h.html#structPickListItem">PickListItem</a> PickListItems[<a class="el" href="config_8h.html#a455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of PickListItems, fixed in size for in-code declarations. </p>
+<p>Arrays must be populated in 0 to 10 order, as the option value is assigned based on this index and <em>not</em> on the structures' value field. It remains a best practice, however, to assign a public enum value with the proper index value. </p>
 
 </div>
 </div>
@@ -1136,7 +1220,7 @@ v</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="config_8h.html">config.h</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

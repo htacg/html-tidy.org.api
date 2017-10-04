@@ -12,7 +12,6 @@ var searchData=
   ['cmdoptprocdir',['CmdOptProcDir',['../group__options__cli.html#gga0ab29ca5ac7d59ef81e5e5a385aeab38a6d257b64572eb993cbdccedaa193508d',1,'tidy.c']]],
   ['cmdoptxml',['CmdOptXML',['../group__options__cli.html#gga0ab29ca5ac7d59ef81e5e5a385aeab38a0d1206a3a47d812ac43669c03351c640',1,'tidy.c']]],
   ['coerce_5fto_5fendtag',['COERCE_TO_ENDTAG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a2875360b8a43232f15a754b3701fe9a6',1,'tidyenum.h']]],
-  ['coerce_5fto_5fendtag_5fwarn',['COERCE_TO_ENDTAG_WARN',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a77abae267e6b4757e127615dbb60fae7',1,'tidyenum.h']]],
   ['color_5fcontrast_5factive_5flink',['COLOR_CONTRAST_ACTIVE_LINK',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a2ac9f1ce4a9d12e7db704c4667eef79e',1,'tidyenum.h']]],
   ['color_5fcontrast_5flink',['COLOR_CONTRAST_LINK',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00adbc2909a62af111efdef755722fa71a4',1,'tidyenum.h']]],
   ['color_5fcontrast_5ftext',['COLOR_CONTRAST_TEXT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a1c64b662862010e61af058e67d1f3db6',1,'tidyenum.h']]],

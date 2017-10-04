@@ -1,13 +1,11 @@
 var searchData=
 [
   ['element',['element',['../lexer_8h.html#a0f0eb98352443751828387a6e3b25d63',1,'_IStack::element()'],['../lexer_8h.html#a0f0eb98352443751828387a6e3b25d63',1,'_Node::element()']]],
-  ['element_5fhash_5flookup',['ELEMENT_HASH_LOOKUP',['../tags_8h.html#a3d6af3e8f967fb36b0c74540e6f12926',1,'tags.h']]],
   ['element_5fhash_5fsize',['ELEMENT_HASH_SIZE',['../tags_8h.html#adc29c2ff13d900c2f185ee95427fb06caa14bd6942754bdb79bc76b521e89c1a1',1,'tags.h']]],
   ['element_5fnot_5fempty',['ELEMENT_NOT_EMPTY',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abd6136bff6c310a71fb2849762a871b7',1,'tidyenum.h']]],
   ['element_5fvers_5fmismatch_5ferror',['ELEMENT_VERS_MISMATCH_ERROR',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ae129b130f685287f681d20607c0c0816',1,'tidyenum.h']]],
   ['element_5fvers_5fmismatch_5fwarn',['ELEMENT_VERS_MISMATCH_WARN',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aee8ab9d975d3381defe74b5f29749d9c',1,'tidyenum.h']]],
   ['encoding',['encoding',['../streamio_8h.html#ad1b45f33065aae3c757f56a692b25741',1,'_StreamIn::encoding()'],['../streamio_8h.html#ad1b45f33065aae3c757f56a692b25741',1,'_StreamOut::encoding()']]],
-  ['encoding_5fio_5fconflict',['ENCODING_IO_CONFLICT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00adf797ca827f5e4697a99edb5aef40112',1,'tidyenum.h']]],
   ['encoding_5fmismatch',['ENCODING_MISMATCH',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a4506fdd6fd61b40c740e4871b0768e91',1,'tidyenum.h']]],
   ['end',['end',['../lexer_8h.html#a967b220666695c1b6eb211560f2a875f',1,'_Node']]],
   ['endbuf',['EndBuf',['../sprtf_8h.html#a82fe31579119237f8b3fe7a3625474e6',1,'sprtf.h']]],
@@ -27,5 +25,7 @@ var searchData=
   ['exiled',['exiled',['../lexer_8h.html#aa1bf04834a10324baf92608f0d68bd62',1,'_Lexer']]],
   ['exittraversal',['ExitTraversal',['../tidy-int_8h.html#a51a31ff322e62768ea43e47fe713c541a849bf11937f45e4b0ebe40225ee55b04',1,'tidy-int.h']]],
   ['experimental_20stuff',['Experimental Stuff',['../group__experimental__stuff.html',1,'']]],
+  ['exportdefaultoptionvalues',['exportDefaultOptionValues',['../group__service__export__config.html#gaec89b75ff451d1b3ed59099801bc5a96',1,'tidy.c']]],
+  ['exportoptionvalues',['exportOptionValues',['../group__service__export__config.html#gae9fc7babe9f298519654d027fc451970',1,'tidy.c']]],
   ['external_20public_20api',['External Public API',['../group__public__api.html',1,'']]]
 ];

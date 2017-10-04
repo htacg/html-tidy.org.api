@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -98,7 +98,20 @@ $(document).ready(function(){initNavTree('sprtf_8h.html','');});
 <div class="title">sprtf.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Log output utility - part of the HTML Tidy project. </p>
+<dl class="section author"><dt>Author</dt><dd>Geoff R. McLane [reports <em>at</em> geoffair <em>dot</em> info]</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 1998-2017 Geoff R. McLane and HTACG. </dd></dl>
+<dl class="section user"><dt></dt><dd>All Rights Reserved. </dd></dl>
+<dl class="section user"><dt></dt><dd>See <code><a class="el" href="tidy_8h.html" title="Defines HTML Tidy public API implemented by LibTidy. ">tidy.h</a></code> for the complete license.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2017/02/12 17:06:02 Revision 1.0.2 geoff - correct license and coding style </dd>
+<dd>
+2012/11/06 13:01:25 Revision 1.0.1 geoff </dd>
+<dd>
+2012/10/17 00:00:00 Revision 1.0.0 geoff </dd>
+<dd>
+Additional updates: consult git log </dd></dl>
+</div>
 <p><a href="sprtf_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -109,8 +122,6 @@ Macros</h2></td></tr>
 <tr class="separator:a224ca0a2137759a2e16c5c4e7a140e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73121a605f19093a757366f96b4252d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#af73121a605f19093a757366f96b4252d">MCDECL</a></td></tr>
 <tr class="separator:af73121a605f19093a757366f96b4252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab0b1339dbff30eaad99793f4a05fab4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#aab0b1339dbff30eaad99793f4a05fab4">SPRTF</a>&#160;&#160;&#160;<a class="el" href="sprtf_8h.html#a6ec44c7595ee9c95ca7f5dfb3ac1ccaf">sprtf</a></td></tr>
-<tr class="separator:aab0b1339dbff30eaad99793f4a05fab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -130,16 +141,16 @@ Functions</h2></td></tr>
 <tr class="separator:a32f684e2d9d47ca24806b88e58498931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bdda91a428950a954f38cd7a4bc3644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a0bdda91a428950a954f38cd7a4bc3644">direct_out_it</a> (char *cp)</td></tr>
 <tr class="separator:a0bdda91a428950a954f38cd7a4bc3644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e0e87763f50a862d89bdb54eb4a6e7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#af4e0e87763f50a862d89bdb54eb4a6e7">get_date_stg</a> ()</td></tr>
-<tr class="separator:af4e0e87763f50a862d89bdb54eb4a6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af411565306c93fbdf7ec28b9f80c6f1b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#af411565306c93fbdf7ec28b9f80c6f1b">get_date_time_stg</a> ()</td></tr>
-<tr class="separator:af411565306c93fbdf7ec28b9f80c6f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ba10a2772ec267b26970eaadf41277"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a87ba10a2772ec267b26970eaadf41277">get_date_stg</a> (void)</td></tr>
+<tr class="separator:a87ba10a2772ec267b26970eaadf41277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b3c17859184113c975e819cdbf0781"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a64b3c17859184113c975e819cdbf0781">get_date_time_stg</a> (void)</td></tr>
+<tr class="separator:a64b3c17859184113c975e819cdbf0781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7fbc31f9ee344a4f71ae5126de3b798"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#ac7fbc31f9ee344a4f71ae5126de3b798">get_log_file</a> (void)</td></tr>
 <tr class="separator:ac7fbc31f9ee344a4f71ae5126de3b798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9ffd5324b6234ec77fec4227074a84"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a7b9ffd5324b6234ec77fec4227074a84">get_time_stg</a> ()</td></tr>
-<tr class="separator:a7b9ffd5324b6234ec77fec4227074a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe8a94ebf1f0aa058401dce542773e1b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#afe8a94ebf1f0aa058401dce542773e1b">GetNxtBuf</a> ()</td></tr>
-<tr class="separator:afe8a94ebf1f0aa058401dce542773e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c8efe52de2790ca5cecb51c0180a27"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a82c8efe52de2790ca5cecb51c0180a27">get_time_stg</a> (void)</td></tr>
+<tr class="separator:a82c8efe52de2790ca5cecb51c0180a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89657a447e8837c65b3f80a6ec54d52"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#ad89657a447e8837c65b3f80a6ec54d52">GetNxtBuf</a> (void)</td></tr>
+<tr class="separator:ad89657a447e8837c65b3f80a6ec54d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1466af77ee4d0f3b27ea360c7b83a048"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a1466af77ee4d0f3b27ea360c7b83a048">open_log_file</a> (void)</td></tr>
 <tr class="separator:a1466af77ee4d0f3b27ea360c7b83a048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8289f177075f89013c5d04962bb9d6c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sprtf_8h.html#a8289f177075f89013c5d04962bb9d6c9">set_log_file</a> (char *nf, int open)</td></tr>
@@ -182,18 +193,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MCDECL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aab0b1339dbff30eaad99793f4a05fab4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPRTF&#160;&#160;&#160;<a class="el" href="sprtf_8h.html#a6ec44c7595ee9c95ca7f5dfb3ac1ccaf">sprtf</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -329,13 +328,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af4e0e87763f50a862d89bdb54eb4a6e7"></a>
+<a class="anchor" id="a87ba10a2772ec267b26970eaadf41277"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">char* get_date_stg </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -344,13 +344,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af411565306c93fbdf7ec28b9f80c6f1b"></a>
+<a class="anchor" id="a64b3c17859184113c975e819cdbf0781"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">char* get_date_time_stg </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -375,13 +376,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7b9ffd5324b6234ec77fec4227074a84"></a>
+<a class="anchor" id="a82c8efe52de2790ca5cecb51c0180a27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">char* get_time_stg </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -390,13 +392,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afe8a94ebf1f0aa058401dce542773e1b"></a>
+<a class="anchor" id="ad89657a447e8837c65b3f80a6ec54d52"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">char* GetNxtBuf </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -479,7 +482,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="sprtf_8h.html">sprtf.h</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

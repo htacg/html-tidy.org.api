@@ -14,6 +14,5 @@ var searchData=
   ['dt_5fintsubset',['DT_INTSUBSET',['../lexer_8h.html#a9000559d29f35498257cb4670ce2e203aa3e0e82240addd3168afe48d2a91f0d6',1,'lexer.h']]],
   ['dt_5fpublicsystem',['DT_PUBLICSYSTEM',['../lexer_8h.html#a9000559d29f35498257cb4670ce2e203ab19155a2dc009c1bd1cd006e26a96cf2',1,'lexer.h']]],
   ['dt_5fquotedstring',['DT_QUOTEDSTRING',['../lexer_8h.html#a9000559d29f35498257cb4670ce2e203a1a573d425d2f2b64db93dcfb59d36086',1,'lexer.h']]],
-  ['dtype_5fnot_5fupper_5fcase',['DTYPE_NOT_UPPER_CASE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a69a001a4c1aaf2108ffcc23af05ff48a',1,'tidyenum.h']]],
   ['duplicate_5fframeset',['DUPLICATE_FRAMESET',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a73daae59f1bac3b116f83aaa5cacafea',1,'tidyenum.h']]]
 ];

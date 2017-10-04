@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('api_namespace.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;TIDY_EXPORT ctmbstr TIDY_CALL tidyLocalizedString( uint messageType );</div></div><!-- fragment --><p>…and now the publicly exposed interface knows that your function exists. All that's left to do is add the <code><a class="el" href="language_8h.html">language.h</a></code> header to <code>tidylib.c</code>, and then implement it there:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;ctmbstr TIDY_CALL tidyLocalizedString( uint messageType )</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    return TY_(tidyLocalizedString)( messageType );</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;}</div></div><!-- fragment --><p>Congratulations, you can now expose new functionality to the API.</p>
 <h2>API functions for opaque types</h2>
-<p>For a more complicated example that demonstrates how to use opaque types (and also the <code>TidyIterator</code> type) have a look at the implementation of <code><a class="el" href="group__Localization.html#gae01854bee5caefaf1c5b4e3f46ea74f0" title="Initiates an iterator for a list of Tidy&#39;s Windows&lt;-&gt;POSIX locale mappings. ">getWindowsLanguageList()</a></code>, and its partners <code>*getNextWindowsLanguage()</code>, <code><a class="el" href="group__Localization.html#gad7702aa4bcb577235a27e78f06091f31" title="Given a tidyLocalMapItem, return the Windows name. ">TidyLangWindowsName()</a></code>, and <code><a class="el" href="group__Localization.html#ga6c79e2784181698a89a2681667726c7b" title="Given a tidyLocalMapItem, return the POSIX name. ">TidyLangPosixName()</a></code>. These demonstrate how to:</p>
+<p>For a more complicated example that demonstrates how to use opaque types (and also the <code>TidyIterator</code> type) have a look at the implementation of <code><a class="el" href="group__Localization.html#gad02a58a776e155f05476551afff61732" title="Initiates an iterator for a list of Tidy&#39;s Windows&lt;-&gt;POSIX locale mappings. ">getWindowsLanguageList()</a></code>, and its partners <code>*getNextWindowsLanguage()</code>, <code><a class="el" href="group__Localization.html#gad7702aa4bcb577235a27e78f06091f31" title="Given a tidyLocalMapItem, return the Windows name. ">TidyLangWindowsName()</a></code>, and <code><a class="el" href="group__Localization.html#ga6c79e2784181698a89a2681667726c7b" title="Given a tidyLocalMapItem, return the POSIX name. ">TidyLangPosixName()</a></code>. These demonstrate how to:</p>
 <ul>
 <li>implement iteration for structures with multiple records.</li>
 <li>write a function in <code>tidylib.c</code> that converts between the exposed, opaque type and the internal, implementation type.</li>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('api_namespace.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

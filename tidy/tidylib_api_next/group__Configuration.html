@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -103,9 +103,15 @@ Option Callback Functions</h2></td></tr>
 <tr class="memitem:ga083099fce59583b2bd0951e2d8065d88"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(<a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga083099fce59583b2bd0951e2d8065d88">TidyOptCallback</a>) (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> value)</td></tr>
 <tr class="memdesc:ga083099fce59583b2bd0951e2d8065d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef represents the required signature for your provided callback function should you wish to register one with <a class="el" href="group__Configuration.html#gab94961700088d2daf8dcc012a5e33e49" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetOptionCallback()</a>.  <a href="#ga083099fce59583b2bd0951e2d8065d88">More...</a><br /></td></tr>
 <tr class="separator:ga083099fce59583b2bd0951e2d8065d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab039c9bf1c0ae9bcbb59fbbde7694537"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(<a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#gab039c9bf1c0ae9bcbb59fbbde7694537">TidyConfigCallback</a>) (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> value)</td></tr>
+<tr class="memdesc:gab039c9bf1c0ae9bcbb59fbbde7694537"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef represents the required signature for your provided callback function should you wish to register one with <a class="el" href="group__Configuration.html#gab94961700088d2daf8dcc012a5e33e49" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetOptionCallback()</a>.  <a href="#gab039c9bf1c0ae9bcbb59fbbde7694537">More...</a><br /></td></tr>
+<tr class="separator:gab039c9bf1c0ae9bcbb59fbbde7694537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab94961700088d2daf8dcc012a5e33e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#gab94961700088d2daf8dcc012a5e33e49">tidySetOptionCallback</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="group__Configuration.html#ga083099fce59583b2bd0951e2d8065d88">TidyOptCallback</a> pOptCallback)</td></tr>
 <tr class="memdesc:gab94961700088d2daf8dcc012a5e33e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applications using TidyLib may want to augment command-line and configuration file options.  <a href="#gab94961700088d2daf8dcc012a5e33e49">More...</a><br /></td></tr>
 <tr class="separator:gab94961700088d2daf8dcc012a5e33e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3063abac6446e0a2fd025523776f9ed9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga3063abac6446e0a2fd025523776f9ed9">tidySetConfigCallback</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="group__Configuration.html#gab039c9bf1c0ae9bcbb59fbbde7694537">TidyConfigCallback</a> pConfigCallback)</td></tr>
+<tr class="memdesc:ga3063abac6446e0a2fd025523776f9ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applications using TidyLib may want to augment command-line and configuration file options.  <a href="#ga3063abac6446e0a2fd025523776f9ed9">More...</a><br /></td></tr>
+<tr class="separator:ga3063abac6446e0a2fd025523776f9ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Option ID Discovery</h2></td></tr>
@@ -231,6 +237,29 @@ Option Documentation</h2></td></tr>
 <tr class="separator:ga1db79a95067d6364c02263d9492fa9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="gab039c9bf1c0ae9bcbb59fbbde7694537"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(<a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> * TidyConfigCallback) (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This typedef represents the required signature for your provided callback function should you wish to register one with <a class="el" href="group__Configuration.html#gab94961700088d2daf8dcc012a5e33e49" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetOptionCallback()</a>. </p>
+<p>Your callback function will be provided with the following parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tdoc</td><td>The document instance for which the callback was invoked. </td></tr>
+    <tr><td class="paramname">option</td><td>The option name that was provided. </td></tr>
+    <tr><td class="paramname">value</td><td>The option value that was provided </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Your callback function will return <code>yes</code> if it handles the provided option, or <code>no</code> if it does not. In the latter case, Tidy will issue an unknown configuration option error. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga083099fce59583b2bd0951e2d8065d88"></a>
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +271,7 @@ Option Documentation</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This typedef represents the required signature for your provided callback function should you wish to register one with <a class="el" href="group__Configuration.html#gab94961700088d2daf8dcc012a5e33e49" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetOptionCallback()</a>. </p>
-<p>Your callback function will be provided with the following parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Your callback function will be provided with the following parameters. Note that this is deprecated and you should instead migrate to <a class="el" href="group__Configuration.html#ga3063abac6446e0a2fd025523776f9ed9" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetConfigCallback()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">option</td><td>The option name that was provided. </td></tr>
     <tr><td class="paramname">value</td><td>The option value that was provided </td></tr>
@@ -959,7 +988,7 @@ Option Documentation</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Given a valid TidyIterator initiated with <a class="el" href="group__Configuration.html#gaeed1ef5cb5329f3f5aca0a8ad7e8ea4f" title="Initiates an iterator for a list of options related to a given option. ">tidyOptGetDocLinksList()</a>, returns a <a class="el" href="group__Opaque.html#structTidyOption" title="Instances of this represent a Tidy configuration option, which contains useful data about these optio...">TidyOption</a> instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns in instane of <a class="el" href="group__Opaque.html#structTidyOption" title="Instances of this represent a Tidy configuration option, which contains useful data about these optio...">TidyOption</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns in instance of <a class="el" href="group__Opaque.html#structTidyOption" title="Instances of this represent a Tidy configuration option, which contains useful data about these optio...">TidyOption</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tdoc</td><td>The tidy document to query. </td></tr>
@@ -1402,6 +1431,42 @@ Option Documentation</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga3063abac6446e0a2fd025523776f9ed9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidySetConfigCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a>&#160;</td>
+          <td class="paramname"><em>tdoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Configuration.html#gab039c9bf1c0ae9bcbb59fbbde7694537">TidyConfigCallback</a>&#160;</td>
+          <td class="paramname"><em>pConfigCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applications using TidyLib may want to augment command-line and configuration file options. </p>
+<p>Setting this callback allows a LibTidy application developer to examine command-line and configuration file options after LibTidy has examined them and failed to recognize them. Note that this is deprecated and you should instead migrate to <a class="el" href="group__Configuration.html#ga3063abac6446e0a2fd025523776f9ed9" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetConfigCallback()</a>. </p><dl class="section return"><dt>Returns</dt><dd>Returns <code>yes</code> upon success. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tdoc</td><td>The document to apply the callback to. </td></tr>
+    <tr><td class="paramname">pConfigCallback</td><td>The name of a function of type <a class="el" href="group__Configuration.html#gab039c9bf1c0ae9bcbb59fbbde7694537" title="This typedef represents the required signature for your provided callback function should you wish to...">TidyConfigCallback()</a> to serve as your callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gab94961700088d2daf8dcc012a5e33e49"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1427,7 +1492,7 @@ Option Documentation</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Applications using TidyLib may want to augment command-line and configuration file options. </p>
-<p>Setting this callback allows a LibTidy application developer to examine command-line and configuration file options after LibTidy has examined them and failed to recognize them. </p><dl class="section return"><dt>Returns</dt><dd>Returns <code>yes</code> upon success. </dd></dl>
+<p>Setting this callback allows a LibTidy application developer to examine command-line and configuration file options after LibTidy has examined them and failed to recognize them. Note that this is deprecated and you should instead migrate to <a class="el" href="group__Configuration.html#ga3063abac6446e0a2fd025523776f9ed9" title="Applications using TidyLib may want to augment command-line and configuration file options...">tidySetConfigCallback()</a>. </p><dl class="section return"><dt>Returns</dt><dd>Returns <code>yes</code> upon success. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tdoc</td><td>The document to apply the callback to. </td></tr>
@@ -1443,7 +1508,7 @@ Option Documentation</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

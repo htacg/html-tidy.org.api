@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="group__Tree.html#gae539f5031bd1e039458a7fffb07a2b7a">tidy.h</a>
 </li>
 <li>tidyGetLanguage()
-: <a class="el" href="group__Localization.html#gaaa253b28b744ff22fd2eb39b028b5d98">tidy.h</a>
+: <a class="el" href="group__Localization.html#gaffdf7adac266df34853b0d51094956f8">tidy.h</a>
 </li>
 <li>tidyGetMessage()
 : <a class="el" href="group__IO.html#gababe673c0fddb892086a6bc990b432ca">tidy.h</a>
@@ -562,6 +562,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>tidySetCharEncoding()
 : <a class="el" href="group__Basic.html#ga2612e184472c2a59ca822a37d030e9af">tidy.h</a>
 </li>
+<li>tidySetConfigCallback()
+: <a class="el" href="group__Configuration.html#ga3063abac6446e0a2fd025523776f9ed9">tidy.h</a>
+</li>
 <li>tidySetEmacsFile()
 : <a class="el" href="group__IO.html#ga0c639effa293e23c273938cfb5a50854">tidy.h</a>
 </li>
@@ -700,6 +703,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>TY_❪CleanGoogleDocument❫()
 : <a class="el" href="gdoc_8h.html#a31b56d2dc82b7c4f1866ab84a8e42771">gdoc.h</a>
 </li>
+<li>TY_❪CleanStyle❫()
+: <a class="el" href="clean_8h.html#ab08f438a743ad42ea25bcef9d60d060c">clean.h</a>
+</li>
 <li>TY_❪CleanWord2000❫()
 : <a class="el" href="clean_8h.html#a366188dddb4c6736e8d783a5ccdab686">clean.h</a>
 </li>
@@ -742,14 +748,17 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>TY_❪DeferDup❫()
 : <a class="el" href="lexer_8h.html#aac555b8d5fc23f2bcfb8abcdd11c09ca">lexer.h</a>
 </li>
+<li>TY_❪DefinePriorityAttribute❫()
+: <a class="el" href="attrs_8h.html#ad2243fe6267226d94fc444cc43eb0fbf">attrs.h</a>
+</li>
 <li>TY_❪DefineTag❫()
 : <a class="el" href="tags_8h.html#a313193956bb593cb5fcb38b9b1677355">tags.h</a>
 </li>
 <li>TY_❪DetachAttribute❫()
 : <a class="el" href="lexer_8h.html#a5d78fdb201e8e7119a517303e5b9af8a">lexer.h</a>
 </li>
-<li>TY_❪DialogueMessage❫()
-: <a class="el" href="message_8h.html#a7b0336912bcd8aa4d5b533d3ea2807f5">message.h</a>
+<li>TY_❪Dialogue❫()
+: <a class="el" href="group__message__reporting.html#ga7500646d4c3bc3d24660571910b112ee">message.h</a>
 </li>
 <li>TY_❪DiscardElement❫()
 : <a class="el" href="parser_8h.html#abe7d9cb1fdf741e17527f9db108b4409">parser.h</a>
@@ -794,10 +803,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="entities_8h.html#a2750ec734eda8202a050f070d6e9b5aa">entities.h</a>
 </li>
 <li>TY_❪ErrorSummary❫()
-: <a class="el" href="message_8h.html#aa94ac252fe354b953d7db0cfdf55b880">message.h</a>
-</li>
-<li>TY_❪FileError❫()
-: <a class="el" href="message_8h.html#a8aaece0e7307e334ee870005d17bcd44">message.h</a>
+: <a class="el" href="group__message__reporting.html#gaa94ac252fe354b953d7db0cfdf55b880">message.h</a>
 </li>
 <li>TY_❪FileInput❫()
 : <a class="el" href="streamio_8h.html#a7982989df32e50bd657df0b552cb11c5">streamio.h</a>
@@ -861,6 +867,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 </li>
 <li>TY_❪FreeAttribute❫()
 : <a class="el" href="lexer_8h.html#a1410eaa05c8666a85c7b6d6572aa277a">lexer.h</a>
+</li>
+<li>TY_❪FreeAttrPriorityList❫()
+: <a class="el" href="attrs_8h.html#ac2f450a41f96f435b3d222e6b1dda318">attrs.h</a>
 </li>
 <li>TY_❪FreeAttrs❫()
 : <a class="el" href="lexer_8h.html#a67f38fa0d90754f6772ac48e4bb9ce87">lexer.h</a>
@@ -947,10 +956,10 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="streamio_8h.html#a0f35bf3a822fab93c3a9186dd093779a">streamio.h</a>
 </li>
 <li>TY_❪getErrorCodeList❫()
-: <a class="el" href="message_8h.html#a649e0b07e4f6b7f50324abe95fd26648">message.h</a>
+: <a class="el" href="group__message__keydiscovery.html#ga7646c4dd06b60a3604b8689492e4bae3">message.h</a>
 </li>
 <li>TY_❪getInstalledLanguageList❫()
-: <a class="el" href="language_8h.html#a71410024789a45f1a6f5fffca77640b4">language.h</a>
+: <a class="el" href="language_8h.html#a17c03d1b05ee3121ad631034ee24755b">language.h</a>
 </li>
 <li>TY_❪getMessageArguments❫()
 : <a class="el" href="group__messageobj__args__api.html#gae068ebd8ca291e4d39d8d19399fb6467">messageobj.h</a>
@@ -1007,7 +1016,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="tags_8h.html#af69c07ebc78bac8c182b440d6c677dcb">tags.h</a>
 </li>
 <li>TY_❪getNextErrorCode❫()
-: <a class="el" href="message_8h.html#a8ba9f055a6fa58e7f1e524d9d8d28fd9">message.h</a>
+: <a class="el" href="group__message__keydiscovery.html#ga8ba9f055a6fa58e7f1e524d9d8d28fd9">message.h</a>
 </li>
 <li>TY_❪getNextInstalledLanguage❫()
 : <a class="el" href="language_8h.html#ac9f37132cc0aea33a718971aed1c132d">language.h</a>
@@ -1037,7 +1046,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="config_8h.html#afab7991049eb74353c7f09ca60f458d3">config.h</a>
 </li>
 <li>TY_❪getStringKeyList❫()
-: <a class="el" href="language_8h.html#ac836f8a0989f68af0b8762c5a9aec168">language.h</a>
+: <a class="el" href="language_8h.html#ab68ade7b3ac2b7f43f4b5fb1e51bef3f">language.h</a>
 </li>
 <li>TY_❪GetToken❫()
 : <a class="el" href="lexer_8h.html#add24a6bf4db9b4584355cb082f99ff2b">lexer.h</a>
@@ -1046,7 +1055,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="utf8_8h.html#aa1e2b5fabf4ddcf2f998dcf68f6139d4">utf8.h</a>
 </li>
 <li>TY_❪getWindowsLanguageList❫()
-: <a class="el" href="language_8h.html#aa1dbb455e8d6f4079ca62c46c2e85da5">language.h</a>
+: <a class="el" href="language_8h.html#abe7de69a34da4ab00f29c0adde0c729b">language.h</a>
 </li>
 <li>TY_❪HTMLVersionNameFromCode❫()
 : <a class="el" href="lexer_8h.html#a773bade0e9f0be4c43300359cb2800c4">lexer.h</a>
@@ -1325,7 +1334,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="streamio_8h.html#affad292b2bb4ffc176291a89a98262cc">streamio.h</a>
 </li>
 <li>TY_❪ReleaseDate❫()
-: <a class="el" href="message_8h.html#a4abc35b4fa975cacb28952d4137cc15b">message.h</a>
+: <a class="el" href="group__message__releaseinfo.html#ga4abc35b4fa975cacb28952d4137cc15b">message.h</a>
 </li>
 <li>TY_❪ReleaseStreamOut❫()
 : <a class="el" href="streamio_8h.html#aed6840a430c2f72a8d99ae265ea34238">streamio.h</a>
@@ -1349,52 +1358,43 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="clean_8h.html#ab3966f394a65d2aaf65d03065c9001a0">clean.h</a>
 </li>
 <li>TY_❪ReportAccessError❫()
-: <a class="el" href="message_8h.html#af061ec297ebf9d8793f9c542b900f315">message.h</a>
-</li>
-<li>TY_❪ReportAccessWarning❫()
-: <a class="el" href="message_8h.html#a09dad63367c13ee954e814a1eaef1fdc">message.h</a>
+: <a class="el" href="group__message__reporting.html#gaf061ec297ebf9d8793f9c542b900f315">message.h</a>
 </li>
 <li>TY_❪ReportAttrError❫()
-: <a class="el" href="message_8h.html#a1887ba9fdbffa7e1432e1a4482677009">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga1887ba9fdbffa7e1432e1a4482677009">message.h</a>
 </li>
 <li>TY_❪ReportBadArgument❫()
-: <a class="el" href="message_8h.html#a218b6755b6f23ce550a92a49494233bf">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga218b6755b6f23ce550a92a49494233bf">message.h</a>
 </li>
 <li>TY_❪ReportEncodingError❫()
-: <a class="el" href="message_8h.html#a29cd6985e53a356f56f4d99f01cf924d">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga29cd6985e53a356f56f4d99f01cf924d">message.h</a>
 </li>
 <li>TY_❪ReportEncodingWarning❫()
-: <a class="el" href="message_8h.html#a289f2e147e211fb3c277a9ebac860812">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga289f2e147e211fb3c277a9ebac860812">message.h</a>
 </li>
 <li>TY_❪ReportEntityError❫()
-: <a class="el" href="message_8h.html#a079e05cb56f02b43e507ef19f7bdc791">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga079e05cb56f02b43e507ef19f7bdc791">message.h</a>
 </li>
-<li>TY_❪ReportError❫()
-: <a class="el" href="message_8h.html#a1abb59de0ebb2a92494608331960440e">message.h</a>
-</li>
-<li>TY_❪ReportFatal❫()
-: <a class="el" href="message_8h.html#acc700b295212e38df2b40db20798ce2d">message.h</a>
+<li>TY_❪ReportFileError❫()
+: <a class="el" href="group__message__reporting.html#gacd4a93e2e9bc0bcae4db89c8ffa23b4f">message.h</a>
 </li>
 <li>TY_❪ReportMarkupVersion❫()
-: <a class="el" href="message_8h.html#a50b6ab8010cded4fe8a00c6657176026">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga50b6ab8010cded4fe8a00c6657176026">message.h</a>
 </li>
 <li>TY_❪ReportMissingAttr❫()
-: <a class="el" href="message_8h.html#a4c1dbd085480403d296164da1d938f0c">message.h</a>
-</li>
-<li>TY_❪ReportNotice❫()
-: <a class="el" href="message_8h.html#aeede6dda54fb0b7515672bf5ddcaf40f">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga4c1dbd085480403d296164da1d938f0c">message.h</a>
 </li>
 <li>TY_❪ReportNumWarnings❫()
-: <a class="el" href="message_8h.html#a2569a7886e9df5184118e4a01ed52b60">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga2569a7886e9df5184118e4a01ed52b60">message.h</a>
 </li>
 <li>TY_❪ReportSurrogateError❫()
-: <a class="el" href="message_8h.html#a0d0ef2889ddf60190b89b29f8fe6ed04">message.h</a>
+: <a class="el" href="group__message__reporting.html#ga0d0ef2889ddf60190b89b29f8fe6ed04">message.h</a>
 </li>
 <li>TY_❪ReportUnknownOption❫()
-: <a class="el" href="message_8h.html#ae1e40173912d40e66249e54c923cd3a9">message.h</a>
+: <a class="el" href="group__message__reporting.html#gae1e40173912d40e66249e54c923cd3a9">message.h</a>
 </li>
-<li>TY_❪ReportWarning❫()
-: <a class="el" href="message_8h.html#a8e1d07e244bd1a589fc0c39992e9da42">message.h</a>
+<li>TY_❪Report❫()
+: <a class="el" href="group__message__reporting.html#ga3c7d598344345d09dc9711ccc7843b8d">message.h</a>
 </li>
 <li>TY_❪ResetConfigToDefault❫()
 : <a class="el" href="config_8h.html#a41ea4e702113a33d268ab885c75afb80">config.h</a>
@@ -1424,7 +1424,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="lexer_8h.html#a8dd5ec7e43d5e830cbfb38df51d0932a">lexer.h</a>
 </li>
 <li>TY_❪SortAttributes❫()
-: <a class="el" href="attrs_8h.html#aefd9e338a2f4a1c73289088627c18c03">attrs.h</a>
+: <a class="el" href="attrs_8h.html#a8ee63beb587cf84044e5ab7601954c0e">attrs.h</a>
 </li>
 <li>TY_❪SplitSurrogatePair❫()
 : <a class="el" href="utf8_8h.html#a93ddd0e05e126a51c90b9f18959c9af7">utf8.h</a>
@@ -1448,13 +1448,13 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="language_8h.html#a7cd39bb0feaa1253238a65f29edb4cdc">language.h</a>
 </li>
 <li>TY_❪tidyErrorCodeAsKey❫()
-: <a class="el" href="message_8h.html#a8b8cb826ca872c5a83f8c22c5a8f649c">message.h</a>
+: <a class="el" href="group__message__keydiscovery.html#ga8b8cb826ca872c5a83f8c22c5a8f649c">message.h</a>
 </li>
 <li>TY_❪tidyErrorCodeFromKey❫()
-: <a class="el" href="message_8h.html#a1957a3868831d0dcafb5fac93de612b0">message.h</a>
+: <a class="el" href="group__message__keydiscovery.html#ga1957a3868831d0dcafb5fac93de612b0">message.h</a>
 </li>
 <li>TY_❪tidyGetLanguage❫()
-: <a class="el" href="language_8h.html#a2d17ba7997d175cd3efd7a1330742a83">language.h</a>
+: <a class="el" href="language_8h.html#adcc55dc2fe58ce585d9cc45d4a5dd14a">language.h</a>
 </li>
 <li>TY_❪TidyLangPosixName❫()
 : <a class="el" href="language_8h.html#a2d71eb7e71d46aff6d25193c487e2b22">language.h</a>
@@ -1463,7 +1463,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 : <a class="el" href="language_8h.html#a4d265d492361af0a6a19ab9a8062ac0a">language.h</a>
 </li>
 <li>TY_❪tidyLibraryVersion❫()
-: <a class="el" href="message_8h.html#a3d6bbe233f8927fc66b8ffc1a5e66053">message.h</a>
+: <a class="el" href="group__message__releaseinfo.html#ga3d6bbe233f8927fc66b8ffc1a5e66053">message.h</a>
 </li>
 <li>TY_❪tidyLocalizedStringN❫()
 : <a class="el" href="language_8h.html#a653233b091c819ce8fd6ce73caf89ff9">language.h</a>
@@ -1482,6 +1482,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 </li>
 <li>TY_❪tidyMessageRelease❫()
 : <a class="el" href="group__messageobj__instantiation.html#ga0c9f347e99b0c9598dbb74711c99e948">messageobj.h</a>
+</li>
+<li>TY_❪TidyMetaCharset❫()
+: <a class="el" href="clean_8h.html#a33a898d59d789800e5aeeb885453359c">clean.h</a>
 </li>
 <li>TY_❪tidySetLanguage❫()
 : <a class="el" href="language_8h.html#afa7f5a7de3eecf3663bd56e4561048cc">language.h</a>
@@ -1561,9 +1564,6 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>TY_❪UserOutput❫()
 : <a class="el" href="streamio_8h.html#a05bb3b493e7bb06c5915769b0ea19151">streamio.h</a>
 </li>
-<li>TY_❪VerifyHTTPEquiv❫()
-: <a class="el" href="clean_8h.html#aa6e9f64de92f3eeef0b71e7c7d2f2bbb">clean.h</a>
-</li>
 <li>TY_❪WarnMissingSIInEmittedDocType❫()
 : <a class="el" href="lexer_8h.html#a915a90bdbf6418fd7ccc11e3dc08fd13">lexer.h</a>
 </li>
@@ -1582,7 +1582,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

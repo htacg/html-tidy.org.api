@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -115,6 +115,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:struct__Attribute"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:struct__TidyAttribImpl"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#struct__TidyAttribImpl">TidyAttribImpl</a></td></tr>
 <tr class="separator:struct__TidyAttribImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structPriorityAttribs"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#structPriorityAttribs">PriorityAttribs</a></td></tr>
+<tr class="separator:structPriorityAttribs"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -200,6 +202,8 @@ Macros</h2></td></tr>
 <tr class="separator:a9e119bd56430e8ec63bc527e6eabfe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13108d753d1dd72830fc0f99a1356dee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a13108d753d1dd72830fc0f99a1356dee">attrGetBGCOLOR</a>(nod)      &#160;&#160;&#160;<a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(AttrGetById)( nod, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a65e9ffd7a60124a5dc79fc7300570f08">TidyAttr_BGCOLOR</a>  )</td></tr>
 <tr class="separator:a13108d753d1dd72830fc0f99a1356dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64e76fcac1e28fb9b91e9eca3a503e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#af64e76fcac1e28fb9b91e9eca3a503e2">attrGetCHARSET</a>(nod)      &#160;&#160;&#160;<a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(AttrGetById)( nod, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a9e3962b79d99e6c930eccc37795cc1ac">TidyAttr_CHARSET</a>  )</td></tr>
+<tr class="separator:af64e76fcac1e28fb9b91e9eca3a503e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5757068d5dbb0ca7b6851772131590f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a5757068d5dbb0ca7b6851772131590f3">attrGetCHECKED</a>(nod)      &#160;&#160;&#160;<a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(AttrGetById)( nod, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1ac18c7b81330a7348e106b8d05c9afb9c">TidyAttr_CHECKED</a>  )</td></tr>
 <tr class="separator:a5757068d5dbb0ca7b6851772131590f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab62c3f3b5b1174ee41eea955bc8a634a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#ab62c3f3b5b1174ee41eea955bc8a634a">attrGetCOLSPAN</a>(nod)      &#160;&#160;&#160;<a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(AttrGetById)( nod, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a185d65dc69ff0b7e11c5142fecdadf11">TidyAttr_COLSPAN</a>  )</td></tr>
@@ -288,8 +292,6 @@ Macros</h2></td></tr>
 <tr class="separator:a09896663edcb0c0743a32ed915c57ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae14136869e304774e291d5afc72bac4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr)        &#160;&#160;&#160;((attr) &amp;&amp; (attr)-&gt;value)</td></tr>
 <tr class="separator:ae14136869e304774e291d5afc72bac4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9d43cb05579f240a07669d4adc10f0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#ac9d43cb05579f240a07669d4adc10f0a">ATTRIBUTE_HASH_LOOKUP</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ac9d43cb05579f240a07669d4adc10f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c8f5cd9e8e7d080866d56e218c4817"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#af9c8f5cd9e8e7d080866d56e218c4817">AttrId</a>(av)&#160;&#160;&#160;((av) &amp;&amp; (av)-&gt;dict ? (av)-&gt;dict-&gt;id : <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a2995365fc5dbe51911f904bdae2da6b1">TidyAttr_UNKNOWN</a>)</td></tr>
 <tr class="separator:af9c8f5cd9e8e7d080866d56e218c4817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2254e80624f930365b40c6ff88cf62c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a2254e80624f930365b40c6ff88cf62c0">attrIsABBR</a>(av)                        &#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1ad7471dca38dd8e53efa2be8cc54d683f">TidyAttr_ABBR</a>  )</td></tr>
@@ -404,6 +406,8 @@ Macros</h2></td></tr>
 <tr class="separator:a27fe14ac2aae65cad6a7c76ad6bf26a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37a224311f50e37c36f5aa093a0bf17d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a37a224311f50e37c36f5aa093a0bf17d">attrIsCHAROFF</a>(av)                  &#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1ad3116ed44e82eb672f95cac09486cd95">TidyAttr_CHAROFF</a>  )</td></tr>
 <tr class="separator:a37a224311f50e37c36f5aa093a0bf17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c90c5f4ad90de3b47d108953c2a4cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a04c90c5f4ad90de3b47d108953c2a4cb">attrIsCHARSET</a>(av)                  &#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a9e3962b79d99e6c930eccc37795cc1ac">TidyAttr_CHARSET</a>  )</td></tr>
+<tr class="separator:a04c90c5f4ad90de3b47d108953c2a4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c90c5f4ad90de3b47d108953c2a4cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a04c90c5f4ad90de3b47d108953c2a4cb">attrIsCHARSET</a>(av)                  &#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a9e3962b79d99e6c930eccc37795cc1ac">TidyAttr_CHARSET</a>  )</td></tr>
 <tr class="separator:a04c90c5f4ad90de3b47d108953c2a4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a222f4258a5ebd2af90627a534e9cf634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a222f4258a5ebd2af90627a534e9cf634">attrIsCHECKED</a>(av)                  &#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1ac18c7b81330a7348e106b8d05c9afb9c">TidyAttr_CHECKED</a>  )</td></tr>
@@ -723,12 +727,16 @@ Functions</h2></td></tr>
 <tr class="separator:a525aa7f06454d06dcf9e5914a3d9f37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46dc895f94abefe2180d6482870345bf"><td class="memItemLeft" align="right" valign="top">const Attribute *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a46dc895f94abefe2180d6482870345bf">TY_❪CheckAttribute❫</a> (TidyDocImpl *doc, Node *node, AttVal *attval)</td></tr>
 <tr class="separator:a46dc895f94abefe2180d6482870345bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2243fe6267226d94fc444cc43eb0fbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#ad2243fe6267226d94fc444cc43eb0fbf">TY_❪DefinePriorityAttribute❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
+<tr class="separator:ad2243fe6267226d94fc444cc43eb0fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d0adbc3032126e622d15b3c0eb86da1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a9d0adbc3032126e622d15b3c0eb86da1">TY_❪DropAttrByName❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
 <tr class="separator:a9d0adbc3032126e622d15b3c0eb86da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb5bfefc844eca1912500f3c9ab4037"><td class="memItemLeft" align="right" valign="top">const Attribute *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#accb5bfefc844eca1912500f3c9ab4037">TY_❪FindAttribute❫</a> (TidyDocImpl *doc, AttVal *attval)</td></tr>
 <tr class="separator:accb5bfefc844eca1912500f3c9ab4037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeed9a81f98ec9a6557cfaa2f047e1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#adeed9a81f98ec9a6557cfaa2f047e1e7">TY_❪FreeAnchors❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="separator:adeed9a81f98ec9a6557cfaa2f047e1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f450a41f96f435b3d222e6b1dda318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#ac2f450a41f96f435b3d222e6b1dda318">TY_❪FreeAttrPriorityList❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="separator:ac2f450a41f96f435b3d222e6b1dda318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc7de2ce72946b5bc189f15d35e6f696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#adc7de2ce72946b5bc189f15d35e6f696">TY_❪FreeAttrTable❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="separator:adc7de2ce72946b5bc189f15d35e6f696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a823c97bf1695fc7bb8195a6491f3e394"><td class="memItemLeft" align="right" valign="top">AttVal *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a823c97bf1695fc7bb8195a6491f3e394">TY_❪GetAttrByName❫</a> (Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
@@ -757,8 +765,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6adb1cbc696809396da18f2a6c898880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebb280e1a7905153e80c3e3aadbd5b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a6ebb280e1a7905153e80c3e3aadbd5b6">TY_❪RepairDuplicateAttributes❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> isXml)</td></tr>
 <tr class="separator:a6ebb280e1a7905153e80c3e3aadbd5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd9e338a2f4a1c73289088627c18c03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#aefd9e338a2f4a1c73289088627c18c03">TY_❪SortAttributes❫</a> (Node *node, <a class="el" href="group__public__enumerations.html#ga708fd210b01d5ee554dfadec04234979">TidyAttrSortStrategy</a> strat)</td></tr>
-<tr class="separator:aefd9e338a2f4a1c73289088627c18c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee63beb587cf84044e5ab7601954c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a8ee63beb587cf84044e5ab7601954c0e">TY_❪SortAttributes❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="group__public__enumerations.html#ga708fd210b01d5ee554dfadec04234979">TidyAttrSortStrategy</a> strat)</td></tr>
+<tr class="separator:a8ee63beb587cf84044e5ab7601954c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -894,6 +902,45 @@ declared_attr_list</td>
 hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa48809e9ebe9a343cf2641dd07bbda60">ATTRIBUTE_HASH_SIZE</a>]</td>
 <td class="fielddoc">
 </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a387b1dc42ac8142057a89ef9c98c6731"></a><a class="el" href="attrs_8h.html#structPriorityAttribs">PriorityAttribs</a></td>
+<td class="fieldname">
+priorityAttribs</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structPriorityAttribs" id="structPriorityAttribs"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct PriorityAttribs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8c5dc625aaaa0bf41017fa5d5510b9b9"></a><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+<td class="fieldname">
+capacity</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab77ade2208ba49f6e2b934ef32622c48"></a><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a51fbbc7940c482f721407f1267447823"></a><a class="el" href="tidyplatform_8h.html#af8d7b7e8f07a0c1fc5e48ba4142bbe26">tmbstr</a> *</td>
+<td class="fieldname">
+list</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -922,7 +969,7 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbsubstr)((attr)-&gt;value, val) != NULL)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:158</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbsubstr)((attr)-&gt;value, val) != NULL)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:165</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1560,6 +1607,22 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
           <td class="paramtype">&#160;</td>
           <td class="paramname">nod</td><td>)</td>
           <td>&#160;&#160;&#160;<a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(AttrGetById)( nod, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a65e9ffd7a60124a5dc79fc7300570f08">TidyAttr_BGCOLOR</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af64e76fcac1e28fb9b91e9eca3a503e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define attrGetCHARSET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">nod</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(AttrGetById)( nod, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a9e3962b79d99e6c930eccc37795cc1ac">TidyAttr_CHARSET</a>  )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2264,18 +2327,6 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
           <td class="paramtype">&#160;</td>
           <td class="paramname">attr</td><td>)</td>
           <td>&#160;&#160;&#160;((attr) &amp;&amp; (attr)-&gt;value)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac9d43cb05579f240a07669d4adc10f0a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ATTRIBUTE_HASH_LOOKUP&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3188,6 +3239,22 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
           <td class="paramtype">&#160;</td>
           <td class="paramname">av</td><td>)</td>
           <td>&#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1ad3116ed44e82eb672f95cac09486cd95">TidyAttr_CHAROFF</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04c90c5f4ad90de3b47d108953c2a4cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define attrIsCHARSET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">av</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="attrs_8h.html#a559c1b9119f9dff8e47cfa4b75ad064c">AttrIsId</a>( av, <a class="el" href="group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a9e3962b79d99e6c930eccc37795cc1ac">TidyAttr_CHARSET</a>  )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5493,7 +5560,7 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbstrcasecmp)((attr)-&gt;value, val) == 0)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:158</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbstrcasecmp)((attr)-&gt;value, val) == 0)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:165</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5774,6 +5841,32 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
 
 </div>
 </div>
+<a class="anchor" id="ad2243fe6267226d94fc444cc43eb0fbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TY_❪DefinePriorityAttribute❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9d0adbc3032126e622d15b3c0eb86da1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5838,6 +5931,22 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
       <table class="memname">
         <tr>
           <td class="memname">void TY_❪FreeAnchors❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2f450a41f96f435b3d222e6b1dda318"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TY_❪FreeAttrPriorityList❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
@@ -6176,13 +6285,19 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
 
 </div>
 </div>
-<a class="anchor" id="aefd9e338a2f4a1c73289088627c18c03"></a>
+<a class="anchor" id="a8ee63beb587cf84044e5ab7601954c0e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void TY_❪SortAttributes❫ </td>
           <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
         </tr>
@@ -6221,7 +6336,7 @@ hashtab[<a class="el" href="attrs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa488
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="attrs_8h.html">attrs.h</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

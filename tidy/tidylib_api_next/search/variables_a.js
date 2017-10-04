@@ -1,10 +1,12 @@
 var searchData=
 [
+  ['label',['label',['../config_8h.html#a8f312608fe59cf2a43a083b2f75d2028',1,'PickListItem']]],
   ['language_5fen',['language_en',['../language__en_8h.html#acf45f0e561099b6ff17038f78ead9bc7',1,'language_en.h']]],
   ['language_5fen_5fgb',['language_en_gb',['../language__en__gb_8h.html#ae6aa5438b7be6390f152c95fe44ddf55',1,'language_en_gb.h']]],
   ['language_5fes',['language_es',['../language__es_8h.html#a317c853494ed4d2c8a902ee2607d5976',1,'language_es.h']]],
   ['language_5fes_5fmx',['language_es_mx',['../language__es__mx_8h.html#af73c8635a011c97e4854012cf2810984',1,'language_es_mx.h']]],
   ['language_5ffr',['language_fr',['../language__fr_8h.html#a23a855e0cff4dac5ba975aa823293df6',1,'language_fr.h']]],
+  ['language_5fpt_5fbr',['language_pt_br',['../language__pt__br_8h.html#a37048afcea11d323097e6a6172206ca6',1,'language_pt_br.h']]],
   ['language_5fzh_5fcn',['language_zh_cn',['../language__zh__cn_8h.html#a651470d7ef0bf38658959712c6435e63',1,'language_zh_cn.h']]],
   ['last',['last',['../lexer_8h.html#a16ac028724e4fd7016faa38928658477',1,'_Node']]],
   ['lastcols',['lastcols',['../streamio_8h.html#a4aa73a74742510d284f74e9a02d93222',1,'_StreamIn']]],
@@ -20,5 +22,6 @@ var searchData=
   ['linelen',['linelen',['../pprint_8h.html#acd10ac976637c48e3491d1d19e44f44c',1,'TidyPrintImpl']]],
   ['lines',['lines',['../lexer_8h.html#a760028244266a7afc030b2fdf2a2a520',1,'_Lexer']]],
   ['links',['links',['../config_8h.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
+  ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs']]],
   ['listelements',['ListElements',['../access_8h.html#ad3e3929ba5bb9b3e56df38c0657366b6',1,'_TidyAccessImpl']]]
 ];

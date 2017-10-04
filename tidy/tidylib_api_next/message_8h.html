@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('message_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">message.h File Reference</div>  </div>
 </div><!--header-->
@@ -134,6 +135,8 @@ Macros</h2></td></tr>
 <tr class="separator:a12a8b745083bb877107ec3e934b89395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9cac709f831ae53cde34f5f05a78f27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#af9cac709f831ae53cde34f5f05a78f27">DISCARDED_CHAR</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:af9cac709f831ae53cde34f5f05a78f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92418500786d7a15a3ebc9bf40b78669"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a92418500786d7a15a3ebc9bf40b78669">FN_TRIM_EMPTY_ELEMENT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a92418500786d7a15a3ebc9bf40b78669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa77348b0ee0d8e2e61b0791c451dc3e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#aa77348b0ee0d8e2e61b0791c451dc3e8">REPLACED_CHAR</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aa77348b0ee0d8e2e61b0791c451dc3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab76b9c963dd4c7d6de3ca96e3e99eff2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#ab76b9c963dd4c7d6de3ca96e3e99eff2">USING_BODY</a>&#160;&#160;&#160;16</td></tr>
@@ -149,65 +152,70 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Release Information</div></td></tr>
-<tr class="memitem:a4abc35b4fa975cacb28952d4137cc15b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a4abc35b4fa975cacb28952d4137cc15b">TY_❪ReleaseDate❫</a> (void)</td></tr>
-<tr class="separator:a4abc35b4fa975cacb28952d4137cc15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d6bbe233f8927fc66b8ffc1a5e66053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a3d6bbe233f8927fc66b8ffc1a5e66053">TY_❪tidyLibraryVersion❫</a> (void)</td></tr>
-<tr class="separator:a3d6bbe233f8927fc66b8ffc1a5e66053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">High Level Message Writing Functions - General</div></td></tr>
-<tr class="memitem:aeede6dda54fb0b7515672bf5ddcaf40f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#aeede6dda54fb0b7515672bf5ddcaf40f">TY_❪ReportNotice❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:aeede6dda54fb0b7515672bf5ddcaf40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1d07e244bd1a589fc0c39992e9da42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a8e1d07e244bd1a589fc0c39992e9da42">TY_❪ReportWarning❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:a8e1d07e244bd1a589fc0c39992e9da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1abb59de0ebb2a92494608331960440e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a1abb59de0ebb2a92494608331960440e">TY_❪ReportError❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:a1abb59de0ebb2a92494608331960440e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc700b295212e38df2b40db20798ce2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#acc700b295212e38df2b40db20798ce2d">TY_❪ReportFatal❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:acc700b295212e38df2b40db20798ce2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">High Level Message Writing Functions - Specific</div></td></tr>
-<tr class="memitem:a8aaece0e7307e334ee870005d17bcd44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a8aaece0e7307e334ee870005d17bcd44">TY_❪FileError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> file, <a class="el" href="group__public__enumerations.html#ga2a05b6d387bd5d4732df061585c0531e">TidyReportLevel</a> level)</td></tr>
-<tr class="separator:a8aaece0e7307e334ee870005d17bcd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1887ba9fdbffa7e1432e1a4482677009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a1887ba9fdbffa7e1432e1a4482677009">TY_❪ReportAttrError❫</a> (TidyDocImpl *doc, Node *node, AttVal *av, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:a1887ba9fdbffa7e1432e1a4482677009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a218b6755b6f23ce550a92a49494233bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a218b6755b6f23ce550a92a49494233bf">TY_❪ReportBadArgument❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
-<tr class="separator:a218b6755b6f23ce550a92a49494233bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29cd6985e53a356f56f4d99f01cf924d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a29cd6985e53a356f56f4d99f01cf924d">TY_❪ReportEncodingError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> discarded)</td></tr>
-<tr class="separator:a29cd6985e53a356f56f4d99f01cf924d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289f2e147e211fb3c277a9ebac860812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a289f2e147e211fb3c277a9ebac860812">TY_❪ReportEncodingWarning❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> encoding)</td></tr>
-<tr class="separator:a289f2e147e211fb3c277a9ebac860812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079e05cb56f02b43e507ef19f7bdc791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a079e05cb56f02b43e507ef19f7bdc791">TY_❪ReportEntityError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> entity, int c)</td></tr>
-<tr class="separator:a079e05cb56f02b43e507ef19f7bdc791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b6ab8010cded4fe8a00c6657176026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a50b6ab8010cded4fe8a00c6657176026">TY_❪ReportMarkupVersion❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a50b6ab8010cded4fe8a00c6657176026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1dbd085480403d296164da1d938f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a4c1dbd085480403d296164da1d938f0c">TY_❪ReportMissingAttr❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
-<tr class="separator:a4c1dbd085480403d296164da1d938f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d0ef2889ddf60190b89b29f8fe6ed04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a0d0ef2889ddf60190b89b29f8fe6ed04">TY_❪ReportSurrogateError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c1, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c2)</td></tr>
-<tr class="separator:a0d0ef2889ddf60190b89b29f8fe6ed04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e40173912d40e66249e54c923cd3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#ae1e40173912d40e66249e54c923cd3a9">TY_❪ReportUnknownOption❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
-<tr class="separator:ae1e40173912d40e66249e54c923cd3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af061ec297ebf9d8793f9c542b900f315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#af061ec297ebf9d8793f9c542b900f315">TY_❪ReportAccessError❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:af061ec297ebf9d8793f9c542b900f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09dad63367c13ee954e814a1eaef1fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a09dad63367c13ee954e814a1eaef1fdc">TY_❪ReportAccessWarning❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:a09dad63367c13ee954e814a1eaef1fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7646c4dd06b60a3604b8689492e4bae3"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__keydiscovery.html#ga7646c4dd06b60a3604b8689492e4bae3">TY_❪getErrorCodeList❫</a> (void)</td></tr>
+<tr class="memdesc:ga7646c4dd06b60a3604b8689492e4bae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the TidyIterator to point to the first item in Tidy's list of error codes that can be return with <code>TidyReportFilter3</code>.  <a href="group__message__keydiscovery.html#ga7646c4dd06b60a3604b8689492e4bae3">More...</a><br /></td></tr>
+<tr class="separator:ga7646c4dd06b60a3604b8689492e4bae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__keydiscovery.html#ga8ba9f055a6fa58e7f1e524d9d8d28fd9">TY_❪getNextErrorCode❫</a> (TidyIterator *iter)</td></tr>
+<tr class="memdesc:ga8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next error code having initialized the iterator with <code><a class="el" href="group__MessagesKeys.html#gabdcab1c50e5a89dab4c411c90e9b6c18" title="Initiates an iterator for a list of message codes available in Tidy. ">getErrorCodeList()</a></code>.  <a href="group__message__keydiscovery.html#ga8ba9f055a6fa58e7f1e524d9d8d28fd9">More...</a><br /></td></tr>
+<tr class="separator:ga8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4abc35b4fa975cacb28952d4137cc15b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__releaseinfo.html#ga4abc35b4fa975cacb28952d4137cc15b">TY_❪ReleaseDate❫</a> (void)</td></tr>
+<tr class="memdesc:ga4abc35b4fa975cacb28952d4137cc15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the release date of this instance of HTML Tidy.  <a href="group__message__releaseinfo.html#ga4abc35b4fa975cacb28952d4137cc15b">More...</a><br /></td></tr>
+<tr class="separator:ga4abc35b4fa975cacb28952d4137cc15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b8cb826ca872c5a83f8c22c5a8f649c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__keydiscovery.html#ga8b8cb826ca872c5a83f8c22c5a8f649c">TY_❪tidyErrorCodeAsKey❫</a> (<a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="memdesc:ga8b8cb826ca872c5a83f8c22c5a8f649c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a string representing the enum value name that can be used as a lookup key independent of changing string values.  <a href="group__message__keydiscovery.html#ga8b8cb826ca872c5a83f8c22c5a8f649c">More...</a><br /></td></tr>
+<tr class="separator:ga8b8cb826ca872c5a83f8c22c5a8f649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1957a3868831d0dcafb5fac93de612b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__keydiscovery.html#ga1957a3868831d0dcafb5fac93de612b0">TY_❪tidyErrorCodeFromKey❫</a> (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> code)</td></tr>
+<tr class="memdesc:ga1957a3868831d0dcafb5fac93de612b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an error code string, return the integer value of it, or UINT_MAX as an error flag.  <a href="group__message__keydiscovery.html#ga1957a3868831d0dcafb5fac93de612b0">More...</a><br /></td></tr>
+<tr class="separator:ga1957a3868831d0dcafb5fac93de612b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d6bbe233f8927fc66b8ffc1a5e66053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__releaseinfo.html#ga3d6bbe233f8927fc66b8ffc1a5e66053">TY_❪tidyLibraryVersion❫</a> (void)</td></tr>
+<tr class="memdesc:ga3d6bbe233f8927fc66b8ffc1a5e66053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the release version of this instance of HTML Tidy.  <a href="group__message__releaseinfo.html#ga3d6bbe233f8927fc66b8ffc1a5e66053">More...</a><br /></td></tr>
+<tr class="separator:ga3d6bbe233f8927fc66b8ffc1a5e66053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">General Report Writing</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>If one of the convenience reporting functions does not fit your required message signature, then this designated reporting function will fit the bill.</p>
+<p>Be sure to see if a message formatter exists that can handle the variable arguments. </p>
+</div></td></tr>
+<tr class="memitem:ga3c7d598344345d09dc9711ccc7843b8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga3c7d598344345d09dc9711ccc7843b8d">TY_❪Report❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code,...)</td></tr>
+<tr class="memdesc:ga3c7d598344345d09dc9711ccc7843b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The designated report writing function.  <a href="group__message__reporting.html#ga3c7d598344345d09dc9711ccc7843b8d">More...</a><br /></td></tr>
+<tr class="separator:ga3c7d598344345d09dc9711ccc7843b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Convenience Reporting Functions</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These convenience reporting functions are able to handle the bulk of Tidy's necessary reporting, and avoid the danger of using a variadic if you are unfamiliar with Tidy. </p>
+</div></td></tr>
+<tr class="memitem:gaf061ec297ebf9d8793f9c542b900f315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gaf061ec297ebf9d8793f9c542b900f315">TY_❪ReportAccessError❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="separator:gaf061ec297ebf9d8793f9c542b900f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1887ba9fdbffa7e1432e1a4482677009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga1887ba9fdbffa7e1432e1a4482677009">TY_❪ReportAttrError❫</a> (TidyDocImpl *doc, Node *node, AttVal *av, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="separator:ga1887ba9fdbffa7e1432e1a4482677009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga218b6755b6f23ce550a92a49494233bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga218b6755b6f23ce550a92a49494233bf">TY_❪ReportBadArgument❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
+<tr class="separator:ga218b6755b6f23ce550a92a49494233bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga079e05cb56f02b43e507ef19f7bdc791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga079e05cb56f02b43e507ef19f7bdc791">TY_❪ReportEntityError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> entity, int c)</td></tr>
+<tr class="separator:ga079e05cb56f02b43e507ef19f7bdc791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd4a93e2e9bc0bcae4db89c8ffa23b4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gacd4a93e2e9bc0bcae4db89c8ffa23b4f">TY_❪ReportFileError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> file, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="separator:gacd4a93e2e9bc0bcae4db89c8ffa23b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29cd6985e53a356f56f4d99f01cf924d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga29cd6985e53a356f56f4d99f01cf924d">TY_❪ReportEncodingError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> discarded)</td></tr>
+<tr class="separator:ga29cd6985e53a356f56f4d99f01cf924d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga289f2e147e211fb3c277a9ebac860812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga289f2e147e211fb3c277a9ebac860812">TY_❪ReportEncodingWarning❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> encoding)</td></tr>
+<tr class="separator:ga289f2e147e211fb3c277a9ebac860812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c1dbd085480403d296164da1d938f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga4c1dbd085480403d296164da1d938f0c">TY_❪ReportMissingAttr❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
+<tr class="separator:ga4c1dbd085480403d296164da1d938f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d0ef2889ddf60190b89b29f8fe6ed04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga0d0ef2889ddf60190b89b29f8fe6ed04">TY_❪ReportSurrogateError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c1, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c2)</td></tr>
+<tr class="separator:ga0d0ef2889ddf60190b89b29f8fe6ed04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1e40173912d40e66249e54c923cd3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gae1e40173912d40e66249e54c923cd3a9">TY_❪ReportUnknownOption❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
+<tr class="separator:gae1e40173912d40e66249e54c923cd3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">General Dialogue Writing</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These functions produce dialogue output such as individual messages, or several messages in summary form. </p>
+</div></td></tr>
+<tr class="memitem:ga7500646d4c3bc3d24660571910b112ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga7500646d4c3bc3d24660571910b112ee">TY_❪Dialogue❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code,...)</td></tr>
+<tr class="memdesc:ga7500646d4c3bc3d24660571910b112ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a single dialogue message, and is capable of accepting a variadic that is passed to the correct message formatter as needed.  <a href="group__message__reporting.html#ga7500646d4c3bc3d24660571910b112ee">More...</a><br /></td></tr>
+<tr class="separator:ga7500646d4c3bc3d24660571910b112ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Output Dialogue Information</div></td></tr>
-<tr class="memitem:a7b0336912bcd8aa4d5b533d3ea2807f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a7b0336912bcd8aa4d5b533d3ea2807f5">TY_❪DialogueMessage❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="group__public__enumerations.html#ga2a05b6d387bd5d4732df061585c0531e">TidyReportLevel</a> level)</td></tr>
-<tr class="separator:a7b0336912bcd8aa4d5b533d3ea2807f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa94ac252fe354b953d7db0cfdf55b880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#aa94ac252fe354b953d7db0cfdf55b880">TY_❪ErrorSummary❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:aa94ac252fe354b953d7db0cfdf55b880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2569a7886e9df5184118e4a01ed52b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a2569a7886e9df5184118e4a01ed52b60">TY_❪ReportNumWarnings❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a2569a7886e9df5184118e4a01ed52b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Key Discovery</div></td></tr>
-<tr class="memitem:a8b8cb826ca872c5a83f8c22c5a8f649c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a8b8cb826ca872c5a83f8c22c5a8f649c">TY_❪tidyErrorCodeAsKey❫</a> (<a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="memdesc:a8b8cb826ca872c5a83f8c22c5a8f649c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LibTidy users may want to use <code>TidyReportCallback</code> to enable their own localization lookup features.  <a href="#a8b8cb826ca872c5a83f8c22c5a8f649c">More...</a><br /></td></tr>
-<tr class="separator:a8b8cb826ca872c5a83f8c22c5a8f649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1957a3868831d0dcafb5fac93de612b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a1957a3868831d0dcafb5fac93de612b0">TY_❪tidyErrorCodeFromKey❫</a> (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> code)</td></tr>
-<tr class="memdesc:a1957a3868831d0dcafb5fac93de612b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an error code string, return the integer value of it, or UINT_MAX as an error flag.  <a href="#a1957a3868831d0dcafb5fac93de612b0">More...</a><br /></td></tr>
-<tr class="separator:a1957a3868831d0dcafb5fac93de612b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a649e0b07e4f6b7f50324abe95fd26648"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a649e0b07e4f6b7f50324abe95fd26648">TY_❪getErrorCodeList❫</a> ()</td></tr>
-<tr class="memdesc:a649e0b07e4f6b7f50324abe95fd26648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the TidyIterator to point to the first item in Tidy's list of error codes that can be return with <code>TidyReportFilter3</code>.  <a href="#a649e0b07e4f6b7f50324abe95fd26648">More...</a><br /></td></tr>
-<tr class="separator:a649e0b07e4f6b7f50324abe95fd26648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message_8h.html#a8ba9f055a6fa58e7f1e524d9d8d28fd9">TY_❪getNextErrorCode❫</a> (TidyIterator *iter)</td></tr>
-<tr class="memdesc:a8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next error code having initialized the iterator with <code><a class="el" href="group__MessagesKeys.html#ga6b2e7272ecb9270f5610f17f21310d47" title="Initiates an iterator for a list of message codes available in Tidy. ">getErrorCodeList()</a></code>.  <a href="#a8ba9f055a6fa58e7f1e524d9d8d28fd9">More...</a><br /></td></tr>
-<tr class="separator:a8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa94ac252fe354b953d7db0cfdf55b880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gaa94ac252fe354b953d7db0cfdf55b880">TY_❪ErrorSummary❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gaa94ac252fe354b953d7db0cfdf55b880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the footnotes and other dialogue information after document cleanup is complete.  <a href="group__message__reporting.html#gaa94ac252fe354b953d7db0cfdf55b880">More...</a><br /></td></tr>
+<tr class="separator:gaa94ac252fe354b953d7db0cfdf55b880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50b6ab8010cded4fe8a00c6657176026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga50b6ab8010cded4fe8a00c6657176026">TY_❪ReportMarkupVersion❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga50b6ab8010cded4fe8a00c6657176026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs document HTML version and version-related information as the final report(s) in the report table.  <a href="group__message__reporting.html#ga50b6ab8010cded4fe8a00c6657176026">More...</a><br /></td></tr>
+<tr class="separator:ga50b6ab8010cded4fe8a00c6657176026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2569a7886e9df5184118e4a01ed52b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga2569a7886e9df5184118e4a01ed52b60">TY_❪ReportNumWarnings❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga2569a7886e9df5184118e4a01ed52b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the number of warnings and errors found in the document as dialogue inforation.  <a href="group__message__reporting.html#ga2569a7886e9df5184118e4a01ed52b60">More...</a><br /></td></tr>
+<tr class="separator:ga2569a7886e9df5184118e4a01ed52b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a84f4a598c391884233aa7ab6963a738c"></a>
@@ -402,6 +410,18 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a92418500786d7a15a3ebc9bf40b78669"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FN_TRIM_EMPTY_ELEMENT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa77348b0ee0d8e2e61b0791c451dc3e8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -474,716 +494,13 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7b0336912bcd8aa4d5b533d3ea2807f5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪DialogueMessage❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga2a05b6d387bd5d4732df061585c0531e">TidyReportLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa94ac252fe354b953d7db0cfdf55b880"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ErrorSummary❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8aaece0e7307e334ee870005d17bcd44"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪FileError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga2a05b6d387bd5d4732df061585c0531e">TidyReportLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a649e0b07e4f6b7f50324abe95fd26648"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TidyIterator TY_❪getErrorCodeList❫ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the TidyIterator to point to the first item in Tidy's list of error codes that can be return with <code>TidyReportFilter3</code>. </p>
-<p>Items can be retrieved with <a class="el" href="group__MessagesKeys.html#ga58486cd4a38fc01b22ef46fc1170b4d1" title="Given a valid TidyIterator initiated with getErrorCodeList(), returns an instance of the opaque type ...">getNextErrorCode()</a>; </p>
-
-</div>
-</div>
-<a class="anchor" id="a8ba9f055a6fa58e7f1e524d9d8d28fd9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> TY_❪getNextErrorCode❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyIterator *&#160;</td>
-          <td class="paramname"><em>iter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the next error code having initialized the iterator with <code><a class="el" href="group__MessagesKeys.html#ga6b2e7272ecb9270f5610f17f21310d47" title="Initiates an iterator for a list of message codes available in Tidy. ">getErrorCodeList()</a></code>. </p>
-<p>You can use tidyErrorCodeAsKey to determine the key for this value. </p>
-
-</div>
-</div>
-<a class="anchor" id="a4abc35b4fa975cacb28952d4137cc15b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪ReleaseDate❫ </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af061ec297ebf9d8793f9c542b900f315"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportAccessError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a09dad63367c13ee954e814a1eaef1fdc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportAccessWarning❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1887ba9fdbffa7e1432e1a4482677009"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportAttrError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AttVal *&#160;</td>
-          <td class="paramname"><em>av</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a218b6755b6f23ce550a92a49494233bf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportBadArgument❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>option</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a29cd6985e53a356f56f4d99f01cf924d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportEncodingError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
-          <td class="paramname"><em>discarded</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a289f2e147e211fb3c277a9ebac860812"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportEncodingWarning❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>encoding</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a079e05cb56f02b43e507ef19f7bdc791"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportEntityError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>entity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1abb59de0ebb2a92494608331960440e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acc700b295212e38df2b40db20798ce2d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportFatal❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a50b6ab8010cded4fe8a00c6657176026"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportMarkupVersion❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4c1dbd085480403d296164da1d938f0c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportMissingAttr❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeede6dda54fb0b7515672bf5ddcaf40f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportNotice❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2569a7886e9df5184118e4a01ed52b60"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportNumWarnings❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0d0ef2889ddf60190b89b29f8fe6ed04"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportSurrogateError❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>c1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>c2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae1e40173912d40e66249e54c923cd3a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportUnknownOption❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>option</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e1d07e244bd1a589fc0c39992e9da42"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ReportWarning❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8b8cb826ca872c5a83f8c22c5a8f649c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪tidyErrorCodeAsKey❫ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>code</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>LibTidy users may want to use <code>TidyReportCallback</code> to enable their own localization lookup features. </p>
-<p>Because Tidy's report codes are enums the specific values can change over time. This function returns a string representing the enum value name that can be used as a lookup key independent of changing string values. <code>TidyReportCallback</code> will return this general string as the report message key. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1957a3868831d0dcafb5fac93de612b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> TY_❪tidyErrorCodeFromKey❫ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>code</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Given an error code string, return the integer value of it, or UINT_MAX as an error flag. </p>
-
-</div>
-</div>
-<a class="anchor" id="a3d6bbe233f8927fc66b8ffc1a5e66053"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪tidyLibraryVersion❫ </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="message_8h.html">message.h</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

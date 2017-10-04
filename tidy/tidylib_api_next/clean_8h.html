@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -112,6 +112,8 @@ Functions</h2></td></tr>
 <tr class="separator:acb873aab8d8cfb59c2e1c0b1441e408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6caaed6e1d4cf4bb8be60abc1449c682"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#a6caaed6e1d4cf4bb8be60abc1449c682">TY_❪CleanDocument❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="separator:a6caaed6e1d4cf4bb8be60abc1449c682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08f438a743ad42ea25bcef9d60d060c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#ab08f438a743ad42ea25bcef9d60d060c">TY_❪CleanStyle❫</a> (TidyDocImpl *doc, Node *html)</td></tr>
+<tr class="separator:ab08f438a743ad42ea25bcef9d60d060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366188dddb4c6736e8d783a5ccdab686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#a366188dddb4c6736e8d783a5ccdab686">TY_❪CleanWord2000❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
 <tr class="separator:a366188dddb4c6736e8d783a5ccdab686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ceececb8fbbbc0224fb956683eb980f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#a8ceececb8fbbbc0224fb956683eb980f">TY_❪ConvertCDATANodes❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
@@ -146,8 +148,8 @@ Functions</h2></td></tr>
 <tr class="separator:aad960401449995884a11e84057ee64cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3966f394a65d2aaf65d03065c9001a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#ab3966f394a65d2aaf65d03065c9001a0">TY_❪ReplacePreformattedSpaces❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
 <tr class="separator:ab3966f394a65d2aaf65d03065c9001a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6e9f64de92f3eeef0b71e7c7d2f2bbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#aa6e9f64de92f3eeef0b71e7c7d2f2bbb">TY_❪VerifyHTTPEquiv❫</a> (TidyDocImpl *pDoc, Node *pParent)</td></tr>
-<tr class="separator:aa6e9f64de92f3eeef0b71e7c7d2f2bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a898d59d789800e5aeeb885453359c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#a33a898d59d789800e5aeeb885453359c">TY_❪TidyMetaCharset❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="separator:a33a898d59d789800e5aeeb885453359c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc5af4d25d8127742ed784b1ad99e84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clean_8h.html#a7dc5af4d25d8127742ed784b1ad99e84">TY_❪WbrToSpace❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
 <tr class="separator:a7dc5af4d25d8127742ed784b1ad99e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -278,6 +280,32 @@ Functions</h2></td></tr>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab08f438a743ad42ea25bcef9d60d060c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TY_❪CleanStyle❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Node *&#160;</td>
+          <td class="paramname"><em>html</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -726,26 +754,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa6e9f64de92f3eeef0b71e7c7d2f2bbb"></a>
+<a class="anchor" id="a33a898d59d789800e5aeeb885453359c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪VerifyHTTPEquiv❫ </td>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪TidyMetaCharset❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>pDoc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">Node *&#160;</td>
-          <td class="paramname"><em>pParent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -784,7 +802,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="clean_8h.html">clean.h</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

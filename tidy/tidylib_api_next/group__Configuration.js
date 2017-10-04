@@ -1,5 +1,6 @@
 var group__Configuration =
 [
+    [ "TidyConfigCallback", "group__Configuration.html#gab039c9bf1c0ae9bcbb59fbbde7694537", null ],
     [ "TidyOptCallback", "group__Configuration.html#ga083099fce59583b2bd0951e2d8065d88", null ],
     [ "tidyGetNextOption", "group__Configuration.html#ga1a3088dacc539487e00f1eb4009dafc0", null ],
     [ "tidyGetOption", "group__Configuration.html#ga030c695d6407b2756856eb1862642cfe", null ],
@@ -37,5 +38,6 @@ var group__Configuration =
     [ "tidyOptSetInt", "group__Configuration.html#gad9e75a64c8dcbc54e791959cf934e1ad", null ],
     [ "tidyOptSetValue", "group__Configuration.html#gaf37bdad3b6809d8cb78e7d6316d4ba69", null ],
     [ "tidyOptSnapshot", "group__Configuration.html#ga4beb2c73c90c3e2ae589c2642478cebd", null ],
+    [ "tidySetConfigCallback", "group__Configuration.html#ga3063abac6446e0a2fd025523776f9ed9", null ],
     [ "tidySetOptionCallback", "group__Configuration.html#gab94961700088d2daf8dcc012a5e33e49", null ]
 ];

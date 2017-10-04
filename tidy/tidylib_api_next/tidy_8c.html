@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.19</span>
+   &#160;<span id="projectnumber">5.5.56</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('tidy_8c.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -122,11 +121,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structOptionDesc"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#structOptionDesc">OptionDesc</a></td></tr>
 <tr class="memdesc:structOptionDesc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure maintains a description of a configuration ption.  <a href="group__utilities__cli__options.html#structOptionDesc">More...</a><br /></td></tr>
 <tr class="separator:structOptionDesc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aab0b1339dbff30eaad99793f4a05fab4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tidy_8c.html#aab0b1339dbff30eaad99793f4a05fab4">SPRTF</a>&#160;&#160;&#160;printf</td></tr>
-<tr class="separator:aab0b1339dbff30eaad99793f4a05fab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -169,6 +163,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4cac43d99465e98d563354622a181993"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__output.html#ga4cac43d99465e98d563354622a181993">cutToWhiteSpace</a> (const char *s, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> offset, char *sbuf)</td></tr>
 <tr class="memdesc:ga4cac43d99465e98d563354622a181993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by <code>print1Column</code>, <code>print2Columns</code> and <code>print3Columns</code> to manage wrapping text within columns.  <a href="group__utilities__output.html#ga4cac43d99465e98d563354622a181993">More...</a><br /></td></tr>
 <tr class="separator:ga4cac43d99465e98d563354622a181993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec89b75ff451d1b3ed59099801bc5a96"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__export__config.html#gaec89b75ff451d1b3ed59099801bc5a96">exportDefaultOptionValues</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc)</td></tr>
+<tr class="memdesc:gaec89b75ff451d1b3ed59099801bc5a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the -export-default-config service.  <a href="group__service__export__config.html#gaec89b75ff451d1b3ed59099801bc5a96">More...</a><br /></td></tr>
+<tr class="separator:gaec89b75ff451d1b3ed59099801bc5a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9fc7babe9f298519654d027fc451970"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__export__config.html#gae9fc7babe9f298519654d027fc451970">exportOptionValues</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc)</td></tr>
+<tr class="memdesc:gae9fc7babe9f298519654d027fc451970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the -export-config service.  <a href="group__service__export__config.html#gae9fc7babe9f298519654d027fc451970">More...</a><br /></td></tr>
+<tr class="separator:gae9fc7babe9f298519654d027fc451970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c52774f6ecafbf87cd6906d02f5c0d7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#ga1c52774f6ecafbf87cd6906d02f5c0d7">ForEachOption</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="group__utilities__cli__options.html#ga914b84113a1a223e3c20da5323b5150b">OptionFunc</a> OptionPrint)</td></tr>
 <tr class="memdesc:ga1c52774f6ecafbf87cd6906d02f5c0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator for the unsorted options.  <a href="group__utilities__cli__options.html#ga1c52774f6ecafbf87cd6906d02f5c0d7">More...</a><br /></td></tr>
 <tr class="separator:ga1c52774f6ecafbf87cd6906d02f5c0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,12 +196,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga85d92d3d7f1a710213327cef40b92faa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#ga85d92d3d7f1a710213327cef40b92faa">getSortedOption</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="group__utilities__cli__options.html#structAllOption__t">AllOption_t</a> *tOption)</td></tr>
 <tr class="memdesc:ga85d92d3d7f1a710213327cef40b92faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns options sorted.  <a href="group__utilities__cli__options.html#ga85d92d3d7f1a710213327cef40b92faa">More...</a><br /></td></tr>
 <tr class="separator:ga85d92d3d7f1a710213327cef40b92faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2005b8c7367c6b866cf3ac78e0410cfa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#ga2005b8c7367c6b866cf3ac78e0410cfa">hasPickList</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt)</td></tr>
+<tr class="memdesc:ga2005b8c7367c6b866cf3ac78e0410cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to determine if an option has a picklist.  <a href="group__utilities__cli__options.html#ga2005b8c7367c6b866cf3ac78e0410cfa">More...</a><br /></td></tr>
+<tr class="separator:ga2005b8c7367c6b866cf3ac78e0410cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5caf3234fed3be3268d063c966084109"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__help.html#ga5caf3234fed3be3268d063c966084109">help</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> prog)</td></tr>
 <tr class="memdesc:ga5caf3234fed3be3268d063c966084109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the -help service.  <a href="group__service__help.html#ga5caf3234fed3be3268d063c966084109">More...</a><br /></td></tr>
 <tr class="separator:ga5caf3234fed3be3268d063c966084109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace6af4c1b79519c58f39c68a6158dbbd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities__cli__options.html#gace6af4c1b79519c58f39c68a6158dbbd">isAutoBool</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt)</td></tr>
-<tr class="memdesc:gace6af4c1b79519c58f39c68a6158dbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to determine if an option is an AutoBool.  <a href="group__utilities__cli__options.html#gace6af4c1b79519c58f39c68a6158dbbd">More...</a><br /></td></tr>
-<tr class="separator:gace6af4c1b79519c58f39c68a6158dbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac99e5dfb6ee2cfdff2284ac0adf611a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__help__env.html#gac99e5dfb6ee2cfdff2284ac0adf611a9">helpEnv</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc)</td></tr>
+<tr class="memdesc:gac99e5dfb6ee2cfdff2284ac0adf611a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the -help-env service.  <a href="group__service__help__env.html#gac99e5dfb6ee2cfdff2284ac0adf611a9">More...</a><br /></td></tr>
+<tr class="separator:gac99e5dfb6ee2cfdff2284ac0adf611a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada01e757207f983846fbc04abfd54363"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__lang__help.html#gada01e757207f983846fbc04abfd54363">lang_help</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc)</td></tr>
 <tr class="memdesc:gada01e757207f983846fbc04abfd54363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the -lang help service.  <a href="group__service__lang__help.html#gada01e757207f983846fbc04abfd54363">More...</a><br /></td></tr>
 <tr class="separator:gada01e757207f983846fbc04abfd54363"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +249,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad88e8270a9c5a3acb92bbac320efbf1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__help__config.html#gad88e8270a9c5a3acb92bbac320efbf1d">printOption</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> <a class="el" href="tidyplatform_8h.html#ac712c76eb5722d446b34bb5eb963dd29">ARG_UNUSED</a>(tdoc), <a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt, <a class="el" href="group__utilities__cli__options.html#structOptionDesc">OptionDesc</a> *d)</td></tr>
 <tr class="memdesc:gad88e8270a9c5a3acb92bbac320efbf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a single option.  <a href="group__service__help__config.html#gad88e8270a9c5a3acb92bbac320efbf1d">More...</a><br /></td></tr>
 <tr class="separator:gad88e8270a9c5a3acb92bbac320efbf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae66a49300b864377ceaa91a95e3db731"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__export__config.html#gae66a49300b864377ceaa91a95e3db731">printOptionExportValues</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> <a class="el" href="tidyplatform_8h.html#ac712c76eb5722d446b34bb5eb963dd29">ARG_UNUSED</a>(tdoc), <a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt, <a class="el" href="group__utilities__cli__options.html#structOptionDesc">OptionDesc</a> *d)</td></tr>
+<tr class="memdesc:gae66a49300b864377ceaa91a95e3db731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the option value for a given option.  <a href="group__service__export__config.html#gae66a49300b864377ceaa91a95e3db731">More...</a><br /></td></tr>
+<tr class="separator:gae66a49300b864377ceaa91a95e3db731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79bd8a3a907394bab70c5446f77e2044"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__show__config.html#ga79bd8a3a907394bab70c5446f77e2044">printOptionValues</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> <a class="el" href="tidyplatform_8h.html#ac712c76eb5722d446b34bb5eb963dd29">ARG_UNUSED</a>(tdoc), <a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> topt, <a class="el" href="group__utilities__cli__options.html#structOptionDesc">OptionDesc</a> *d)</td></tr>
 <tr class="memdesc:ga79bd8a3a907394bab70c5446f77e2044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the option value for a given option.  <a href="group__service__show__config.html#ga79bd8a3a907394bab70c5446f77e2044">More...</a><br /></td></tr>
 <tr class="separator:ga79bd8a3a907394bab70c5446f77e2044"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,19 +338,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ga7b5927df126ef20440f507030407230a"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__options__cli.html#ga7b5927df126ef20440f507030407230a">ul</a> [] = &quot;=================================================================&quot;</td></tr>
 <tr class="separator:ga7b5927df126ef20440f507030407230a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aab0b1339dbff30eaad99793f4a05fab4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPRTF&#160;&#160;&#160;printf</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a204602c852899d533c8ccac696712852"></a>
 <div class="memitem">
@@ -374,7 +367,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_9cae9f760e9ef1f02038d37e87b61aca.html">console</a></li><li class="navelem"><a class="el" href="tidy_8c.html">tidy.c</a></li>
-    <li class="footer">Generated on Sun May 7 2017 15:37:55 for HTML Tidy by
+    <li class="footer">Generated on Wed Oct 4 2017 18:12:21 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
