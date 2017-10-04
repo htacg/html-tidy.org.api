@@ -25,11 +25,17 @@
     <a name="qtop"></a>
     <h2 id="top">Option Groups</h2>
     <ul>
-        <li><a class="h3" href="#MarkupHeader">HTML, XHTML, XML</a></li>
+        <li><a class="h3" href="#DisplayHeader">Document Display</a></li>
+        <li><a class="h3" href="#DocumentIOHeader">Document In and Out</a></li>
+        <li><a class="h3" href="#FileIOHeader">File Input-Output</a></li>
         <li><a class="h3" href="#DiagnosticsHeader">Diagnostics</a></li>
+        <li><a class="h3" href="#EncodingHeader">Encoding</a></li>
+        <li><a class="h3" href="#MarkupCleanupHeader">Cleanup</a></li>
+        <li><a class="h3" href="#MarkupEntitiesHeader">Entities</a></li>
+        <li><a class="h3" href="#MarkupRepairHeader">Repair</a></li>
+        <li><a class="h3" href="#MarkupXFormHeader">Transformation</a></li>
+        <li><a class="h3" href="#MarkupTeachHeader">Teaching Tidy</a></li>
         <li><a class="h3" href="#PrettyPrintHeader">Pretty Print</a></li>
-        <li><a class="h3" href="#EncodingHeader">Character Encoding</a></li>
-        <li><a class="h3" href="#MiscellaneousHeader">Miscellaneous</a></li>
     </ul>
     <xsl:call-template name="link-section" />
 
@@ -49,9 +55,19 @@
       <col width="33%" />
     </colgroup>
     <xsl:call-template name="links">
-      <xsl:with-param name="class">markup</xsl:with-param>
-      <xsl:with-param name="header">HTML, XHTML, XML</xsl:with-param>
-      <xsl:with-param name="headerID">MarkupHeader</xsl:with-param>
+      <xsl:with-param name="class">display</xsl:with-param>
+      <xsl:with-param name="header">Document Display</xsl:with-param>
+      <xsl:with-param name="headerID">DisplayHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">document</xsl:with-param>
+      <xsl:with-param name="header">Document In and Out</xsl:with-param>
+      <xsl:with-param name="headerID">DocumentIOHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">file</xsl:with-param>
+      <xsl:with-param name="header">File Input-Output</xsl:with-param>
+      <xsl:with-param name="headerID">FileIOHeader</xsl:with-param>
     </xsl:call-template>
     <xsl:call-template name="links">
       <xsl:with-param name="class">diagnostics</xsl:with-param>
@@ -59,19 +75,39 @@
       <xsl:with-param name="headerID">DiagnosticsHeader</xsl:with-param>
     </xsl:call-template>
     <xsl:call-template name="links">
-      <xsl:with-param name="class">print</xsl:with-param>
-      <xsl:with-param name="header">Pretty Print</xsl:with-param>
-      <xsl:with-param name="headerID">PrettyPrintHeader</xsl:with-param>
-    </xsl:call-template>
-    <xsl:call-template name="links">
       <xsl:with-param name="class">encoding</xsl:with-param>
-      <xsl:with-param name="header">Character Encoding</xsl:with-param>
+      <xsl:with-param name="header">Encoding</xsl:with-param>
       <xsl:with-param name="headerID">EncodingHeader</xsl:with-param>
     </xsl:call-template>
     <xsl:call-template name="links">
-      <xsl:with-param name="class">misc</xsl:with-param>
-      <xsl:with-param name="header">Miscellaneous</xsl:with-param>
-      <xsl:with-param name="headerID">MiscellaneousHeader</xsl:with-param>
+      <xsl:with-param name="class">cleanup</xsl:with-param>
+      <xsl:with-param name="header">Cleanup</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupCleanupHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">entities</xsl:with-param>
+      <xsl:with-param name="header">Entities</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupEntitiesHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">repair</xsl:with-param>
+      <xsl:with-param name="header">Repair</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupRepairHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">transform</xsl:with-param>
+      <xsl:with-param name="header">Transformation</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupXFormHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">teach</xsl:with-param>
+      <xsl:with-param name="header">Teaching Tidy</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupTeachHeader</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="links">
+      <xsl:with-param name="class">print</xsl:with-param>
+      <xsl:with-param name="header">Pretty Print</xsl:with-param>
+      <xsl:with-param name="headerID">PrettyPrintHeader</xsl:with-param>
     </xsl:call-template>
   </table>
 </xsl:template>
@@ -81,9 +117,19 @@
   <table summary="Tidy Options Quick Reference Detail Section" border="0"
     cellpadding="3" cellspacing="0">
     <xsl:call-template name="reference">
-      <xsl:with-param name="class">markup</xsl:with-param>
-      <xsl:with-param name="header">HTML, XHTML, XML</xsl:with-param>
-      <xsl:with-param name="headerID">MarkupReference</xsl:with-param>
+      <xsl:with-param name="class">display</xsl:with-param>
+      <xsl:with-param name="header">Document Display</xsl:with-param>
+      <xsl:with-param name="headerID">DisplayReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">document</xsl:with-param>
+      <xsl:with-param name="header">Document In and Out</xsl:with-param>
+      <xsl:with-param name="headerID">DocumentIOReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">file</xsl:with-param>
+      <xsl:with-param name="header">File Input-Output</xsl:with-param>
+      <xsl:with-param name="headerID">FileIOReference</xsl:with-param>
     </xsl:call-template>
     <xsl:call-template name="reference">
       <xsl:with-param name="class">diagnostics</xsl:with-param>
@@ -91,19 +137,39 @@
       <xsl:with-param name="headerID">DiagnosticsReference</xsl:with-param>
     </xsl:call-template>
     <xsl:call-template name="reference">
-      <xsl:with-param name="class">print</xsl:with-param>
-      <xsl:with-param name="header">Pretty Print</xsl:with-param>
-      <xsl:with-param name="headerID">PrettyPrintReference</xsl:with-param>
-    </xsl:call-template>
-    <xsl:call-template name="reference">
       <xsl:with-param name="class">encoding</xsl:with-param>
-      <xsl:with-param name="header">Character Encoding</xsl:with-param>
+      <xsl:with-param name="header">Encoding</xsl:with-param>
       <xsl:with-param name="headerID">EncodingReference</xsl:with-param>
     </xsl:call-template>
     <xsl:call-template name="reference">
-      <xsl:with-param name="class">misc</xsl:with-param>
-      <xsl:with-param name="header">Miscellaneous</xsl:with-param>
-      <xsl:with-param name="headerID">MiscellaneousReference</xsl:with-param>
+      <xsl:with-param name="class">cleanup</xsl:with-param>
+      <xsl:with-param name="header">Cleanup</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupCleanupReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">entities</xsl:with-param>
+      <xsl:with-param name="header">Entities</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupEntitiesReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">repair</xsl:with-param>
+      <xsl:with-param name="header">Repair</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupRepairReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">transform</xsl:with-param>
+      <xsl:with-param name="header">Transformation</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupXFormReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">teach</xsl:with-param>
+      <xsl:with-param name="header">Teaching Tidy</xsl:with-param>
+      <xsl:with-param name="headerID">MarkupTeachReference</xsl:with-param>
+    </xsl:call-template>
+    <xsl:call-template name="reference">
+      <xsl:with-param name="class">print</xsl:with-param>
+      <xsl:with-param name="header">Pretty Print</xsl:with-param>
+      <xsl:with-param name="headerID">PrettyPrintReference</xsl:with-param>
     </xsl:call-template>
   </table>
 </xsl:template>
