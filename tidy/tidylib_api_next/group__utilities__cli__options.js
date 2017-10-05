@@ -15,7 +15,7 @@ var group__utilities__cli__options =
     ] ],
     [ "OptionFunc", "group__utilities__cli__options.html#ga914b84113a1a223e3c20da5323b5150b", null ],
     [ "cmpOpt", "group__utilities__cli__options.html#ga078f615feaae79dad664cee1258eeabd", null ],
-    [ "ConfigCategoryName", "group__utilities__cli__options.html#ga8e7c9021e6a528ebf3d376578aa8b644", null ],
+    [ "ConfigCategoryId", "group__utilities__cli__options.html#ga9a6059648fda694751a91b47eb9e6fe6", null ],
     [ "ForEachOption", "group__utilities__cli__options.html#ga1c52774f6ecafbf87cd6906d02f5c0d7", null ],
     [ "ForEachSortedOption", "group__utilities__cli__options.html#gaefc73b8c2bd74b86598744e4710b7b98", null ],
     [ "GetOption", "group__utilities__cli__options.html#gaa987b8e399763dc0a374637d6373099e", null ],

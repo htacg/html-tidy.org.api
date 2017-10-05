@@ -72,7 +72,7 @@ var searchData=
   ['commenttag',['CommentTag',['../lexer_8h.html#acac9cbaeea226ed297804c012dc12b16a24457463240eaba9d27ac23e856bf575',1,'lexer.h']]],
   ['config',['config',['../tidy-int_8h.html#a0a6a7ec779151327e23de6bdf7c43bd6',1,'_TidyDocImpl']]],
   ['config_2eh',['config.h',['../config_8h.html',1,'']]],
-  ['configcategoryname',['ConfigCategoryName',['../group__utilities__cli__options.html#ga8e7c9021e6a528ebf3d376578aa8b644',1,'tidy.c']]],
+  ['configcategoryid',['ConfigCategoryId',['../group__utilities__cli__options.html#ga9a6059648fda694751a91b47eb9e6fe6',1,'tidy.c']]],
   ['configuration_20options',['Configuration Options',['../group__Configuration.html',1,'']]],
   ['content',['content',['../lexer_8h.html#afe991cfe94ce37df6a9487ccdb4a5974',1,'_Node']]],
   ['content_5fafter_5fbody',['CONTENT_AFTER_BODY',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a269ecda5ef585419b8692de9872edcba',1,'tidyenum.h']]],
