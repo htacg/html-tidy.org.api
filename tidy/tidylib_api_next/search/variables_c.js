@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../attrs_8h.html#afc5afb45179fb3e3ea9c7d67ba38dd78',1,'_Attribute::name()'],['../attrs_8h.html#a5ac083a645d964373f022d03df4849c8',1,'_Anchor::name()'],['../config_8h.html#a92d8a89d1a637a454a5887a8621cc993',1,'_tidy_option::name()'],['../lexer_8h.html#afc5afb45179fb3e3ea9c7d67ba38dd78',1,'_StyleProp::name()'],['../tags_8h.html#afc5afb45179fb3e3ea9c7d67ba38dd78',1,'_Dict::name()'],['../group__utilities__cli__options.html#a92d8a89d1a637a454a5887a8621cc993',1,'OptionDesc::name()']]],
+  ['name',['name',['../attrs_8h.html#afc5afb45179fb3e3ea9c7d67ba38dd78',1,'_Attribute::name()'],['../attrs_8h.html#a5ac083a645d964373f022d03df4849c8',1,'_Anchor::name()'],['../group__configuration__options.html#a92d8a89d1a637a454a5887a8621cc993',1,'_tidy_option::name()'],['../lexer_8h.html#afc5afb45179fb3e3ea9c7d67ba38dd78',1,'_StyleProp::name()'],['../tags_8h.html#afc5afb45179fb3e3ea9c7d67ba38dd78',1,'_Dict::name()'],['../group__utilities__cli__options.html#a92d8a89d1a637a454a5887a8621cc993',1,'OptionDesc::name()']]],
   ['name1',['name1',['../group__options__cli.html#af7e92e884f40512545329edf2c8054e3',1,'CmdOptDesc']]],
   ['name2',['name2',['../group__options__cli.html#add174b12219989b54b33388c5a621785',1,'CmdOptDesc']]],
   ['name3',['name3',['../group__options__cli.html#a7b61cc2051106bf9d64ce6c323e0a90c',1,'CmdOptDesc']]],

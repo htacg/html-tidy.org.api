@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.58</span>
+   &#160;<span id="projectnumber">5.5.61</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -116,1111 +116,146 @@ $(document).ready(function(){initNavTree('config_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:struct__tidy__option"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#struct__tidy__option">TidyOptionImpl</a></td></tr>
+<tr class="memitem:struct__tidy__option"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#struct__tidy__option">TidyOptionImpl</a></td></tr>
+<tr class="memdesc:struct__tidy__option"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure defines the internal representation of a Tidy option.  <a href="group__configuration__options.html#struct__tidy__option">More...</a><br /></td></tr>
 <tr class="separator:struct__tidy__option"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structPickListItem"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#structPickListItem">PickListItem</a></td></tr>
-<tr class="memdesc:structPickListItem"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structs of this type contain information needed in order to present pick lists, relate pick list entries to public enum values, and parse strings that are accepted in order to assign the value.  <a href="config_8h.html#structPickListItem">More...</a><br /></td></tr>
+<tr class="memitem:structPickListItem"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#structPickListItem">PickListItem</a></td></tr>
+<tr class="memdesc:structPickListItem"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structs of this type contain information needed in order to present picklists, relate picklist entries to public enum values, and parse strings that are accepted in order to assign the value.  <a href="group__configuration__options.html#structPickListItem">More...</a><br /></td></tr>
 <tr class="separator:structPickListItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structTidyConfigImpl"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#structTidyConfigImpl">TidyConfigImpl</a></td></tr>
+<tr class="memitem:structTidyConfigImpl"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#structTidyConfigImpl">TidyConfigImpl</a></td></tr>
+<tr class="memdesc:structTidyConfigImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is used to define a structure for keeping track of the values for each option.  <a href="group__configuration__options.html#structTidyConfigImpl">More...</a><br /></td></tr>
 <tr class="separator:structTidyConfigImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structTidyOptionDoc"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#structTidyOptionDoc">TidyOptionDoc</a></td></tr>
+<tr class="memitem:structTidyOptionDoc"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#structTidyOptionDoc">TidyOptionDoc</a></td></tr>
+<tr class="memdesc:structTidyOptionDoc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to build a table of documentation cross-references.  <a href="group__configuration__options.html#structTidyOptionDoc">More...</a><br /></td></tr>
 <tr class="separator:structTidyOptionDoc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionTidyOptionValue"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#unionTidyOptionValue">TidyOptionValue</a></td></tr>
+<tr class="memitem:unionTidyOptionValue"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#unionTidyOptionValue">TidyOptionValue</a></td></tr>
+<tr class="memdesc:unionTidyOptionValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored option values can be one of two internal types.  <a href="group__configuration__options.html#unionTidyOptionValue">More...</a><br /></td></tr>
 <tr class="separator:unionTidyOptionValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a484580ed1c9e6a982719162077f61ab4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a484580ed1c9e6a982719162077f61ab4">cfg</a>(doc,  id)                    &#160;&#160;&#160;((doc)-&gt;config.value[ (id) ].v)</td></tr>
-<tr class="separator:a484580ed1c9e6a982719162077f61ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d58cbd3c2db3881c3c7c6424f8e44bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a3d58cbd3c2db3881c3c7c6424f8e44bc">cfgAutoBool</a>(doc,  id)    &#160;&#160;&#160;((<a class="el" href="group__public__enumerations.html#ga43f1adcf856d4da325284770e707ef91">TidyTriState</a>) <a class="el" href="config_8h.html#a484580ed1c9e6a982719162077f61ab4">cfg</a>(doc, id))</td></tr>
-<tr class="separator:a3d58cbd3c2db3881c3c7c6424f8e44bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855c6bcc6f3076c6774e03ac16f1a3d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a855c6bcc6f3076c6774e03ac16f1a3d2">cfgBool</a>(doc,  id)            &#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>) <a class="el" href="config_8h.html#a484580ed1c9e6a982719162077f61ab4">cfg</a>(doc, id))</td></tr>
-<tr class="separator:a855c6bcc6f3076c6774e03ac16f1a3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd94e3fc33c415d20a1315dd0441012"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#addd94e3fc33c415d20a1315dd0441012">cfgStr</a>(doc,  id)              &#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>) (doc)-&gt;config.value[ (id) ].p)</td></tr>
-<tr class="separator:addd94e3fc33c415d20a1315dd0441012"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455f998ab0d80cee91d18965756e3f58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memdesc:a455f998ab0d80cee91d18965756e3f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">PickLists may have up to 16 items.  <a href="#a455f998ab0d80cee91d18965756e3f58">More...</a><br /></td></tr>
-<tr class="separator:a455f998ab0d80cee91d18965756e3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga484580ed1c9e6a982719162077f61ab4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga484580ed1c9e6a982719162077f61ab4">cfg</a>(doc,  id)                    &#160;&#160;&#160;((doc)-&gt;config.value[ (id) ].v)</td></tr>
+<tr class="memdesc:ga484580ed1c9e6a982719162077f61ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the raw, non-string uint value of the given option ID.  <a href="group__configuration__options.html#ga484580ed1c9e6a982719162077f61ab4">More...</a><br /></td></tr>
+<tr class="separator:ga484580ed1c9e6a982719162077f61ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d58cbd3c2db3881c3c7c6424f8e44bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga3d58cbd3c2db3881c3c7c6424f8e44bc">cfgAutoBool</a>(doc,  id)    &#160;&#160;&#160;((<a class="el" href="group__public__enumerations.html#ga43f1adcf856d4da325284770e707ef91">TidyTriState</a>) <a class="el" href="group__configuration__options.html#ga484580ed1c9e6a982719162077f61ab4">cfg</a>(doc, id))</td></tr>
+<tr class="memdesc:ga3d58cbd3c2db3881c3c7c6424f8e44bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the TidyTriState value of the given option ID.  <a href="group__configuration__options.html#ga3d58cbd3c2db3881c3c7c6424f8e44bc">More...</a><br /></td></tr>
+<tr class="separator:ga3d58cbd3c2db3881c3c7c6424f8e44bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga855c6bcc6f3076c6774e03ac16f1a3d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga855c6bcc6f3076c6774e03ac16f1a3d2">cfgBool</a>(doc,  id)            &#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>) <a class="el" href="group__configuration__options.html#ga484580ed1c9e6a982719162077f61ab4">cfg</a>(doc, id))</td></tr>
+<tr class="memdesc:ga855c6bcc6f3076c6774e03ac16f1a3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the Bool value of the given option ID.  <a href="group__configuration__options.html#ga855c6bcc6f3076c6774e03ac16f1a3d2">More...</a><br /></td></tr>
+<tr class="separator:ga855c6bcc6f3076c6774e03ac16f1a3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddd94e3fc33c415d20a1315dd0441012"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gaddd94e3fc33c415d20a1315dd0441012">cfgStr</a>(doc,  id)              &#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>) (doc)-&gt;config.value[ (id) ].p)</td></tr>
+<tr class="memdesc:gaddd94e3fc33c415d20a1315dd0441012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the string value of the given option ID.  <a href="group__configuration__options.html#gaddd94e3fc33c415d20a1315dd0441012">More...</a><br /></td></tr>
+<tr class="separator:gaddd94e3fc33c415d20a1315dd0441012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga455f998ab0d80cee91d18965756e3f58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:ga455f998ab0d80cee91d18965756e3f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the maximum number of items in an option's picklist.  <a href="group__configuration__options.html#ga455f998ab0d80cee91d18965756e3f58">More...</a><br /></td></tr>
+<tr class="separator:ga455f998ab0d80cee91d18965756e3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a83b9884672316d66cc29b41b2f228903"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a83b9884672316d66cc29b41b2f228903">ParseProperty</a>) (TidyDocImpl *doc, const TidyOptionImpl *opt)</td></tr>
-<tr class="separator:a83b9884672316d66cc29b41b2f228903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafea9d2a1576b6e37a6f28eb90ed14c0"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="config_8h.html#structPickListItem">PickListItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aafea9d2a1576b6e37a6f28eb90ed14c0">PickListItems</a>[<a class="el" href="config_8h.html#a455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>]</td></tr>
-<tr class="memdesc:aafea9d2a1576b6e37a6f28eb90ed14c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of PickListItems, fixed in size for in-code declarations.  <a href="#aafea9d2a1576b6e37a6f28eb90ed14c0">More...</a><br /></td></tr>
-<tr class="separator:aafea9d2a1576b6e37a6f28eb90ed14c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83b9884672316d66cc29b41b2f228903"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga83b9884672316d66cc29b41b2f228903">ParseProperty</a>) (TidyDocImpl *doc, const TidyOptionImpl *opt)</td></tr>
+<tr class="memdesc:ga83b9884672316d66cc29b41b2f228903"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef describes a function that is used for parsing the input given for a particular Tidy option.  <a href="group__configuration__options.html#ga83b9884672316d66cc29b41b2f228903">More...</a><br /></td></tr>
+<tr class="separator:ga83b9884672316d66cc29b41b2f228903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafea9d2a1576b6e37a6f28eb90ed14c0"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="group__configuration__options.html#structPickListItem">PickListItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gaafea9d2a1576b6e37a6f28eb90ed14c0">PickListItems</a>[<a class="el" href="group__configuration__options.html#ga455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>]</td></tr>
+<tr class="memdesc:gaafea9d2a1576b6e37a6f28eb90ed14c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of PickListItems, fixed in size for in-code declarations.  <a href="group__configuration__options.html#gaafea9d2a1576b6e37a6f28eb90ed14c0">More...</a><br /></td></tr>
+<tr class="separator:gaafea9d2a1576b6e37a6f28eb90ed14c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a75e0e2a48931f727d034e4252fd1dc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a75e0e2a48931f727d034e4252fd1dc50">TY_❪AdjustCharEncoding❫</a> (TidyDocImpl *doc, int encoding)</td></tr>
-<tr class="separator:a75e0e2a48931f727d034e4252fd1dc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a3dd9ef5d4b4633cb3f92fbf2168b88ca">TY_❪CharEncodingId❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> charenc)</td></tr>
-<tr class="separator:a3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5295d52a6baa2fb63fa07abde0793a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a0f5295d52a6baa2fb63fa07abde0793a">TY_❪CharEncodingName❫</a> (int encoding)</td></tr>
-<tr class="separator:a0f5295d52a6baa2fb63fa07abde0793a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08c595cc6424d17ceedcea6a2963eec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a08c595cc6424d17ceedcea6a2963eec1">TY_❪CharEncodingOptName❫</a> (int encoding)</td></tr>
-<tr class="separator:a08c595cc6424d17ceedcea6a2963eec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915a8fcc0b81ad9c75fbcb1c6eae21e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a915a8fcc0b81ad9c75fbcb1c6eae21e4">TY_❪ConfigDiffThanDefault❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a915a8fcc0b81ad9c75fbcb1c6eae21e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead1cf5158c2d60cb533b7b051c01d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aead1cf5158c2d60cb533b7b051c01d6d">TY_❪ConfigDiffThanSnapshot❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:aead1cf5158c2d60cb533b7b051c01d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2a647a0240d322bfbbfbd4d7fa98e22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab2a647a0240d322bfbbfbd4d7fa98e22">TY_❪CopyConfig❫</a> (TidyDocImpl *docTo, TidyDocImpl *docFrom)</td></tr>
-<tr class="separator:ab2a647a0240d322bfbbfbd4d7fa98e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a521ab1409f6700766610d8660e3ced9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a521ab1409f6700766610d8660e3ced9a">TY_❪DeclareUserTag❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> tagType, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
-<tr class="separator:a521ab1409f6700766610d8660e3ced9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b8529038a261b5d3e38130c341e72c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a19b8529038a261b5d3e38130c341e72c">TY_❪FreeConfig❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a19b8529038a261b5d3e38130c341e72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af06d266b28af2a1ff373cd056a5fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a1af06d266b28af2a1ff373cd056a5fb8">TY_❪getNextOptionPick❫</a> (const TidyOptionImpl *option, TidyIterator *iter)</td></tr>
-<tr class="separator:a1af06d266b28af2a1ff373cd056a5fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae796091c8333fce859ac319713234e8a"><td class="memItemLeft" align="right" valign="top">const TidyOptionImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ae796091c8333fce859ac319713234e8a">TY_❪getNextOption❫</a> (TidyDocImpl *doc, TidyIterator *iter)</td></tr>
-<tr class="separator:ae796091c8333fce859ac319713234e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a716eb5b96aa3d3c001f821fdceae2e"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a0a716eb5b96aa3d3c001f821fdceae2e">TY_❪getOptionList❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a0a716eb5b96aa3d3c001f821fdceae2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9059e2ba623d2fcbd125a2177b0a08bd"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a9059e2ba623d2fcbd125a2177b0a08bd">TY_❪getOptionPickList❫</a> (const TidyOptionImpl *option)</td></tr>
-<tr class="separator:a9059e2ba623d2fcbd125a2177b0a08bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab7991049eb74353c7f09ca60f458d3"><td class="memItemLeft" align="right" valign="top">const TidyOptionImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#afab7991049eb74353c7f09ca60f458d3">TY_❪getOption❫</a> (<a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId)</td></tr>
-<tr class="separator:afab7991049eb74353c7f09ca60f458d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a596f69c9739d45aea9fb3559d816f9a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a596f69c9739d45aea9fb3559d816f9a6">TY_❪InitConfig❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a596f69c9739d45aea9fb3559d816f9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969805a31a6859d6cc00ff414b87a2e3"><td class="memItemLeft" align="right" valign="top">const TidyOptionImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a969805a31a6859d6cc00ff414b87a2e3">TY_❪lookupOption❫</a> (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optnam)</td></tr>
-<tr class="separator:a969805a31a6859d6cc00ff414b87a2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8551d9401040f3e0aa73c8c213998411"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="config_8h.html#structTidyOptionDoc">TidyOptionDoc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a8551d9401040f3e0aa73c8c213998411">TY_❪OptGetDocDesc❫</a> (<a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId)</td></tr>
-<tr class="separator:a8551d9401040f3e0aa73c8c213998411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeee0cf3007c93c981af7c183d7b30119"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aeee0cf3007c93c981af7c183d7b30119">TY_❪ParseConfigFileEnc❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> cfgfil, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> charenc)</td></tr>
-<tr class="separator:aeee0cf3007c93c981af7c183d7b30119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04ce668c994470cbb0ff1fa2d37a6caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a04ce668c994470cbb0ff1fa2d37a6caf">TY_❪ParseConfigFile❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> cfgfil)</td></tr>
-<tr class="separator:a04ce668c994470cbb0ff1fa2d37a6caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0d521ee1681a3411e52baadd3e4a418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab0d521ee1681a3411e52baadd3e4a418">TY_❪ParseConfigOption❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optnam, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optVal)</td></tr>
-<tr class="separator:ab0d521ee1681a3411e52baadd3e4a418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98fe585bf4b51d4f46dca360771822f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a98fe585bf4b51d4f46dca360771822f9">TY_❪ParseConfigValue❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optVal)</td></tr>
-<tr class="separator:a98fe585bf4b51d4f46dca360771822f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ea4e702113a33d268ab885c75afb80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a41ea4e702113a33d268ab885c75afb80">TY_❪ResetConfigToDefault❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a41ea4e702113a33d268ab885c75afb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a6ccf92c34a835bdea59fca639f28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a33a6ccf92c34a835bdea59fca639f28c">TY_❪ResetConfigToSnapshot❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a33a6ccf92c34a835bdea59fca639f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19fef733e575f90d02eac7c3847c333b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a19fef733e575f90d02eac7c3847c333b">TY_❪ResetOptionToDefault❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId)</td></tr>
-<tr class="separator:a19fef733e575f90d02eac7c3847c333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9112939effd684b43ea232e8cec04ff7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a9112939effd684b43ea232e8cec04ff7">TY_❪SaveConfigFile❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> cfgfil)</td></tr>
-<tr class="separator:a9112939effd684b43ea232e8cec04ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868727438e01073e3242a3e737f98e53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a868727438e01073e3242a3e737f98e53">TY_❪SaveConfigSink❫</a> (TidyDocImpl *doc, <a class="el" href="group__IO.html#structTidyOutputSink">TidyOutputSink</a> *sink)</td></tr>
-<tr class="separator:a868727438e01073e3242a3e737f98e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d1510f2d7c8274a8361dd96bc0cd54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ae5d1510f2d7c8274a8361dd96bc0cd54">TY_❪SetOptionBool❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> val)</td></tr>
-<tr class="separator:ae5d1510f2d7c8274a8361dd96bc0cd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da7c1c95284002599e45ccf52c508ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a3da7c1c95284002599e45ccf52c508ee">TY_❪SetOptionInt❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, ulong val)</td></tr>
-<tr class="separator:a3da7c1c95284002599e45ccf52c508ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1f4e103a6f244f8a6938b441770692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a8b1f4e103a6f244f8a6938b441770692">TY_❪TakeConfigSnapshot❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="separator:a8b1f4e103a6f244f8a6938b441770692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75e0e2a48931f727d034e4252fd1dc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga75e0e2a48931f727d034e4252fd1dc50">TY_❪AdjustCharEncoding❫</a> (TidyDocImpl *doc, int encoding)</td></tr>
+<tr class="memdesc:ga75e0e2a48931f727d034e4252fd1dc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that char encodings are self consistent.  <a href="group__configuration__options.html#ga75e0e2a48931f727d034e4252fd1dc50">More...</a><br /></td></tr>
+<tr class="separator:ga75e0e2a48931f727d034e4252fd1dc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga3dd9ef5d4b4633cb3f92fbf2168b88ca">TY_❪CharEncodingId❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> charenc)</td></tr>
+<tr class="memdesc:ga3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character encoding ID for the given character encoding string.  <a href="group__configuration__options.html#ga3dd9ef5d4b4633cb3f92fbf2168b88ca">More...</a><br /></td></tr>
+<tr class="separator:ga3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f5295d52a6baa2fb63fa07abde0793a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga0f5295d52a6baa2fb63fa07abde0793a">TY_❪CharEncodingName❫</a> (int encoding)</td></tr>
+<tr class="memdesc:ga0f5295d52a6baa2fb63fa07abde0793a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full name of the encoding for the given ID.  <a href="group__configuration__options.html#ga0f5295d52a6baa2fb63fa07abde0793a">More...</a><br /></td></tr>
+<tr class="separator:ga0f5295d52a6baa2fb63fa07abde0793a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08c595cc6424d17ceedcea6a2963eec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga08c595cc6424d17ceedcea6a2963eec1">TY_❪CharEncodingOptName❫</a> (int encoding)</td></tr>
+<tr class="memdesc:ga08c595cc6424d17ceedcea6a2963eec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Tidy command line option name of the encoding for the given ID.  <a href="group__configuration__options.html#ga08c595cc6424d17ceedcea6a2963eec1">More...</a><br /></td></tr>
+<tr class="separator:ga08c595cc6424d17ceedcea6a2963eec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga915a8fcc0b81ad9c75fbcb1c6eae21e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga915a8fcc0b81ad9c75fbcb1c6eae21e4">TY_❪ConfigDiffThanDefault❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga915a8fcc0b81ad9c75fbcb1c6eae21e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the current configuration is completely default.  <a href="group__configuration__options.html#ga915a8fcc0b81ad9c75fbcb1c6eae21e4">More...</a><br /></td></tr>
+<tr class="separator:ga915a8fcc0b81ad9c75fbcb1c6eae21e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaead1cf5158c2d60cb533b7b051c01d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gaead1cf5158c2d60cb533b7b051c01d6d">TY_❪ConfigDiffThanSnapshot❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gaead1cf5158c2d60cb533b7b051c01d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the current configuration is different from the stored snapshot.  <a href="group__configuration__options.html#gaead1cf5158c2d60cb533b7b051c01d6d">More...</a><br /></td></tr>
+<tr class="separator:gaead1cf5158c2d60cb533b7b051c01d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2a647a0240d322bfbbfbd4d7fa98e22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gab2a647a0240d322bfbbfbd4d7fa98e22">TY_❪CopyConfig❫</a> (TidyDocImpl *docTo, TidyDocImpl *docFrom)</td></tr>
+<tr class="memdesc:gab2a647a0240d322bfbbfbd4d7fa98e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the configuration from one document to another.  <a href="group__configuration__options.html#gab2a647a0240d322bfbbfbd4d7fa98e22">More...</a><br /></td></tr>
+<tr class="separator:gab2a647a0240d322bfbbfbd4d7fa98e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga521ab1409f6700766610d8660e3ced9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga521ab1409f6700766610d8660e3ced9a">TY_❪DeclareUserTag❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> tagType, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
+<tr class="memdesc:ga521ab1409f6700766610d8660e3ced9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinates Config update and Tags data.  <a href="group__configuration__options.html#ga521ab1409f6700766610d8660e3ced9a">More...</a><br /></td></tr>
+<tr class="separator:ga521ab1409f6700766610d8660e3ced9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19b8529038a261b5d3e38130c341e72c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga19b8529038a261b5d3e38130c341e72c">TY_❪FreeConfig❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga19b8529038a261b5d3e38130c341e72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the configuration memory for the given Tidy document.  <a href="group__configuration__options.html#ga19b8529038a261b5d3e38130c341e72c">More...</a><br /></td></tr>
+<tr class="separator:ga19b8529038a261b5d3e38130c341e72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1af06d266b28af2a1ff373cd056a5fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga1af06d266b28af2a1ff373cd056a5fb8">TY_❪getNextOptionPick❫</a> (const TidyOptionImpl *option, TidyIterator *iter)</td></tr>
+<tr class="memdesc:ga1af06d266b28af2a1ff373cd056a5fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next picklist possibility provided by the iterator.  <a href="group__configuration__options.html#ga1af06d266b28af2a1ff373cd056a5fb8">More...</a><br /></td></tr>
+<tr class="separator:ga1af06d266b28af2a1ff373cd056a5fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae796091c8333fce859ac319713234e8a"><td class="memItemLeft" align="right" valign="top">const TidyOptionImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gae796091c8333fce859ac319713234e8a">TY_❪getNextOption❫</a> (TidyDocImpl *doc, TidyIterator *iter)</td></tr>
+<tr class="memdesc:gae796091c8333fce859ac319713234e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next option provided by the iterator.  <a href="group__configuration__options.html#gae796091c8333fce859ac319713234e8a">More...</a><br /></td></tr>
+<tr class="separator:gae796091c8333fce859ac319713234e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a716eb5b96aa3d3c001f821fdceae2e"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga0a716eb5b96aa3d3c001f821fdceae2e">TY_❪getOptionList❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga0a716eb5b96aa3d3c001f821fdceae2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates an iterator to cycle through all of the available options.  <a href="group__configuration__options.html#ga0a716eb5b96aa3d3c001f821fdceae2e">More...</a><br /></td></tr>
+<tr class="separator:ga0a716eb5b96aa3d3c001f821fdceae2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9059e2ba623d2fcbd125a2177b0a08bd"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga9059e2ba623d2fcbd125a2177b0a08bd">TY_❪getOptionPickList❫</a> (const TidyOptionImpl *option)</td></tr>
+<tr class="memdesc:ga9059e2ba623d2fcbd125a2177b0a08bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates an iterator to cycle through all of the available picklist possibilities.  <a href="group__configuration__options.html#ga9059e2ba623d2fcbd125a2177b0a08bd">More...</a><br /></td></tr>
+<tr class="separator:ga9059e2ba623d2fcbd125a2177b0a08bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafab7991049eb74353c7f09ca60f458d3"><td class="memItemLeft" align="right" valign="top">const TidyOptionImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gafab7991049eb74353c7f09ca60f458d3">TY_❪getOption❫</a> (<a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId)</td></tr>
+<tr class="memdesc:gafab7991049eb74353c7f09ca60f458d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an option ID, return an instance of an option.  <a href="group__configuration__options.html#gafab7991049eb74353c7f09ca60f458d3">More...</a><br /></td></tr>
+<tr class="separator:gafab7991049eb74353c7f09ca60f458d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga596f69c9739d45aea9fb3559d816f9a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga596f69c9739d45aea9fb3559d816f9a6">TY_❪InitConfig❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga596f69c9739d45aea9fb3559d816f9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the configuration for the given Tidy document.  <a href="group__configuration__options.html#ga596f69c9739d45aea9fb3559d816f9a6">More...</a><br /></td></tr>
+<tr class="separator:ga596f69c9739d45aea9fb3559d816f9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga969805a31a6859d6cc00ff414b87a2e3"><td class="memItemLeft" align="right" valign="top">const TidyOptionImpl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga969805a31a6859d6cc00ff414b87a2e3">TY_❪lookupOption❫</a> (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optnam)</td></tr>
+<tr class="memdesc:ga969805a31a6859d6cc00ff414b87a2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an option name, return an instance of an option.  <a href="group__configuration__options.html#ga969805a31a6859d6cc00ff414b87a2e3">More...</a><br /></td></tr>
+<tr class="separator:ga969805a31a6859d6cc00ff414b87a2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8551d9401040f3e0aa73c8c213998411"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__configuration__options.html#structTidyOptionDoc">TidyOptionDoc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga8551d9401040f3e0aa73c8c213998411">TY_❪OptGetDocDesc❫</a> (<a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId)</td></tr>
+<tr class="memdesc:ga8551d9401040f3e0aa73c8c213998411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cross-reference information structure for optID, which is used for generating documentation.  <a href="group__configuration__options.html#ga8551d9401040f3e0aa73c8c213998411">More...</a><br /></td></tr>
+<tr class="separator:ga8551d9401040f3e0aa73c8c213998411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeee0cf3007c93c981af7c183d7b30119"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gaeee0cf3007c93c981af7c183d7b30119">TY_❪ParseConfigFileEnc❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> cfgfil, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> charenc)</td></tr>
+<tr class="memdesc:gaeee0cf3007c93c981af7c183d7b30119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse the given config file into the document, using the provided encoding.  <a href="group__configuration__options.html#gaeee0cf3007c93c981af7c183d7b30119">More...</a><br /></td></tr>
+<tr class="separator:gaeee0cf3007c93c981af7c183d7b30119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04ce668c994470cbb0ff1fa2d37a6caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga04ce668c994470cbb0ff1fa2d37a6caf">TY_❪ParseConfigFile❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> cfgfil)</td></tr>
+<tr class="memdesc:ga04ce668c994470cbb0ff1fa2d37a6caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse the given config file into the document.  <a href="group__configuration__options.html#ga04ce668c994470cbb0ff1fa2d37a6caf">More...</a><br /></td></tr>
+<tr class="separator:ga04ce668c994470cbb0ff1fa2d37a6caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0d521ee1681a3411e52baadd3e4a418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gab0d521ee1681a3411e52baadd3e4a418">TY_❪ParseConfigOption❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optnam, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optVal)</td></tr>
+<tr class="memdesc:gab0d521ee1681a3411e52baadd3e4a418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse the provided value for the given option name.  <a href="group__configuration__options.html#gab0d521ee1681a3411e52baadd3e4a418">More...</a><br /></td></tr>
+<tr class="separator:gab0d521ee1681a3411e52baadd3e4a418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98fe585bf4b51d4f46dca360771822f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga98fe585bf4b51d4f46dca360771822f9">TY_❪ParseConfigValue❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> optVal)</td></tr>
+<tr class="memdesc:ga98fe585bf4b51d4f46dca360771822f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse the provided value for the given option id.  <a href="group__configuration__options.html#ga98fe585bf4b51d4f46dca360771822f9">More...</a><br /></td></tr>
+<tr class="separator:ga98fe585bf4b51d4f46dca360771822f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41ea4e702113a33d268ab885c75afb80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga41ea4e702113a33d268ab885c75afb80">TY_❪ResetConfigToDefault❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga41ea4e702113a33d268ab885c75afb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all options in the document to their default values.  <a href="group__configuration__options.html#ga41ea4e702113a33d268ab885c75afb80">More...</a><br /></td></tr>
+<tr class="separator:ga41ea4e702113a33d268ab885c75afb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33a6ccf92c34a835bdea59fca639f28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga33a6ccf92c34a835bdea59fca639f28c">TY_❪ResetConfigToSnapshot❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga33a6ccf92c34a835bdea59fca639f28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores all of the configuration values to their snapshotted values.  <a href="group__configuration__options.html#ga33a6ccf92c34a835bdea59fca639f28c">More...</a><br /></td></tr>
+<tr class="separator:ga33a6ccf92c34a835bdea59fca639f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19fef733e575f90d02eac7c3847c333b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga19fef733e575f90d02eac7c3847c333b">TY_❪ResetOptionToDefault❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId)</td></tr>
+<tr class="memdesc:ga19fef733e575f90d02eac7c3847c333b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the given option to its default value.  <a href="group__configuration__options.html#ga19fef733e575f90d02eac7c3847c333b">More...</a><br /></td></tr>
+<tr class="separator:ga19fef733e575f90d02eac7c3847c333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9112939effd684b43ea232e8cec04ff7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga9112939effd684b43ea232e8cec04ff7">TY_❪SaveConfigFile❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> cfgfil)</td></tr>
+<tr class="memdesc:ga9112939effd684b43ea232e8cec04ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current configuration for options not having default values into the specified file.  <a href="group__configuration__options.html#ga9112939effd684b43ea232e8cec04ff7">More...</a><br /></td></tr>
+<tr class="separator:ga9112939effd684b43ea232e8cec04ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga868727438e01073e3242a3e737f98e53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga868727438e01073e3242a3e737f98e53">TY_❪SaveConfigSink❫</a> (TidyDocImpl *doc, <a class="el" href="group__IO.html#structTidyOutputSink">TidyOutputSink</a> *sink)</td></tr>
+<tr class="memdesc:ga868727438e01073e3242a3e737f98e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the current configuration for options not having default values into the specified sink.  <a href="group__configuration__options.html#ga868727438e01073e3242a3e737f98e53">More...</a><br /></td></tr>
+<tr class="separator:ga868727438e01073e3242a3e737f98e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5d1510f2d7c8274a8361dd96bc0cd54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gae5d1510f2d7c8274a8361dd96bc0cd54">TY_❪SetOptionBool❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> val)</td></tr>
+<tr class="memdesc:gae5d1510f2d7c8274a8361dd96bc0cd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bool value for the given option Id.  <a href="group__configuration__options.html#gae5d1510f2d7c8274a8361dd96bc0cd54">More...</a><br /></td></tr>
+<tr class="separator:gae5d1510f2d7c8274a8361dd96bc0cd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3da7c1c95284002599e45ccf52c508ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga3da7c1c95284002599e45ccf52c508ee">TY_❪SetOptionInt❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, ulong val)</td></tr>
+<tr class="memdesc:ga3da7c1c95284002599e45ccf52c508ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the integer value for the given option Id.  <a href="group__configuration__options.html#ga3da7c1c95284002599e45ccf52c508ee">More...</a><br /></td></tr>
+<tr class="separator:ga3da7c1c95284002599e45ccf52c508ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b1f4e103a6f244f8a6938b441770692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga8b1f4e103a6f244f8a6938b441770692">TY_❪TakeConfigSnapshot❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga8b1f4e103a6f244f8a6938b441770692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a snapshot of all of the configuration values that can be restored later.  <a href="group__configuration__options.html#ga8b1f4e103a6f244f8a6938b441770692">More...</a><br /></td></tr>
+<tr class="separator:ga8b1f4e103a6f244f8a6938b441770692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="struct__tidy__option" id="struct__tidy__option"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct _tidy_option</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ab2184a7c49c7e1c114362af850d86fa0"></a><a class="el" href="group__public__enumerations.html#ga3812a124fc3e26e59b5a4312dabcc4a7">TidyConfigCategory</a></td>
-<td class="fieldname">
-category</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a6cb9febc21a7670131ccdeecde517264"></a>ulong</td>
-<td class="fieldname">
-dflt</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a128af87c43c818054988cdfeb17edba8"></a><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a></td>
-<td class="fieldname">
-id</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a92d8a89d1a637a454a5887a8621cc993"></a><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></td>
-<td class="fieldname">
-name</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="abbb57b0bf733ab6d364fd9fa7bb40e58"></a><a class="el" href="config_8h.html#a83b9884672316d66cc29b41b2f228903">ParseProperty</a> *</td>
-<td class="fieldname">
-parser</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="abce39ec786ece653b0d5848cf19ec28e"></a><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></td>
-<td class="fieldname">
-pdflt</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ac17a5cdf76b9bf15a537de4b78a5c3d4"></a><a class="el" href="config_8h.html#aafea9d2a1576b6e37a6f28eb90ed14c0">PickListItems</a> *</td>
-<td class="fieldname">
-pickList</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ac5e767ee9292db51478035581ed522f6"></a><a class="el" href="group__public__enumerations.html#gaf8dfd06ad560734d294fe8c9374fd11b">TidyOptionType</a></td>
-<td class="fieldname">
-type</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structPickListItem" id="structPickListItem"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct PickListItem</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Structs of this type contain information needed in order to present pick lists, relate pick list entries to public enum values, and parse strings that are accepted in order to assign the value. </p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a3dc1e88129b8d6a8e42b28af5d0ed4aa"></a><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></td>
-<td class="fieldname">
-inputs[10]</td>
-<td class="fielddoc">
-String values that can select this value. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a8f312608fe59cf2a43a083b2f75d2028"></a><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></td>
-<td class="fieldname">
-label</td>
-<td class="fielddoc">
-PickList label for this item. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a679d27cc04d873a03221ea2a89b8c6d8"></a>const int</td>
-<td class="fieldname">
-value</td>
-<td class="fielddoc">
-The option value represented by this label. </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structTidyConfigImpl" id="structTidyConfigImpl"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct TidyConfigImpl</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a1fa1bc6482837324f98667a012839afd"></a><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
-<td class="fieldname">
-c</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="aae9d57947d6150d275f76ff35f174f34"></a>StreamIn *</td>
-<td class="fieldname">
-cfgIn</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="acfceab81bfdde95f59610d0ea13333a9"></a><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
-<td class="fieldname">
-defined_tags</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a94a976947de8f05d246298e25563a023"></a><a class="el" href="config_8h.html#unionTidyOptionValue">TidyOptionValue</a></td>
-<td class="fieldname">
-snapshot[<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a6b389f13aa939c78b6e8335fe67a9c3a">N_TIDY_OPTIONS</a>+1]</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a3f44bd1e57dec6d3ee71d48e2660b52d"></a><a class="el" href="config_8h.html#unionTidyOptionValue">TidyOptionValue</a></td>
-<td class="fieldname">
-value[<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a6b389f13aa939c78b6e8335fe67a9c3a">N_TIDY_OPTIONS</a>+1]</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="structTidyOptionDoc" id="structTidyOptionDoc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct TidyOptionDoc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="aee4038cacd3a4c2062ca64384d29e167"></a><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> const *</td>
-<td class="fieldname">
-links</td>
-<td class="fielddoc">
-Cross references. <p>Last element must be 'TidyUnknownOption'. </p>
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a9d7040fbed83902ec3a9a383c1c23f35"></a><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a></td>
-<td class="fieldname">
-opt</td>
-<td class="fielddoc">
-Identifier. </td></tr>
-</table>
-
-</div>
-</div>
-<a name="unionTidyOptionValue" id="unionTidyOptionValue"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">union TidyOptionValue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="aaa1ebe818ec1c763a776cc580551f3e6"></a>char *</td>
-<td class="fieldname">
-p</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a9a595f0fb3e4dd34782e38d3896f7ba5"></a>ulong</td>
-<td class="fieldname">
-v</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a484580ed1c9e6a982719162077f61ab4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cfg</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">doc, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">id&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((doc)-&gt;config.value[ (id) ].v)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3d58cbd3c2db3881c3c7c6424f8e44bc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cfgAutoBool</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">doc, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">id&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="group__public__enumerations.html#ga43f1adcf856d4da325284770e707ef91">TidyTriState</a>) <a class="el" href="config_8h.html#a484580ed1c9e6a982719162077f61ab4">cfg</a>(doc, id))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a855c6bcc6f3076c6774e03ac16f1a3d2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cfgBool</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">doc, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">id&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>) <a class="el" href="config_8h.html#a484580ed1c9e6a982719162077f61ab4">cfg</a>(doc, id))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="addd94e3fc33c415d20a1315dd0441012"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cfgStr</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">doc, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">id&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>) (doc)-&gt;config.value[ (id) ].p)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a455f998ab0d80cee91d18965756e3f58"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIDY_PL_SIZE&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>PickLists may have up to 16 items. </p>
-<p>For some reason, this limit has always been hard-coded into Tidy. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a83b9884672316d66cc29b41b2f228903"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>( ParseProperty) (TidyDocImpl *doc, const TidyOptionImpl *opt)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aafea9d2a1576b6e37a6f28eb90ed14c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef const <a class="el" href="config_8h.html#structPickListItem">PickListItem</a> PickListItems[<a class="el" href="config_8h.html#a455f998ab0d80cee91d18965756e3f58">TIDY_PL_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An array of PickListItems, fixed in size for in-code declarations. </p>
-<p>Arrays must be populated in 0 to 10 order, as the option value is assigned based on this index and <em>not</em> on the structures' value field. It remains a best practice, however, to assign a public enum value with the proper index value. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a75e0e2a48931f727d034e4252fd1dc50"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪AdjustCharEncoding❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>encoding</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3dd9ef5d4b4633cb3f92fbf2168b88ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TY_❪CharEncodingId❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>charenc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0f5295d52a6baa2fb63fa07abde0793a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪CharEncodingName❫ </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>encoding</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a08c595cc6424d17ceedcea6a2963eec1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪CharEncodingOptName❫ </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>encoding</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a915a8fcc0b81ad9c75fbcb1c6eae21e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪ConfigDiffThanDefault❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aead1cf5158c2d60cb533b7b051c01d6d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪ConfigDiffThanSnapshot❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab2a647a0240d322bfbbfbd4d7fa98e22"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪CopyConfig❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>docTo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>docFrom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a521ab1409f6700766610d8660e3ced9a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪DeclareUserTag❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>tagType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a19b8529038a261b5d3e38130c341e72c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪FreeConfig❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1af06d266b28af2a1ff373cd056a5fb8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪getNextOptionPick❫ </td>
-          <td>(</td>
-          <td class="paramtype">const TidyOptionImpl *&#160;</td>
-          <td class="paramname"><em>option</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TidyIterator *&#160;</td>
-          <td class="paramname"><em>iter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae796091c8333fce859ac319713234e8a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const TidyOptionImpl* TY_❪getNextOption❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TidyIterator *&#160;</td>
-          <td class="paramname"><em>iter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0a716eb5b96aa3d3c001f821fdceae2e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TidyIterator TY_❪getOptionList❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9059e2ba623d2fcbd125a2177b0a08bd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TidyIterator TY_❪getOptionPickList❫ </td>
-          <td>(</td>
-          <td class="paramtype">const TidyOptionImpl *&#160;</td>
-          <td class="paramname"><em>option</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afab7991049eb74353c7f09ca60f458d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const TidyOptionImpl* TY_❪getOption❫ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a596f69c9739d45aea9fb3559d816f9a6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪InitConfig❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a969805a31a6859d6cc00ff414b87a2e3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const TidyOptionImpl* TY_❪lookupOption❫ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>optnam</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8551d9401040f3e0aa73c8c213998411"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="config_8h.html#structTidyOptionDoc">TidyOptionDoc</a>* TY_❪OptGetDocDesc❫ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeee0cf3007c93c981af7c183d7b30119"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TY_❪ParseConfigFileEnc❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>cfgfil</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>charenc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a04ce668c994470cbb0ff1fa2d37a6caf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TY_❪ParseConfigFile❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>cfgfil</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab0d521ee1681a3411e52baadd3e4a418"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪ParseConfigOption❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>optnam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>optVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a98fe585bf4b51d4f46dca360771822f9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪ParseConfigValue❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>optVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a41ea4e702113a33d268ab885c75afb80"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ResetConfigToDefault❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a33a6ccf92c34a835bdea59fca639f28c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪ResetConfigToSnapshot❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a19fef733e575f90d02eac7c3847c333b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪ResetOptionToDefault❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9112939effd684b43ea232e8cec04ff7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TY_❪SaveConfigFile❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>cfgfil</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a868727438e01073e3242a3e737f98e53"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TY_❪SaveConfigSink❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__IO.html#structTidyOutputSink">TidyOutputSink</a> *&#160;</td>
-          <td class="paramname"><em>sink</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae5d1510f2d7c8274a8361dd96bc0cd54"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪SetOptionBool❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3da7c1c95284002599e45ccf52c508ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪SetOptionInt❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ulong&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8b1f4e103a6f244f8a6938b441770692"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪TakeConfigSnapshot❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="config_8h.html">config.h</a></li>
-    <li class="footer">Generated on Thu Oct 5 2017 19:32:41 for HTML Tidy by
+    <li class="footer">Generated on Sat Oct 7 2017 16:14:33 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

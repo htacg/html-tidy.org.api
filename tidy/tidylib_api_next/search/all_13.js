@@ -21,7 +21,7 @@ var searchData=
   ['skipchildrenandsiblings',['SkipChildrenAndSiblings',['../tidy-int_8h.html#a51a31ff322e62768ea43e47fe713c541ada64a316dbf906770dee0f7c90fd1ffe',1,'tidy-int.h']]],
   ['skipover_5fascii_5fart',['SKIPOVER_ASCII_ART',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a4e80d58cc26d1972824f1a58e1e8f962',1,'tidyenum.h']]],
   ['skipsiblings',['SkipSiblings',['../tidy-int_8h.html#a51a31ff322e62768ea43e47fe713c541a978ee0e65c61a37d38ad8ff6bd6dfd40',1,'tidy-int.h']]],
-  ['snapshot',['snapshot',['../config_8h.html#a94a976947de8f05d246298e25563a023',1,'TidyConfigImpl']]],
+  ['snapshot',['snapshot',['../group__configuration__options.html#a94a976947de8f05d246298e25563a023',1,'TidyConfigImpl']]],
   ['source',['source',['../streamio_8h.html#a82b8662008d127f318a3a1f730d9f5ba',1,'_StreamIn']]],
   ['sourcedata',['sourceData',['../group__IO.html#a1bd631ed73df958cc18d4de1edb8f6cb',1,'TidyInputSource']]],
   ['space_5fpreceding_5fxmldecl',['SPACE_PRECEDING_XMLDECL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aec47c91cc6b1a8643baac10a14bb11f0',1,'tidyenum.h']]],

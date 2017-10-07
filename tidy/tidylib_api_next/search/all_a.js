@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ibm858',['IBM858',['../streamio_8h.html#aeb7051710c34af39c9bba5acc71ea63d',1,'streamio.h']]],
-  ['id',['id',['../attrs_8h.html#a90bbe89dca64550526346e998d2c9883',1,'_Attribute::id()'],['../config_8h.html#a128af87c43c818054988cdfeb17edba8',1,'_tidy_option::id()'],['../tags_8h.html#a5f6d6390a04de3cbcbc4bba527c2a160',1,'_Dict::id()']]],
+  ['id',['id',['../attrs_8h.html#a90bbe89dca64550526346e998d2c9883',1,'_Attribute::id()'],['../group__configuration__options.html#a128af87c43c818054988cdfeb17edba8',1,'_tidy_option::id()'],['../tags_8h.html#a5f6d6390a04de3cbcbc4bba527c2a160',1,'_Dict::id()']]],
   ['id_5fname_5fmismatch',['ID_NAME_MISMATCH',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abad7ce8ff8b172d6542f0ad6c12228cc',1,'tidyenum.h']]],
   ['ignoremarkup',['IgnoreMarkup',['../lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5afcf3b7de0e0a6991746af2bdcc35c884',1,'lexer.h']]],
   ['ignorewhitespace',['IgnoreWhitespace',['../lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5a80ef53c6df4648b08465ef8c23288f11',1,'lexer.h']]],
@@ -30,7 +30,7 @@ var searchData=
   ['information_5fnot_5fconveyed_5fscript',['INFORMATION_NOT_CONVEYED_SCRIPT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ac4103aaabdb1c4410669164a6814d662',1,'tidyenum.h']]],
   ['inode',['inode',['../lexer_8h.html#a8337a0714784f4219356e8f1dfc987ea',1,'_Lexer']]],
   ['inputhadbom',['inputHadBOM',['../tidy-int_8h.html#aca5f4e217bb5cd8486974c6d18d6fceb',1,'_TidyDocImpl']]],
-  ['inputs',['inputs',['../config_8h.html#a3dc1e88129b8d6a8e42b28af5d0ed4aa',1,'PickListItem']]],
+  ['inputs',['inputs',['../group__configuration__options.html#a3dc1e88129b8d6a8e42b28af5d0ed4aa',1,'PickListItem']]],
   ['insert',['insert',['../lexer_8h.html#a8c85c0f2aa2f1a7fe80c749230604aee',1,'_Lexer']]],
   ['inserting_5fauto_5fattribute',['INSERTING_AUTO_ATTRIBUTE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00adfefc7400bf5536d8b3964530830ade4',1,'tidyenum.h']]],
   ['inserting_5ftag',['INSERTING_TAG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a267e4545055c57ed5e22e4ede97f3883',1,'tidyenum.h']]],

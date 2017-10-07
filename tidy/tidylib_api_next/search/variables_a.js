@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../config_8h.html#a8f312608fe59cf2a43a083b2f75d2028',1,'PickListItem']]],
+  ['label',['label',['../group__configuration__options.html#a8f312608fe59cf2a43a083b2f75d2028',1,'PickListItem']]],
   ['language_5fen',['language_en',['../language__en_8h.html#acf45f0e561099b6ff17038f78ead9bc7',1,'language_en.h']]],
   ['language_5fen_5fgb',['language_en_gb',['../language__en__gb_8h.html#ae6aa5438b7be6390f152c95fe44ddf55',1,'language_en_gb.h']]],
   ['language_5fes',['language_es',['../language__es_8h.html#a317c853494ed4d2c8a902ee2607d5976',1,'language_es.h']]],
@@ -21,7 +21,7 @@ var searchData=
   ['linebuf',['linebuf',['../pprint_8h.html#a11252993cd94130b15d92f3716cd8b47',1,'TidyPrintImpl']]],
   ['linelen',['linelen',['../pprint_8h.html#acd10ac976637c48e3491d1d19e44f44c',1,'TidyPrintImpl']]],
   ['lines',['lines',['../lexer_8h.html#a760028244266a7afc030b2fdf2a2a520',1,'_Lexer']]],
-  ['links',['links',['../config_8h.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
+  ['links',['links',['../group__configuration__options.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
   ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs']]],
   ['listelements',['ListElements',['../access_8h.html#ad3e3929ba5bb9b3e56df38c0657366b6',1,'_TidyAccessImpl']]]
 ];

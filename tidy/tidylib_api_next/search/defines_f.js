@@ -3,7 +3,6 @@ var searchData=
   ['tagid',['TagId',['../tags_8h.html#a0c57772b337eb4a0cfc9ac4e22b73267',1,'tags.h']]],
   ['tagisid',['TagIsId',['../tags_8h.html#a221ed9a58fd80a9f9eee7282c77b35b0',1,'tags.h']]],
   ['tidy_5fcall',['TIDY_CALL',['../tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0',1,'tidyplatform.h']]],
-  ['tidy_5fpl_5fsize',['TIDY_PL_SIZE',['../config_8h.html#a455f998ab0d80cee91d18965756e3f58',1,'config.h']]],
   ['tidy_5fstruct',['TIDY_STRUCT',['../tidyplatform_8h.html#a758afad615b3408ec0aa785278cd10ce',1,'tidyplatform.h']]],
   ['tidyalloc',['TidyAlloc',['../forward_8h.html#aa39c40bca094805a4fa86ee2fa2acbe4',1,'forward.h']]],
   ['tidyattrtoimpl',['tidyAttrToImpl',['../tidy-int_8h.html#a0b9c7afa589d9aa372b754e8785a6cfb',1,'tidy-int.h']]],

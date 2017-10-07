@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.58</span>
+   &#160;<span id="projectnumber">5.5.61</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('options.html','');});
 <p>Some care has to be taken with the description string. The only html allowed here is <code>&lt;code&gt;...&lt;/code&gt;</code>, <code>&lt;var&gt;...&lt;/var&gt;</code>, <code>&lt;em&gt;...&lt;/em&gt;</code>, <code>&lt;strong&gt;...&lt;/strong&gt;</code>, and <code>&lt;br/&gt;</code>. Entities, tags, attributes, etc., should be enclosed in <code>&lt;code&gt;...&lt;/code&gt;</code>. Option values should be enclosed in <code>&lt;var&gt;...&lt;/var&gt;</code>. It's very important that <code>&lt;br/&gt;</code> be self-closing! This string is processed to build the API documentation.</p>
 <p>This is the desription added for this new option.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;{</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  TidyEscapeScripts,          0,</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &quot;This option causes items that look like closing tags, like &lt;code&gt;&amp;lt;/g&lt;/code&gt; to be &quot;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &quot;escaped to &lt;code&gt;&amp;lt;\\/g&lt;/code&gt;. Set this option to &#39;no&#39; if you do not want this.&quot;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;},</div></div><!-- fragment --><h4>4. Use in Code</h4>
-<p>This can be added anywhere in the code to change the current code action. While the testing of the option depends on the option type, the most common is <code><a class="el" href="config_8h.html#a855c6bcc6f3076c6774e03ac16f1a3d2">cfgBool( doc, id )</a></code>. Here is an example of where this new option is used -</p>
+<p>This can be added anywhere in the code to change the current code action. While the testing of the option depends on the option type, the most common is <code><a class="el" href="group__configuration__options.html#ga855c6bcc6f3076c6774e03ac16f1a3d2" title="Access the Bool value of the given option ID. ">cfgBool( doc, id )</a></code>. Here is an example of where this new option is used -</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;/*\ if javascript insert backslash before / </div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; *  Issue #348 - Add option, escape-scripts, to skip</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;\*/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ((TY_(IsJavaScript)(container)) &amp;&amp; cfgBool(doc, TidyEscapeScripts))</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div></div><!-- fragment --><h4>Summary</h4>
 <p>That's about it. Just 4 places. Obviously the best idea it to search for an existing option <code>ID</code>, and follow where it is all defined and used, and copy that. It is not difficult.</p>
 <p>; eof 20160310 </p>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('options.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 5 2017 19:32:42 for HTML Tidy by
+    <li class="footer">Generated on Sat Oct 7 2017 16:14:34 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

@@ -175,5 +175,5 @@ var searchData=
   ['ty_5f❪w3cattrsfor_5fvideo❫',['TY_❪W3CAttrsFor_VIDEO❫',['../attrdict_8h.html#a95a4d946e51467770ef47dabf8b447a1',1,'attrdict.h']]],
   ['ty_5f❪w3cattrsfor_5fwbr❫',['TY_❪W3CAttrsFor_WBR❫',['../attrdict_8h.html#adddfc726d1eb9bf58b900f3beee9881f',1,'attrdict.h']]],
   ['ty_5f❪w3cattrsfor_5fxmp❫',['TY_❪W3CAttrsFor_XMP❫',['../attrdict_8h.html#aa34262d5ee0309c0e34787f006bfe553',1,'attrdict.h']]],
-  ['type',['type',['../config_8h.html#ac5e767ee9292db51478035581ed522f6',1,'_tidy_option::type()'],['../lexer_8h.html#a4ae4552b2f2e44004ccacf29ef1cbc77',1,'_Node::type()'],['../group__utilities__cli__options.html#afd497e9c74306550bd7e425e4685cdf3',1,'OptionDesc::type()']]]
+  ['type',['type',['../group__configuration__options.html#ac5e767ee9292db51478035581ed522f6',1,'_tidy_option::type()'],['../lexer_8h.html#a4ae4552b2f2e44004ccacf29ef1cbc77',1,'_Node::type()'],['../group__utilities__cli__options.html#afd497e9c74306550bd7e425e4685cdf3',1,'OptionDesc::type()']]]
 ];

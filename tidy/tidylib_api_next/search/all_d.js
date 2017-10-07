@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../config_8h.html#a8f312608fe59cf2a43a083b2f75d2028',1,'PickListItem']]],
+  ['label',['label',['../group__configuration__options.html#a8f312608fe59cf2a43a083b2f75d2028',1,'PickListItem']]],
   ['lang_5fhelp',['lang_help',['../group__service__lang__help.html#gada01e757207f983846fbc04abfd54363',1,'tidy.c']]],
   ['language_2eh',['language.h',['../language_8h.html',1,'']]],
   ['language_5fen',['language_en',['../language__en_8h.html#acf45f0e561099b6ff17038f78ead9bc7',1,'language_en.h']]],
@@ -64,7 +64,7 @@ var searchData=
   ['link_5ftext_5fnot_5fmeaningful',['LINK_TEXT_NOT_MEANINGFUL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a3d33ca945223f32be4891d7ec48d9076',1,'tidyenum.h']]],
   ['link_5ftext_5fnot_5fmeaningful_5fclick_5fhere',['LINK_TEXT_NOT_MEANINGFUL_CLICK_HERE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a13032ec87b01e398a4d4186799e3a08f',1,'tidyenum.h']]],
   ['link_5ftext_5ftoo_5flong',['LINK_TEXT_TOO_LONG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a0800f87a9c6f5de629966408c143fc07',1,'tidyenum.h']]],
-  ['links',['links',['../config_8h.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
+  ['links',['links',['../group__configuration__options.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
   ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs']]],
   ['list_5fusage_5finvalid_5fli',['LIST_USAGE_INVALID_LI',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a8fe760ec766f9346efe41f78efc26071',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5fol',['LIST_USAGE_INVALID_OL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a56a0166615408bdfa6d2d6e04a5efddd',1,'tidyenum.h']]],

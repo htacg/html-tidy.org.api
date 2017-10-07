@@ -13,7 +13,7 @@ var searchData=
   ['_5fstreamout',['_StreamOut',['../streamio_8h.html#struct__StreamOut',1,'']]],
   ['_5fstyle',['_Style',['../lexer_8h.html#struct__Style',1,'']]],
   ['_5fstyleprop',['_StyleProp',['../lexer_8h.html#struct__StyleProp',1,'']]],
-  ['_5ftidy_5foption',['_tidy_option',['../config_8h.html#struct__tidy__option',1,'']]],
+  ['_5ftidy_5foption',['_tidy_option',['../group__configuration__options.html#struct__tidy__option',1,'']]],
   ['_5ftidyaccessimpl',['_TidyAccessImpl',['../access_8h.html#struct__TidyAccessImpl',1,'']]],
   ['_5ftidyallocator',['_TidyAllocator',['../group__Memory.html#struct__TidyAllocator',1,'']]],
   ['_5ftidyallocatorvtbl',['_TidyAllocatorVtbl',['../group__Memory.html#struct__TidyAllocatorVtbl',1,'']]],

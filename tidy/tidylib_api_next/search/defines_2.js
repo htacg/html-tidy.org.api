@@ -1,10 +1,6 @@
 var searchData=
 [
   ['cdata',['CDATA',['../pprint_8h.html#a72048b767e62a20b79bde41af5b4615c',1,'pprint.h']]],
-  ['cfg',['cfg',['../config_8h.html#a484580ed1c9e6a982719162077f61ab4',1,'config.h']]],
-  ['cfgautobool',['cfgAutoBool',['../config_8h.html#a3d58cbd3c2db3881c3c7c6424f8e44bc',1,'config.h']]],
-  ['cfgbool',['cfgBool',['../config_8h.html#a855c6bcc6f3076c6774e03ac16f1a3d2',1,'config.h']]],
-  ['cfgstr',['cfgStr',['../config_8h.html#addd94e3fc33c415d20a1315dd0441012',1,'config.h']]],
   ['cm_5fblock',['CM_BLOCK',['../lexer_8h.html#a76c918adbb34cc629a7bef912ccd6f2c',1,'lexer.h']]],
   ['cm_5fdeflist',['CM_DEFLIST',['../lexer_8h.html#a76b31abd12aa0be9246fe5922c9ef293',1,'lexer.h']]],
   ['cm_5fempty',['CM_EMPTY',['../lexer_8h.html#a24314e26b35a1d1db9091d4056f33e32',1,'lexer.h']]],

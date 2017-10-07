@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['c',['c',['../config_8h.html#a1fa1bc6482837324f98667a012839afd',1,'TidyConfigImpl']]],
+  ['c',['c',['../group__configuration__options.html#a1fa1bc6482837324f98667a012839afd',1,'TidyConfigImpl']]],
   ['capacity',['capacity',['../attrs_8h.html#a8c5dc625aaaa0bf41017fa5d5510b9b9',1,'PriorityAttribs']]],
   ['cat',['cat',['../group__options__cli.html#af53206e0ab9f5d13a08b154f1267e429',1,'CmdOptDesc::cat()'],['../group__utilities__cli__options.html#a2f7b6e3364fc842f8b3896c17d651c55',1,'OptionDesc::cat()']]],
-  ['category',['category',['../config_8h.html#ab2184a7c49c7e1c114362af850d86fa0',1,'_tidy_option']]],
+  ['category',['category',['../group__configuration__options.html#ab2184a7c49c7e1c114362af850d86fa0',1,'_tidy_option']]],
   ['catid',['catid',['../group__utilities__cli__options.html#a95bfa89dd612e5a6677b8bb0a2bb25f6',1,'OptionDesc']]],
-  ['cfgin',['cfgIn',['../config_8h.html#aae9d57947d6150d275f76ff35f174f34',1,'TidyConfigImpl']]],
+  ['cfgin',['cfgIn',['../group__configuration__options.html#aae9d57947d6150d275f76ff35f174f34',1,'TidyConfigImpl']]],
   ['charbuf',['charbuf',['../streamio_8h.html#a6ece0ca065c04601bffbd495c43b811d',1,'_StreamIn']]],
   ['checkedheaders',['CheckedHeaders',['../access_8h.html#a304078dee1fa37811e456b8bae2508b9',1,'_TidyAccessImpl']]],
   ['chkattrs',['chkattrs',['../tags_8h.html#a3b78d0ba0798944b36212a2d869a3685',1,'_Dict']]],
