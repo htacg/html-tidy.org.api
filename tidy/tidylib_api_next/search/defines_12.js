@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['white',['white',['../lexer_8h.html#a85bd03e30e523319b5e069e7a8a0f81d',1,'lexer.h']]],
-  ['win1252',['WIN1252',['../streamio_8h.html#a733809de81b13d53a582269f3da0610d',1,'streamio.h']]]
+  ['x10f',['X10F',['../lexer_8h.html#a7cfbedf597b31c9a13cc7fa13eb1bbac',1,'lexer.h']]],
+  ['x10s',['X10S',['../lexer_8h.html#abc45b9bf01ecaaa484d60cb409247b4c',1,'lexer.h']]],
+  ['x10t',['X10T',['../lexer_8h.html#a20d7a08653ee4eb7257dd3331d02574f',1,'lexer.h']]],
+  ['xb10',['XB10',['../lexer_8h.html#a390cccfd0d2b5415463604d2862cf565',1,'lexer.h']]],
+  ['xh11',['XH11',['../lexer_8h.html#a03d682ec9b52d8a221f4b45b219f12f2',1,'lexer.h']]],
+  ['xh50',['XH50',['../lexer_8h.html#a0a9d5efec651ffa44616f2c7611534bf',1,'lexer.h']]],
+  ['xhtml_5fnamespace',['XHTML_NAMESPACE',['../attrs_8h.html#a1b815d401ab0311f96a91047c71389bb',1,'attrs.h']]],
+  ['xxxx',['xxxx',['../lexer_8h.html#ac684563858bff821d0cd46a0d1edbf6e',1,'lexer.h']]]
 ];

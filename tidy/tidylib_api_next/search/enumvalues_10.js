@@ -552,6 +552,8 @@ var searchData=
   ['tidymergeemphasis',['TidyMergeEmphasis',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150aa65f876b599e023be7bbb12065a4bda0',1,'tidyenum.h']]],
   ['tidymergespans',['TidyMergeSpans',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a619ee0aa6acf2ed9fa1aa35de350b9f3',1,'tidyenum.h']]],
   ['tidymetacharset',['TidyMetaCharset',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150af5b61e2a40001e6b99e72c2ee9b53271',1,'tidyenum.h']]],
+  ['tidymutereports',['TidyMuteReports',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c',1,'tidyenum.h']]],
+  ['tidymuteshow',['TidyMuteShow',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25',1,'tidyenum.h']]],
   ['tidyncr',['TidyNCR',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a93d63c38bc0bd6cca368e23926dbf486',1,'tidyenum.h']]],
   ['tidynewline',['TidyNewline',['../group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a3be9fddbd7a49644bc4359f79c95f0e0',1,'tidyenum.h']]],
   ['tidynode_5fasp',['TidyNode_Asp',['../group__public__enumerations.html#gga4af7ceeebf0ce18b70ed74f5db2cdf72a4b6abbff33e0faf3f4e3b47b148c805b',1,'tidyenum.h']]],

@@ -6,6 +6,7 @@ var group__messageobj__message__api =
     [ "TY_❪getMessageDoc❫", "group__messageobj__message__api.html#gadae37ec8eb8cfe3c84d57d82c59e76c1", null ],
     [ "TY_❪getMessageFormatDefault❫", "group__messageobj__message__api.html#ga7a0371fca393553b8e98d22d0a8fcf4f", null ],
     [ "TY_❪getMessageFormat❫", "group__messageobj__message__api.html#ga1ffd260b78fdbe0b554aaccb4bbabdc5", null ],
+    [ "TY_❪getMessageIsMuted❫", "group__messageobj__message__api.html#ga93fa5108e9949d660f3a788dad48630b", null ],
     [ "TY_❪getMessageKey❫", "group__messageobj__message__api.html#ga3f640506737650059b6ba66f6dbe3fd0", null ],
     [ "TY_❪getMessageLevel❫", "group__messageobj__message__api.html#ga621ec0be2e87982479adf6a64387b98f", null ],
     [ "TY_❪getMessageLine❫", "group__messageobj__message__api.html#gaf79d9b7ce9ce7f24b9a4634abcb850e4", null ],

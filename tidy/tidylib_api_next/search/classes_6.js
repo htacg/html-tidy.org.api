@@ -9,6 +9,7 @@ var searchData=
   ['tidylocalmapitem',['tidyLocalMapItem',['../group__Localization.html#structtidyLocalMapItem',1,'']]],
   ['tidymessage',['TidyMessage',['../group__Opaque.html#structTidyMessage',1,'']]],
   ['tidymessageargument',['TidyMessageArgument',['../group__Opaque.html#structTidyMessageArgument',1,'']]],
+  ['tidymutedmessages',['TidyMutedMessages',['../group__message__mutinging.html#structTidyMutedMessages',1,'']]],
   ['tidynode',['TidyNode',['../group__Opaque.html#structTidyNode',1,'']]],
   ['tidyoption',['TidyOption',['../group__Opaque.html#structTidyOption',1,'']]],
   ['tidyoptiondoc',['TidyOptionDoc',['../group__configuration__options.html#structTidyOptionDoc',1,'']]],

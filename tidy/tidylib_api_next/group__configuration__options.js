@@ -44,6 +44,7 @@ var group__configuration__options =
     [ "TY_❪ConfigDiffThanDefault❫", "group__configuration__options.html#ga915a8fcc0b81ad9c75fbcb1c6eae21e4", null ],
     [ "TY_❪ConfigDiffThanSnapshot❫", "group__configuration__options.html#gaead1cf5158c2d60cb533b7b051c01d6d", null ],
     [ "TY_❪CopyConfig❫", "group__configuration__options.html#gab2a647a0240d322bfbbfbd4d7fa98e22", null ],
+    [ "TY_❪DeclareListItem❫", "group__configuration__options.html#gaed9c70489d9584f5d8ce21839d88bd77", null ],
     [ "TY_❪DeclareUserTag❫", "group__configuration__options.html#ga521ab1409f6700766610d8660e3ced9a", null ],
     [ "TY_❪FreeConfig❫", "group__configuration__options.html#ga19b8529038a261b5d3e38130c341e72c", null ],
     [ "TY_❪getNextOptionPick❫", "group__configuration__options.html#ga1af06d266b28af2a1ff373cd056a5fb8", null ],

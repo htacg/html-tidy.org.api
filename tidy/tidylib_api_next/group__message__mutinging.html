@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
-<title>HTML Tidy: Provide the -xml-help Service</title>
+<title>HTML Tidy: Message Muting</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__service__xmlhelp.html','');});
+$(document).ready(function(){initNavTree('group__message__mutinging.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -92,35 +92,81 @@ $(document).ready(function(){initNavTree('group__service__xmlhelp.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Provide the -xml-help Service<div class="ingroups"><a class="el" href="group__console__application.html">Tidy Console Application</a></div></div>  </div>
+<div class="title">Message Muting<div class="ingroups"><a class="el" href="group__internal__api.html">Internal API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Message types included in the <code>mute</code> option will be be printed in messageOut(). </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structTidyMutedMessages"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#structTidyMutedMessages">TidyMutedMessages</a></td></tr>
+<tr class="memdesc:structTidyMutedMessages"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maintains a list of messages not to display.  <a href="group__message__mutinging.html#structTidyMutedMessages">More...</a><br /></td></tr>
+<tr class="separator:structTidyMutedMessages"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaeed7f9dcfe524104cf46919ccbc06ff5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__xmlhelp.html#gaeed7f9dcfe524104cf46919ccbc06ff5">print_xml_help_option_element</a> (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> element, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
-<tr class="memdesc:gaeed7f9dcfe524104cf46919ccbc06ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs an XML element for a CLI option, escaping special characters as required.  <a href="#gaeed7f9dcfe524104cf46919ccbc06ff5">More...</a><br /></td></tr>
-<tr class="separator:gaeed7f9dcfe524104cf46919ccbc06ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e9a14b4d4332de70dad28a51da40183"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__service__xmlhelp.html#ga5e9a14b4d4332de70dad28a51da40183">xml_help</a> (void)</td></tr>
-<tr class="memdesc:ga5e9a14b4d4332de70dad28a51da40183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the -xml-help service.  <a href="#ga5e9a14b4d4332de70dad28a51da40183">More...</a><br /></td></tr>
-<tr class="separator:ga5e9a14b4d4332de70dad28a51da40183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae62d0467b5184908e6415f7188946b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#gae62d0467b5184908e6415f7188946b22">TY_❪DefineMutedMessage❫</a> (TidyDocImpl *doc, const TidyOptionImpl *opt, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
+<tr class="memdesc:gae62d0467b5184908e6415f7188946b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new message ID to the list of muted messages.  <a href="#gae62d0467b5184908e6415f7188946b22">More...</a><br /></td></tr>
+<tr class="separator:gae62d0467b5184908e6415f7188946b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0f94e453acac568a9e308144e030fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#gad0f94e453acac568a9e308144e030fd2">TY_❪FreeMutedMessageList❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gad0f94e453acac568a9e308144e030fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the list of muted messages.  <a href="#gad0f94e453acac568a9e308144e030fd2">More...</a><br /></td></tr>
+<tr class="separator:gad0f94e453acac568a9e308144e030fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaeed7f9dcfe524104cf46919ccbc06ff5"></a>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structTidyMutedMessages" id="structTidyMutedMessages"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void print_xml_help_option_element </td>
+          <td class="memname">struct TidyMutedMessages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Maintains a list of messages not to display. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8c5dc625aaaa0bf41017fa5d5510b9b9"></a><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+<td class="fieldname">
+capacity</td>
+<td class="fielddoc">
+Current capacity of the list. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab77ade2208ba49f6e2b934ef32622c48"></a><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+Current count of the list. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac71dcecd19b685611ec92d966a8b6fa2"></a><a class="el" href="group__public__enumerations.html#ga1686318b9a8c2aa6e60e341af7145c00">tidyStrings</a> *</td>
+<td class="fieldname">
+list</td>
+<td class="fielddoc">
+A list of messages that won't be output. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gae62d0467b5184908e6415f7188946b22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TY_❪DefineMutedMessage❫ </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TidyOptionImpl *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -134,48 +180,41 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Outputs an XML element for a CLI option, escaping special characters as required. </p>
-<p>For example, it might print <code>&lt;name&gt;-output &lt;file&gt;&lt;/name&gt;</code>. </p>
+<p>Adds a new message ID to the list of muted messages. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">element</td><td>XML element name. </td></tr>
-    <tr><td class="paramname">name</td><td>The contents of the element. </td></tr>
+    <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
+    <tr><td class="paramname">opt</td><td>The option that is defining the muted message. </td></tr>
+    <tr><td class="paramname">name</td><td>The message code as a string. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ga5e9a14b4d4332de70dad28a51da40183"></a>
+<a class="anchor" id="gad0f94e453acac568a9e308144e030fd2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void xml_help </td>
+          <td class="memname">void TY_❪FreeMutedMessageList❫ </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Provides the -xml-help service. </p>
+<p>Frees the list of muted messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

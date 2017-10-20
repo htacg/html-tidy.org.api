@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.61</span>
+   &#160;<span id="projectnumber">5.5.66</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -1916,6 +1916,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>tidyGetMessageFormatDefault()
 : <a class="el" href="group__IO.html#ga9fd535a76f175365e0965644d415ccbf">tidy.h</a>
 </li>
+<li>tidyGetMessageIsMuted()
+: <a class="el" href="group__IO.html#ga15bd8e0146f751872791cecb0878e010">tidy.h</a>
+</li>
 <li>tidyGetMessageKey()
 : <a class="el" href="group__IO.html#ga69e6b28fe92bc343131b2cf29ad6c1eb">tidy.h</a>
 </li>
@@ -2131,6 +2134,12 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 </li>
 <li>TidyMetaCharset
 : <a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150af5b61e2a40001e6b99e72c2ee9b53271">tidyenum.h</a>
+</li>
+<li>TidyMuteReports
+: <a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c">tidyenum.h</a>
+</li>
+<li>TidyMuteShow
+: <a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25">tidyenum.h</a>
 </li>
 <li>TidyNCR
 : <a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a93d63c38bc0bd6cca368e23926dbf486">tidyenum.h</a>
@@ -2369,6 +2378,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 </li>
 <li>tidyParseString()
 : <a class="el" href="group__Parse.html#ga50c02fa244dcd120ae339719c2132ff9">tidy.h</a>
+</li>
+<li>tidyPlatform()
+: <a class="el" href="group__Basic.html#gab799556cff58c229917e47c7431d2e83">tidy.h</a>
 </li>
 <li>TidyPPProgress
 : <a class="el" href="group__IO.html#ga670db9238fab3919248238737512d6be">tidy.h</a>
@@ -3259,6 +3271,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>TY_❪CopyConfig❫()
 : <a class="el" href="group__configuration__options.html#gab2a647a0240d322bfbbfbd4d7fa98e22">config.h</a>
 </li>
+<li>TY_❪DeclareListItem❫()
+: <a class="el" href="group__configuration__options.html#gaed9c70489d9584f5d8ce21839d88bd77">config.h</a>
+</li>
 <li>TY_❪DeclareUserTag❫()
 : <a class="el" href="group__configuration__options.html#ga521ab1409f6700766610d8660e3ced9a">config.h</a>
 </li>
@@ -3273,6 +3288,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 </li>
 <li>TY_❪DeferDup❫()
 : <a class="el" href="lexer_8h.html#aac555b8d5fc23f2bcfb8abcdd11c09ca">lexer.h</a>
+</li>
+<li>TY_❪DefineMutedMessage❫()
+: <a class="el" href="group__message__mutinging.html#gae62d0467b5184908e6415f7188946b22">message.h</a>
 </li>
 <li>TY_❪DefinePriorityAttribute❫()
 : <a class="el" href="attrs_8h.html#ad2243fe6267226d94fc444cc43eb0fbf">attrs.h</a>
@@ -3415,6 +3433,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>TY_❪FreeLexer❫()
 : <a class="el" href="lexer_8h.html#ac6029d03218822b142ac7c449a8c438d">lexer.h</a>
 </li>
+<li>TY_❪FreeMutedMessageList❫()
+: <a class="el" href="group__message__mutinging.html#gad0f94e453acac568a9e308144e030fd2">message.h</a>
+</li>
 <li>TY_❪FreeNode❫()
 : <a class="el" href="lexer_8h.html#a2a85cc6ffba6bd968c0d26284f009415">lexer.h</a>
 </li>
@@ -3510,6 +3531,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 </li>
 <li>TY_❪getMessageFormat❫()
 : <a class="el" href="group__messageobj__message__api.html#ga1ffd260b78fdbe0b554aaccb4bbabdc5">messageobj.h</a>
+</li>
+<li>TY_❪getMessageIsMuted❫()
+: <a class="el" href="group__messageobj__message__api.html#ga93fa5108e9949d660f3a788dad48630b">messageobj.h</a>
 </li>
 <li>TY_❪getMessageKey❫()
 : <a class="el" href="group__messageobj__message__api.html#ga3f640506737650059b6ba66f6dbe3fd0">messageobj.h</a>
@@ -4591,7 +4615,7 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 7 2017 16:14:34 for HTML Tidy by
+    <li class="footer">Generated on Thu Oct 19 2017 20:27:40 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

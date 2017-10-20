@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.61</span>
+   &#160;<span id="projectnumber">5.5.66</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -239,6 +239,9 @@ TidyMessageCallback API</h2></td></tr>
 <tr class="memitem:ga8133a7d5a0f278a803eaee1826ce64f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__public__enumerations.html#ga2a05b6d387bd5d4732df061585c0531e">TidyReportLevel</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IO.html#ga8133a7d5a0f278a803eaee1826ce64f8">tidyGetMessageLevel</a> (<a class="el" href="group__Opaque.html#structTidyMessage">TidyMessage</a> tmessage)</td></tr>
 <tr class="memdesc:ga8133a7d5a0f278a803eaee1826ce64f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the TidyReportLevel of the message.  <a href="#ga8133a7d5a0f278a803eaee1826ce64f8">More...</a><br /></td></tr>
 <tr class="separator:ga8133a7d5a0f278a803eaee1826ce64f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15bd8e0146f751872791cecb0878e010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IO.html#ga15bd8e0146f751872791cecb0878e010">tidyGetMessageIsMuted</a> (<a class="el" href="group__Opaque.html#structTidyMessage">TidyMessage</a> tmessage)</td></tr>
+<tr class="memdesc:ga15bd8e0146f751872791cecb0878e010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the muted status of the message, that is, whether or not the current configuration indicated that this message should be muted.  <a href="#ga15bd8e0146f751872791cecb0878e010">More...</a><br /></td></tr>
+<tr class="separator:ga15bd8e0146f751872791cecb0878e010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fd535a76f175365e0965644d415ccbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IO.html#ga9fd535a76f175365e0965644d415ccbf">tidyGetMessageFormatDefault</a> (<a class="el" href="group__Opaque.html#structTidyMessage">TidyMessage</a> tmessage)</td></tr>
 <tr class="memdesc:ga9fd535a76f175365e0965644d415ccbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default format string, which is the format string for the message in Tidy's default localization (en_us).  <a href="#ga9fd535a76f175365e0965644d415ccbf">More...</a><br /></td></tr>
 <tr class="separator:ga9fd535a76f175365e0965644d415ccbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1063,6 +1066,31 @@ Output context. <p>Passed to callbacks. </p>
 
 </div>
 </div>
+<a class="anchor" id="ga15bd8e0146f751872791cecb0878e010"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidyGetMessageIsMuted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyMessage">TidyMessage</a>&#160;</td>
+          <td class="paramname"><em>tmessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the muted status of the message, that is, whether or not the current configuration indicated that this message should be muted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmessage</td><td>Specify the message that you are querying. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a Bool indicating that the config indicates muting this message. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga69e6b28fe92bc343131b2cf29ad6c1eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1801,7 +1829,7 @@ Output context. <p>Passed to callbacks. </p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 7 2017 16:14:34 for HTML Tidy by
+    <li class="footer">Generated on Thu Oct 19 2017 20:27:40 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

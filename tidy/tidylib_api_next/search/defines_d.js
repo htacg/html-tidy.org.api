@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['raw',['RAW',['../streamio_8h.html#a8cbc8c74f4ed0a3d6a415c8d37630e6b',1,'streamio.h']]],
-  ['replaced_5fchar',['REPLACED_CHAR',['../message_8h.html#aa77348b0ee0d8e2e61b0791c451dc3e8',1,'message.h']]]
+  ['shiftjis',['SHIFTJIS',['../streamio_8h.html#a55968d502666c9aeccd1b834e6e36842',1,'streamio.h']]],
+  ['support_5flocalizations',['SUPPORT_LOCALIZATIONS',['../tidyplatform_8h.html#af8d7b180618e09812d4a3997dba66243',1,'tidyplatform.h']]],
+  ['support_5fposix_5fmapped_5ffiles',['SUPPORT_POSIX_MAPPED_FILES',['../tidyplatform_8h.html#ad9f608f417a997f4973e218d859381d6',1,'tidyplatform.h']]]
 ];

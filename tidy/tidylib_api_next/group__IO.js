@@ -42,6 +42,7 @@ var group__IO =
     [ "tidyGetMessageDoc", "group__IO.html#ga300dae656d81e3c222b95bc2f8f017e8", null ],
     [ "tidyGetMessageFormat", "group__IO.html#gaac520b53052bfee6db1b03031c5af506", null ],
     [ "tidyGetMessageFormatDefault", "group__IO.html#ga9fd535a76f175365e0965644d415ccbf", null ],
+    [ "tidyGetMessageIsMuted", "group__IO.html#ga15bd8e0146f751872791cecb0878e010", null ],
     [ "tidyGetMessageKey", "group__IO.html#ga69e6b28fe92bc343131b2cf29ad6c1eb", null ],
     [ "tidyGetMessageLevel", "group__IO.html#ga8133a7d5a0f278a803eaee1826ce64f8", null ],
     [ "tidyGetMessageLine", "group__IO.html#ga3822426bdd08f1278fe346e33a048e57", null ],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['m_5fmax_5fsprtf',['M_MAX_SPRTF',['../sprtf_8h.html#a224ca0a2137759a2e16c5c4e7a140e7a',1,'sprtf.h']]],
   ['macroman',['MACROMAN',['../streamio_8h.html#a3a3b1c938934296f85c1497cdd4dfbbc',1,'streamio.h']]],
   ['main',['main',['../group__main.html#ga3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;tidy.c'],['../group__main.html',1,'(Global Namespace)']]],
   ['main_5fpage_2emd',['main_page.md',['../main__page_8md.html',1,'']]],
@@ -13,10 +12,10 @@ var searchData=
   ['malformed_5fdoctype',['MALFORMED_DOCTYPE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ac3544a82e3bcfb81a90634e433c17ce2',1,'tidyenum.h']]],
   ['mappedio_2eh',['mappedio.h',['../mappedio_8h.html',1,'']]],
   ['max',['MAX',['../tidy-int_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f',1,'tidy-int.h']]],
-  ['mcdecl',['MCDECL',['../sprtf_8h.html#af73121a605f19093a757366f96b4252d',1,'sprtf.h']]],
   ['memory_20allocation',['Memory Allocation',['../group__Memory.html',1,'']]],
   ['message',['message',['../tidy-int_8h.html#a54a3c8ba7fa71bf0bb56dce11ba17e91',1,'_TidyMessageImpl']]],
   ['message_2eh',['message.h',['../message_8h.html',1,'']]],
+  ['message_20muting',['Message Muting',['../group__message__mutinging.html',1,'']]],
   ['messagecallback',['messageCallback',['../tidy-int_8h.html#ad2666eece113a54f9d861d5fdeca104d',1,'_TidyDocImpl']]],
   ['messagedefault',['messageDefault',['../tidy-int_8h.html#ab608dd882385fc47ef1e26a7436b548f',1,'_TidyMessageImpl']]],
   ['messageformat',['messageFormat',['../tidy-int_8h.html#a41427f958fed26665c3a7f2d3f02e339',1,'_TidyMessageImpl']]],
@@ -56,5 +55,6 @@ var searchData=
   ['model',['model',['../tags_8h.html#a29bfa0b6cdd9075416521614e503187e',1,'_Dict']]],
   ['moved_5fstyle_5fto_5fhead',['MOVED_STYLE_TO_HEAD',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a8e59c24e31235ad65337f3c277c4ea89',1,'tidyenum.h']]],
   ['multimedia_5frequires_5ftext',['MULTIMEDIA_REQUIRES_TEXT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aac8a39c2f8ef20f58086be3a6e374839',1,'tidyenum.h']]],
+  ['muted',['muted',['../tidy-int_8h.html#a8cf68f216e7ac6aa109cd040a85e31c1',1,'_TidyDocImpl::muted()'],['../tidy-int_8h.html#aa4eb6f573e4dadc0e2f832aa8625a31d',1,'_TidyMessageImpl::muted()']]],
   ['miscellaneous_20utilities',['Miscellaneous Utilities',['../group__utilities__misc.html',1,'']]]
 ];

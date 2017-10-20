@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <meta name="generator" content="HTML Tidy for HTML5 for Mac OS X version 5.5.61" />
+        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.5.66" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>
-            HTML Tidy 5.5.61 Options Quick Reference
+            HTML Tidy 5.5.66 Options Quick Reference
         </title>
         <style type="text/css">
         /*<![CDATA[*/
@@ -148,7 +148,7 @@
     </head>
     <body>
         <h1 id="top">
-            HTML Tidy 5.5.61 Options Quick Reference
+            HTML Tidy 5.5.66 Options Quick Reference
         </h1>
         <h2>
             Option Groups
@@ -231,6 +231,28 @@
                     </td>
                     <td>
                         yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#mute">mute</a>
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        <strong>-</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#mute-id">mute-id</a>
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                    <td>
+                        no
                     </td>
                 </tr>
                 <tr>
@@ -1567,6 +1589,101 @@
                     <td></td>
                     <td class="qdescription">
                         This option specifies if Tidy should generate a pretty printed version of the markup. Note that Tidy won't generate a pretty printed version if it finds significant errors (see <code>force-output</code>).
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr class="header_option_name">
+                    <td colspan="2" id="mute">
+                        mute
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Type:
+                    </td>
+                    <td>
+                        String
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Default:
+                    </td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example
+                    </td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        See also:
+                    </td>
+                    <td>
+                        <a href="#mute-id">mute-id</a>, <a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="qdescription">
+                        Use this option to prevent Tidy from displaying certain types of report output,for example, for conditions that you wish to ignore.<br />
+                        This option takes a list of one or more keys indicating the message type to mute. You can discover these message keys by using the <code>mute-id</code> configuration option and examining Tidy's output.
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr class="header_option_name">
+                    <td colspan="2" id="mute-id">
+                        mute-id
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Type:
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Default:
+                    </td>
+                    <td>
+                        no
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example
+                    </td>
+                    <td>
+                        no, yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        See also:
+                    </td>
+                    <td>
+                        <a href="#mute">mute</a>, <a href="#doctype">doctype</a>, <a href="#preserve-entities">preserve-entities</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="qdescription">
+                        This option indicates whether or not Tidy should display message ID's with each of its error reports. This could be useful if you wanted to use the <code>mute</code> configuration option in order to filter out certain report messages.
                     </td>
                 </tr>
             </tbody>

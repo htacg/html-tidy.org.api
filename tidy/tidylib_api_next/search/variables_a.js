@@ -22,6 +22,6 @@ var searchData=
   ['linelen',['linelen',['../pprint_8h.html#acd10ac976637c48e3491d1d19e44f44c',1,'TidyPrintImpl']]],
   ['lines',['lines',['../lexer_8h.html#a760028244266a7afc030b2fdf2a2a520',1,'_Lexer']]],
   ['links',['links',['../group__configuration__options.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
-  ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs']]],
+  ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs::list()'],['../group__message__mutinging.html#ac71dcecd19b685611ec92d966a8b6fa2',1,'TidyMutedMessages::list()']]],
   ['listelements',['ListElements',['../access_8h.html#ad3e3929ba5bb9b3e56df38c0657366b6',1,'_TidyAccessImpl']]]
 ];

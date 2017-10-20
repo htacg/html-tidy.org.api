@@ -65,7 +65,7 @@ var searchData=
   ['link_5ftext_5fnot_5fmeaningful_5fclick_5fhere',['LINK_TEXT_NOT_MEANINGFUL_CLICK_HERE',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a13032ec87b01e398a4d4186799e3a08f',1,'tidyenum.h']]],
   ['link_5ftext_5ftoo_5flong',['LINK_TEXT_TOO_LONG',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a0800f87a9c6f5de629966408c143fc07',1,'tidyenum.h']]],
   ['links',['links',['../group__configuration__options.html#aee4038cacd3a4c2062ca64384d29e167',1,'TidyOptionDoc']]],
-  ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs']]],
+  ['list',['list',['../attrs_8h.html#a51fbbc7940c482f721407f1267447823',1,'PriorityAttribs::list()'],['../group__message__mutinging.html#ac71dcecd19b685611ec92d966a8b6fa2',1,'TidyMutedMessages::list()']]],
   ['list_5fusage_5finvalid_5fli',['LIST_USAGE_INVALID_LI',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a8fe760ec766f9346efe41f78efc26071',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5fol',['LIST_USAGE_INVALID_OL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a56a0166615408bdfa6d2d6e04a5efddd',1,'tidyenum.h']]],
   ['list_5fusage_5finvalid_5ful',['LIST_USAGE_INVALID_UL',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aa0443bdcef430b36e016474617958bdb',1,'tidyenum.h']]],

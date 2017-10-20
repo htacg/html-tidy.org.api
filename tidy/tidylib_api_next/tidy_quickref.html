@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.61</span>
+   &#160;<span id="projectnumber">5.5.66</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -159,6 +159,22 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">yes</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#mute">mute</a>
+    </td>
+    <td class="qrow">String</td>
+    <td class="qrow">
+      <strong>-</strong>
+    </td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#mute-id">mute-id</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
   </tr>
   <tr>
     <td class="qrow">
@@ -1038,6 +1054,68 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   <tr>
     <td/>
     <td colspan="1" class="qdescription">This option specifies if Tidy should generate a pretty printed version of the markup. Note that Tidy won't generate a pretty printed version if it finds significant errors (see <code xmlns="">force-output</code>). </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="mute" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">mute</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">String</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">-</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#mute-id">mute-id</a>, <a href="#new-blocklevel-tags">new-blocklevel-tags</a>, <a href="#new-empty-tags">new-empty-tags</a>, <a href="#new-inline-tags">new-inline-tags</a>, <a href="#new-pre-tags">new-pre-tags</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">Use this option to prevent Tidy from displaying certain types of report output,for example, for conditions that you wish to ignore.<br xmlns=""/>This option takes a list of one or more keys indicating the message type to mute. You can discover these message keys by using the <code xmlns="">mute-id</code> configuration option and examining Tidy's output. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td valign="top" id="mute-id" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">mute-id</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">See Also:</td>
+    <td valign="top" class="qvalu"><a href="#mute">mute</a>, <a href="#doctype">doctype</a>, <a href="#preserve-entities">preserve-entities</a></td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">This option indicates whether or not Tidy should display message ID's with each of its error reports. This could be useful if you wanted to use the <code xmlns="">mute</code> configuration option in order to filter out certain report messages. </td>
   </tr>
   <tr>
     <td> </td>
@@ -3768,7 +3846,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 7 2017 16:14:34 for HTML Tidy by
+    <li class="footer">Generated on Thu Oct 19 2017 20:27:40 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

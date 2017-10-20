@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.61</span>
+   &#160;<span id="projectnumber">5.5.66</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -304,6 +304,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150aaf7d008212d2d90dabc1d7d011926d08">TidySkipNested</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a3637f4378a8136b0c8ea72ca4aa7add0">TidySortAttributes</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c">TidyMuteReports</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25">TidyMuteShow</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a196abcbd26a73e7450cf8d3de0f934f9">TidyStrictTagsAttr</a>, 
 <br />
@@ -1589,21 +1593,17 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a050e3a45e5d216e13c926800fc0584d8">FOREACH_FOOTNOTE_MSG</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7dd6be3c59d384bf89a04f1de45d654f">STRING_DOCTYPE_GIVEN</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7f58526e55e5f53056ecaed87e072180">STRING_ERROR_COUNT</a>, 
-<br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abf02b221b40b37187dc696d0319d545c">STRING_NEEDS_INTERVENTION</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00acc07f113f005099d6be5168078416fda">STRING_NO_ERRORS</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a70ea4e72d7f79fb32ef8ee5841d4eb52">STRING_NO_SYSID</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ac13a60da3b76d4e0fb87ccbf79159873">STRING_NOT_ALL_SHOWN</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ae78b785afd94332efe36dcb8d409d79b">TEXT_GENERAL_INFO_PLEA</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00afc4b3ef76c9b6caac9384607842192ad">TEXT_GENERAL_INFO</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00afc2e0869f4bcd9ae60089a4015177705">REPORT_MESSAGE_FIRST</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a1df7a8e0ee431706a90f52cb41fc3d4a">ADDED_MISSING_CHARSET</a>, 
 <br />
@@ -1771,7 +1771,17 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aec47c91cc6b1a8643baac10a14bb11f0">SPACE_PRECEDING_XMLDECL</a>, 
 <br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a6dece91adfb4efcd25d747863805deb3">STRING_CONTENT_LOOKS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a1db4940ce48f1292ea5a9dc3d952a523">STRING_ARGUMENT_BAD</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7dd6be3c59d384bf89a04f1de45d654f">STRING_DOCTYPE_GIVEN</a>, 
+<br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7f6d6727a6ca3c96c08b1149f3c526c9">STRING_MISSING_MALFORMED</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a3ab1eeb7030bae734c8c8a32fc93d78f">STRING_MUTING_TYPE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a70ea4e72d7f79fb32ef8ee5841d4eb52">STRING_NO_SYSID</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a61548cb51362a5d485794b7f9269a7e2">STRING_UNKNOWN_OPTION</a>, 
 <br />
@@ -1818,6 +1828,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a775eb8ad26519f9c02f5c21ec700deef">XML_DECLARATION_DETECTED</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00af06055c386b736503d4dbb2d3836569d">XML_ID_SYNTAX</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00acc380ad192872df76b322ef19d731117">REPORT_MESSAGE_LAST</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ad7ff8ba9c027342e556b74269d553cb1">IMG_MISSING_ALT</a>, 
 <br />
@@ -2245,7 +2257,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_347ffb9558b54b31166949a03b842226.html">include</a></li><li class="navelem"><a class="el" href="tidyenum_8h.html">tidyenum.h</a></li>
-    <li class="footer">Generated on Sat Oct 7 2017 16:14:34 for HTML Tidy by
+    <li class="footer">Generated on Thu Oct 19 2017 20:27:40 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

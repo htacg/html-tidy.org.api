@@ -15,6 +15,7 @@ var group__Basic =
     [ "tidyLibraryVersion", "group__Basic.html#ga8ae8a9a37f8a143e135141d5e50eac0a", null ],
     [ "tidyLoadConfig", "group__Basic.html#ga2dec710c0d4927e76a7b0d338b11693a", null ],
     [ "tidyLoadConfigEnc", "group__Basic.html#gac677de148c6f00fc96a682c21433ab1c", null ],
+    [ "tidyPlatform", "group__Basic.html#gab799556cff58c229917e47c7431d2e83", null ],
     [ "tidyRelease", "group__Basic.html#gacc380c1451088b89898a85337b113713", null ],
     [ "tidyReleaseDate", "group__Basic.html#gab7b404ada690635341d2e2d332102b36", null ],
     [ "tidySetAppData", "group__Basic.html#gaa1a9f78be3542868ac10481e2efa8708", null ],

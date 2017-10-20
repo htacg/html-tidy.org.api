@@ -4,7 +4,6 @@ var searchData=
   ['obsolete_5felement',['OBSOLETE_ELEMENT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a3f0f5a1b0504a6baea0096904a083da5',1,'tidyenum.h']]],
   ['opaque_20types',['Opaque Types',['../group__Opaque.html',1,'']]],
   ['opaque_5ftype',['opaque_type',['../tidyplatform_8h.html#a726579837b45614e05458b0e20725fe6',1,'opaque_type():&#160;tidyplatform.h'],['../tidyplatform_8h.html#a80eb302731e6c99e11501e913479116c',1,'opaque_type(TidyIterator):&#160;tidyplatform.h']]],
-  ['open_5flog_5ffile',['open_log_file',['../sprtf_8h.html#a1466af77ee4d0f3b27ea360c7b83a048',1,'sprtf.h']]],
   ['opt',['opt',['../group__configuration__options.html#a9d7040fbed83902ec3a9a383c1c23f35',1,'TidyOptionDoc']]],
   ['option_5fremoved',['OPTION_REMOVED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a69b3e2e7b8da47227295236b75e0c3e1',1,'tidyenum.h']]],
   ['option_5fremoved_5fapplied',['OPTION_REMOVED_APPLIED',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a10a058c449a79fd5943095cd6e049a0f',1,'tidyenum.h']]],

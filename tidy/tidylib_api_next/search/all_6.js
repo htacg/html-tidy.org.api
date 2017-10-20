@@ -8,7 +8,6 @@ var searchData=
   ['encoding',['encoding',['../streamio_8h.html#ad1b45f33065aae3c757f56a692b25741',1,'_StreamIn::encoding()'],['../streamio_8h.html#ad1b45f33065aae3c757f56a692b25741',1,'_StreamOut::encoding()']]],
   ['encoding_5fmismatch',['ENCODING_MISMATCH',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a4506fdd6fd61b40c740e4871b0768e91',1,'tidyenum.h']]],
   ['end',['end',['../lexer_8h.html#a967b220666695c1b6eb211560f2a875f',1,'_Node']]],
-  ['endbuf',['EndBuf',['../sprtf_8h.html#a82fe31579119237f8b3fe7a3625474e6',1,'sprtf.h']]],
   ['endofstream',['EndOfStream',['../group__IO.html#ga9a078b706ec6f37cce40958f6f68585a',1,'tidy.h']]],
   ['endtag',['EndTag',['../lexer_8h.html#acac9cbaeea226ed297804c012dc12b16aeb9e89209f7286932442b62fcb37e44e',1,'lexer.h']]],
   ['ensure_5fprogrammatic_5fobjects_5faccessible_5fapplet',['ENSURE_PROGRAMMATIC_OBJECTS_ACCESSIBLE_APPLET',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a705350d621f89b4c7c831f4374e155b0',1,'tidyenum.h']]],
