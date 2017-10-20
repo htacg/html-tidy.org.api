@@ -1,6 +1,7 @@
 var group__internal__api =
 [
     [ "Configuration Options", "group__configuration__options.html", "group__configuration__options" ],
+    [ "Key Discovery", "group__message__keydiscovery.html", "group__message__keydiscovery" ],
     [ "Message Creation and Releasing", "group__messageobj__instantiation.html", "group__messageobj__instantiation" ],
     [ "Message Muting", "group__message__mutinging.html", "group__message__mutinging" ],
     [ "Report Arguments Interrogation API", "group__messageobj__args__api.html", "group__messageobj__args__api" ],
