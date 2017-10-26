@@ -246,38 +246,39 @@
         <td>
           <xsl:choose>
             <xsl:when test="string-length(default) &gt; 0">
-              <xsl:apply-templates select="default" />
+              <var><xsl:apply-templates select="default" /></var>
             </xsl:when>
             <xsl:otherwise>
-              -
+              no default value
             </xsl:otherwise>
           </xsl:choose>        
         </td>
       </tr>
-      <tr>
-        <td>Example</td>
-        <td>
-          <xsl:choose>
-            <xsl:when test="string-length(example) &gt; 0">
-              <xsl:apply-templates select="example"/>
-            </xsl:when>
-            <xsl:otherwise>
-              -
-            </xsl:otherwise>
-          </xsl:choose>
-        </td>
-      </tr>
-      <tr>
-        <td>See also:</td>
-        <td>
-          <xsl:for-each select="seealso">
-            <a href="#{.}"><xsl:apply-templates select="." /></a>
-            <xsl:if test="position() != last()">
-              <xsl:text>, </xsl:text>
-            </xsl:if>
-          </xsl:for-each>
-        </td>
-      </tr>
+      <xsl:choose>
+        <xsl:when test="string-length(example) &gt; 0">
+          <tr>
+            <td>Values:</td>
+            <td>
+              <var><xsl:apply-templates select="example"/></var>
+            </td>
+          </tr>
+        </xsl:when>
+      </xsl:choose>
+      <xsl:choose>
+        <xsl:when test="count(seealso) &gt; 0" >
+          <tr>
+            <td>See also:</td>
+            <td>
+              <xsl:for-each select="seealso">
+                <a href="#{.}"><xsl:apply-templates select="." /></a>
+                <xsl:if test="position() != last()">
+                  <xsl:text>, </xsl:text>
+                </xsl:if>
+              </xsl:for-each>
+            </td>
+          </tr>
+        </xsl:when>
+      </xsl:choose>
       <tr>
         <td></td>
         <td class="qdescription"><xsl:apply-templates select="description"/></td>
@@ -420,7 +421,7 @@
             min-width: 6.0em;
         }
         
-        code, var
+        code
         {
             color: darkgreen;
             font-size: 1.3em;
@@ -428,7 +429,10 @@
         
         var
         {
-        	font-weight: bold;
+            color: darkred;
+            font-size: 1.0em;
+            font-weight: 600;
+            font-style: normal;
         }
 		
 	</style>
