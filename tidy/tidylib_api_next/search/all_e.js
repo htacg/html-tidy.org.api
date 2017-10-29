@@ -52,7 +52,7 @@ var searchData=
   ['missing_5ftitle_5felement',['MISSING_TITLE_ELEMENT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a7a1dfb019d041f6d189a1eafbc1467a0',1,'tidyenum.h']]],
   ['mixedcontent',['MixedContent',['../lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5abfe7484d366620ba533b2e7b471e5ff0',1,'lexer.h']]],
   ['mnemonic',['mnemonic',['../group__options__cli.html#ga65803ae9414c2e3f85d6030e5a0e553b',1,'@5']]],
-  ['model',['model',['../tags_8h.html#a29bfa0b6cdd9075416521614e503187e',1,'_Dict']]],
+  ['model',['model',['../group__tags__h.html#a29bfa0b6cdd9075416521614e503187e',1,'_Dict']]],
   ['moved_5fstyle_5fto_5fhead',['MOVED_STYLE_TO_HEAD',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a8e59c24e31235ad65337f3c277c4ea89',1,'tidyenum.h']]],
   ['multimedia_5frequires_5ftext',['MULTIMEDIA_REQUIRES_TEXT',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aac8a39c2f8ef20f58086be3a6e374839',1,'tidyenum.h']]],
   ['muted',['muted',['../tidy-int_8h.html#a8cf68f216e7ac6aa109cd040a85e31c1',1,'_TidyDocImpl::muted()'],['../tidy-int_8h.html#aa4eb6f573e4dadc0e2f832aa8625a31d',1,'_TidyMessageImpl::muted()']]],

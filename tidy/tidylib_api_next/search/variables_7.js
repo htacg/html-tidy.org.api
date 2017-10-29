@@ -1,7 +1,7 @@
 var searchData=
 [
   ['hascheckedlongdesc',['HasCheckedLongDesc',['../access_8h.html#a05c6358c573f0ddfb38c40652dcfb8b6',1,'_TidyAccessImpl']]],
-  ['hashtab',['hashtab',['../attrs_8h.html#a92c8a13b2ba2c6c684b76bce2e5718b8',1,'_TidyAttribImpl::hashtab()'],['../tags_8h.html#acc50a05ea6d10e74989522c82f9a07d3',1,'_TidyTagImpl::hashtab()']]],
+  ['hashtab',['hashtab',['../attrs_8h.html#a92c8a13b2ba2c6c684b76bce2e5718b8',1,'_TidyAttribImpl::hashtab()'],['../group__tags__h.html#acc50a05ea6d10e74989522c82f9a07d3',1,'TidyTagImpl::hashtab()']]],
   ['hasinvalidcolumnheader',['HasInvalidColumnHeader',['../access_8h.html#aaba2eb0037d0554c284d178eb27c5ba7',1,'_TidyAccessImpl']]],
   ['hasinvalidrowheader',['HasInvalidRowHeader',['../access_8h.html#a42538d2f88fac6204737524679e8e7b7',1,'_TidyAccessImpl']]],
   ['hasmap',['HasMap',['../access_8h.html#ace39426b15bc724f965809c227fc284b',1,'_TidyAccessImpl']]],

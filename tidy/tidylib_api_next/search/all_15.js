@@ -22,7 +22,7 @@ var searchData=
   ['unknownoption',['unknownOption',['../group__utilities__output.html#ga13e930734972b76be7ca42c7c5e90652',1,'tidy.c']]],
   ['uppercase',['uppercase',['../lexer_8h.html#a2ce68ddf8e471f4d649d12223a7b4a4d',1,'lexer.h']]],
   ['userio',['UserIO',['../streamio_8h.html#a2634dc8f796d724e921dc6a0edb43507a1a3c80ce70e73ccafd5aa142db1fbb8c',1,'streamio.h']]],
-  ['usertagtype',['UserTagType',['../tags_8h.html#af3b32897f6ec5fdf2bc8bdc5f7e61d47',1,'tags.h']]],
+  ['usertagtype',['UserTagType',['../group__tags__h.html#gaf3b32897f6ec5fdf2bc8bdc5f7e61d47',1,'tags.h']]],
   ['using_5fbody',['USING_BODY',['../message_8h.html#ab76b9c963dd4c7d6de3ca96e3e99eff2',1,'message.h']]],
   ['using_5fbr_5finplace_5fof',['USING_BR_INPLACE_OF',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a9e6c4fbde3956adee9c60acc41b7234b',1,'tidyenum.h']]],
   ['using_5ffont',['USING_FONT',['../message_8h.html#ace3f7b975346d138691b14fae5227613',1,'message.h']]],

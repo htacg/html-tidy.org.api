@@ -8,7 +8,7 @@ var searchData=
   ['cfgin',['cfgIn',['../group__configuration__options.html#aae9d57947d6150d275f76ff35f174f34',1,'TidyConfigImpl']]],
   ['charbuf',['charbuf',['../streamio_8h.html#a6ece0ca065c04601bffbd495c43b811d',1,'_StreamIn']]],
   ['checkedheaders',['CheckedHeaders',['../access_8h.html#a304078dee1fa37811e456b8bae2508b9',1,'_TidyAccessImpl']]],
-  ['chkattrs',['chkattrs',['../tags_8h.html#a3b78d0ba0798944b36212a2d869a3685',1,'_Dict']]],
+  ['chkattrs',['chkattrs',['../group__tags__h.html#a3b78d0ba0798944b36212a2d869a3685',1,'_Dict']]],
   ['closed',['closed',['../lexer_8h.html#aaeb64e4ed29d824f296ed13142c24b93',1,'_Node']]],
   ['cmdopt_5fcatname',['cmdopt_catname',['../group__options__cli.html#ga30880c5e3cf09226c9ebe16c722af272',1,'tidy.c']]],
   ['cmdopt_5fdefs',['cmdopt_defs',['../group__options__cli.html#gad7a9fcaf7b2a712a82e625e84c042b28',1,'tidy.c']]],

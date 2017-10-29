@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tagid',['TagId',['../tags_8h.html#a0c57772b337eb4a0cfc9ac4e22b73267',1,'tags.h']]],
-  ['tagisid',['TagIsId',['../tags_8h.html#a221ed9a58fd80a9f9eee7282c77b35b0',1,'tags.h']]],
   ['tidy_5fcall',['TIDY_CALL',['../tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0',1,'tidyplatform.h']]],
   ['tidy_5fstruct',['TIDY_STRUCT',['../tidyplatform_8h.html#a758afad615b3408ec0aa785278cd10ce',1,'tidyplatform.h']]],
   ['tidyalloc',['TidyAlloc',['../forward_8h.html#aa39c40bca094805a4fa86ee2fa2acbe4',1,'forward.h']]],

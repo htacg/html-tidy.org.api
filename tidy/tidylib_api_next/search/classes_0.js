@@ -4,8 +4,7 @@ var searchData=
   ['_5fattrhash',['_AttrHash',['../attrs_8h.html#struct__AttrHash',1,'']]],
   ['_5fattribute',['_Attribute',['../attrs_8h.html#struct__Attribute',1,'']]],
   ['_5fattval',['_AttVal',['../lexer_8h.html#struct__AttVal',1,'']]],
-  ['_5fdict',['_Dict',['../tags_8h.html#struct__Dict',1,'']]],
-  ['_5fdicthash',['_DictHash',['../tags_8h.html#struct__DictHash',1,'']]],
+  ['_5fdict',['_Dict',['../group__tags__h.html#struct__Dict',1,'']]],
   ['_5fistack',['_IStack',['../lexer_8h.html#struct__IStack',1,'']]],
   ['_5flexer',['_Lexer',['../lexer_8h.html#struct__Lexer',1,'']]],
   ['_5fnode',['_Node',['../lexer_8h.html#struct__Node',1,'']]],
@@ -20,6 +19,5 @@ var searchData=
   ['_5ftidyattribimpl',['_TidyAttribImpl',['../attrs_8h.html#struct__TidyAttribImpl',1,'']]],
   ['_5ftidybuffer',['_TidyBuffer',['../group__IO.html#struct__TidyBuffer',1,'']]],
   ['_5ftidydocimpl',['_TidyDocImpl',['../tidy-int_8h.html#struct__TidyDocImpl',1,'']]],
-  ['_5ftidymessageimpl',['_TidyMessageImpl',['../tidy-int_8h.html#struct__TidyMessageImpl',1,'']]],
-  ['_5ftidytagimpl',['_TidyTagImpl',['../tags_8h.html#struct__TidyTagImpl',1,'']]]
+  ['_5ftidymessageimpl',['_TidyMessageImpl',['../tidy-int_8h.html#struct__TidyMessageImpl',1,'']]]
 ];

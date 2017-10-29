@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['picklistitem',['PickListItem',['../group__configuration__options.html#structPickListItem',1,'']]],
-  ['priorityattribs',['PriorityAttribs',['../attrs_8h.html#structPriorityAttribs',1,'']]]
+  ['optiondesc',['OptionDesc',['../group__utilities__cli__options.html#structOptionDesc',1,'']]]
 ];

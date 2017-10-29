@@ -2,9 +2,10 @@ var searchData=
 [
   ['p',['p',['../group__configuration__options.html#aaa1ebe818ec1c763a776cc580551f3e6',1,'TidyOptionValue']]],
   ['parent',['parent',['../lexer_8h.html#a15358e51f4bc699859aef344484ae4a8',1,'_Node::parent()'],['../lexer_8h.html#a15358e51f4bc699859aef344484ae4a8',1,'_Lexer::parent()']]],
-  ['parser',['parser',['../group__configuration__options.html#abbb57b0bf733ab6d364fd9fa7bb40e58',1,'_tidy_option::parser()'],['../tags_8h.html#abe6a6375726e1b75657c9d8f926efe04',1,'_Dict::parser()']]],
+  ['parser',['parser',['../group__configuration__options.html#abbb57b0bf733ab6d364fd9fa7bb40e58',1,'_tidy_option::parser()'],['../group__tags__h.html#abe6a6375726e1b75657c9d8f926efe04',1,'_Dict::parser()']]],
   ['parsestatus',['parseStatus',['../tidy-int_8h.html#acb8b6aee6f9d2df2b32e9ea50d2643ab',1,'_TidyDocImpl']]],
   ['pconfigcallback',['pConfigCallback',['../tidy-int_8h.html#af5caf52ed7cf45fdcf47c31990f6931c',1,'_TidyDocImpl']]],
+  ['pconfigchangecallback',['pConfigChangeCallback',['../tidy-int_8h.html#a857f5863fda1c6cc3b371c0ac6af87cf',1,'_TidyDocImpl']]],
   ['pdflt',['pdflt',['../group__configuration__options.html#abce39ec786ece653b0d5848cf19ec28e',1,'_tidy_option']]],
   ['php',['php',['../lexer_8h.html#ae16403c038df8c3df69f3055414d9028',1,'_AttVal']]],
   ['picklist',['pickList',['../group__configuration__options.html#ac17a5cdf76b9bf15a537de4b78a5c3d4',1,'_tidy_option']]],

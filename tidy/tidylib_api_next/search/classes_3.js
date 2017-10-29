@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['languagedefinition',['languageDefinition',['../structlanguageDefinition.html',1,'']]],
-  ['languagedictionaryentry',['languageDictionaryEntry',['../language_8h.html#structlanguageDictionaryEntry',1,'']]]
+  ['dicthash',['DictHash',['../group__tags__h.html#structDictHash',1,'']]]
 ];

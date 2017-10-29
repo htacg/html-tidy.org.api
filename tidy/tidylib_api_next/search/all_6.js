@@ -1,7 +1,7 @@
 var searchData=
 [
   ['element',['element',['../lexer_8h.html#a0f0eb98352443751828387a6e3b25d63',1,'_IStack::element()'],['../lexer_8h.html#a0f0eb98352443751828387a6e3b25d63',1,'_Node::element()']]],
-  ['element_5fhash_5fsize',['ELEMENT_HASH_SIZE',['../tags_8h.html#adc29c2ff13d900c2f185ee95427fb06caa14bd6942754bdb79bc76b521e89c1a1',1,'tags.h']]],
+  ['element_5fhash_5fsize',['ELEMENT_HASH_SIZE',['../group__tags__h.html#ggadc29c2ff13d900c2f185ee95427fb06caa14bd6942754bdb79bc76b521e89c1a1',1,'tags.h']]],
   ['element_5fnot_5fempty',['ELEMENT_NOT_EMPTY',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abd6136bff6c310a71fb2849762a871b7',1,'tidyenum.h']]],
   ['element_5fvers_5fmismatch_5ferror',['ELEMENT_VERS_MISMATCH_ERROR',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ae129b130f685287f681d20607c0c0816',1,'tidyenum.h']]],
   ['element_5fvers_5fmismatch_5fwarn',['ELEMENT_VERS_MISMATCH_WARN',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00aee8ab9d975d3381defe74b5f29749d9c',1,'tidyenum.h']]],

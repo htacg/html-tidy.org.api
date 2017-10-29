@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ibm858',['IBM858',['../streamio_8h.html#aeb7051710c34af39c9bba5acc71ea63d',1,'streamio.h']]],
-  ['id',['id',['../attrs_8h.html#a90bbe89dca64550526346e998d2c9883',1,'_Attribute::id()'],['../group__configuration__options.html#a128af87c43c818054988cdfeb17edba8',1,'_tidy_option::id()'],['../tags_8h.html#a5f6d6390a04de3cbcbc4bba527c2a160',1,'_Dict::id()']]],
+  ['id',['id',['../attrs_8h.html#a90bbe89dca64550526346e998d2c9883',1,'_Attribute::id()'],['../group__configuration__options.html#a128af87c43c818054988cdfeb17edba8',1,'_tidy_option::id()'],['../group__tags__h.html#a5f6d6390a04de3cbcbc4bba527c2a160',1,'_Dict::id()']]],
   ['id_5fname_5fmismatch',['ID_NAME_MISMATCH',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abad7ce8ff8b172d6542f0ad6c12228cc',1,'tidyenum.h']]],
   ['ignoremarkup',['IgnoreMarkup',['../lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5afcf3b7de0e0a6991746af2bdcc35c884',1,'lexer.h']]],
   ['ignorewhitespace',['IgnoreWhitespace',['../lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5a80ef53c6df4648b08465ef8c23288f11',1,'lexer.h']]],

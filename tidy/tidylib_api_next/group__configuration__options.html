@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.69</span>
+   &#160;<span id="projectnumber">5.5.75</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -153,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga75e0e2a48931f727d034e4252fd1dc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga75e0e2a48931f727d034e4252fd1dc50">TY_❪AdjustCharEncoding❫</a> (TidyDocImpl *doc, int encoding)</td></tr>
 <tr class="memdesc:ga75e0e2a48931f727d034e4252fd1dc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that char encodings are self consistent.  <a href="#ga75e0e2a48931f727d034e4252fd1dc50">More...</a><br /></td></tr>
 <tr class="separator:ga75e0e2a48931f727d034e4252fd1dc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35a3df6e51a169e5ea86ccd9a04bd1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga35a3df6e51a169e5ea86ccd9a04bd1a6">TY_❪AdjustConfig❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga35a3df6e51a169e5ea86ccd9a04bd1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the configuration options are self consistent.  <a href="#ga35a3df6e51a169e5ea86ccd9a04bd1a6">More...</a><br /></td></tr>
+<tr class="separator:ga35a3df6e51a169e5ea86ccd9a04bd1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga3dd9ef5d4b4633cb3f92fbf2168b88ca">TY_❪CharEncodingId❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> charenc)</td></tr>
 <tr class="memdesc:ga3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character encoding ID for the given character encoding string.  <a href="#ga3dd9ef5d4b4633cb3f92fbf2168b88ca">More...</a><br /></td></tr>
 <tr class="separator:ga3dd9ef5d4b4633cb3f92fbf2168b88ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,9 +177,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaed9c70489d9584f5d8ce21839d88bd77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#gaed9c70489d9584f5d8ce21839d88bd77">TY_❪DeclareListItem❫</a> (TidyDocImpl *doc, const TidyOptionImpl *opt, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
 <tr class="memdesc:gaed9c70489d9584f5d8ce21839d88bd77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinates Config update and list data.  <a href="#gaed9c70489d9584f5d8ce21839d88bd77">More...</a><br /></td></tr>
 <tr class="separator:gaed9c70489d9584f5d8ce21839d88bd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga521ab1409f6700766610d8660e3ced9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga521ab1409f6700766610d8660e3ced9a">TY_❪DeclareUserTag❫</a> (TidyDocImpl *doc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> tagType, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
-<tr class="memdesc:ga521ab1409f6700766610d8660e3ced9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinates Config update and Tags data.  <a href="#ga521ab1409f6700766610d8660e3ced9a">More...</a><br /></td></tr>
-<tr class="separator:ga521ab1409f6700766610d8660e3ced9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19b8529038a261b5d3e38130c341e72c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__configuration__options.html#ga19b8529038a261b5d3e38130c341e72c">TY_❪FreeConfig❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="memdesc:ga19b8529038a261b5d3e38130c341e72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the configuration memory for the given Tidy document.  <a href="#ga19b8529038a261b5d3e38130c341e72c">More...</a><br /></td></tr>
 <tr class="separator:ga19b8529038a261b5d3e38130c341e72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -639,6 +639,30 @@ Value for TidyInteger and TidyBoolean. </td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga35a3df6e51a169e5ea86ccd9a04bd1a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TY_❪AdjustConfig❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ensure that the configuration options are self consistent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>The Tidy document to adjust. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga3dd9ef5d4b4633cb3f92fbf2168b88ca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -846,55 +870,6 @@ Value for TidyInteger and TidyBoolean. </td></tr>
     <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
     <tr><td class="paramname">opt</td><td>The option the list item is intended for. </td></tr>
     <tr><td class="paramname">name</td><td>The name of the new list item. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga521ab1409f6700766610d8660e3ced9a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TY_❪DeclareUserTag❫ </td>
-          <td>(</td>
-          <td class="paramtype">TidyDocImpl *&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a>&#160;</td>
-          <td class="paramname"><em>optId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
-          <td class="paramname"><em>tagType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Coordinates Config update and Tags data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
-    <tr><td class="paramname">optId</td><td>The option ID the tag is intended for. </td></tr>
-    <tr><td class="paramname">tagType</td><td>The type of tag (pre, inline, etc.). </td></tr>
-    <tr><td class="paramname">name</td><td>The name of the new tag. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1582,7 +1557,7 @@ Value for TidyInteger and TidyBoolean. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 19 2017 20:45:46 for HTML Tidy by
+    <li class="footer">Generated on Sun Oct 29 2017 15:06:19 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

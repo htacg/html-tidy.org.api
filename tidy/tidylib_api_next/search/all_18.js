@@ -13,7 +13,7 @@ var searchData=
   ['xml_5fid_5fsyntax',['XML_ID_SYNTAX',['../group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00af06055c386b736503d4dbb2d3836569d',1,'tidyenum.h']]],
   ['xml_5foptions_5fstrings',['xml_options_strings',['../group__service__xml__opts__strings.html#ga0c6585f3f478649c1803b019f391918b',1,'tidy.c']]],
   ['xml_5fstrings',['xml_strings',['../group__service__xml__strings.html#ga9193e01b70ad68ba9fdc501f6b7e14ad',1,'tidy.c']]],
-  ['xml_5ftags',['xml_tags',['../tags_8h.html#aab977597b39cfb58b1d13f40fb2ce400',1,'_TidyTagImpl']]],
+  ['xml_5ftags',['xml_tags',['../group__tags__h.html#aab977597b39cfb58b1d13f40fb2ce400',1,'TidyTagImpl']]],
   ['xmldecl',['XmlDecl',['../lexer_8h.html#acac9cbaeea226ed297804c012dc12b16a37832856e0c1775be87aaa6e3cb43c38',1,'lexer.h']]],
   ['xmldetected',['xmlDetected',['../tidy-int_8h.html#ad7f39d8162160452858505c38f3e48ba',1,'_TidyDocImpl']]],
   ['xmloptionhelp',['XMLoptionhelp',['../group__service__xml__config.html#ga28054be1f1152ea7b05e7ea6006238d5',1,'tidy.c']]],

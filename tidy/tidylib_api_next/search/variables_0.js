@@ -17,5 +17,5 @@ var searchData=
   ['attributes',['attributes',['../lexer_8h.html#a3f68f794918054aa83d581af34546ab5',1,'_IStack::attributes()'],['../lexer_8h.html#a3f68f794918054aa83d581af34546ab5',1,'_Node::attributes()']]],
   ['attrstringstart',['attrStringStart',['../pprint_8h.html#a8cd47d83214002262b2b16d3d74a9630',1,'TidyIndent']]],
   ['attrvalstart',['attrValStart',['../pprint_8h.html#af5a68a8ade18e0b25cede9901f3c4770',1,'TidyIndent']]],
-  ['attrvers',['attrvers',['../tags_8h.html#a5175acfb8aa1b8c03f7dd849d4b1a844',1,'_Dict']]]
+  ['attrvers',['attrvers',['../group__tags__h.html#a5175acfb8aa1b8c03f7dd849d4b1a844',1,'_Dict']]]
 ];

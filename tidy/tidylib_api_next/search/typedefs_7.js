@@ -2,6 +2,7 @@ var searchData=
 [
   ['tchar',['tchar',['../tidyplatform_8h.html#a60b5a0768544842885a9982025c93c5f',1,'tidyplatform.h']]],
   ['tidyconfigcallback',['TidyConfigCallback',['../group__Configuration.html#gab039c9bf1c0ae9bcbb59fbbde7694537',1,'tidy.h']]],
+  ['tidyconfigchangecallback',['TidyConfigChangeCallback',['../group__Configuration.html#ga6ac482ba16610fb14d2b56a6c306597e',1,'tidy.h']]],
   ['tidyeoffunc',['TidyEOFFunc',['../group__IO.html#ga1405248cf7f1edf8af8d487f0b877e0e',1,'tidy.h']]],
   ['tidyfree',['TidyFree',['../group__Memory.html#gaada345a86e699dfaadd8fe06718b98c1',1,'tidy.h']]],
   ['tidygetbytefunc',['TidyGetByteFunc',['../group__IO.html#ga99e9bd01465d9fb642f4eadd69da6f9d',1,'tidy.h']]],

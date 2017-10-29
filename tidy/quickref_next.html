@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.5.69" />
+        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.5.75" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>
-            HTML Tidy 5.5.69 Options Quick Reference
+            HTML Tidy 5.5.75 Options Quick Reference
         </title>
         <style type="text/css">
         /*<![CDATA[*/
@@ -148,7 +148,7 @@
     </head>
     <body>
         <h1 id="top">
-            HTML Tidy 5.5.69 Options Quick Reference
+            HTML Tidy 5.5.75 Options Quick Reference
         </h1>
         <h2>
             Option Groups
@@ -920,7 +920,7 @@
                         String
                     </td>
                     <td>
-                        <strong>-</strong>
+                        c
                     </td>
                 </tr>
                 <tr>
@@ -1635,7 +1635,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        Use this option to prevent Tidy from displaying certain types of report output,for example, for conditions that you wish to ignore.<br />
+                        Use this option to prevent Tidy from displaying certain types of report output, for example, for conditions that you wish to ignore.<br />
                         This option takes a list of one or more keys indicating the message type to mute. You can discover these message keys by using the <code>mute-id</code> configuration option and examining Tidy's output.
                     </td>
                 </tr>
@@ -1728,7 +1728,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should output the summary of the numbers of errors and warnings, or the welcome or informational messages.
+                        When enabled, this option limits Tidy's non-document output to report only document warnings and errors.
                     </td>
                 </tr>
             </tbody>
@@ -2736,14 +2736,11 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies the character encoding Tidy uses for both the input and output.<br />
-                        For <var>ascii</var> Tidy will accept Latin-1 (ISO-8859-1) character values, but will use entities for all characters whose value &gt;127.<br />
-                        For <var>raw</var>, Tidy will output values above 127 without translating them into entities.<br />
-                        For <var>latin1</var>, characters above 255 will be written as entities.<br />
-                        For <var>utf8</var>, Tidy assumes that both input and output are encoded as UTF-8.<br />
-                        You can use <var>iso2022</var> for files encoded using the ISO-2022 family of encodings e.g. ISO-2022-JP.<br />
-                        For <var>mac</var> and <var>win1252</var>, Tidy will accept vendor specific character values, but will use entities for all characters whose value &gt;127.<br />
-                        For unsupported encodings, use an external utility to convert to and from UTF-8.
+                        This option specifies the character encoding Tidy uses for input, and when set, automatically chooses an appropriate character encoding to be used for output. The output encoding Tidy chooses may be different from the input encoding.<br />
+                        For <var>ascii</var>, <var>latin0</var>, <var>ibm858</var>, <var>mac</var>, and <var>win1252</var> input encodings, the <code>output-encoding</code> option will automatically be set to <var>ascii</var>. You can set <code>output-encoding</code> manually to override this.<br />
+                        For other input encodings, the <code>output-encoding</code> option will automatically be set to the the same value.<br />
+                        Regardless of the preset value, you can set <code>output-encoding</code> manually to override this.<br />
+                        Tidy is not an encoding converter. Although the Latin and UTF encodings can be mixed freely, it is not possible to convert Asian encodings to Latin encodings with Tidy.
                     </td>
                 </tr>
             </tbody>
@@ -2790,7 +2787,12 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies the character encoding Tidy uses for the input. See <code>char-encoding</code> for more info.
+                        This option specifies the character encoding Tidy uses for input. Tidy makes certain assumptions about some of the input encodings.<br />
+                        For <var>ascii</var>, Tidy will accept Latin-1 (ISO-8859-1) character values and convert them to entities as necessary.<br />
+                        For <var>raw</var>, Tidy will make no assumptions about the character values and will pass them unchanged to output.<br />
+                        For <var>mac</var> and <var>win1252</var>, vendor specific characters values will be accepted and converted to entities as necessary.<br />
+                        Asian encodings such as <var>iso2022</var> will be handled appropriately assuming the corresponding <code>output-encoding</code> is also specified.<br />
+                        Tidy is not an encoding converter. Although the Latin and UTF encodings can be mixed freely, it is not possible to convert Asian encodings to Latin encodings with Tidy.
                     </td>
                 </tr>
             </tbody>
@@ -2836,7 +2838,7 @@
                     <td></td>
                     <td class="qdescription">
                         The default is appropriate to the current platform.<br />
-                        Genrally CRLF on PC-DOS, Windows and OS/2; CR on Classic Mac OS; and LF everywhere else (Linux, Mac OS X, and Unix).
+                        Genrally <var>CRLF</var> on PC-DOS, Windows and OS/2; <var>CR</var> on Classic Mac OS; and <var>LF</var> everywhere else (Linux, macOS, and Unix).
                     </td>
                 </tr>
             </tbody>
@@ -2930,9 +2932,13 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies the character encoding Tidy uses for the output.<br />
-                        Note that this may only be different from <code>input-encoding</code> for Latin encodings (<var>ascii</var>, <var>latin0</var>, <var>latin1</var>, <var>mac</var>, <var>win1252</var>, <var>ibm858</var>).<br />
-                        See <code>char-encoding</code> for more information
+                        This option specifies the character encoding Tidy uses for output. Some of the output encodings affect whether or not some characters are translated to entities, although in all cases, some entities will be written according to other Tidy configuration options.<br />
+                        For <var>ascii</var>, <var>mac</var>, and <var>win1252</var> output encodings, entities will be used for all characters with values over 127.<br />
+                        For <var>raw</var> output, Tidy will write values above 127 without translating them to entities.<br />
+                        Output using <var>latin1</var> will cause Tidy to write character values higher than 255 as entities.<br />
+                        The UTF family such as <var>utf8</var> will write output in the respective UTF encoding.<br />
+                        Asian output encodings such as <var>iso2022</var> will write output in the specified encoding, assuming a corresponding <code>input-encoding</code> was specified.<br />
+                        Tidy is not an encoding converter. Although the Latin and UTF encodings can be mixed freely, it is not possible to convert Asian encodings to Latin encodings with Tidy.
                     </td>
                 </tr>
             </tbody>
@@ -3029,7 +3035,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should perform cleaning of some legacy presentational tags (currently <code>&lt;i&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;center&gt;</code> when enclosed within appropriate inline tags, and <code>&lt;font&gt;</code>). If set to <var>yes</var> then legacy tags will be replaced with CSS <code>&lt;style&gt;</code> tags and structural markup as appropriate.
+                        This option specifies if Tidy should perform cleaning of some legacy presentational tags (currently <code>&lt;i&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;center&gt;</code> when enclosed within appropriate inline tags, and <code>&lt;font&gt;</code>). If set to <var>yes</var>, then the legacy tags will be replaced with CSS <code>&lt;style&gt;</code> tags and structural markup as appropriate.
                     </td>
                 </tr>
             </tbody>
@@ -3400,7 +3406,7 @@
                     <td></td>
                     <td class="qdescription">
                         This option specifies if Tidy should go to great pains to strip out all the surplus stuff Microsoft Word 2000 inserts when you save Word documents as "Web pages". It doesn't handle embedded images or VML.<br />
-                        You should consider using Word's "Save As: Web Page, Filtered".
+                        You should consider saving using Word's <strong>Save As...</strong>, and choosing <strong>Web Page, Filtered</strong>.
                     </td>
                 </tr>
             </tbody>
@@ -3949,7 +3955,7 @@
                         Default:
                     </td>
                     <td>
-                        -
+                        c
                     </td>
                 </tr>
                 <tr>
@@ -4017,7 +4023,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option enables the use of tags for autonomous custom elements, e.g. &lt;flag-icon&gt; with Tidy. Custom tags are disabled if this value is <var>no</var>. Other settings - <var>blocklevel</var>, <var>empty</var>, <var>inline</var>, and <var>pre</var> will treat <em>all</em> detected custom tags accordingly.<br />
+                        This option enables the use of tags for autonomous custom elements, e.g. <code>&lt;flag-icon&gt;</code> with Tidy. Custom tags are disabled if this value is <var>no</var>. Other settings - <var>blocklevel</var>, <var>empty</var>, <var>inline</var>, and <var>pre</var> will treat <em>all</em> detected custom tags accordingly.<br />
                         The use of <code>new-blocklevel-tags</code>, <code>new-empty-tags</code>, <code>new-inline-tags</code>, or <code>new-pre-tags</code> will override the treatment of custom tags by this configuration option. This may be useful if you have different types of custom tags.<br />
                         When enabled these tags are determined during the processing of your document using opening tags; matching closing tags will be recognized accordingly, and unknown closing tags will be discarded.
                     </td>
@@ -5572,7 +5578,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option allows prioritizing the writing of attributes in tidied documents, allowing them to written before the other attributes of an element. For example, you might specify that <var>id</var> and <var>name</var> are written before every other attribute.<br />
+                        This option allows prioritizing the writing of attributes in tidied documents, allowing them to written before the other attributes of an element. For example, you might specify that <strong>id</strong> and <strong>name</strong> are written before every other attribute.<br />
                         This option takes a space or comma separated list of attribute names.
                     </td>
                 </tr>
@@ -5851,7 +5857,7 @@
                     <td class="qdescription">
                         This option specifies the right margin Tidy uses for line wrapping.<br />
                         Tidy tries to wrap lines so that they do not exceed this length.<br />
-                        Set <code>wrap</code> to <var>0</var>(zero) if you want to disable line wrapping.
+                        Set <code>wrap</code> to <var>0</var> (zero) if you want to disable line wrapping.
                     </td>
                 </tr>
             </tbody>

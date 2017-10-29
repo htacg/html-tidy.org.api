@@ -1,7 +1,7 @@
 var searchData=
 [
   ['declared_5fattr_5flist',['declared_attr_list',['../attrs_8h.html#a96eeadf969f53d01d19751309a139eec',1,'_TidyAttribImpl']]],
-  ['declared_5ftag_5flist',['declared_tag_list',['../tags_8h.html#a15ec350747a5a4faf26691dd41441a64',1,'_TidyTagImpl']]],
+  ['declared_5ftag_5flist',['declared_tag_list',['../group__tags__h.html#a15ec350747a5a4faf26691dd41441a64',1,'TidyTagImpl']]],
   ['def',['def',['../group__utilities__cli__options.html#ac35ea3fc7be15e1f0bd63b56db066686',1,'OptionDesc']]],
   ['defined_5ftags',['defined_tags',['../group__configuration__options.html#acfceab81bfdde95f59610d0ea13333a9',1,'TidyConfigImpl']]],
   ['delim',['delim',['../lexer_8h.html#a7867c41486ebfa85c97e8d9cbdf97ff2',1,'_AttVal']]],

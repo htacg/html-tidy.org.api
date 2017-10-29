@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id',['id',['../attrs_8h.html#a90bbe89dca64550526346e998d2c9883',1,'_Attribute::id()'],['../group__configuration__options.html#a128af87c43c818054988cdfeb17edba8',1,'_tidy_option::id()'],['../tags_8h.html#a5f6d6390a04de3cbcbc4bba527c2a160',1,'_Dict::id()']]],
+  ['id',['id',['../attrs_8h.html#a90bbe89dca64550526346e998d2c9883',1,'_Attribute::id()'],['../group__configuration__options.html#a128af87c43c818054988cdfeb17edba8',1,'_tidy_option::id()'],['../group__tags__h.html#a5f6d6390a04de3cbcbc4bba527c2a160',1,'_Dict::id()']]],
   ['implicit',['implicit',['../lexer_8h.html#adb8d717a43d5ddc94b7bb07f28eeca7b',1,'_Node']]],
   ['indent',['indent',['../pprint_8h.html#a21c07722a7690b6aeb1c64a6e9101275',1,'TidyPrintImpl']]],
   ['infomessages',['infoMessages',['../tidy-int_8h.html#acfe2546b4f4ca8ac7c818f52ed7d6ce8',1,'_TidyDocImpl']]],

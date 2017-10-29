@@ -14,6 +14,6 @@ var searchData=
   ['messageprefixdefault',['messagePrefixDefault',['../tidy-int_8h.html#a3bf51d7daac99918e86e384b10c07f3e',1,'_TidyMessageImpl']]],
   ['messages',['messages',['../structlanguageDefinition.html#a9ad9ed32d10e9f8e0f02848f7e59b009',1,'languageDefinition']]],
   ['mnemonic',['mnemonic',['../group__options__cli.html#ga65803ae9414c2e3f85d6030e5a0e553b',1,'@5']]],
-  ['model',['model',['../tags_8h.html#a29bfa0b6cdd9075416521614e503187e',1,'_Dict']]],
+  ['model',['model',['../group__tags__h.html#a29bfa0b6cdd9075416521614e503187e',1,'_Dict']]],
   ['muted',['muted',['../tidy-int_8h.html#a8cf68f216e7ac6aa109cd040a85e31c1',1,'_TidyDocImpl::muted()'],['../tidy-int_8h.html#aa4eb6f573e4dadc0e2f832aa8625a31d',1,'_TidyMessageImpl::muted()']]]
 ];

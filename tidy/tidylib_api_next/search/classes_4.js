@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['optiondesc',['OptionDesc',['../group__utilities__cli__options.html#structOptionDesc',1,'']]]
+  ['languagedefinition',['languageDefinition',['../structlanguageDefinition.html',1,'']]],
+  ['languagedictionaryentry',['languageDictionaryEntry',['../language_8h.html#structlanguageDictionaryEntry',1,'']]]
 ];
