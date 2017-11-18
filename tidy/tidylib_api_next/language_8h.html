@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.75</span>
+   &#160;<span id="projectnumber">5.5.80</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -124,6 +124,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adcc55dc2fe58ce585d9cc45d4a5dd14a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="language_8h.html#adcc55dc2fe58ce585d9cc45d4a5dd14a">TY_❪tidyGetLanguage❫</a> (void)</td></tr>
 <tr class="memdesc:adcc55dc2fe58ce585d9cc45d4a5dd14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current language used by Tidy.  <a href="#adcc55dc2fe58ce585d9cc45d4a5dd14a">More...</a><br /></td></tr>
 <tr class="separator:adcc55dc2fe58ce585d9cc45d4a5dd14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa6c199b91dacb9aaa50130762c512c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="language_8h.html#aaaa6c199b91dacb9aaa50130762c512c">TY_❪tidyGetLanguageSetByUser❫</a> (void)</td></tr>
+<tr class="memdesc:aaaa6c199b91dacb9aaa50130762c512c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the current language was set by a LibTidy user or internally by the library.  <a href="#aaaa6c199b91dacb9aaa50130762c512c">More...</a><br /></td></tr>
+<tr class="separator:aaaa6c199b91dacb9aaa50130762c512c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514b85b1a09fa033dc2bdbfafa5392ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="language_8h.html#a514b85b1a09fa033dc2bdbfafa5392ad">TY_❪tidySetLanguageSetByUser❫</a> (void)</td></tr>
+<tr class="memdesc:a514b85b1a09fa033dc2bdbfafa5392ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies to LibTidy that the user (rather than the library) selected the current language.  <a href="#a514b85b1a09fa033dc2bdbfafa5392ad">More...</a><br /></td></tr>
+<tr class="separator:a514b85b1a09fa033dc2bdbfafa5392ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653233b091c819ce8fd6ce73caf89ff9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="language_8h.html#a653233b091c819ce8fd6ce73caf89ff9">TY_❪tidyLocalizedStringN❫</a> (<a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> quantity)</td></tr>
 <tr class="memdesc:a653233b091c819ce8fd6ce73caf89ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a string given <code>messageType</code> in the current localization for <code>quantity</code>.  <a href="#a653233b091c819ce8fd6ce73caf89ff9">More...</a><br /></td></tr>
 <tr class="separator:a653233b091c819ce8fd6ce73caf89ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,6 +406,25 @@ winName</td>
 
 </div>
 </div>
+<a class="anchor" id="aaaa6c199b91dacb9aaa50130762c512c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪tidyGetLanguageSetByUser❫ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether or not the current language was set by a LibTidy user or internally by the library. </p>
+<p>This flag prevents subsequently created instances of TidyDocument from changing the user's language. </p><dl class="section return"><dt>Returns</dt><dd>Returns yes to indicate that the current language was specified by an API user. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="adcc55dc2fe58ce585d9cc45d4a5dd14a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -500,6 +525,25 @@ winName</td>
 
 </div>
 </div>
+<a class="anchor" id="a514b85b1a09fa033dc2bdbfafa5392ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TY_❪tidySetLanguageSetByUser❫ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies to LibTidy that the user (rather than the library) selected the current language. </p>
+<p>This flag prevents subsequently created instances of TidyDocument from changing the user's language. </p>
+
+</div>
+</div>
 <a class="anchor" id="afa7f5a7de3eecf3663bd56e4561048cc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -556,7 +600,7 @@ winName</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="language_8h.html">language.h</a></li>
-    <li class="footer">Generated on Sun Oct 29 2017 15:07:39 for HTML Tidy by
+    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

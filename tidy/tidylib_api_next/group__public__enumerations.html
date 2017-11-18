@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.75</span>
+   &#160;<span id="projectnumber">5.5.80</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -203,6 +203,10 @@ Configuration Options Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150af5b61e2a40001e6b99e72c2ee9b53271">TidyMetaCharset</a>, 
 <br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c">TidyMuteReports</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25">TidyMuteShow</a>, 
+<br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a93d63c38bc0bd6cca368e23926dbf486">TidyNCR</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a3be9fddbd7a49644bc4359f79c95f0e0">TidyNewline</a>, 
@@ -250,10 +254,6 @@ Configuration Options Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150aaf7d008212d2d90dabc1d7d011926d08">TidySkipNested</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a3637f4378a8136b0c8ea72ca4aa7add0">TidySortAttributes</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c">TidyMuteReports</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25">TidyMuteShow</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a196abcbd26a73e7450cf8d3de0f934f9">TidyStrictTagsAttr</a>, 
 <br />
@@ -3675,6 +3675,12 @@ Messages</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150af5b61e2a40001e6b99e72c2ee9b53271"></a>TidyMetaCharset&#160;</td><td class="fielddoc">
 <p>Adds/checks/fixes meta charset in the head, based on document type. </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c"></a>TidyMuteReports&#160;</td><td class="fielddoc">
+<p>Filter these messages from output. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25"></a>TidyMuteShow&#160;</td><td class="fielddoc">
+<p>Show message ID's in the error table. </p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a93d63c38bc0bd6cca368e23926dbf486"></a>TidyNCR&#160;</td><td class="fielddoc">
 <p>Allow numeric character references. </p>
 </td></tr>
@@ -3746,12 +3752,6 @@ Messages</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a3637f4378a8136b0c8ea72ca4aa7add0"></a>TidySortAttributes&#160;</td><td class="fielddoc">
 <p>Sort attributes. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a401fc76a2161bd3c90479e6605bfda4c"></a>TidyMuteReports&#160;</td><td class="fielddoc">
-<p>Filter these messages from output. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a5a8adfc57d3a21e3b327f2129466ac25"></a>TidyMuteShow&#160;</td><td class="fielddoc">
-<p>Show message ID's in the error table. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga3a1401652599150188a168dade7dc150a196abcbd26a73e7450cf8d3de0f934f9"></a>TidyStrictTagsAttr&#160;</td><td class="fielddoc">
 <p>Ensure tags and attributes match output HTML version. </p>
@@ -5318,7 +5318,7 @@ This enum's starting value is guaranteed to remain stable. </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 29 2017 15:07:39 for HTML Tidy by
+    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

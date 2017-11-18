@@ -13,6 +13,5 @@ var group__Localization =
     [ "TidyLangWindowsName", "group__Localization.html#gad7702aa4bcb577235a27e78f06091f31", null ],
     [ "tidyLocalizedString", "group__Localization.html#ga3b1ffd42b71e28881de8dea41d6930f2", null ],
     [ "tidyLocalizedStringN", "group__Localization.html#gaa6d607f19533d83f6044698ee207f37e", null ],
-    [ "tidySetLanguage", "group__Localization.html#gace6675cb163944bde81c4deaa5b55cbe", null ],
-    [ "tidySystemLocale", "group__Localization.html#gaa67c2e1e5ecc5ef28755b2dd8b86225a", null ]
+    [ "tidySetLanguage", "group__Localization.html#gace6675cb163944bde81c4deaa5b55cbe", null ]
 ];

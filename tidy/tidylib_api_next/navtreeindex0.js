@@ -151,7 +151,6 @@ var NAVTREEINDEX0 =
 "group__Localization.html#ga6c4038820b68a1e5994faed07c23e136":[8,0,7,1],
 "group__Localization.html#ga6c79e2784181698a89a2681667726c7b":[8,0,7,9],
 "group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd":[8,0,7,3],
-"group__Localization.html#gaa67c2e1e5ecc5ef28755b2dd8b86225a":[8,0,7,14],
 "group__Localization.html#gaa6d607f19533d83f6044698ee207f37e":[8,0,7,12],
 "group__Localization.html#gace6675cb163944bde81c4deaa5b55cbe":[8,0,7,13],
 "group__Localization.html#gad02a58a776e155f05476551afff61732":[8,0,7,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "group__configuration__options.html#abce39ec786ece653b0d5848cf19ec28e":[8,1,0,0,5],
 "group__configuration__options.html#ac17a5cdf76b9bf15a537de4b78a5c3d4":[8,1,0,0,6],
 "group__configuration__options.html#ac5e767ee9292db51478035581ed522f6":[8,1,0,0,7],
-"group__configuration__options.html#acfceab81bfdde95f59610d0ea13333a9":[8,1,0,2,2]
+"group__configuration__options.html#acfceab81bfdde95f59610d0ea13333a9":[8,1,0,2,2],
+"group__configuration__options.html#aee4038cacd3a4c2062ca64384d29e167":[8,1,0,3,0]
 };

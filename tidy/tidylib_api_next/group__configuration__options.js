@@ -52,6 +52,7 @@ var group__configuration__options =
     [ "TY_❪getOptionList❫", "group__configuration__options.html#ga0a716eb5b96aa3d3c001f821fdceae2e", null ],
     [ "TY_❪getOptionPickList❫", "group__configuration__options.html#ga9059e2ba623d2fcbd125a2177b0a08bd", null ],
     [ "TY_❪getOption❫", "group__configuration__options.html#gafab7991049eb74353c7f09ca60f458d3", null ],
+    [ "TY_❪GetPickListLabelForPick❫", "group__configuration__options.html#gad770a3170f2f06a81e8b2d28b85b1ada", null ],
     [ "TY_❪InitConfig❫", "group__configuration__options.html#ga596f69c9739d45aea9fb3559d816f9a6", null ],
     [ "TY_❪lookupOption❫", "group__configuration__options.html#ga969805a31a6859d6cc00ff414b87a2e3", null ],
     [ "TY_❪OptGetDocDesc❫", "group__configuration__options.html#ga8551d9401040f3e0aa73c8c213998411", null ],

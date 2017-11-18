@@ -34,6 +34,7 @@ var searchData=
   ['ht32',['HT32',['../lexer_8h.html#a7c638190143bbe1cc20493bf12dc8e05',1,'lexer.h']]],
   ['ht50',['HT50',['../lexer_8h.html#ad779c976ae36701a1e1086b2e21096fe',1,'lexer.h']]],
   ['html5mode',['HTML5Mode',['../tidy-int_8h.html#aa1b6bc3c811bef0f1bf3feedf18ab89d',1,'_TidyDocImpl']]],
+  ['html_20and_20xml_20parsing',['HTML and XML Parsing',['../group__parser__h.html',1,'']]],
   ['html_20tags',['HTML Tags',['../group__tags__h.html',1,'']]],
   ['html_20tidy_20versioning',['HTML Tidy Versioning',['../version.html',1,'programming']]]
 ];

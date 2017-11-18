@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.75</span>
+   &#160;<span id="projectnumber">5.5.80</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -1164,6 +1164,7 @@ Option Documentation</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Is Option read-only? Some options (mainly internal use only options) are read-only. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This is no longer a valid test for the public API; instead you should test an option's availability using <code><a class="el" href="group__Configuration.html#ga1d8b72e64e4d949dc21599fa788e842f" title="Get category of given Option. ">tidyOptGetCategory()</a></code> against <code>TidyInternalCategory</code>. This API will be removed! </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opt</td><td>An instance of a <a class="el" href="group__Opaque.html#structTidyOption" title="Instances of this represent a Tidy configuration option, which contains useful data about these optio...">TidyOption</a> to query. </td></tr>
@@ -1573,7 +1574,7 @@ Option Documentation</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 29 2017 15:07:39 for HTML Tidy by
+    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
