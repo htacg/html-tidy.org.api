@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.80</span>
+   &#160;<span id="projectnumber">5.5.81</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -115,6 +115,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gad0f94e453acac568a9e308144e030fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#gad0f94e453acac568a9e308144e030fd2">TY_❪FreeMutedMessageList❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="memdesc:gad0f94e453acac568a9e308144e030fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the list of muted messages.  <a href="#gad0f94e453acac568a9e308144e030fd2">More...</a><br /></td></tr>
 <tr class="separator:gad0f94e453acac568a9e308144e030fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga394bbacb623f2401255ee842a3b0ddb5"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#ga394bbacb623f2401255ee842a3b0ddb5">TY_❪getMutedMessageList❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga394bbacb623f2401255ee842a3b0ddb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an iterator for muted messages.  <a href="#ga394bbacb623f2401255ee842a3b0ddb5">More...</a><br /></td></tr>
+<tr class="separator:ga394bbacb623f2401255ee842a3b0ddb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaabd073778c17e7e195bbddcfe524279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#gaaabd073778c17e7e195bbddcfe524279">TY_❪getNextMutedMessage❫</a> (TidyDocImpl *doc, TidyIterator *iter)</td></tr>
+<tr class="memdesc:gaaabd073778c17e7e195bbddcfe524279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next priority attribute.  <a href="#gaaabd073778c17e7e195bbddcfe524279">More...</a><br /></td></tr>
+<tr class="separator:gaaabd073778c17e7e195bbddcfe524279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structTidyMutedMessages" id="structTidyMutedMessages"></a>
@@ -218,12 +224,73 @@ A list of messages that won't be output. </td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga394bbacb623f2401255ee842a3b0ddb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TidyIterator TY_❪getMutedMessageList❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start an iterator for muted messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an iterator token. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaabd073778c17e7e195bbddcfe524279"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪getNextMutedMessage❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TidyIterator *&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next priority attribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
+    <tr><td class="paramname">iter</td><td>The iterator token. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The next priority attribute. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
+    <li class="footer">Generated on Sun Nov 19 2017 13:00:32 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

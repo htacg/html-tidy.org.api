@@ -49,6 +49,7 @@ var group__configuration__options =
     [ "TY_❪FreeConfig❫", "group__configuration__options.html#ga19b8529038a261b5d3e38130c341e72c", null ],
     [ "TY_❪getNextOptionPick❫", "group__configuration__options.html#ga1af06d266b28af2a1ff373cd056a5fb8", null ],
     [ "TY_❪getNextOption❫", "group__configuration__options.html#gae796091c8333fce859ac319713234e8a", null ],
+    [ "TY_❪getOptionIsList❫", "group__configuration__options.html#gaea7200af8893c3d774e322b9d9bd37d6", null ],
     [ "TY_❪getOptionList❫", "group__configuration__options.html#ga0a716eb5b96aa3d3c001f821fdceae2e", null ],
     [ "TY_❪getOptionPickList❫", "group__configuration__options.html#ga9059e2ba623d2fcbd125a2177b0a08bd", null ],
     [ "TY_❪getOption❫", "group__configuration__options.html#gafab7991049eb74353c7f09ca60f458d3", null ],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.80</span>
+   &#160;<span id="projectnumber">5.5.81</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -741,6 +741,10 @@ Functions</h2></td></tr>
 <tr class="separator:adc7de2ce72946b5bc189f15d35e6f696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a823c97bf1695fc7bb8195a6491f3e394"><td class="memItemLeft" align="right" valign="top">AttVal *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a823c97bf1695fc7bb8195a6491f3e394">TY_❪GetAttrByName❫</a> (Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
 <tr class="separator:a823c97bf1695fc7bb8195a6491f3e394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb5bb812737779af5b779cf17c9f533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#aedb5bb812737779af5b779cf17c9f533">TY_❪getNextPriorityAttr❫</a> (TidyDocImpl *doc, TidyIterator *iter)</td></tr>
+<tr class="separator:aedb5bb812737779af5b779cf17c9f533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d15469d4acce7de8bf9a749be4caf57"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#a8d15469d4acce7de8bf9a749be4caf57">TY_❪getPriorityAttrList❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="separator:a8d15469d4acce7de8bf9a749be4caf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac08146c631e51d1fe3431f82c00c0096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#ac08146c631e51d1fe3431f82c00c0096">TY_❪InitAttrs❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="separator:ac08146c631e51d1fe3431f82c00c0096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae93fe928250d2640a8eaa4cae88463c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attrs_8h.html#aae93fe928250d2640a8eaa4cae88463c">TY_❪IsAnchorElement❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
@@ -969,7 +973,7 @@ list</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbsubstr)((attr)-&gt;value, val) != NULL)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:165</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbsubstr)((attr)-&gt;value, val) != NULL)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:171</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5560,7 +5564,7 @@ list</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbstrcasecmp)((attr)-&gt;value, val) == 0)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:165</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a>(attr) &amp;&amp; \</div><div class="line">                                 TY_(tmbstrcasecmp)((attr)-&gt;value, val) == 0)</div><div class="ttc" id="attrs_8h_html_ae14136869e304774e291d5afc72bac4d"><div class="ttname"><a href="attrs_8h.html#ae14136869e304774e291d5afc72bac4d">AttrHasValue</a></div><div class="ttdeci">#define AttrHasValue(attr)        </div><div class="ttdef"><b>Definition:</b> attrs.h:171</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5999,6 +6003,48 @@ list</td>
 
 </div>
 </div>
+<a class="anchor" id="aedb5bb812737779af5b779cf17c9f533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> TY_❪getNextPriorityAttr❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TidyIterator *&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d15469d4acce7de8bf9a749be4caf57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TidyIterator TY_❪getPriorityAttrList❫ </td>
+          <td>(</td>
+          <td class="paramtype">TidyDocImpl *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac08146c631e51d1fe3431f82c00c0096"></a>
 <div class="memitem">
 <div class="memproto">
@@ -6336,7 +6382,7 @@ list</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="attrs_8h.html">attrs.h</a></li>
-    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
+    <li class="footer">Generated on Sun Nov 19 2017 13:00:32 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

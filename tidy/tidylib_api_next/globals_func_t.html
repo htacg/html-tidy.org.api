@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.80</span>
+   &#160;<span id="projectnumber">5.5.81</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -454,6 +454,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>tidyOptGetInt()
 : <a class="el" href="group__Configuration.html#ga7ff683612d446b07318517e564cccc7a">tidy.h</a>
 </li>
+<li>tidyOptGetMutedMessageList()
+: <a class="el" href="group__Configuration.html#ga93120b4aacd20492927a6f02ce56f183">tidy.h</a>
+</li>
 <li>tidyOptGetName()
 : <a class="el" href="group__Configuration.html#gaf370cd2ea113747f50da185fda24adcb">tidy.h</a>
 </li>
@@ -463,17 +466,29 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>tidyOptGetNextDocLinks()
 : <a class="el" href="group__Configuration.html#ga1db79a95067d6364c02263d9492fa9e8">tidy.h</a>
 </li>
+<li>tidyOptGetNextMutedMessage()
+: <a class="el" href="group__Configuration.html#gab2102016c7bdf1df43de73a56783c3b0">tidy.h</a>
+</li>
 <li>tidyOptGetNextPick()
 : <a class="el" href="group__Configuration.html#gad1366c5c458f38d2a9c6a6335e6704d9">tidy.h</a>
 </li>
+<li>tidyOptGetNextPriorityAttr()
+: <a class="el" href="group__Configuration.html#ga6d5a9e69eadc6faca3842d21d7773ac0">tidy.h</a>
+</li>
 <li>tidyOptGetPickList()
 : <a class="el" href="group__Configuration.html#ga31f815fe2b5bf1e00d6b50be62edd0ab">tidy.h</a>
+</li>
+<li>tidyOptGetPriorityAttrList()
+: <a class="el" href="group__Configuration.html#ga07d16425aa6610169446bc760163eaba">tidy.h</a>
 </li>
 <li>tidyOptGetType()
 : <a class="el" href="group__Configuration.html#ga06e2685cc2950b182ff2f7136d170a34">tidy.h</a>
 </li>
 <li>tidyOptGetValue()
 : <a class="el" href="group__Configuration.html#ga0fbe23ab1e4ec374fa38e6f514617e4d">tidy.h</a>
+</li>
+<li>tidyOptionIsList()
+: <a class="el" href="group__Configuration.html#gac7a6d010d3807b469e61ccf0fc724d09">tidy.h</a>
 </li>
 <li>tidyOptIsReadOnly()
 : <a class="el" href="group__Configuration.html#ga6aba2ccdb1237a70f5fe1393fee0ce4d">tidy.h</a>
@@ -1033,6 +1048,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>TY_❪getMessage❫()
 : <a class="el" href="group__messageobj__message__api.html#ga3da95bd4de4ea3e3d8221cbd87aec2b5">messageobj.h</a>
 </li>
+<li>TY_❪getMutedMessageList❫()
+: <a class="el" href="group__message__mutinging.html#ga394bbacb623f2401255ee842a3b0ddb5">message.h</a>
+</li>
 <li>TY_❪GetNextDeclaredTag❫()
 : <a class="el" href="group__tags__h.html#gaf69c07ebc78bac8c182b440d6c677dcb">tags.h</a>
 </li>
@@ -1045,17 +1063,26 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <li>TY_❪getNextMessageArgument❫()
 : <a class="el" href="group__messageobj__args__api.html#ga3192fcc4bc7b7300bdf898f4804b1219">messageobj.h</a>
 </li>
+<li>TY_❪getNextMutedMessage❫()
+: <a class="el" href="group__message__mutinging.html#gaaabd073778c17e7e195bbddcfe524279">message.h</a>
+</li>
 <li>TY_❪getNextOptionPick❫()
 : <a class="el" href="group__configuration__options.html#ga1af06d266b28af2a1ff373cd056a5fb8">config.h</a>
 </li>
 <li>TY_❪getNextOption❫()
 : <a class="el" href="group__configuration__options.html#gae796091c8333fce859ac319713234e8a">config.h</a>
 </li>
+<li>TY_❪getNextPriorityAttr❫()
+: <a class="el" href="attrs_8h.html#aedb5bb812737779af5b779cf17c9f533">attrs.h</a>
+</li>
 <li>TY_❪getNextStringKey❫()
 : <a class="el" href="language_8h.html#a2c51e3fd16c8756e65f634b8a1771fb7">language.h</a>
 </li>
 <li>TY_❪getNextWindowsLanguage❫()
 : <a class="el" href="language_8h.html#a60e5dddad16c6dde80893f929dece85b">language.h</a>
+</li>
+<li>TY_❪getOptionIsList❫()
+: <a class="el" href="group__configuration__options.html#gaea7200af8893c3d774e322b9d9bd37d6">config.h</a>
 </li>
 <li>TY_❪getOptionList❫()
 : <a class="el" href="group__configuration__options.html#ga0a716eb5b96aa3d3c001f821fdceae2e">config.h</a>
@@ -1068,6 +1095,9 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 </li>
 <li>TY_❪GetPickListLabelForPick❫()
 : <a class="el" href="group__configuration__options.html#gad770a3170f2f06a81e8b2d28b85b1ada">config.h</a>
+</li>
+<li>TY_❪getPriorityAttrList❫()
+: <a class="el" href="attrs_8h.html#a8d15469d4acce7de8bf9a749be4caf57">attrs.h</a>
 </li>
 <li>TY_❪getStringKeyList❫()
 : <a class="el" href="language_8h.html#ab68ade7b3ac2b7f43f4b5fb1e51bef3f">language.h</a>
@@ -1612,7 +1642,7 @@ $(document).ready(function(){initNavTree('globals_func_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
+    <li class="footer">Generated on Sun Nov 19 2017 13:00:32 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

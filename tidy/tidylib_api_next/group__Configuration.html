@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.80</span>
+   &#160;<span id="projectnumber">5.5.81</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -152,6 +152,9 @@ Information About Options</h2></td></tr>
 <tr class="memitem:ga06e2685cc2950b182ff2f7136d170a34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__public__enumerations.html#gaf8dfd06ad560734d294fe8c9374fd11b">TidyOptionType</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga06e2685cc2950b182ff2f7136d170a34">tidyOptGetType</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> opt)</td></tr>
 <tr class="memdesc:ga06e2685cc2950b182ff2f7136d170a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get datatype of given Option.  <a href="#ga06e2685cc2950b182ff2f7136d170a34">More...</a><br /></td></tr>
 <tr class="separator:ga06e2685cc2950b182ff2f7136d170a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7a6d010d3807b469e61ccf0fc724d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#gac7a6d010d3807b469e61ccf0fc724d09">tidyOptionIsList</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> opt)</td></tr>
+<tr class="memdesc:gac7a6d010d3807b469e61ccf0fc724d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that an option takes a list of items.  <a href="#gac7a6d010d3807b469e61ccf0fc724d09">More...</a><br /></td></tr>
+<tr class="separator:gac7a6d010d3807b469e61ccf0fc724d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6aba2ccdb1237a70f5fe1393fee0ce4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga6aba2ccdb1237a70f5fe1393fee0ce4d">tidyOptIsReadOnly</a> (<a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a> opt)</td></tr>
 <tr class="memdesc:ga6aba2ccdb1237a70f5fe1393fee0ce4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Option read-only? Some options (mainly internal use only options) are read-only.  <a href="#ga6aba2ccdb1237a70f5fe1393fee0ce4d">More...</a><br /></td></tr>
 <tr class="separator:ga6aba2ccdb1237a70f5fe1393fee0ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +233,18 @@ Option Value Functions</h2></td></tr>
 <tr class="memitem:gacec933eef8f9eec3dfa4382e05cab251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#gacec933eef8f9eec3dfa4382e05cab251">tidyOptGetNextDeclTag</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, <a class="el" href="group__public__enumerations.html#ga3a1401652599150188a168dade7dc150">TidyOptionId</a> optId, TidyIterator *iter)</td></tr>
 <tr class="memdesc:gacec933eef8f9eec3dfa4382e05cab251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a valid TidyIterator initiated with <a class="el" href="group__Configuration.html#ga55f30cf9e507f8fc66330ec3b0132620" title="Initiates an iterator for a list of user-declared tags, including autonomous custom tags detected in ...">tidyOptGetDeclTagList()</a>, returns a string representing a user-declared or autonomous custom tag.  <a href="#gacec933eef8f9eec3dfa4382e05cab251">More...</a><br /></td></tr>
 <tr class="separator:gacec933eef8f9eec3dfa4382e05cab251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07d16425aa6610169446bc760163eaba"><td class="memItemLeft" align="right" valign="top">TidyIterator <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga07d16425aa6610169446bc760163eaba">tidyOptGetPriorityAttrList</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc)</td></tr>
+<tr class="memdesc:ga07d16425aa6610169446bc760163eaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates an iterator for a list of priority attributes.  <a href="#ga07d16425aa6610169446bc760163eaba">More...</a><br /></td></tr>
+<tr class="separator:ga07d16425aa6610169446bc760163eaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d5a9e69eadc6faca3842d21d7773ac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga6d5a9e69eadc6faca3842d21d7773ac0">tidyOptGetNextPriorityAttr</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, TidyIterator *iter)</td></tr>
+<tr class="memdesc:ga6d5a9e69eadc6faca3842d21d7773ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a valid TidyIterator initiated with <a class="el" href="group__Configuration.html#ga07d16425aa6610169446bc760163eaba" title="Initiates an iterator for a list of priority attributes. ">tidyOptGetPriorityAttrList()</a>, returns a string representing a priority attribute.  <a href="#ga6d5a9e69eadc6faca3842d21d7773ac0">More...</a><br /></td></tr>
+<tr class="separator:ga6d5a9e69eadc6faca3842d21d7773ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93120b4aacd20492927a6f02ce56f183"><td class="memItemLeft" align="right" valign="top">TidyIterator <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga93120b4aacd20492927a6f02ce56f183">tidyOptGetMutedMessageList</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc)</td></tr>
+<tr class="memdesc:ga93120b4aacd20492927a6f02ce56f183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates an iterator for a list of muted messages.  <a href="#ga93120b4aacd20492927a6f02ce56f183">More...</a><br /></td></tr>
+<tr class="separator:ga93120b4aacd20492927a6f02ce56f183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2102016c7bdf1df43de73a56783c3b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#gab2102016c7bdf1df43de73a56783c3b0">tidyOptGetNextMutedMessage</a> (<a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a> tdoc, TidyIterator *iter)</td></tr>
+<tr class="memdesc:gab2102016c7bdf1df43de73a56783c3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a valid TidyIterator initiated with <a class="el" href="group__Configuration.html#ga93120b4aacd20492927a6f02ce56f183" title="Initiates an iterator for a list of muted messages. ">tidyOptGetMutedMessageList()</a>, returns a string representing a muted message.  <a href="#gab2102016c7bdf1df43de73a56783c3b0">More...</a><br /></td></tr>
+<tr class="separator:gab2102016c7bdf1df43de73a56783c3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Option Documentation</h2></td></tr>
@@ -922,6 +937,31 @@ Option Documentation</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga93120b4aacd20492927a6f02ce56f183"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TidyIterator <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidyOptGetMutedMessageList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a>&#160;</td>
+          <td class="paramname"><em>tdoc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initiates an iterator for a list of muted messages. </p>
+<p>This iterator allows you to iterate through all of the priority attributes defined with the <code>mute</code> configuration option. In order to iterate through the list, initiate with this function, and then use <a class="el" href="group__Configuration.html#gab2102016c7bdf1df43de73a56783c3b0" title="Given a valid TidyIterator initiated with tidyOptGetMutedMessageList(), returns a string representing...">tidyOptGetNextMutedMessage()</a> to retrieve the first and subsequent attributes. For example: </p><div class="fragment"><div class="line">TidyIterator itAttr = <a class="code" href="group__Configuration.html#ga93120b4aacd20492927a6f02ce56f183">tidyOptGetMutedMessageList</a>( tdoc );</div><div class="line"><span class="keywordflow">while</span> ( itAttr ) {</div><div class="line">  printf(<span class="stringliteral">&quot;%s&quot;</span>, <a class="code" href="group__Configuration.html#gab2102016c7bdf1df43de73a56783c3b0">tidyOptGetNextMutedMessage</a>( tdoc, &amp;itAttr ));</div><div class="line">}</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tdoc</td><td>An instance of a <a class="el" href="group__Opaque.html#structTidyDoc" title="Instances of this represent a Tidy document, which encapsulates everything there is to know about a s...">TidyDoc</a> to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a TidyIterator, which is a token used to represent the current position in a list within LibTidy. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="gaf370cd2ea113747f50da185fda24adcb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1027,6 +1067,42 @@ Option Documentation</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gab2102016c7bdf1df43de73a56783c3b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidyOptGetNextMutedMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a>&#160;</td>
+          <td class="paramname"><em>tdoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TidyIterator *&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a valid TidyIterator initiated with <a class="el" href="group__Configuration.html#ga93120b4aacd20492927a6f02ce56f183" title="Initiates an iterator for a list of muted messages. ">tidyOptGetMutedMessageList()</a>, returns a string representing a muted message. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the next tag. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tdoc</td><td>The tidy document to query. </td></tr>
+    <tr><td class="paramname">iter</td><td>The TidyIterator (initiated with <a class="el" href="group__Configuration.html#ga93120b4aacd20492927a6f02ce56f183" title="Initiates an iterator for a list of muted messages. ">tidyOptGetMutedMessageList()</a>) token. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gad1366c5c458f38d2a9c6a6335e6704d9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1063,6 +1139,42 @@ Option Documentation</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga6d5a9e69eadc6faca3842d21d7773ac0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidyOptGetNextPriorityAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a>&#160;</td>
+          <td class="paramname"><em>tdoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TidyIterator *&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a valid TidyIterator initiated with <a class="el" href="group__Configuration.html#ga07d16425aa6610169446bc760163eaba" title="Initiates an iterator for a list of priority attributes. ">tidyOptGetPriorityAttrList()</a>, returns a string representing a priority attribute. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the next tag. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tdoc</td><td>The tidy document to query. </td></tr>
+    <tr><td class="paramname">iter</td><td>The TidyIterator (initiated with <a class="el" href="group__Configuration.html#ga07d16425aa6610169446bc760163eaba" title="Initiates an iterator for a list of priority attributes. ">tidyOptGetPriorityAttrList()</a>) token. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga31f815fe2b5bf1e00d6b50be62edd0ab"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1081,6 +1193,31 @@ Option Documentation</h2></td></tr>
 <p>In order to iterate through the available values, initiate the iterator with this function, and then use <a class="el" href="group__Configuration.html#gad1366c5c458f38d2a9c6a6335e6704d9" title="Given a valid TidyIterator initiated with tidyOptGetPickList(), returns a string representing a possi...">tidyOptGetNextPick()</a> to retrieve the first and subsequent option values. For example: </p><div class="fragment"><div class="line">TidyIterator itOpt = <a class="code" href="group__Configuration.html#ga31f815fe2b5bf1e00d6b50be62edd0ab">tidyOptGetPickList</a>( opt );</div><div class="line"><span class="keywordflow">while</span> ( itOpt ) {</div><div class="line">  printf(<span class="stringliteral">&quot;%s&quot;</span>, <a class="code" href="group__Configuration.html#gad1366c5c458f38d2a9c6a6335e6704d9">tidyOptGetNextPick</a>( opt, &amp;itOpt ));</div><div class="line">}</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opt</td><td>An instance of a <a class="el" href="group__Opaque.html#structTidyOption" title="Instances of this represent a Tidy configuration option, which contains useful data about these optio...">TidyOption</a> to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a TidyIterator, which is a token used to represent the current position in a list within LibTidy. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga07d16425aa6610169446bc760163eaba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TidyIterator <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidyOptGetPriorityAttrList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyDoc">TidyDoc</a>&#160;</td>
+          <td class="paramname"><em>tdoc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initiates an iterator for a list of priority attributes. </p>
+<p>This iterator allows you to iterate through all of the priority attributes defined with the <code>priority-attributes</code> configuration option. In order to iterate through the attributes, initiate the iterator with this function, and then use <a class="el" href="group__Configuration.html#ga6d5a9e69eadc6faca3842d21d7773ac0" title="Given a valid TidyIterator initiated with tidyOptGetPriorityAttrList(), returns a string representing...">tidyOptGetNextPriorityAttr()</a> to retrieve the first and subsequent attributes. For example: </p><div class="fragment"><div class="line">TidyIterator itAttr = <a class="code" href="group__Configuration.html#ga07d16425aa6610169446bc760163eaba">tidyOptGetPriorityAttrList</a>( tdoc );</div><div class="line"><span class="keywordflow">while</span> ( itAttr ) {</div><div class="line">  printf(<span class="stringliteral">&quot;%s&quot;</span>, <a class="code" href="group__Configuration.html#ga6d5a9e69eadc6faca3842d21d7773ac0">tidyOptGetNextPriorityAttr</a>( tdoc, &amp;itAttr ));</div><div class="line">}</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tdoc</td><td>An instance of a <a class="el" href="group__Opaque.html#structTidyDoc" title="Instances of this represent a Tidy document, which encapsulates everything there is to know about a s...">TidyDoc</a> to query. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1109,7 +1246,7 @@ Option Documentation</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the TidyOptionType of the given option. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The TidyOptionType of the given option. </dd></dl>
 
 </div>
 </div>
@@ -1146,6 +1283,31 @@ Option Documentation</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="gac7a6d010d3807b469e61ccf0fc724d09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> <a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> tidyOptionIsList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Opaque.html#structTidyOption">TidyOption</a>&#160;</td>
+          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates that an option takes a list of items. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt</td><td>An instance of a <a class="el" href="group__Opaque.html#structTidyOption" title="Instances of this represent a Tidy configuration option, which contains useful data about these optio...">TidyOption</a> to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A bool indicating whether or not the option accepts a list. </dd></dl>
 
 </div>
 </div>
@@ -1574,7 +1736,7 @@ Option Documentation</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
+    <li class="footer">Generated on Sun Nov 19 2017 13:00:32 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

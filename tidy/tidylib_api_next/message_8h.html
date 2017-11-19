@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.80</span>
+   &#160;<span id="projectnumber">5.5.81</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -168,9 +168,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7646c4dd06b60a3604b8689492e4bae3"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__keydiscovery.html#ga7646c4dd06b60a3604b8689492e4bae3">TY_❪getErrorCodeList❫</a> (void)</td></tr>
 <tr class="memdesc:ga7646c4dd06b60a3604b8689492e4bae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the TidyIterator to point to the first item in Tidy's list of error codes that can be return with <code>TidyReportFilter3</code>.  <a href="group__message__keydiscovery.html#ga7646c4dd06b60a3604b8689492e4bae3">More...</a><br /></td></tr>
 <tr class="separator:ga7646c4dd06b60a3604b8689492e4bae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga394bbacb623f2401255ee842a3b0ddb5"><td class="memItemLeft" align="right" valign="top">TidyIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#ga394bbacb623f2401255ee842a3b0ddb5">TY_❪getMutedMessageList❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga394bbacb623f2401255ee842a3b0ddb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an iterator for muted messages.  <a href="group__message__mutinging.html#ga394bbacb623f2401255ee842a3b0ddb5">More...</a><br /></td></tr>
+<tr class="separator:ga394bbacb623f2401255ee842a3b0ddb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__keydiscovery.html#ga8ba9f055a6fa58e7f1e524d9d8d28fd9">TY_❪getNextErrorCode❫</a> (TidyIterator *iter)</td></tr>
 <tr class="memdesc:ga8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next error code having initialized the iterator with <code><a class="el" href="group__MessagesKeys.html#gabdcab1c50e5a89dab4c411c90e9b6c18" title="Initiates an iterator for a list of message codes available in Tidy. ">getErrorCodeList()</a></code>.  <a href="group__message__keydiscovery.html#ga8ba9f055a6fa58e7f1e524d9d8d28fd9">More...</a><br /></td></tr>
 <tr class="separator:ga8ba9f055a6fa58e7f1e524d9d8d28fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaabd073778c17e7e195bbddcfe524279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__mutinging.html#gaaabd073778c17e7e195bbddcfe524279">TY_❪getNextMutedMessage❫</a> (TidyDocImpl *doc, TidyIterator *iter)</td></tr>
+<tr class="memdesc:gaaabd073778c17e7e195bbddcfe524279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next priority attribute.  <a href="group__message__mutinging.html#gaaabd073778c17e7e195bbddcfe524279">More...</a><br /></td></tr>
+<tr class="separator:gaaabd073778c17e7e195bbddcfe524279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4abc35b4fa975cacb28952d4137cc15b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__releaseinfo.html#ga4abc35b4fa975cacb28952d4137cc15b">TY_❪ReleaseDate❫</a> (void)</td></tr>
 <tr class="memdesc:ga4abc35b4fa975cacb28952d4137cc15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the release date of this instance of HTML Tidy.  <a href="group__message__releaseinfo.html#ga4abc35b4fa975cacb28952d4137cc15b">More...</a><br /></td></tr>
 <tr class="separator:ga4abc35b4fa975cacb28952d4137cc15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -513,7 +519,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="message_8h.html">message.h</a></li>
-    <li class="footer">Generated on Fri Nov 17 2017 21:59:29 for HTML Tidy by
+    <li class="footer">Generated on Sun Nov 19 2017 13:00:32 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
