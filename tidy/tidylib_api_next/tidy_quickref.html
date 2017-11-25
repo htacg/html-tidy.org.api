@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.5.81</span>
+   &#160;<span id="projectnumber">5.7.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -886,6 +886,13 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
   <tr>
     <td class="qrow">
       <a href="#indent-with-tabs">indent-with-tabs</a>
+    </td>
+    <td class="qrow">Boolean</td>
+    <td class="qrow">no</td>
+  </tr>
+  <tr>
+    <td class="qrow">
+      <a href="#keep-tabs">keep-tabs</a>
     </td>
     <td class="qrow">Boolean</td>
     <td class="qrow">no</td>
@@ -3449,6 +3456,33 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
     <td> </td>
   </tr>
   <tr>
+    <td valign="top" id="keep-tabs" colspan="2" class="qoptiontitletd">
+      <h4 class="qoptiontitle">keep-tabs</h4>
+    </td>
+    <td class="tabletitlelink" valign="top" align="right">
+      <a href="#qtop">Top</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Type:</td>
+    <td class="qvalu">Boolean</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Default:</td>
+    <td class="qvalu">no</td>
+  </tr>
+  <tr>
+    <td valign="top" class="qlabel">Example:</td>
+    <td class="qvalu">no, yes</td>
+  </tr>
+  <tr>
+    <td/>
+    <td colspan="1" class="qdescription">With the default <var xmlns="">no</var> Tidy will replace all source tabs with spaces, controlled by the option <code xmlns="">tab-size</code>, and the current line offset. Of course, except in the special blocks/elements enumerated below, this will later be reduced to just one space. <br xmlns=""/>If set <var xmlns="">yes</var> this option specifies Tidy should keep certain tabs found in the source, but only in preformatted blocks like <code xmlns="">&lt;pre&gt;</code>, and other CDATA elements like <code xmlns="">&lt;script&gt;</code>, <code xmlns="">&lt;style&gt;</code>, and other pseudo elements like <code xmlns="">&lt;?php ... ?&gt;</code>. As always, all other tabs, or sequences of tabs, in the source will continue to be replaced with a space. </td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
     <td valign="top" id="omit-optional-tags" colspan="2" class="qoptiontitletd">
       <h4 class="qoptiontitle">omit-optional-tags</h4>
     </td>
@@ -3848,7 +3882,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 19 2017 13:00:32 for HTML Tidy by
+    <li class="footer">Generated on Sat Nov 25 2017 15:28:13 for HTML Tidy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.5.81" />
+        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.7.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>
-            HTML Tidy 5.5.81 Options Quick Reference
+            HTML Tidy 5.7.0 Options Quick Reference
         </title>
         <style type="text/css">
         /*<![CDATA[*/
@@ -151,7 +151,7 @@
     </head>
     <body>
         <h1 id="top">
-            HTML Tidy 5.5.81 Options Quick Reference
+            HTML Tidy 5.7.0 Options Quick Reference
         </h1>
         <h2>
             Option Groups
@@ -1330,6 +1330,17 @@
                 <tr>
                     <td>
                         <a href="#indent-with-tabs">indent-with-tabs</a>
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                    <td>
+                        no
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#keep-tabs">keep-tabs</a>
                     </td>
                     <td>
                         Boolean
@@ -5058,6 +5069,46 @@
                         Set it to <var>yes</var> to indent using tabs instead of the default spaces.<br />
                         Use the option <code>indent-spaces</code> to control the number of tabs output per level of indent. Note that when <code>indent-with-tabs</code> is enabled the default value of <code>indent-spaces</code> is reset to <var>1</var>.<br />
                         Note <code>tab-size</code> controls converting input tabs to spaces. Set it to zero to retain input tabs.
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr class="header_option_name">
+                    <td colspan="2" id="keep-tabs">
+                        keep-tabs
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Type:
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Default:
+                    </td>
+                    <td>
+                        <var>no</var>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Values:
+                    </td>
+                    <td>
+                        <var>no, yes</var>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="qdescription">
+                        With the default <var>no</var> Tidy will replace all source tabs with spaces, controlled by the option <code>tab-size</code>, and the current line offset. Of course, except in the special blocks/elements enumerated below, this will later be reduced to just one space.<br />
+                        If set <var>yes</var> this option specifies Tidy should keep certain tabs found in the source, but only in preformatted blocks like <code>&lt;pre&gt;</code>, and other CDATA elements like <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, and other pseudo elements like <code>&lt;?php ... ?&gt;</code>. As always, all other tabs, or sequences of tabs, in the source will continue to be replaced with a space.
                     </td>
                 </tr>
             </tbody>
