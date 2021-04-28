@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version',['version',['../group__service__version.html#gaffa0703c44739afbd4649db8b51da308',1,'tidy.c']]]
+  ['unknownoption_3566',['unknownOption',['../group__utilities__output.html#ga13e930734972b76be7ca42c7c5e90652',1,'tidy.c']]]
 ];

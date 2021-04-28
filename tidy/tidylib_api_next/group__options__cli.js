@@ -20,7 +20,7 @@ var group__options__cli =
     ] ],
     [ "get_escaped_name", "group__options__cli.html#gaff96034efcd3ed946239bb0f9af4cec0", null ],
     [ "localize_option_names", "group__options__cli.html#gadd1dcc01631e78dc2ffd8ffa0e13bc9e", null ],
-    [ "cmdopt_catname", "group__options__cli.html#ga30880c5e3cf09226c9ebe16c722af272", null ],
+    [ "cmdopt_catname", "group__options__cli.html#gaabf8863644d7f6f2c46547bcabc54cd0", null ],
     [ "cmdopt_defs", "group__options__cli.html#gad7a9fcaf7b2a712a82e625e84c042b28", null ],
     [ "fmt", "group__options__cli.html#gad196f477a10ad597f9b5453d4fce4dee", null ],
     [ "helpfmt", "group__options__cli.html#gaabcde62ff0605cfdd54119ad4341aa55", null ],

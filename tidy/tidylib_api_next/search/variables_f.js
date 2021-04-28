@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['reportcallback',['reportCallback',['../tidy-int_8h.html#abf0f5366e3d0c213faceb2224b1c9795',1,'_TidyDocImpl']]],
-  ['reportfilter',['reportFilter',['../tidy-int_8h.html#af70bf9de84fed3569c66112649e5a40d',1,'_TidyDocImpl']]],
-  ['root',['root',['../lexer_8h.html#a3f7db53410d0f3007de60cc3d64a0c09',1,'_Lexer::root()'],['../tidy-int_8h.html#a60591a2a62ffba453012ba51340a0c17',1,'_TidyDocImpl::root()']]]
+  ['reportcallback_3761',['reportCallback',['../tidy-int_8h.html#abf0f5366e3d0c213faceb2224b1c9795',1,'_TidyDocImpl']]],
+  ['reportfilter_3762',['reportFilter',['../tidy-int_8h.html#af70bf9de84fed3569c66112649e5a40d',1,'_TidyDocImpl']]],
+  ['root_3763',['root',['../lexer_8h.html#a3f7db53410d0f3007de60cc3d64a0c09',1,'_Lexer::root()'],['../tidy-int_8h.html#a60591a2a62ffba453012ba51340a0c17',1,'_TidyDocImpl::root()']]]
 ];

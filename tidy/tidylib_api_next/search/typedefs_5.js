@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['optionfunc',['OptionFunc',['../group__utilities__cli__options.html#ga914b84113a1a223e3c20da5323b5150b',1,'tidy.c']]]
+  ['optionfunc_3977',['OptionFunc',['../group__utilities__cli__options.html#ga914b84113a1a223e3c20da5323b5150b',1,'tidy.c']]]
 ];

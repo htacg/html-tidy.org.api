@@ -1,6 +1,11 @@
 var group__IO =
 [
     [ "TidyBuffer", "group__IO.html#struct__TidyBuffer", [
+      [ "1. Option ID", "options.html#autotoc_md77", null ],
+      [ "2. Table Definition", "options.html#autotoc_md78", null ],
+      [ "3. Option Description", "options.html#autotoc_md79", null ],
+      [ "4. Use in Code", "options.html#autotoc_md80", null ],
+      [ "Summary", "options.html#autotoc_md81", null ],
       [ "allocated", "group__IO.html#a251ae84689f7885fc9f8a96ff41ba825", null ],
       [ "allocator", "group__IO.html#a9b11c38b6128c3c99c39ab9fbe173a23", null ],
       [ "bp", "group__IO.html#a4321e5e76837ce9ebea9d5213d13960f", null ],

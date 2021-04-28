@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.7.0" />
+        <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.7.47" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>
-            HTML Tidy 5.7.0 Options Quick Reference
+            HTML Tidy 5.7.47 Options Quick Reference
         </title>
         <style type="text/css">
         /*<![CDATA[*/
@@ -151,7 +151,7 @@
     </head>
     <body>
         <h1 id="top">
-            HTML Tidy 5.7.0 Options Quick Reference
+            HTML Tidy 5.7.47 Options Quick Reference
         </h1>
         <h2>
             Option Groups
@@ -289,6 +289,17 @@
                     </td>
                     <td>
                         6
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#show-filename">show-filename</a>
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                    <td>
+                        no
                     </td>
                 </tr>
                 <tr>
@@ -1478,7 +1489,7 @@
                         Boolean
                     </td>
                     <td>
-                        yes
+                        no
                     </td>
                 </tr>
                 <tr>
@@ -1549,9 +1560,20 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        See also:
+                    </td>
+                    <td>
+                        <a href="#show-filename">show-filename</a>
+                    </td>
+                </tr>
+                <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should change the format for reporting errors and warnings to a format that is more easily parsed by GNU Emacs.
+                        This option specifies that Tidy should change the format for reporting errors and warnings to a format that is more easily parsed by GNU Emacs or some other program. It changes them from the default<br />
+                        line &lt;line number&gt; column &lt;column number&gt; - (Error|Warning): &lt;message&gt;<br />
+                        to a form which includes the input filename:<br />
+                        &lt;filename&gt;:&lt;line number&gt;:&lt;column number&gt;: (Error|Warning): &lt;message&gt;
                     </td>
                 </tr>
             </tbody>
@@ -1798,6 +1820,55 @@
                     <td></td>
                     <td class="qdescription">
                         This option specifies the number Tidy uses to determine if further errors should be shown. If set to <var>0</var>, then no errors are shown.
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr class="header_option_name">
+                    <td colspan="2" id="show-filename">
+                        show-filename
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Type:
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Default:
+                    </td>
+                    <td>
+                        <var>no</var>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Values:
+                    </td>
+                    <td>
+                        <var>no, yes</var>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        See also:
+                    </td>
+                    <td>
+                        <a href="#gnu-emacs">gnu-emacs</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="qdescription">
+                        This option specifies if Tidy should show the filename in messages. eg:<br />
+                        tidy -q -e --show-filename yes index.html<br />
+                        index.html: line 43 column 3 - Warning: replacing invalid UTF-8 bytes (char. code U+00A9)
                     </td>
                 </tr>
             </tbody>
@@ -2834,7 +2905,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should strip Microsoft specific HTML from Word 2000 documents, and output spaces rather than non-breaking spaces where they exist in the input.
+                        This option specifies if Tidy should replace smart quotes and em dashes with ASCII, and output spaces rather than non-breaking spaces, where they exist in the input.
                     </td>
                 </tr>
             </tbody>
@@ -3429,7 +3500,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should output unadorned <code>&amp;</code> characters as <code>&amp;amp;</code>.
+                        This option specifies if Tidy should output unadorned <code>&amp;</code> characters as <code>&amp;amp;</code>, in legacy doctypes only.
                     </td>
                 </tr>
             </tbody>
@@ -4440,7 +4511,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should print out comments.
+                        This option specifies if Tidy should not print out comments.
                     </td>
                 </tr>
             </tbody>
@@ -5589,7 +5660,7 @@
                         Default:
                     </td>
                     <td>
-                        <var>yes</var>
+                        <var>no</var>
                     </td>
                 </tr>
                 <tr>
@@ -5603,7 +5674,7 @@
                 <tr>
                     <td></td>
                     <td class="qdescription">
-                        This option specifies if Tidy should line wrap text contained within PHP pseudo elements, which look like: <code>&lt;?php ... ?&gt;</code>.
+                        This option specifies if Tidy should add a new line after a PHP pseudo elements, which look like: <code>&lt;?php ... ?&gt;</code>.
                     </td>
                 </tr>
             </tbody>
