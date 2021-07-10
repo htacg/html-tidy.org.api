@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -291,7 +291,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse markup in given string. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the highest of <code>2</code> indicating that errors were present in the document, <code>1</code> indicating warnings, and <code>0</code> in the case of everything being okay. </dd></dl>
+<p>Note that the supplied string is of type <code>ctmbstr</code> based on <code>char</code> and therefore doesn't support the use of UTF-16 strings. Use <code><a class="el" href="group__Parse.html#gaa28ce34c95750f150205843885317851" title="Parse markup in given buffer.">tidyParseBuffer()</a></code> if parsing multibyte strings. </p><dl class="section return"><dt>Returns</dt><dd>Returns the highest of <code>2</code> indicating that errors were present in the document, <code>1</code> indicating warnings, and <code>0</code> in the case of everything being okay. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tdoc</td><td>The tidy document to use for parsing. </td></tr>
@@ -307,7 +307,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:44 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

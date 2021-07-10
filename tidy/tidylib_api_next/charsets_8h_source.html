@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -98,19 +98,26 @@ $(document).ready(function(){initNavTree('charsets_8h_source.html',''); initResi
 <div class="title">charsets.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="charsets_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* charsets.h -- character set information and mappings</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  (c) 1998-2006 (W3C) MIT, ERCIM, Keio University</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  See tidy.h for the copyright notice.</span></div>
+<a href="charsets_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __CHARSETS_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __CHARSETS_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* charsets.h -- character set information and mappings</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="charsets_8h.html#a261c31d15ebd36288e8f5e9c38f0c8a0">    8</a></span>&#160;<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingIdFromName)(<a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name);</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="charsets_8h.html#a9ff94be0d513183c9eb7380cba581d98">    9</a></span>&#160;<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingIdFromCodePage)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cp);</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="charsets_8h.html#aa03836f63b9d96b9210f73a98d66c1fa">   10</a></span>&#160;<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingCodePageFromName)(<a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name);</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="charsets_8h.html#ab39e91fbdc906906443cb0d8eea90d88">   11</a></span>&#160;<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingCodePageFromId)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> id);</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="charsets_8h.html#ab004275937661d7f26504bdc7d3dc553">   12</a></span>&#160;<a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingNameFromId)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> id);</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="charsets_8h.html#a1aa21d9cfe8e1033e21cbab313a86e84">   13</a></span>&#160;<a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingNameFromCodePage)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cp);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">  (c) 1998-2021 (W3C) MIT, ERCIM, Keio University</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">  See tidy.h for the copyright notice.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="charsets_8h.html#a20996063317a0d74daf670d3b7bfce4a">   11</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingIdFromName)(<a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name);</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="charsets_8h.html#a224c5ef255068e4e40c42eb3aed772d8">   12</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingIdFromCodePage)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cp);</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="charsets_8h.html#a6786fce874d06f36fac8f59a56d1182b">   13</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingCodePageFromName)(<a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name);</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="charsets_8h.html#a36512ee870fb6538b9b7ac35827f9307">   14</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingCodePageFromId)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> id);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="charsets_8h.html#af7a9d0f1432a520ae90ef9868365e215">   15</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingNameFromId)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> id);</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="charsets_8h.html#acad0279d531128424287cf8902f78f5d">   16</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(GetEncodingNameFromCodePage)(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cp);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __CHARSETS_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="ttc" id="aforward_8h_html_ac106c51e7d00e7491634ad74c10db0de"><div class="ttname"><a href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a></div><div class="ttdeci">#define TY_PRIVATE</div><div class="ttdef"><b>Definition:</b> forward.h:29</div></div>
 <div class="ttc" id="aforward_8h_html_afe4399ce3d59fdbba5127cb28fd18ef8"><div class="ttname"><a href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a></div><div class="ttdeci">#define TY_(str)</div><div class="ttdef"><b>Definition:</b> forward.h:23</div></div>
 <div class="ttc" id="atidyplatform_8h_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> tidyplatform.h:569</div></div>
 <div class="ttc" id="atidyplatform_8h_html_ab79be1eeb8c1b64feac28be54d28ba70"><div class="ttname"><a href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a></div><div class="ttdeci">const tmbchar * ctmbstr</div><div class="ttdef"><b>Definition:</b> tidyplatform.h:609</div></div>
@@ -120,7 +127,7 @@ $(document).ready(function(){initNavTree('charsets_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="charsets_8h.html">charsets.h</a></li>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:25 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:43 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

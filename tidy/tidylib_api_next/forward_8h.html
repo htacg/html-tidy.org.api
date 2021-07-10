@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -119,13 +119,15 @@ Macros</h2></td></tr>
 <tr class="separator:a4d9c2d56031ad033e6e703ce5dda67b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4399ce3d59fdbba5127cb28fd18ef8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(str)&#160;&#160;&#160;<a class="el" href="forward_8h.html#a25a93d599a72baffae5ed445d38ca4a3">TYDYAPPEND</a>(prvTidy,str)</td></tr>
 <tr class="separator:afe4399ce3d59fdbba5127cb28fd18ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac106c51e7d00e7491634ad74c10db0de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a>&#160;&#160;&#160;__attribute__((__visibility__(&quot;hidden&quot;)))</td></tr>
+<tr class="separator:ac106c51e7d00e7491634ad74c10db0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25a93d599a72baffae5ed445d38ca4a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forward_8h.html#a25a93d599a72baffae5ed445d38ca4a3">TYDYAPPEND</a>(str1,  str2)&#160;&#160;&#160;str1##str2</td></tr>
 <tr class="separator:a25a93d599a72baffae5ed445d38ca4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a60d23b9f0b8abcf750765d38ae2d54ef"><td class="memItemLeft" align="right" valign="top">TidyAllocator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forward_8h.html#a60d23b9f0b8abcf750765d38ae2d54ef">TY_❪g_default_allocator❫</a></td></tr>
-<tr class="separator:a60d23b9f0b8abcf750765d38ae2d54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5034f7a0dc1d21843f7e3c41a992fb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyAllocator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forward_8h.html#ac5034f7a0dc1d21843f7e3c41a992fb9">TY_❪g_default_allocator❫</a></td></tr>
+<tr class="separator:ac5034f7a0dc1d21843f7e3c41a992fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa39c40bca094805a4fa86ee2fa2acbe4"></a>
@@ -294,6 +296,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ac106c51e7d00e7491634ad74c10db0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac106c51e7d00e7491634ad74c10db0de">&#9670;&nbsp;</a></span>TY_PRIVATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TY_PRIVATE&#160;&#160;&#160;__attribute__((__visibility__(&quot;hidden&quot;)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a25a93d599a72baffae5ed445d38ca4a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25a93d599a72baffae5ed445d38ca4a3">&#9670;&nbsp;</a></span>TYDYAPPEND</h2>
 
@@ -323,8 +339,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a60d23b9f0b8abcf750765d38ae2d54ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60d23b9f0b8abcf750765d38ae2d54ef">&#9670;&nbsp;</a></span>TY_❪g_default_allocator❫</h2>
+<a id="ac5034f7a0dc1d21843f7e3c41a992fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5034f7a0dc1d21843f7e3c41a992fb9">&#9670;&nbsp;</a></span>TY_❪g_default_allocator❫</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +349,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TidyAllocator TY_❪g_default_allocator❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyAllocator TY_❪g_default_allocator❫</td>
         </tr>
       </table>
   </td>
@@ -351,7 +367,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="forward_8h.html">forward.h</a></li>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:44 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

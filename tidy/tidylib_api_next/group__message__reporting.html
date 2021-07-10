@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -106,61 +106,61 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpb7bde75c4c59f5722c97efc5432d7c9e"></a>If one of the convenience reporting functions does not fit your required message signature, then this designated reporting function will fit the bill.</p>
 <p>Be sure to see if a message formatter exists that can handle the variable arguments. </p>
 </td></tr>
-<tr class="memitem:ga3c7d598344345d09dc9711ccc7843b8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga3c7d598344345d09dc9711ccc7843b8d">TY_❪Report❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code,...)</td></tr>
-<tr class="memdesc:ga3c7d598344345d09dc9711ccc7843b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The designated report writing function.  <a href="group__message__reporting.html#ga3c7d598344345d09dc9711ccc7843b8d">More...</a><br /></td></tr>
-<tr class="separator:ga3c7d598344345d09dc9711ccc7843b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4043f84414ce80753baf3bee18099306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga4043f84414ce80753baf3bee18099306">TY_❪Report❫</a> (TidyDocImpl *doc, Node *element, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code,...)</td></tr>
+<tr class="memdesc:ga4043f84414ce80753baf3bee18099306"><td class="mdescLeft">&#160;</td><td class="mdescRight">The designated report writing function.  <a href="group__message__reporting.html#ga4043f84414ce80753baf3bee18099306">More...</a><br /></td></tr>
+<tr class="separator:ga4043f84414ce80753baf3bee18099306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Convenience Reporting Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp6f02839a7a77b4a541d323eaf7ef979a"></a>These convenience reporting functions are able to handle the bulk of Tidy's necessary reporting, and avoid the danger of using a variadic if you are unfamiliar with Tidy. </p>
 </td></tr>
-<tr class="memitem:gaf061ec297ebf9d8793f9c542b900f315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gaf061ec297ebf9d8793f9c542b900f315">TY_❪ReportAccessError❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:gaf061ec297ebf9d8793f9c542b900f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1887ba9fdbffa7e1432e1a4482677009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga1887ba9fdbffa7e1432e1a4482677009">TY_❪ReportAttrError❫</a> (TidyDocImpl *doc, Node *node, AttVal *av, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:ga1887ba9fdbffa7e1432e1a4482677009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga218b6755b6f23ce550a92a49494233bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga218b6755b6f23ce550a92a49494233bf">TY_❪ReportBadArgument❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
-<tr class="separator:ga218b6755b6f23ce550a92a49494233bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga079e05cb56f02b43e507ef19f7bdc791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga079e05cb56f02b43e507ef19f7bdc791">TY_❪ReportEntityError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> entity, int c)</td></tr>
-<tr class="separator:ga079e05cb56f02b43e507ef19f7bdc791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd4a93e2e9bc0bcae4db89c8ffa23b4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gacd4a93e2e9bc0bcae4db89c8ffa23b4f">TY_❪ReportFileError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> file, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
-<tr class="separator:gacd4a93e2e9bc0bcae4db89c8ffa23b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29cd6985e53a356f56f4d99f01cf924d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga29cd6985e53a356f56f4d99f01cf924d">TY_❪ReportEncodingError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> discarded)</td></tr>
-<tr class="separator:ga29cd6985e53a356f56f4d99f01cf924d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga289f2e147e211fb3c277a9ebac860812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga289f2e147e211fb3c277a9ebac860812">TY_❪ReportEncodingWarning❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> encoding)</td></tr>
-<tr class="separator:ga289f2e147e211fb3c277a9ebac860812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c1dbd085480403d296164da1d938f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga4c1dbd085480403d296164da1d938f0c">TY_❪ReportMissingAttr❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
-<tr class="separator:ga4c1dbd085480403d296164da1d938f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d0ef2889ddf60190b89b29f8fe6ed04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga0d0ef2889ddf60190b89b29f8fe6ed04">TY_❪ReportSurrogateError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c1, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c2)</td></tr>
-<tr class="separator:ga0d0ef2889ddf60190b89b29f8fe6ed04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1e40173912d40e66249e54c923cd3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gae1e40173912d40e66249e54c923cd3a9">TY_❪ReportUnknownOption❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
-<tr class="separator:gae1e40173912d40e66249e54c923cd3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a22074c47cc082cf3670d2688415735"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga2a22074c47cc082cf3670d2688415735">TY_❪ReportAccessError❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="separator:ga2a22074c47cc082cf3670d2688415735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac74c720939205dbc1ce9540310c9264c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gac74c720939205dbc1ce9540310c9264c">TY_❪ReportAttrError❫</a> (TidyDocImpl *doc, Node *node, AttVal *av, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="separator:gac74c720939205dbc1ce9540310c9264c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca1a3189163f818e53cdada1ce79b36e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gaca1a3189163f818e53cdada1ce79b36e">TY_❪ReportBadArgument❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
+<tr class="separator:gaca1a3189163f818e53cdada1ce79b36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14d09d7228c17ed7a9f5beeeba6f86a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga14d09d7228c17ed7a9f5beeeba6f86a0">TY_❪ReportEntityError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> entity, int c)</td></tr>
+<tr class="separator:ga14d09d7228c17ed7a9f5beeeba6f86a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f9518ecd7abb738d32e76467d9f8658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga2f9518ecd7abb738d32e76467d9f8658">TY_❪ReportFileError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> file, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code)</td></tr>
+<tr class="separator:ga2f9518ecd7abb738d32e76467d9f8658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaef888ea453e8d1bde36aa124dad3885"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gaaef888ea453e8d1bde36aa124dad3885">TY_❪ReportEncodingError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> discarded)</td></tr>
+<tr class="separator:gaaef888ea453e8d1bde36aa124dad3885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66dddd4813de6853c82faa2527a1ba8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga66dddd4813de6853c82faa2527a1ba8a">TY_❪ReportEncodingWarning❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> encoding)</td></tr>
+<tr class="separator:ga66dddd4813de6853c82faa2527a1ba8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4607785a01fd4bd5f18ee06bf3865944"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga4607785a01fd4bd5f18ee06bf3865944">TY_❪ReportMissingAttr❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
+<tr class="separator:ga4607785a01fd4bd5f18ee06bf3865944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36bc18c4d59b3c2c025a4cdfde7367a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga36bc18c4d59b3c2c025a4cdfde7367a0">TY_❪ReportSurrogateError❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c1, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> c2)</td></tr>
+<tr class="separator:ga36bc18c4d59b3c2c025a4cdfde7367a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ab50949b96c08e3ba633dac9bd33969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga7ab50949b96c08e3ba633dac9bd33969">TY_❪ReportUnknownOption❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option)</td></tr>
+<tr class="separator:ga7ab50949b96c08e3ba633dac9bd33969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">General Dialogue Writing</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpa2a2b0b730b6664c98ec8b3b38df18f3"></a>These functions produce dialogue output such as individual messages, or several messages in summary form. </p>
 </td></tr>
-<tr class="memitem:ga7500646d4c3bc3d24660571910b112ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga7500646d4c3bc3d24660571910b112ee">TY_❪Dialogue❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code,...)</td></tr>
-<tr class="memdesc:ga7500646d4c3bc3d24660571910b112ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a single dialogue message, and is capable of accepting a variadic that is passed to the correct message formatter as needed.  <a href="group__message__reporting.html#ga7500646d4c3bc3d24660571910b112ee">More...</a><br /></td></tr>
-<tr class="separator:ga7500646d4c3bc3d24660571910b112ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5874881f20eb2562111f63c674bab93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gac5874881f20eb2562111f63c674bab93">TY_❪Dialogue❫</a> (TidyDocImpl *doc, <a class="el" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> code,...)</td></tr>
+<tr class="memdesc:gac5874881f20eb2562111f63c674bab93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a single dialogue message, and is capable of accepting a variadic that is passed to the correct message formatter as needed.  <a href="group__message__reporting.html#gac5874881f20eb2562111f63c674bab93">More...</a><br /></td></tr>
+<tr class="separator:gac5874881f20eb2562111f63c674bab93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Output Dialogue Information</h2></td></tr>
-<tr class="memitem:gaa94ac252fe354b953d7db0cfdf55b880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gaa94ac252fe354b953d7db0cfdf55b880">TY_❪ErrorSummary❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="memdesc:gaa94ac252fe354b953d7db0cfdf55b880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the footnotes and other dialogue information after document cleanup is complete.  <a href="group__message__reporting.html#gaa94ac252fe354b953d7db0cfdf55b880">More...</a><br /></td></tr>
-<tr class="separator:gaa94ac252fe354b953d7db0cfdf55b880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50b6ab8010cded4fe8a00c6657176026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga50b6ab8010cded4fe8a00c6657176026">TY_❪ReportMarkupVersion❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="memdesc:ga50b6ab8010cded4fe8a00c6657176026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs document HTML version and version-related information as the final report(s) in the report table.  <a href="group__message__reporting.html#ga50b6ab8010cded4fe8a00c6657176026">More...</a><br /></td></tr>
-<tr class="separator:ga50b6ab8010cded4fe8a00c6657176026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2569a7886e9df5184118e4a01ed52b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga2569a7886e9df5184118e4a01ed52b60">TY_❪ReportNumWarnings❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="memdesc:ga2569a7886e9df5184118e4a01ed52b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the number of warnings and errors found in the document as dialogue inforation.  <a href="group__message__reporting.html#ga2569a7886e9df5184118e4a01ed52b60">More...</a><br /></td></tr>
-<tr class="separator:ga2569a7886e9df5184118e4a01ed52b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb54d837baebd566e839a4a4dd209877"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#gadb54d837baebd566e839a4a4dd209877">TY_❪ErrorSummary❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gadb54d837baebd566e839a4a4dd209877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the footnotes and other dialogue information after document cleanup is complete.  <a href="group__message__reporting.html#gadb54d837baebd566e839a4a4dd209877">More...</a><br /></td></tr>
+<tr class="separator:gadb54d837baebd566e839a4a4dd209877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04ba017e65d77f65d6d216f16a5844b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga04ba017e65d77f65d6d216f16a5844b6">TY_❪ReportMarkupVersion❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga04ba017e65d77f65d6d216f16a5844b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs document HTML version and version-related information as the final report(s) in the report table.  <a href="group__message__reporting.html#ga04ba017e65d77f65d6d216f16a5844b6">More...</a><br /></td></tr>
+<tr class="separator:ga04ba017e65d77f65d6d216f16a5844b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga956b13ee70820de2a0d0a41436793388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__message__reporting.html#ga956b13ee70820de2a0d0a41436793388">TY_❪ReportNumWarnings❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga956b13ee70820de2a0d0a41436793388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the number of warnings and errors found in the document as dialogue inforation.  <a href="group__message__reporting.html#ga956b13ee70820de2a0d0a41436793388">More...</a><br /></td></tr>
+<tr class="separator:ga956b13ee70820de2a0d0a41436793388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga7500646d4c3bc3d24660571910b112ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7500646d4c3bc3d24660571910b112ee">&#9670;&nbsp;</a></span>TY_❪Dialogue❫()</h2>
+<a id="gac5874881f20eb2562111f63c674bab93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5874881f20eb2562111f63c674bab93">&#9670;&nbsp;</a></span>TY_❪Dialogue❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪Dialogue❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪Dialogue❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -189,14 +189,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="gaa94ac252fe354b953d7db0cfdf55b880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa94ac252fe354b953d7db0cfdf55b880">&#9670;&nbsp;</a></span>TY_❪ErrorSummary❫()</h2>
+<a id="gadb54d837baebd566e839a4a4dd209877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb54d837baebd566e839a4a4dd209877">&#9670;&nbsp;</a></span>TY_❪ErrorSummary❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ErrorSummary❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ErrorSummary❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
@@ -210,14 +210,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="gaf061ec297ebf9d8793f9c542b900f315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf061ec297ebf9d8793f9c542b900f315">&#9670;&nbsp;</a></span>TY_❪ReportAccessError❫()</h2>
+<a id="ga2a22074c47cc082cf3670d2688415735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a22074c47cc082cf3670d2688415735">&#9670;&nbsp;</a></span>TY_❪ReportAccessError❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportAccessError❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportAccessError❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -244,14 +244,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga1887ba9fdbffa7e1432e1a4482677009"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1887ba9fdbffa7e1432e1a4482677009">&#9670;&nbsp;</a></span>TY_❪ReportAttrError❫()</h2>
+<a id="gac74c720939205dbc1ce9540310c9264c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac74c720939205dbc1ce9540310c9264c">&#9670;&nbsp;</a></span>TY_❪ReportAttrError❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportAttrError❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportAttrError❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -284,14 +284,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga218b6755b6f23ce550a92a49494233bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga218b6755b6f23ce550a92a49494233bf">&#9670;&nbsp;</a></span>TY_❪ReportBadArgument❫()</h2>
+<a id="gaca1a3189163f818e53cdada1ce79b36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca1a3189163f818e53cdada1ce79b36e">&#9670;&nbsp;</a></span>TY_❪ReportBadArgument❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportBadArgument❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportBadArgument❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -312,14 +312,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga29cd6985e53a356f56f4d99f01cf924d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga29cd6985e53a356f56f4d99f01cf924d">&#9670;&nbsp;</a></span>TY_❪ReportEncodingError❫()</h2>
+<a id="gaaef888ea453e8d1bde36aa124dad3885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaef888ea453e8d1bde36aa124dad3885">&#9670;&nbsp;</a></span>TY_❪ReportEncodingError❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportEncodingError❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportEncodingError❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -352,14 +352,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga289f2e147e211fb3c277a9ebac860812"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga289f2e147e211fb3c277a9ebac860812">&#9670;&nbsp;</a></span>TY_❪ReportEncodingWarning❫()</h2>
+<a id="ga66dddd4813de6853c82faa2527a1ba8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66dddd4813de6853c82faa2527a1ba8a">&#9670;&nbsp;</a></span>TY_❪ReportEncodingWarning❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportEncodingWarning❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportEncodingWarning❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -386,14 +386,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga079e05cb56f02b43e507ef19f7bdc791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga079e05cb56f02b43e507ef19f7bdc791">&#9670;&nbsp;</a></span>TY_❪ReportEntityError❫()</h2>
+<a id="ga14d09d7228c17ed7a9f5beeeba6f86a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14d09d7228c17ed7a9f5beeeba6f86a0">&#9670;&nbsp;</a></span>TY_❪ReportEntityError❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportEntityError❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportEntityError❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -426,14 +426,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="gacd4a93e2e9bc0bcae4db89c8ffa23b4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd4a93e2e9bc0bcae4db89c8ffa23b4f">&#9670;&nbsp;</a></span>TY_❪ReportFileError❫()</h2>
+<a id="ga2f9518ecd7abb738d32e76467d9f8658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f9518ecd7abb738d32e76467d9f8658">&#9670;&nbsp;</a></span>TY_❪ReportFileError❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportFileError❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportFileError❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -460,14 +460,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga50b6ab8010cded4fe8a00c6657176026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga50b6ab8010cded4fe8a00c6657176026">&#9670;&nbsp;</a></span>TY_❪ReportMarkupVersion❫()</h2>
+<a id="ga04ba017e65d77f65d6d216f16a5844b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04ba017e65d77f65d6d216f16a5844b6">&#9670;&nbsp;</a></span>TY_❪ReportMarkupVersion❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportMarkupVersion❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportMarkupVersion❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
@@ -481,14 +481,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga4c1dbd085480403d296164da1d938f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c1dbd085480403d296164da1d938f0c">&#9670;&nbsp;</a></span>TY_❪ReportMissingAttr❫()</h2>
+<a id="ga4607785a01fd4bd5f18ee06bf3865944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4607785a01fd4bd5f18ee06bf3865944">&#9670;&nbsp;</a></span>TY_❪ReportMissingAttr❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportMissingAttr❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportMissingAttr❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -515,14 +515,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga2569a7886e9df5184118e4a01ed52b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2569a7886e9df5184118e4a01ed52b60">&#9670;&nbsp;</a></span>TY_❪ReportNumWarnings❫()</h2>
+<a id="ga956b13ee70820de2a0d0a41436793388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga956b13ee70820de2a0d0a41436793388">&#9670;&nbsp;</a></span>TY_❪ReportNumWarnings❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportNumWarnings❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportNumWarnings❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
@@ -536,14 +536,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga0d0ef2889ddf60190b89b29f8fe6ed04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d0ef2889ddf60190b89b29f8fe6ed04">&#9670;&nbsp;</a></span>TY_❪ReportSurrogateError❫()</h2>
+<a id="ga36bc18c4d59b3c2c025a4cdfde7367a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36bc18c4d59b3c2c025a4cdfde7367a0">&#9670;&nbsp;</a></span>TY_❪ReportSurrogateError❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportSurrogateError❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportSurrogateError❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -576,14 +576,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="gae1e40173912d40e66249e54c923cd3a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae1e40173912d40e66249e54c923cd3a9">&#9670;&nbsp;</a></span>TY_❪ReportUnknownOption❫()</h2>
+<a id="ga7ab50949b96c08e3ba633dac9bd33969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ab50949b96c08e3ba633dac9bd33969">&#9670;&nbsp;</a></span>TY_❪ReportUnknownOption❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ReportUnknownOption❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ReportUnknownOption❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -604,14 +604,14 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 
 </div>
 </div>
-<a id="ga3c7d598344345d09dc9711ccc7843b8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c7d598344345d09dc9711ccc7843b8d">&#9670;&nbsp;</a></span>TY_❪Report❫()</h2>
+<a id="ga4043f84414ce80753baf3bee18099306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4043f84414ce80753baf3bee18099306">&#9670;&nbsp;</a></span>TY_❪Report❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪Report❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪Report❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -658,7 +658,7 @@ $(document).ready(function(){initNavTree('group__message__reporting.html',''); i
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:44 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

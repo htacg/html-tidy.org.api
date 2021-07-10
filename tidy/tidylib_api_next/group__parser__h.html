@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -105,67 +105,67 @@ $(document).ready(function(){initNavTree('group__parser__h.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf0e72bbf0af0c1a94802ce7d70b8429c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaf0e72bbf0af0c1a94802ce7d70b8429c">TY_❪CheckNodeIntegrity❫</a> (Node *node)</td></tr>
-<tr class="memdesc:gaf0e72bbf0af0c1a94802ce7d70b8429c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is used to perform a node integrity check recursively after parsing an HTML or XML document.  <a href="group__parser__h.html#gaf0e72bbf0af0c1a94802ce7d70b8429c">More...</a><br /></td></tr>
-<tr class="separator:gaf0e72bbf0af0c1a94802ce7d70b8429c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ab9230a40f750cd556b5b19c2593a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga7ab9230a40f750cd556b5b19c2593a50">TY_❪CoerceNode❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="group__public__enumerations.html#gae5b597c0999422ff383f08ab595ef5e8">TidyTagId</a> tid, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> obsolete, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> expected)</td></tr>
-<tr class="memdesc:ga7ab9230a40f750cd556b5b19c2593a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a given node to another element, for example, from a <code>p</code> to a <code>br</code>.  <a href="group__parser__h.html#ga7ab9230a40f750cd556b5b19c2593a50">More...</a><br /></td></tr>
-<tr class="separator:ga7ab9230a40f750cd556b5b19c2593a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe7d9cb1fdf741e17527f9db108b4409"><td class="memItemLeft" align="right" valign="top">Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gabe7d9cb1fdf741e17527f9db108b4409">TY_❪DiscardElement❫</a> (TidyDocImpl *doc, Node *element)</td></tr>
-<tr class="memdesc:gabe7d9cb1fdf741e17527f9db108b4409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove node from markup tree and discard it.  <a href="group__parser__h.html#gabe7d9cb1fdf741e17527f9db108b4409">More...</a><br /></td></tr>
-<tr class="separator:gabe7d9cb1fdf741e17527f9db108b4409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf661e623ab40f0ea7c96ae0ba1d7f7fc"><td class="memItemLeft" align="right" valign="top">Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaf661e623ab40f0ea7c96ae0ba1d7f7fc">TY_❪DropEmptyElements❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
-<tr class="memdesc:gaf661e623ab40f0ea7c96ae0ba1d7f7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims a tree of empty elements recursively, returning the next node.  <a href="group__parser__h.html#gaf661e623ab40f0ea7c96ae0ba1d7f7fc">More...</a><br /></td></tr>
-<tr class="separator:gaf661e623ab40f0ea7c96ae0ba1d7f7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga915a247392bbe8919a7e54a30f1c5fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga915a247392bbe8919a7e54a30f1c5fd7">TY_❪InsertNodeAfterElement❫</a> (Node *element, Node *node)</td></tr>
-<tr class="memdesc:ga915a247392bbe8919a7e54a30f1c5fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree after element.  <a href="group__parser__h.html#ga915a247392bbe8919a7e54a30f1c5fd7">More...</a><br /></td></tr>
-<tr class="separator:ga915a247392bbe8919a7e54a30f1c5fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad11307e32642ae3de8a61c6883de583e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gad11307e32642ae3de8a61c6883de583e">TY_❪InsertNodeAtEnd❫</a> (Node *element, Node *node)</td></tr>
-<tr class="memdesc:gad11307e32642ae3de8a61c6883de583e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree as the last element of content of element.  <a href="group__parser__h.html#gad11307e32642ae3de8a61c6883de583e">More...</a><br /></td></tr>
-<tr class="separator:gad11307e32642ae3de8a61c6883de583e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ac42fc353f3c337d8413b38e5c848a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga9ac42fc353f3c337d8413b38e5c848a3">TY_❪InsertNodeAtStart❫</a> (Node *element, Node *node)</td></tr>
-<tr class="memdesc:ga9ac42fc353f3c337d8413b38e5c848a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree as the firt element of content of element.  <a href="group__parser__h.html#ga9ac42fc353f3c337d8413b38e5c848a3">More...</a><br /></td></tr>
-<tr class="separator:ga9ac42fc353f3c337d8413b38e5c848a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b8d022b41ff2bcda737e289edd414cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga6b8d022b41ff2bcda737e289edd414cc">TY_❪InsertNodeBeforeElement❫</a> (Node *element, Node *node)</td></tr>
-<tr class="memdesc:ga6b8d022b41ff2bcda737e289edd414cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree before element.  <a href="group__parser__h.html#ga6b8d022b41ff2bcda737e289edd414cc">More...</a><br /></td></tr>
-<tr class="separator:ga6b8d022b41ff2bcda737e289edd414cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29a375a2160e53c482f738c596a8920d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga29a375a2160e53c482f738c596a8920d">TY_❪IsBlank❫</a> (Lexer *lexer, Node *node)</td></tr>
-<tr class="memdesc:ga29a375a2160e53c482f738c596a8920d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a text node is blank, meaning that it consists of nothing, or a single space.  <a href="group__parser__h.html#ga29a375a2160e53c482f738c596a8920d">More...</a><br /></td></tr>
-<tr class="separator:ga29a375a2160e53c482f738c596a8920d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3388be6b806fb2c21b8274a99247d362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga3388be6b806fb2c21b8274a99247d362">TY_❪IsJavaScript❫</a> (Node *node)</td></tr>
-<tr class="memdesc:ga3388be6b806fb2c21b8274a99247d362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a node is declared as containing javascript code.  <a href="group__parser__h.html#ga3388be6b806fb2c21b8274a99247d362">More...</a><br /></td></tr>
-<tr class="separator:ga3388be6b806fb2c21b8274a99247d362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8b93a7724602fd13fa723f83f495a02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gab8b93a7724602fd13fa723f83f495a02">TY_❪IsNewNode❫</a> (Node *node)</td></tr>
-<tr class="memdesc:gab8b93a7724602fd13fa723f83f495a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if a node uses CM_NEW, which determines how attributes without values should be printed.  <a href="group__parser__h.html#gab8b93a7724602fd13fa723f83f495a02">More...</a><br /></td></tr>
-<tr class="separator:gab8b93a7724602fd13fa723f83f495a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0deb0e95f5a92c4179d236f0042b702d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga0deb0e95f5a92c4179d236f0042b702d">TY_❪ParseDocument❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="memdesc:ga0deb0e95f5a92c4179d236f0042b702d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a document after lexing using the HTML parser.  <a href="group__parser__h.html#ga0deb0e95f5a92c4179d236f0042b702d">More...</a><br /></td></tr>
-<tr class="separator:ga0deb0e95f5a92c4179d236f0042b702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f2e47d41b50c8900ba4687262d2e14f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga9f2e47d41b50c8900ba4687262d2e14f">TY_❪ParseXMLDocument❫</a> (TidyDocImpl *doc)</td></tr>
-<tr class="memdesc:ga9f2e47d41b50c8900ba4687262d2e14f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a document after lexing using the XML parser.  <a href="group__parser__h.html#ga9f2e47d41b50c8900ba4687262d2e14f">More...</a><br /></td></tr>
-<tr class="separator:ga9f2e47d41b50c8900ba4687262d2e14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga492110ab6c2ee9698a1941c1c504995b"><td class="memItemLeft" align="right" valign="top">Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga492110ab6c2ee9698a1941c1c504995b">TY_❪RemoveNode❫</a> (Node *node)</td></tr>
-<tr class="memdesc:ga492110ab6c2ee9698a1941c1c504995b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a node and its children from a markup tree.  <a href="group__parser__h.html#ga492110ab6c2ee9698a1941c1c504995b">More...</a><br /></td></tr>
-<tr class="separator:ga492110ab6c2ee9698a1941c1c504995b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ef937216fbf41a02133928368f35fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga4ef937216fbf41a02133928368f35fde">TY_❪TextNodeEndWithSpace❫</a> (Lexer *lexer, Node *node)</td></tr>
-<tr class="memdesc:ga4ef937216fbf41a02133928368f35fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a text node ends with a space or newline.  <a href="group__parser__h.html#ga4ef937216fbf41a02133928368f35fde">More...</a><br /></td></tr>
-<tr class="separator:ga4ef937216fbf41a02133928368f35fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fafd0a48b5f60c2687f5dca6af79014"><td class="memItemLeft" align="right" valign="top">Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga9fafd0a48b5f60c2687f5dca6af79014">TY_❪TrimEmptyElement❫</a> (TidyDocImpl *doc, Node *element)</td></tr>
-<tr class="memdesc:ga9fafd0a48b5f60c2687f5dca6af79014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims a single, empty element, returning the next node.  <a href="group__parser__h.html#ga9fafd0a48b5f60c2687f5dca6af79014">More...</a><br /></td></tr>
-<tr class="separator:ga9fafd0a48b5f60c2687f5dca6af79014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga948a15e87faeb10a21467c1640ee2ecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga948a15e87faeb10a21467c1640ee2ecc">TY_❪XMLPreserveWhiteSpace❫</a> (TidyDocImpl *doc, Node *element)</td></tr>
-<tr class="memdesc:ga948a15e87faeb10a21467c1640ee2ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not whitespace is to be preserved in XHTML/XML documents.  <a href="group__parser__h.html#ga948a15e87faeb10a21467c1640ee2ecc">More...</a><br /></td></tr>
-<tr class="separator:ga948a15e87faeb10a21467c1640ee2ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58492611dc17c9cbf34a5646d6241c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga58492611dc17c9cbf34a5646d6241c81">TY_❪CheckNodeIntegrity❫</a> (Node *node)</td></tr>
+<tr class="memdesc:ga58492611dc17c9cbf34a5646d6241c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is used to perform a node integrity check recursively after parsing an HTML or XML document.  <a href="group__parser__h.html#ga58492611dc17c9cbf34a5646d6241c81">More...</a><br /></td></tr>
+<tr class="separator:ga58492611dc17c9cbf34a5646d6241c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc38544f4b7b9d40dc553ca5272514c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gadc38544f4b7b9d40dc553ca5272514c7">TY_❪CoerceNode❫</a> (TidyDocImpl *doc, Node *node, <a class="el" href="group__public__enumerations.html#gae5b597c0999422ff383f08ab595ef5e8">TidyTagId</a> tid, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> obsolete, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> expected)</td></tr>
+<tr class="memdesc:gadc38544f4b7b9d40dc553ca5272514c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a given node to another element, for example, from a <code>p</code> to a <code>br</code>.  <a href="group__parser__h.html#gadc38544f4b7b9d40dc553ca5272514c7">More...</a><br /></td></tr>
+<tr class="separator:gadc38544f4b7b9d40dc553ca5272514c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46769d54f0a1bcfd801d60c34eb563e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga46769d54f0a1bcfd801d60c34eb563e7">TY_❪DiscardElement❫</a> (TidyDocImpl *doc, Node *element)</td></tr>
+<tr class="memdesc:ga46769d54f0a1bcfd801d60c34eb563e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove node from markup tree and discard it.  <a href="group__parser__h.html#ga46769d54f0a1bcfd801d60c34eb563e7">More...</a><br /></td></tr>
+<tr class="separator:ga46769d54f0a1bcfd801d60c34eb563e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16fe5925f73392b7f59794831a1f41f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga16fe5925f73392b7f59794831a1f41f6">TY_❪DropEmptyElements❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
+<tr class="memdesc:ga16fe5925f73392b7f59794831a1f41f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims a tree of empty elements recursively, returning the next node.  <a href="group__parser__h.html#ga16fe5925f73392b7f59794831a1f41f6">More...</a><br /></td></tr>
+<tr class="separator:ga16fe5925f73392b7f59794831a1f41f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacb6287d875c22498e74c13beb7997a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaacb6287d875c22498e74c13beb7997a6">TY_❪InsertNodeAfterElement❫</a> (Node *element, Node *node)</td></tr>
+<tr class="memdesc:gaacb6287d875c22498e74c13beb7997a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree after element.  <a href="group__parser__h.html#gaacb6287d875c22498e74c13beb7997a6">More...</a><br /></td></tr>
+<tr class="separator:gaacb6287d875c22498e74c13beb7997a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf46363b9cf2c1aface00a2f4c7d2313e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaf46363b9cf2c1aface00a2f4c7d2313e">TY_❪InsertNodeAtEnd❫</a> (Node *element, Node *node)</td></tr>
+<tr class="memdesc:gaf46363b9cf2c1aface00a2f4c7d2313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree as the last element of content of element.  <a href="group__parser__h.html#gaf46363b9cf2c1aface00a2f4c7d2313e">More...</a><br /></td></tr>
+<tr class="separator:gaf46363b9cf2c1aface00a2f4c7d2313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2f28849907a6cb00ef01f73b80919d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaf2f28849907a6cb00ef01f73b80919d0">TY_❪InsertNodeAtStart❫</a> (Node *element, Node *node)</td></tr>
+<tr class="memdesc:gaf2f28849907a6cb00ef01f73b80919d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree as the firt element of content of element.  <a href="group__parser__h.html#gaf2f28849907a6cb00ef01f73b80919d0">More...</a><br /></td></tr>
+<tr class="separator:gaf2f28849907a6cb00ef01f73b80919d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9faf97cbc6014ea124ed645d7c6ba6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gae9faf97cbc6014ea124ed645d7c6ba6b">TY_❪InsertNodeBeforeElement❫</a> (Node *element, Node *node)</td></tr>
+<tr class="memdesc:gae9faf97cbc6014ea124ed645d7c6ba6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert node into markup tree before element.  <a href="group__parser__h.html#gae9faf97cbc6014ea124ed645d7c6ba6b">More...</a><br /></td></tr>
+<tr class="separator:gae9faf97cbc6014ea124ed645d7c6ba6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74559ab68214650f4694cf4117194cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga74559ab68214650f4694cf4117194cf5">TY_❪IsBlank❫</a> (Lexer *lexer, Node *node)</td></tr>
+<tr class="memdesc:ga74559ab68214650f4694cf4117194cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a text node is blank, meaning that it consists of nothing, or a single space.  <a href="group__parser__h.html#ga74559ab68214650f4694cf4117194cf5">More...</a><br /></td></tr>
+<tr class="separator:ga74559ab68214650f4694cf4117194cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6248adad81233d0a837c2d438759a174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga6248adad81233d0a837c2d438759a174">TY_❪IsJavaScript❫</a> (Node *node)</td></tr>
+<tr class="memdesc:ga6248adad81233d0a837c2d438759a174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a node is declared as containing javascript code.  <a href="group__parser__h.html#ga6248adad81233d0a837c2d438759a174">More...</a><br /></td></tr>
+<tr class="separator:ga6248adad81233d0a837c2d438759a174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa289b801638c7fdf06676c853780f1ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaa289b801638c7fdf06676c853780f1ca">TY_❪IsNewNode❫</a> (Node *node)</td></tr>
+<tr class="memdesc:gaa289b801638c7fdf06676c853780f1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if a node uses CM_NEW, which determines how attributes without values should be printed.  <a href="group__parser__h.html#gaa289b801638c7fdf06676c853780f1ca">More...</a><br /></td></tr>
+<tr class="separator:gaa289b801638c7fdf06676c853780f1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4538142e5894ae1b269affa94f3ce3b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga4538142e5894ae1b269affa94f3ce3b5">TY_❪ParseDocument❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga4538142e5894ae1b269affa94f3ce3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a document after lexing using the HTML parser.  <a href="group__parser__h.html#ga4538142e5894ae1b269affa94f3ce3b5">More...</a><br /></td></tr>
+<tr class="separator:ga4538142e5894ae1b269affa94f3ce3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac794fbd9a8fa9815e434fc60e12cfeb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gac794fbd9a8fa9815e434fc60e12cfeb1">TY_❪ParseXMLDocument❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gac794fbd9a8fa9815e434fc60e12cfeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a document after lexing using the XML parser.  <a href="group__parser__h.html#gac794fbd9a8fa9815e434fc60e12cfeb1">More...</a><br /></td></tr>
+<tr class="separator:gac794fbd9a8fa9815e434fc60e12cfeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7fbea2d1071f0ec9b254e1aabb06db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gad7fbea2d1071f0ec9b254e1aabb06db6">TY_❪RemoveNode❫</a> (Node *node)</td></tr>
+<tr class="memdesc:gad7fbea2d1071f0ec9b254e1aabb06db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a node and its children from a markup tree.  <a href="group__parser__h.html#gad7fbea2d1071f0ec9b254e1aabb06db6">More...</a><br /></td></tr>
+<tr class="separator:gad7fbea2d1071f0ec9b254e1aabb06db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef570dcccde0a10a742f2b02a0e1bb45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaef570dcccde0a10a742f2b02a0e1bb45">TY_❪TextNodeEndWithSpace❫</a> (Lexer *lexer, Node *node)</td></tr>
+<tr class="memdesc:gaef570dcccde0a10a742f2b02a0e1bb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a text node ends with a space or newline.  <a href="group__parser__h.html#gaef570dcccde0a10a742f2b02a0e1bb45">More...</a><br /></td></tr>
+<tr class="separator:gaef570dcccde0a10a742f2b02a0e1bb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf941c11ab3dbfa527664ec93cc861e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaaaf941c11ab3dbfa527664ec93cc861e">TY_❪TrimEmptyElement❫</a> (TidyDocImpl *doc, Node *element)</td></tr>
+<tr class="memdesc:gaaaf941c11ab3dbfa527664ec93cc861e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims a single, empty element, returning the next node.  <a href="group__parser__h.html#gaaaf941c11ab3dbfa527664ec93cc861e">More...</a><br /></td></tr>
+<tr class="separator:gaaaf941c11ab3dbfa527664ec93cc861e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5990f11c308aab54456de04a1521b534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga5990f11c308aab54456de04a1521b534">TY_❪XMLPreserveWhiteSpace❫</a> (TidyDocImpl *doc, Node *element)</td></tr>
+<tr class="memdesc:ga5990f11c308aab54456de04a1521b534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not whitespace is to be preserved in XHTML/XML documents.  <a href="group__parser__h.html#ga5990f11c308aab54456de04a1521b534">More...</a><br /></td></tr>
+<tr class="separator:ga5990f11c308aab54456de04a1521b534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaf0e72bbf0af0c1a94802ce7d70b8429c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf0e72bbf0af0c1a94802ce7d70b8429c">&#9670;&nbsp;</a></span>TY_❪CheckNodeIntegrity❫()</h2>
+<a id="ga58492611dc17c9cbf34a5646d6241c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58492611dc17c9cbf34a5646d6241c81">&#9670;&nbsp;</a></span>TY_❪CheckNodeIntegrity❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪CheckNodeIntegrity❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪CheckNodeIntegrity❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -186,14 +186,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7ab9230a40f750cd556b5b19c2593a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ab9230a40f750cd556b5b19c2593a50">&#9670;&nbsp;</a></span>TY_❪CoerceNode❫()</h2>
+<a id="gadc38544f4b7b9d40dc553ca5272514c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc38544f4b7b9d40dc553ca5272514c7">&#9670;&nbsp;</a></span>TY_❪CoerceNode❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪CoerceNode❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪CoerceNode❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -244,14 +244,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gabe7d9cb1fdf741e17527f9db108b4409"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe7d9cb1fdf741e17527f9db108b4409">&#9670;&nbsp;</a></span>TY_❪DiscardElement❫()</h2>
+<a id="ga46769d54f0a1bcfd801d60c34eb563e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46769d54f0a1bcfd801d60c34eb563e7">&#9670;&nbsp;</a></span>TY_❪DiscardElement❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Node* TY_❪DiscardElement❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node* TY_❪DiscardElement❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -282,14 +282,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf661e623ab40f0ea7c96ae0ba1d7f7fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf661e623ab40f0ea7c96ae0ba1d7f7fc">&#9670;&nbsp;</a></span>TY_❪DropEmptyElements❫()</h2>
+<a id="ga16fe5925f73392b7f59794831a1f41f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16fe5925f73392b7f59794831a1f41f6">&#9670;&nbsp;</a></span>TY_❪DropEmptyElements❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Node* TY_❪DropEmptyElements❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node* TY_❪DropEmptyElements❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -320,14 +320,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga915a247392bbe8919a7e54a30f1c5fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga915a247392bbe8919a7e54a30f1c5fd7">&#9670;&nbsp;</a></span>TY_❪InsertNodeAfterElement❫()</h2>
+<a id="gaacb6287d875c22498e74c13beb7997a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacb6287d875c22498e74c13beb7997a6">&#9670;&nbsp;</a></span>TY_❪InsertNodeAfterElement❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪InsertNodeAfterElement❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪InsertNodeAfterElement❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>element</em>, </td>
@@ -357,14 +357,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad11307e32642ae3de8a61c6883de583e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad11307e32642ae3de8a61c6883de583e">&#9670;&nbsp;</a></span>TY_❪InsertNodeAtEnd❫()</h2>
+<a id="gaf46363b9cf2c1aface00a2f4c7d2313e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf46363b9cf2c1aface00a2f4c7d2313e">&#9670;&nbsp;</a></span>TY_❪InsertNodeAtEnd❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪InsertNodeAtEnd❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪InsertNodeAtEnd❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>element</em>, </td>
@@ -394,14 +394,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9ac42fc353f3c337d8413b38e5c848a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ac42fc353f3c337d8413b38e5c848a3">&#9670;&nbsp;</a></span>TY_❪InsertNodeAtStart❫()</h2>
+<a id="gaf2f28849907a6cb00ef01f73b80919d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2f28849907a6cb00ef01f73b80919d0">&#9670;&nbsp;</a></span>TY_❪InsertNodeAtStart❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪InsertNodeAtStart❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪InsertNodeAtStart❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>element</em>, </td>
@@ -431,14 +431,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6b8d022b41ff2bcda737e289edd414cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6b8d022b41ff2bcda737e289edd414cc">&#9670;&nbsp;</a></span>TY_❪InsertNodeBeforeElement❫()</h2>
+<a id="gae9faf97cbc6014ea124ed645d7c6ba6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9faf97cbc6014ea124ed645d7c6ba6b">&#9670;&nbsp;</a></span>TY_❪InsertNodeBeforeElement❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪InsertNodeBeforeElement❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪InsertNodeBeforeElement❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>element</em>, </td>
@@ -468,14 +468,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga29a375a2160e53c482f738c596a8920d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga29a375a2160e53c482f738c596a8920d">&#9670;&nbsp;</a></span>TY_❪IsBlank❫()</h2>
+<a id="ga74559ab68214650f4694cf4117194cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74559ab68214650f4694cf4117194cf5">&#9670;&nbsp;</a></span>TY_❪IsBlank❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪IsBlank❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪IsBlank❫ </td>
           <td>(</td>
           <td class="paramtype">Lexer *&#160;</td>
           <td class="paramname"><em>lexer</em>, </td>
@@ -506,14 +506,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3388be6b806fb2c21b8274a99247d362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3388be6b806fb2c21b8274a99247d362">&#9670;&nbsp;</a></span>TY_❪IsJavaScript❫()</h2>
+<a id="ga6248adad81233d0a837c2d438759a174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6248adad81233d0a837c2d438759a174">&#9670;&nbsp;</a></span>TY_❪IsJavaScript❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪IsJavaScript❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪IsJavaScript❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -533,14 +533,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab8b93a7724602fd13fa723f83f495a02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8b93a7724602fd13fa723f83f495a02">&#9670;&nbsp;</a></span>TY_❪IsNewNode❫()</h2>
+<a id="gaa289b801638c7fdf06676c853780f1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa289b801638c7fdf06676c853780f1ca">&#9670;&nbsp;</a></span>TY_❪IsNewNode❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪IsNewNode❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪IsNewNode❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -560,14 +560,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0deb0e95f5a92c4179d236f0042b702d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0deb0e95f5a92c4179d236f0042b702d">&#9670;&nbsp;</a></span>TY_❪ParseDocument❫()</h2>
+<a id="ga4538142e5894ae1b269affa94f3ce3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4538142e5894ae1b269affa94f3ce3b5">&#9670;&nbsp;</a></span>TY_❪ParseDocument❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ParseDocument❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ParseDocument❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
@@ -586,14 +586,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9f2e47d41b50c8900ba4687262d2e14f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9f2e47d41b50c8900ba4687262d2e14f">&#9670;&nbsp;</a></span>TY_❪ParseXMLDocument❫()</h2>
+<a id="gac794fbd9a8fa9815e434fc60e12cfeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac794fbd9a8fa9815e434fc60e12cfeb1">&#9670;&nbsp;</a></span>TY_❪ParseXMLDocument❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TY_❪ParseXMLDocument❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void TY_❪ParseXMLDocument❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em></td><td>)</td>
@@ -612,14 +612,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga492110ab6c2ee9698a1941c1c504995b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga492110ab6c2ee9698a1941c1c504995b">&#9670;&nbsp;</a></span>TY_❪RemoveNode❫()</h2>
+<a id="gad7fbea2d1071f0ec9b254e1aabb06db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7fbea2d1071f0ec9b254e1aabb06db6">&#9670;&nbsp;</a></span>TY_❪RemoveNode❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Node* TY_❪RemoveNode❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node* TY_❪RemoveNode❫ </td>
           <td>(</td>
           <td class="paramtype">Node *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -639,14 +639,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4ef937216fbf41a02133928368f35fde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ef937216fbf41a02133928368f35fde">&#9670;&nbsp;</a></span>TY_❪TextNodeEndWithSpace❫()</h2>
+<a id="gaef570dcccde0a10a742f2b02a0e1bb45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef570dcccde0a10a742f2b02a0e1bb45">&#9670;&nbsp;</a></span>TY_❪TextNodeEndWithSpace❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪TextNodeEndWithSpace❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪TextNodeEndWithSpace❫ </td>
           <td>(</td>
           <td class="paramtype">Lexer *&#160;</td>
           <td class="paramname"><em>lexer</em>, </td>
@@ -678,14 +678,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9fafd0a48b5f60c2687f5dca6af79014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9fafd0a48b5f60c2687f5dca6af79014">&#9670;&nbsp;</a></span>TY_❪TrimEmptyElement❫()</h2>
+<a id="gaaaf941c11ab3dbfa527664ec93cc861e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaaf941c11ab3dbfa527664ec93cc861e">&#9670;&nbsp;</a></span>TY_❪TrimEmptyElement❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Node* TY_❪TrimEmptyElement❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node* TY_❪TrimEmptyElement❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -716,14 +716,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga948a15e87faeb10a21467c1640ee2ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga948a15e87faeb10a21467c1640ee2ecc">&#9670;&nbsp;</a></span>TY_❪XMLPreserveWhiteSpace❫()</h2>
+<a id="ga5990f11c308aab54456de04a1521b534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5990f11c308aab54456de04a1521b534">&#9670;&nbsp;</a></span>TY_❪XMLPreserveWhiteSpace❫()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪XMLPreserveWhiteSpace❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> TY_❪XMLPreserveWhiteSpace❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -759,7 +759,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:44 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

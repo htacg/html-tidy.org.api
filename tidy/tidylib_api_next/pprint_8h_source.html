@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -160,10 +160,10 @@ $(document).ready(function(){initNavTree('pprint_8h_source.html',''); initResiza
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <a class="code" href="pprint_8h.html#structTidyPrintImpl">TidyPrintImpl</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="pprint_8h.html#ab122cae294c0ed58a79a6241886f5c37">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(InitPrintBuf)( TidyDocImpl* doc );</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="pprint_8h.html#af39570765c14964efba1d21eab3fa19d">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(FreePrintBuf)( TidyDocImpl* doc );</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="pprint_8h.html#aa4539817e798cfe3a8fac230ac2ec046">   63</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(InitPrintBuf)( TidyDocImpl* doc );</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="pprint_8h.html#aa5bebac3a8c94072f1b1e8d4e05f5f60">   64</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(FreePrintBuf)( TidyDocImpl* doc );</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="pprint_8h.html#a80fc4fba84723782d8ea314e61e1c8ce">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PFlushLine)( TidyDocImpl* doc, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> indent );</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="pprint_8h.html#aaecc8ebe668cb6f735da1683a5322b10">   66</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PFlushLine)( TidyDocImpl* doc, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> indent );</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/* print just the content of the body element.</span></div>
@@ -173,21 +173,22 @@ $(document).ready(function(){initNavTree('pprint_8h_source.html',''); initResiza
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">** -- Sebastiano Vigna &lt;vigna@dsi.unimi.it&gt;</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="pprint_8h.html#a699c129cb24ca60499484ec1883d1214">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PrintBody)( TidyDocImpl* doc );       <span class="comment">/* you can print an entire document */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="pprint_8h.html#a23f63a58ab8ed37e22bc931b78a3c28a">   76</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PrintBody)( TidyDocImpl* doc );       <span class="comment">/* you can print an entire document */</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                          <span class="comment">/* node as body using PPrintTree() */</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="pprint_8h.html#a5aae33bcac145d9236ec7bdf2639fc47">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintTree)( TidyDocImpl* doc, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mode, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> indent, Node *node );</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="pprint_8h.html#a425c7f471496a1c6bbea15793e49dae5">   79</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintTree)( TidyDocImpl* doc, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mode, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> indent, Node *node );</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="pprint_8h.html#a1a220f7f3167ecbf217f586c9c67528e">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintXMLTree)( TidyDocImpl* doc, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mode, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> indent, Node *node );</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="pprint_8h.html#a156d48727ad7f6fe87cd9ffc4a746ebb">   81</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintXMLTree)( TidyDocImpl* doc, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mode, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> indent, Node *node );</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/*\</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * 20150515 - support using tabs instead of spaces</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">\*/</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="pprint_8h.html#aed55a33e58af857f139c872167e27021">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintTabs)(void);</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="pprint_8h.html#a8eb1410a6e127c44e2429c30c9743d21">   87</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintSpaces)(void);</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="pprint_8h.html#a6ad917d56ab76a54b337714112f5c427">   86</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintTabs)(void);</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="pprint_8h.html#afb4caf56b3c4bbfa051f45e8f94f7322">   87</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keywordtype">void</span> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(PPrintSpaces)(void);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __PPRINT_H__ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aforward_8h_html"><div class="ttname"><a href="forward_8h.html">forward.h</a></div></div>
+<div class="ttc" id="aforward_8h_html_ac106c51e7d00e7491634ad74c10db0de"><div class="ttname"><a href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a></div><div class="ttdeci">#define TY_PRIVATE</div><div class="ttdef"><b>Definition:</b> forward.h:29</div></div>
 <div class="ttc" id="aforward_8h_html_afe4399ce3d59fdbba5127cb28fd18ef8"><div class="ttname"><a href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a></div><div class="ttdeci">#define TY_(str)</div><div class="ttdef"><b>Definition:</b> forward.h:23</div></div>
 <div class="ttc" id="apprint_8h_html_a11252993cd94130b15d92f3716cd8b47"><div class="ttname"><a href="pprint_8h.html#a11252993cd94130b15d92f3716cd8b47">TidyPrintImpl::linebuf</a></div><div class="ttdeci">uint * linebuf</div><div class="ttdef"><b>Definition:</b> pprint.h:52</div></div>
 <div class="ttc" id="apprint_8h_html_a4fb633eda9995a378fcd11b5452d5519"><div class="ttname"><a href="pprint_8h.html#a4fb633eda9995a378fcd11b5452d5519">TidyIndent::spaces</a></div><div class="ttdeci">int spaces</div><div class="ttdef"><b>Definition:</b> pprint.h:43</div></div>
@@ -208,7 +209,7 @@ $(document).ready(function(){initNavTree('pprint_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="pprint_8h.html">pprint.h</a></li>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:43 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

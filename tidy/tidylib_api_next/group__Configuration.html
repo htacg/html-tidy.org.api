@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('group__Configuration.html',''); initRe
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for getting and setting Tidy configuration options. </p>
-<dl class="section note"><dt>Note</dt><dd>In general, you should expect that options you set should stay set. This isn't always the case, though, because Tidy will adjust options for internal use during the lexing, parsing, cleaning, and printing phases, but will restore them after the printing process. If you require access to user configuration values at any time between the tidyParseXXX() process and the tidySaveXXX() process, make sure to keep your own copy. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In general, you should expect that options you set should stay set. This isn't always the case, though, because Tidy will adjust options for internal use during the lexing, parsing, cleaning, and printing phases. If you require access to user configuration values at any time after the tidyParseXXX() process, make sure to keep your own copy, or use <a class="el" href="group__Configuration.html#gae6212b8f32990763cc18a6d3f05eb191" title="Apply a snapshot of config settings to a document.">tidyOptResetToSnapshot()</a> when you no longer need to use any other tidy functions. </dd></dl>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Option Callback Functions</h2></td></tr>
 <tr class="memitem:ga083099fce59583b2bd0951e2d8065d88"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>(<a class="el" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Configuration.html#ga083099fce59583b2bd0951e2d8065d88">TidyOptCallback</a>) (<a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> option, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> value)</td></tr>
@@ -697,7 +697,7 @@ $(document).ready(function(){initNavTree('group__Configuration.html',''); initRe
 <div class="line">}</div>
 <div class="ttc" id="agroup__Configuration_html_ga55f30cf9e507f8fc66330ec3b0132620"><div class="ttname"><a href="group__Configuration.html#ga55f30cf9e507f8fc66330ec3b0132620">tidyOptGetDeclTagList</a></div><div class="ttdeci">TidyIterator TIDY_CALL tidyOptGetDeclTagList(TidyDoc tdoc)</div><div class="ttdoc">Initiates an iterator for a list of user-declared tags, including autonomous custom tags detected in ...</div></div>
 <div class="ttc" id="agroup__Configuration_html_gacec933eef8f9eec3dfa4382e05cab251"><div class="ttname"><a href="group__Configuration.html#gacec933eef8f9eec3dfa4382e05cab251">tidyOptGetNextDeclTag</a></div><div class="ttdeci">ctmbstr TIDY_CALL tidyOptGetNextDeclTag(TidyDoc tdoc, TidyOptionId optId, TidyIterator *iter)</div><div class="ttdoc">Given a valid TidyIterator initiated with tidyOptGetDeclTagList(), returns a string representing a us...</div></div>
-<div class="ttc" id="agroup__public__enumerations_html_gga3a1401652599150188a168dade7dc150a9e3bd7767820dc2483c486e2e9e49e6a"><div class="ttname"><a href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a9e3bd7767820dc2483c486e2e9e49e6a">TidyBlockTags</a></div><div class="ttdeci">@ TidyBlockTags</div><div class="ttdoc">Declared block tags.</div><div class="ttdef"><b>Definition:</b> tidyenum.h:579</div></div>
+<div class="ttc" id="agroup__public__enumerations_html_gga3a1401652599150188a168dade7dc150a9e3bd7767820dc2483c486e2e9e49e6a"><div class="ttname"><a href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a9e3bd7767820dc2483c486e2e9e49e6a">TidyBlockTags</a></div><div class="ttdeci">@ TidyBlockTags</div><div class="ttdoc">Declared block tags.</div><div class="ttdef"><b>Definition:</b> tidyenum.h:580</div></div>
 </div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tdoc</td><td>An instance of a <a class="el" href="group__Opaque.html#structTidyDoc" title="Instances of this represent a Tidy document, which encapsulates everything there is to know about a s...">TidyDoc</a> to query. </td></tr>
@@ -861,7 +861,7 @@ $(document).ready(function(){initNavTree('group__Configuration.html',''); initRe
 <div class="line">}</div>
 <div class="ttc" id="agroup__Configuration_html_ga1db79a95067d6364c02263d9492fa9e8"><div class="ttname"><a href="group__Configuration.html#ga1db79a95067d6364c02263d9492fa9e8">tidyOptGetNextDocLinks</a></div><div class="ttdeci">TidyOption TIDY_CALL tidyOptGetNextDocLinks(TidyDoc tdoc, TidyIterator *pos)</div><div class="ttdoc">Given a valid TidyIterator initiated with tidyOptGetDocLinksList(), returns a TidyOption instance.</div></div>
 <div class="ttc" id="agroup__Configuration_html_gaeed1ef5cb5329f3f5aca0a8ad7e8ea4f"><div class="ttname"><a href="group__Configuration.html#gaeed1ef5cb5329f3f5aca0a8ad7e8ea4f">tidyOptGetDocLinksList</a></div><div class="ttdeci">TidyIterator TIDY_CALL tidyOptGetDocLinksList(TidyDoc tdoc, TidyOption opt)</div><div class="ttdoc">Initiates an iterator for a list of options related to a given option.</div></div>
-<div class="ttc" id="agroup__public__enumerations_html_gga3a1401652599150188a168dade7dc150a8835beb4c35f2a41a798669b891b8536"><div class="ttname"><a href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a8835beb4c35f2a41a798669b891b8536">TidyJoinStyles</a></div><div class="ttdeci">@ TidyJoinStyles</div><div class="ttdoc">Join multiple style attributes.</div><div class="ttdef"><b>Definition:</b> tidyenum.h:621</div></div>
+<div class="ttc" id="agroup__public__enumerations_html_gga3a1401652599150188a168dade7dc150a8835beb4c35f2a41a798669b891b8536"><div class="ttname"><a href="group__public__enumerations.html#gga3a1401652599150188a168dade7dc150a8835beb4c35f2a41a798669b891b8536">TidyJoinStyles</a></div><div class="ttdeci">@ TidyJoinStyles</div><div class="ttdoc">Join multiple style attributes.</div><div class="ttdef"><b>Definition:</b> tidyenum.h:622</div></div>
 </div><!-- fragment --> <dl class="section return"><dt>Returns</dt><dd>Returns a TidyIterator, which is a token used to represent the current position in a list within LibTidy. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1868,7 +1868,7 @@ $(document).ready(function(){initNavTree('group__Configuration.html',''); initRe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:44 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

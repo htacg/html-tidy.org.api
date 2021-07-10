@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.7.47</span>
+   &#160;<span id="projectnumber">5.9.0</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -1699,7 +1699,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html',''); initResizable
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies what level of accessibility checking, if any, that Tidy should perform. <br xmlns=""/>Level <var xmlns="">0 (Tidy Classic)</var> is equivalent to Tidy Classic's accessibility checking. <br xmlns=""/>For more information on Tidy's accessibility checking, visit <a xmlns="" href="http://www.html-tidy.org/accessibility/"> Tidy's Accessibility Page</a>. </td>
+    <td colspan="1" class="qdescription">This option specifies what level of accessibility checking, if any, that Tidy should perform. <br xmlns=""/>Level <var xmlns="">0 (Tidy Classic)</var> performs no additional accessibility checking. <br xmlns=""/>Level <var xmlns="">1 (Priority 1 Checks)</var> performs the Priority Level 1 checks.<br xmlns=""/>Level <var xmlns="">2 (Priority 2 Checks)</var> performs the Priority Level 1 and 2 checks.<br xmlns=""/>Level <var xmlns="">3 (Priority 3 Checks)</var> performs the Priority Level 1, 2, and 3 checks.<br xmlns=""/>For more information on Tidy's accessibility checking, including the specific checks that are made for each Priority Level, please visit <a xmlns="" href="http://www.html-tidy.org/accessibility/"> Tidy's Accessibility Page</a>. </td>
   </tr>
   <tr>
     <td> </td>
@@ -2741,7 +2741,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html',''); initResizable
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should replace unexpected hyphens with <code xmlns="">=</code> characters when it comes across adjacent hyphens. <br xmlns=""/>The default is <var xmlns="">auto</var> will which will act as <var xmlns="">no</var> for HTML5 document types, and <var xmlns="">yes</var> for all other document types. <br xmlns=""/>HTML has abandonded SGML comment syntax, and allows adjacent hypens for all versions of HTML, although XML and XHTML do not. If you plan to support older browsers that require SGML comment syntax, then consider setting this value to <var xmlns="">yes</var>.</td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should replace unexpected hyphens with <code xmlns="">=</code> characters when it comes across adjacent hyphens. <br xmlns=""/>The default is <var xmlns="">auto</var> will which will act as <var xmlns="">no</var> for HTML5 document types, and <var xmlns="">yes</var> for all other document types. <br xmlns=""/>HTML has abandoned SGML comment syntax, and allows adjacent hyphens for all versions of HTML, although XML and XHTML do not. If you plan to support older browsers that require SGML comment syntax, then consider setting this value to <var xmlns="">yes</var>.</td>
   </tr>
   <tr>
     <td> </td>
@@ -3893,7 +3893,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html',''); initResizable
   </tr>
   <tr>
     <td/>
-    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap string literals that appear in script attributes. <br xmlns=""/>Tidy wraps long script string literals by inserting a backslash character before the line break. </td>
+    <td colspan="1" class="qdescription">This option specifies if Tidy should line wrap string literals assigned to element event handler attributes, such as element.onmouseover().</td>
   </tr>
   <tr>
     <td> </td>
@@ -3932,7 +3932,7 @@ $(document).ready(function(){initNavTree('tidy_quickref.html',''); initResizable
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 28 2021 09:09:26 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 10 2021 16:56:44 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
