@@ -192,7 +192,7 @@ var searchData=
   ['ty_5f❪addstyleasclass❫_3252',['TY_❪AddStyleAsClass❫',['../clean_8h.html#ac1f3ce47d24f31e59e95ae17010ee826',1,'clean.h']]],
   ['ty_5f❪addstyleproperty❫_3253',['TY_❪AddStyleProperty❫',['../clean_8h.html#a812ea57168be1f76bdc34d77691892e3',1,'clean.h']]],
   ['ty_5f❪adjustcharencoding❫_3254',['TY_❪AdjustCharEncoding❫',['../group__configuration__options.html#gac10d9b5de6509de4d9c1f1d4d8d242a8',1,'config.h']]],
-  ['ty_5f❪adjustconfig❫_3255',['TY_❪AdjustConfig❫',['../group__configuration__options.html#ga35a3df6e51a169e5ea86ccd9a04bd1a6',1,'config.h']]],
+  ['ty_5f❪adjustconfig❫_3255',['TY_❪AdjustConfig❫',['../group__configuration__options.html#gadd50cab75935c41cf9db2cfb56312048',1,'config.h']]],
   ['ty_5f❪adjusttags❫_3256',['TY_❪AdjustTags❫',['../group__tags__h.html#ga7fe430d571988fa69721c348e6babef4',1,'tags.h']]],
   ['ty_5f❪apparentversion❫_3257',['TY_❪ApparentVersion❫',['../lexer_8h.html#a96d87f8a21b60b7b5ec04d4413f9cb14',1,'lexer.h']]],
   ['ty_5f❪appendtoclassattr❫_3258',['TY_❪AppendToClassAttr❫',['../attrs_8h.html#aaa2696a1390bec8ccd970cc51e650766',1,'attrs.h']]],

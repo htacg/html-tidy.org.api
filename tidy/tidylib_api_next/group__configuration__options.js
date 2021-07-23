@@ -38,7 +38,7 @@ var group__configuration__options =
     [ "ParseProperty", "group__configuration__options.html#ga5e988d0979fa22f91b73d83eda3309bc", null ],
     [ "PickListItems", "group__configuration__options.html#gaafea9d2a1576b6e37a6f28eb90ed14c0", null ],
     [ "TY_❪AdjustCharEncoding❫", "group__configuration__options.html#gac10d9b5de6509de4d9c1f1d4d8d242a8", null ],
-    [ "TY_❪AdjustConfig❫", "group__configuration__options.html#ga35a3df6e51a169e5ea86ccd9a04bd1a6", null ],
+    [ "TY_❪AdjustConfig❫", "group__configuration__options.html#gadd50cab75935c41cf9db2cfb56312048", null ],
     [ "TY_❪CharEncodingId❫", "group__configuration__options.html#gabafcaf9bc2d88bbd3a16406fd38470bf", null ],
     [ "TY_❪CharEncodingName❫", "group__configuration__options.html#ga55385b7a778600a3012566d34c94c780", null ],
     [ "TY_❪CharEncodingOptName❫", "group__configuration__options.html#ga6e812e608c13c54c1e517709f5798e4d", null ],
