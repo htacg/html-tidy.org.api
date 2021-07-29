@@ -54,15 +54,15 @@ var NAVTREE =
     [ "Anchor", "attrs_8h.html#struct__Anchor", "attrs_8h_struct__Anchor" ],
     [ "AttrHash", "attrs_8h.html#struct__AttrHash", "attrs_8h_struct__AttrHash" ],
     [ "Attribute", "attrs_8h.html#struct__Attribute", "attrs_8h_struct__Attribute" ],
-    [ "AttVal", "lexer_8h.html#struct__AttVal", "lexer_8h_struct__AttVal" ],
+    [ "AttVal", "group__lexer__h.html#struct__AttVal", "group__lexer__h_struct__AttVal" ],
     [ "Dict", "group__tags__h.html#struct__Dict", "group__tags__h_struct__Dict" ],
-    [ "IStack", "lexer_8h.html#struct__IStack", "lexer_8h_struct__IStack" ],
-    [ "Lexer", "lexer_8h.html#struct__Lexer", "lexer_8h_struct__Lexer" ],
-    [ "Node", "lexer_8h.html#struct__Node", "lexer_8h_struct__Node" ],
+    [ "IStack", "group__lexer__h.html#struct__IStack", "group__lexer__h_struct__IStack" ],
+    [ "Lexer", "group__lexer__h.html#struct__Lexer", "group__lexer__h_struct__Lexer" ],
+    [ "Node", "group__lexer__h.html#struct__Node", "group__lexer__h_struct__Node" ],
     [ "StreamIn", "streamio_8h.html#struct__StreamIn", "streamio_8h_struct__StreamIn" ],
     [ "StreamOut", "streamio_8h.html#struct__StreamOut", "streamio_8h_struct__StreamOut" ],
-    [ "TagStyle", "lexer_8h.html#struct__Style", "lexer_8h_struct__Style" ],
-    [ "StyleProp", "lexer_8h.html#struct__StyleProp", "lexer_8h_struct__StyleProp" ],
+    [ "TagStyle", "group__lexer__h.html#struct__Style", "group__lexer__h_struct__Style" ],
+    [ "StyleProp", "group__lexer__h.html#struct__StyleProp", "group__lexer__h_struct__StyleProp" ],
     [ "TidyOptionImpl", "group__configuration__options.html#struct__tidy__option", "group__configuration__options_struct__tidy__option" ],
     [ "TidyAccessImpl", "access_8h.html#struct__TidyAccessImpl", "access_8h_struct__TidyAccessImpl" ],
     [ "TidyAllocator", "group__Memory.html#struct__TidyAllocator", "group__Memory_struct__TidyAllocator" ],
@@ -80,6 +80,7 @@ var NAVTREE =
     [ "OptionDesc", "group__utilities__cli__options.html#structOptionDesc", "group__utilities__cli__options_structOptionDesc" ],
     [ "PickListItem", "group__configuration__options.html#structPickListItem", "group__configuration__options_structPickListItem" ],
     [ "PriorityAttribs", "attrs_8h.html#structPriorityAttribs", "attrs_8h_structPriorityAttribs" ],
+    [ "Stack", "group__lexer__h.html#structStack", "group__lexer__h_structStack" ],
     [ "TidyAttr", "group__Opaque.html#structTidyAttr", null ],
     [ "TidyConfigImpl", "group__configuration__options.html#structTidyConfigImpl", "group__configuration__options_structTidyConfigImpl" ],
     [ "TidyDoc", "group__Opaque.html#structTidyDoc", null ],
@@ -95,6 +96,8 @@ var NAVTREE =
     [ "TidyOptionDoc", "group__configuration__options.html#structTidyOptionDoc", "group__configuration__options_structTidyOptionDoc" ],
     [ "TidyOptionValue", "group__configuration__options.html#unionTidyOptionValue", "group__configuration__options_unionTidyOptionValue" ],
     [ "TidyOutputSink", "group__IO.html#structTidyOutputSink", "group__IO_structTidyOutputSink" ],
+    [ "TidyParserMemory", "group__parser__h.html#structTidyParserMemory", "group__parser__h_structTidyParserMemory" ],
+    [ "TidyParserStack", "group__parser__h.html#structTidyParserStack", "group__parser__h_structTidyParserStack" ],
     [ "TidyPrintImpl", "pprint_8h.html#structTidyPrintImpl", "pprint_8h_structTidyPrintImpl" ],
     [ "TidyTagImpl", "group__tags__h.html#structTidyTagImpl", "group__tags__h_structTidyTagImpl" ]
   ] ]
@@ -104,12 +107,13 @@ var NAVTREEINDEX =
 [
 "api_namespace.html",
 "group__Tree.html#gaeb8f272e8135e744b9b3f006517f1073",
-"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a24cf99d3a9ab68e5f59de15d6db041ed",
-"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ae0341c206bc4ff3db48b35675ca04946",
-"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a21478fb6d9c535e75a74277234f91d2b",
-"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1adc19eb91d2b50321feecab74daf4e929",
-"group__service__help.html",
-"index.html#autotoc_md9"
+"group__lexer__h.html#gac4348f68e4742584948769ca581b9fe9",
+"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a029bbef738f9a0e4b68177df743d03fa",
+"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abffe1862ee4b46bbad21088c90b74c34",
+"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a06f3dd96b46978c8ef6a98944d381e7c",
+"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1abe33f804e6fac08c370e3e27cbb33c99",
+"group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ad59a66b777c972a2dd8043d375993bbb",
+"group__utilities__cli__options.html#a20a3c908c4e8eec1308b4b99806785b1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

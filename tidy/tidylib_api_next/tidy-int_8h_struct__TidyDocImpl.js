@@ -34,6 +34,7 @@ var tidy_int_8h_struct__TidyDocImpl =
     [ "reportCallback", "tidy-int_8h.html#abf0f5366e3d0c213faceb2224b1c9795", null ],
     [ "reportFilter", "tidy-int_8h.html#af70bf9de84fed3569c66112649e5a40d", null ],
     [ "root", "tidy-int_8h.html#a60591a2a62ffba453012ba51340a0c17", null ],
+    [ "stack", "tidy-int_8h.html#a6745a3636ad36cc0fe80064848abe43d", null ],
     [ "tags", "tidy-int_8h.html#a6a6338eb215fdf4444c8514c0eaf9b27", null ],
     [ "warnings", "tidy-int_8h.html#aa2648d726c01778819ea9e56f61207d8", null ],
     [ "xmlDetected", "tidy-int_8h.html#ad7f39d8162160452858505c38f3e48ba", null ]

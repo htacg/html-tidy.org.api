@@ -117,7 +117,7 @@ var group__tags__h =
     [ "TagId", "group__tags__h.html#gae9d08a10fb905116124f7c6d6c9eb3f0", null ],
     [ "TagIsId", "group__tags__h.html#ga221ed9a58fd80a9f9eee7282c77b35b0", null ],
     [ "CheckAttribs", "group__tags__h.html#gaf735453806f98129ef76caa554e72343", null ],
-    [ "Parser", "group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6", [
+    [ "Parser", "group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685", [
       [ "ELEMENT_HASH_SIZE", "group__tags__h.html#ggadc29c2ff13d900c2f185ee95427fb06caa14bd6942754bdb79bc76b521e89c1a1", null ]
     ] ],
     [ "UserTagType", "group__tags__h.html#gaf3b32897f6ec5fdf2bc8bdc5f7e61d47", [

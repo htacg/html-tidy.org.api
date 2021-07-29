@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.9.3</span>
+   &#160;<span id="projectnumber">5.9.4</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -136,9 +136,9 @@ Data Structures</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gadc29c2ff13d900c2f185ee95427fb06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum indicates the maximum size of the has table for tag hash lookup.  <a href="group__tags__h.html#gadc29c2ff13d900c2f185ee95427fb06c">More...</a><br /></td></tr>
 <tr class="separator:gadc29c2ff13d900c2f185ee95427fb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00cd7c0fa7a152114231acf02ca30fa6"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>(TidyDocImpl *doc, Node *node, <a class="el" href="lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5">GetTokenMode</a> mode)</td></tr>
-<tr class="memdesc:ga00cd7c0fa7a152114231acf02ca30fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef describes a function to be used to parse HTML of a Tidy tag.  <a href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">More...</a><br /></td></tr>
-<tr class="separator:ga00cd7c0fa7a152114231acf02ca30fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5e7cf70d2e1a7c6eefbb173b3a3d685"><td class="memItemLeft" align="right" valign="top">typedef Node *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>(TidyDocImpl *doc, Node *node, <a class="el" href="group__lexer__h.html#ga773211207be5e4e64a26c06c69b21ad5">GetTokenMode</a> mode, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> popStack)</td></tr>
+<tr class="memdesc:gaf5e7cf70d2e1a7c6eefbb173b3a3d685"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef describes a function to be used to parse HTML of a Tidy tag.  <a href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">More...</a><br /></td></tr>
+<tr class="separator:gaf5e7cf70d2e1a7c6eefbb173b3a3d685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf735453806f98129ef76caa554e72343"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf735453806f98129ef76caa554e72343">CheckAttribs</a>(TidyDocImpl *doc, Node *node)</td></tr>
 <tr class="memdesc:gaf735453806f98129ef76caa554e72343"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef describes a function be be used to check the attributes of a Tidy tag.  <a href="group__tags__h.html#gaf735453806f98129ef76caa554e72343">More...</a><br /></td></tr>
 <tr class="separator:gaf735453806f98129ef76caa554e72343"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +151,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:gae5041ebc68fecb402e63acb217473fad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gae5041ebc68fecb402e63acb217473fad">TY_❪FindTag❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
 <tr class="memdesc:gae5041ebc68fecb402e63acb217473fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the node's tag.  <a href="group__tags__h.html#gae5041ebc68fecb402e63acb217473fad">More...</a><br /></td></tr>
 <tr class="separator:gae5041ebc68fecb402e63acb217473fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab04e73489bca35ba9bd6744d85b2f70e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gab04e73489bca35ba9bd6744d85b2f70e">TY_❪FindParser❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
+<tr class="memitem:gab04e73489bca35ba9bd6744d85b2f70e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gab04e73489bca35ba9bd6744d85b2f70e">TY_❪FindParser❫</a> (TidyDocImpl *doc, Node *node)</td></tr>
 <tr class="memdesc:gab04e73489bca35ba9bd6744d85b2f70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the parser function for a given node.  <a href="group__tags__h.html#gab04e73489bca35ba9bd6744d85b2f70e">More...</a><br /></td></tr>
 <tr class="separator:gab04e73489bca35ba9bd6744d85b2f70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcd52f829db43b84f670f519418677c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gadcd52f829db43b84f670f519418677c8">TY_❪DefineTag❫</a> (TidyDocImpl *doc, <a class="el" href="group__tags__h.html#gaf3b32897f6ec5fdf2bc8bdc5f7e61d47">UserTagType</a> tagType, <a class="el" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> name)</td></tr>
@@ -185,49 +185,49 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Parser Methods And Attribute Checker Functions for Tags</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpc08cc6e7d614e3c294c9d0a691342171"></a>These functions define the parsers and attribute checking functions for each of Tidy's tags. </p>
 </td></tr>
-<tr class="memitem:ga77b295cafbcbf0d0ca4049838e8d9db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga77b295cafbcbf0d0ca4049838e8d9db6">TY_❪ParseHTML❫</a></td></tr>
+<tr class="memitem:ga77b295cafbcbf0d0ca4049838e8d9db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga77b295cafbcbf0d0ca4049838e8d9db6">TY_❪ParseHTML❫</a></td></tr>
 <tr class="separator:ga77b295cafbcbf0d0ca4049838e8d9db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf9e41437917122cfe0c48670abc162e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf9e41437917122cfe0c48670abc162e6">TY_❪ParseHead❫</a></td></tr>
+<tr class="memitem:gaf9e41437917122cfe0c48670abc162e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf9e41437917122cfe0c48670abc162e6">TY_❪ParseHead❫</a></td></tr>
 <tr class="separator:gaf9e41437917122cfe0c48670abc162e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58aebf0489d28ea35faa57d353b99423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga58aebf0489d28ea35faa57d353b99423">TY_❪ParseTitle❫</a></td></tr>
+<tr class="memitem:ga58aebf0489d28ea35faa57d353b99423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga58aebf0489d28ea35faa57d353b99423">TY_❪ParseTitle❫</a></td></tr>
 <tr class="separator:ga58aebf0489d28ea35faa57d353b99423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf920f3aa8dadbc5eeece260ebe76529b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf920f3aa8dadbc5eeece260ebe76529b">TY_❪ParseScript❫</a></td></tr>
+<tr class="memitem:gaf920f3aa8dadbc5eeece260ebe76529b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf920f3aa8dadbc5eeece260ebe76529b">TY_❪ParseScript❫</a></td></tr>
 <tr class="separator:gaf920f3aa8dadbc5eeece260ebe76529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3afca5ef75bb2a40ae81b86f0b11c0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga3afca5ef75bb2a40ae81b86f0b11c0aa">TY_❪ParseFrameSet❫</a></td></tr>
+<tr class="memitem:ga3afca5ef75bb2a40ae81b86f0b11c0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga3afca5ef75bb2a40ae81b86f0b11c0aa">TY_❪ParseFrameSet❫</a></td></tr>
 <tr class="separator:ga3afca5ef75bb2a40ae81b86f0b11c0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf28a914bf1ec00c49e6be886d97a7f82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf28a914bf1ec00c49e6be886d97a7f82">TY_❪ParseNoFrames❫</a></td></tr>
+<tr class="memitem:gaf28a914bf1ec00c49e6be886d97a7f82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaf28a914bf1ec00c49e6be886d97a7f82">TY_❪ParseNoFrames❫</a></td></tr>
 <tr class="separator:gaf28a914bf1ec00c49e6be886d97a7f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea27312b4e05f0310273c4e2fc64e87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaea27312b4e05f0310273c4e2fc64e87b">TY_❪ParseBody❫</a></td></tr>
+<tr class="memitem:gaea27312b4e05f0310273c4e2fc64e87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaea27312b4e05f0310273c4e2fc64e87b">TY_❪ParseBody❫</a></td></tr>
 <tr class="separator:gaea27312b4e05f0310273c4e2fc64e87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3d13bb7bf3879cfb88804fecee9ec34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gae3d13bb7bf3879cfb88804fecee9ec34">TY_❪ParsePre❫</a></td></tr>
+<tr class="memitem:gae3d13bb7bf3879cfb88804fecee9ec34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gae3d13bb7bf3879cfb88804fecee9ec34">TY_❪ParsePre❫</a></td></tr>
 <tr class="separator:gae3d13bb7bf3879cfb88804fecee9ec34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8fa0a0e79b3aed255e7080474f2a8502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga8fa0a0e79b3aed255e7080474f2a8502">TY_❪ParseList❫</a></td></tr>
+<tr class="memitem:ga8fa0a0e79b3aed255e7080474f2a8502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga8fa0a0e79b3aed255e7080474f2a8502">TY_❪ParseList❫</a></td></tr>
 <tr class="separator:ga8fa0a0e79b3aed255e7080474f2a8502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3df669ce838752f2ddfbf871b13ee58a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga3df669ce838752f2ddfbf871b13ee58a">TY_❪ParseDefList❫</a></td></tr>
+<tr class="memitem:ga3df669ce838752f2ddfbf871b13ee58a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga3df669ce838752f2ddfbf871b13ee58a">TY_❪ParseDefList❫</a></td></tr>
 <tr class="separator:ga3df669ce838752f2ddfbf871b13ee58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c5aa513aec966d81d896e26851ee916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga1c5aa513aec966d81d896e26851ee916">TY_❪ParseBlock❫</a></td></tr>
+<tr class="memitem:ga1c5aa513aec966d81d896e26851ee916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga1c5aa513aec966d81d896e26851ee916">TY_❪ParseBlock❫</a></td></tr>
 <tr class="separator:ga1c5aa513aec966d81d896e26851ee916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83c2b184ae01e9de9c80040890f0ac37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga83c2b184ae01e9de9c80040890f0ac37">TY_❪ParseInline❫</a></td></tr>
+<tr class="memitem:ga83c2b184ae01e9de9c80040890f0ac37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga83c2b184ae01e9de9c80040890f0ac37">TY_❪ParseInline❫</a></td></tr>
 <tr class="separator:ga83c2b184ae01e9de9c80040890f0ac37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae78bc727e680f93ed80d17035df72d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gae78bc727e680f93ed80d17035df72d09">TY_❪ParseEmpty❫</a></td></tr>
+<tr class="memitem:gae78bc727e680f93ed80d17035df72d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gae78bc727e680f93ed80d17035df72d09">TY_❪ParseEmpty❫</a></td></tr>
 <tr class="separator:gae78bc727e680f93ed80d17035df72d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac569b55d753a437f10e98c290fe4bd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaac569b55d753a437f10e98c290fe4bd3">TY_❪ParseTableTag❫</a></td></tr>
+<tr class="memitem:gaac569b55d753a437f10e98c290fe4bd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gaac569b55d753a437f10e98c290fe4bd3">TY_❪ParseTableTag❫</a></td></tr>
 <tr class="separator:gaac569b55d753a437f10e98c290fe4bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55d64b31615c73c396c517d1c2897821"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga55d64b31615c73c396c517d1c2897821">TY_❪ParseColGroup❫</a></td></tr>
+<tr class="memitem:ga55d64b31615c73c396c517d1c2897821"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga55d64b31615c73c396c517d1c2897821">TY_❪ParseColGroup❫</a></td></tr>
 <tr class="separator:ga55d64b31615c73c396c517d1c2897821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga470eab313a6c333691db06a15db77a11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga470eab313a6c333691db06a15db77a11">TY_❪ParseRowGroup❫</a></td></tr>
+<tr class="memitem:ga470eab313a6c333691db06a15db77a11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga470eab313a6c333691db06a15db77a11">TY_❪ParseRowGroup❫</a></td></tr>
 <tr class="separator:ga470eab313a6c333691db06a15db77a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f7396b64b45bbf02f86fb2487e9dd13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga1f7396b64b45bbf02f86fb2487e9dd13">TY_❪ParseRow❫</a></td></tr>
+<tr class="memitem:ga1f7396b64b45bbf02f86fb2487e9dd13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga1f7396b64b45bbf02f86fb2487e9dd13">TY_❪ParseRow❫</a></td></tr>
 <tr class="separator:ga1f7396b64b45bbf02f86fb2487e9dd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b1531d1524b6289f883144185ea2f5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga9b1531d1524b6289f883144185ea2f5a">TY_❪ParseSelect❫</a></td></tr>
+<tr class="memitem:ga9b1531d1524b6289f883144185ea2f5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga9b1531d1524b6289f883144185ea2f5a">TY_❪ParseSelect❫</a></td></tr>
 <tr class="separator:ga9b1531d1524b6289f883144185ea2f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbe838fe38df2593960f4d0ce15c5897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gafbe838fe38df2593960f4d0ce15c5897">TY_❪ParseOptGroup❫</a></td></tr>
+<tr class="memitem:gafbe838fe38df2593960f4d0ce15c5897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gafbe838fe38df2593960f4d0ce15c5897">TY_❪ParseOptGroup❫</a></td></tr>
 <tr class="separator:gafbe838fe38df2593960f4d0ce15c5897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0580460a69bc61d9baf1d5cdaa64e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gab0580460a69bc61d9baf1d5cdaa64e5d">TY_❪ParseText❫</a></td></tr>
+<tr class="memitem:gab0580460a69bc61d9baf1d5cdaa64e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gab0580460a69bc61d9baf1d5cdaa64e5d">TY_❪ParseText❫</a></td></tr>
 <tr class="separator:gab0580460a69bc61d9baf1d5cdaa64e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66b75a5680868d08bc3bedeb9262ccc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga66b75a5680868d08bc3bedeb9262ccc2">TY_❪ParseDatalist❫</a></td></tr>
+<tr class="memitem:ga66b75a5680868d08bc3bedeb9262ccc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga66b75a5680868d08bc3bedeb9262ccc2">TY_❪ParseDatalist❫</a></td></tr>
 <tr class="separator:ga66b75a5680868d08bc3bedeb9262ccc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga671c9a752502bb409b1396bcb6555f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga671c9a752502bb409b1396bcb6555f86">TY_❪ParseNamespace❫</a></td></tr>
+<tr class="memitem:ga671c9a752502bb409b1396bcb6555f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#ga671c9a752502bb409b1396bcb6555f86">TY_❪ParseNamespace❫</a></td></tr>
 <tr class="separator:ga671c9a752502bb409b1396bcb6555f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc9a4052bd1fb9d364f52a8559cb30ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf735453806f98129ef76caa554e72343">CheckAttribs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tags__h.html#gabc9a4052bd1fb9d364f52a8559cb30ef">TY_❪CheckAttributes❫</a></td></tr>
 <tr class="separator:gabc9a4052bd1fb9d364f52a8559cb30ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,7 +506,7 @@ Identifier for this tag. </td></tr>
 <td class="fieldname">
 model</td>
 <td class="fielddoc">
-Indicates the relevant content models for the tag. <p>See <a class="el" href="lexer_8h.html">lexer.h</a>; there is no enum. </p>
+Indicates the relevant content models for the tag. <p>See <a class="el" href="lexer_8h.html" title="Lexer for HTML and XML Parsers.">lexer.h</a>; there is no enum. </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="afc5afb45179fb3e3ea9c7d67ba38dd78"></a><a class="el" href="tidyplatform_8h.html#af8d7b7e8f07a0c1fc5e48ba4142bbe26">tmbstr</a></td>
@@ -521,7 +521,7 @@ next</td>
 <td class="fielddoc">
 Link to next tag. </td></tr>
 <tr><td class="fieldtype">
-<a id="abe6a6375726e1b75657c9d8f926efe04"></a><a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> *</td>
+<a id="abe6a6375726e1b75657c9d8f926efe04"></a><a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> *</td>
 <td class="fieldname">
 parser</td>
 <td class="fielddoc">
@@ -2382,19 +2382,28 @@ Placeholder for all xml tags. </td></tr>
 
 </div>
 </div>
-<a id="ga00cd7c0fa7a152114231acf02ca30fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga00cd7c0fa7a152114231acf02ca30fa6">&#9670;&nbsp;</a></span>Parser</h2>
+<a id="gaf5e7cf70d2e1a7c6eefbb173b3a3d685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">&#9670;&nbsp;</a></span>Parser</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void() Parser(TidyDocImpl *doc, Node *node, <a class="el" href="lexer_8h.html#a773211207be5e4e64a26c06c69b21ad5">GetTokenMode</a> mode)</td>
+          <td class="memname">typedef Node*() Parser(TidyDocImpl *doc, Node *node, <a class="el" href="group__lexer__h.html#ga773211207be5e4e64a26c06c69b21ad5">GetTokenMode</a> mode, <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a> popStack)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>This typedef describes a function to be used to parse HTML of a Tidy tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>The Tidy document. </td></tr>
+    <tr><td class="paramname">node</td><td>The node being parsed. </td></tr>
+    <tr><td class="paramname">mode</td><td>The GetTokenMode to be used for parsing the node contents. </td></tr>
+    <tr><td class="paramname">popStack</td><td>A flag indicating that we are re-entering this parser, and it should restore a state from the stack. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2596,7 +2605,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a>* TY_❪FindParser❫ </td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a>* TY_❪FindParser❫ </td>
           <td>(</td>
           <td class="paramtype">TidyDocImpl *&#160;</td>
           <td class="paramname"><em>doc</em>, </td>
@@ -3259,7 +3268,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseBlock❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseBlock❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3273,7 +3282,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseBody❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseBody❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3287,7 +3296,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseColGroup❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseColGroup❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3301,7 +3310,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseDatalist❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseDatalist❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3315,7 +3324,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseDefList❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseDefList❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3329,7 +3338,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseEmpty❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseEmpty❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3343,7 +3352,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseFrameSet❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseFrameSet❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3357,7 +3366,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseHead❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseHead❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3371,7 +3380,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseHTML❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseHTML❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3385,7 +3394,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseInline❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseInline❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3399,7 +3408,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseList❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseList❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3413,7 +3422,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseNamespace❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseNamespace❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3427,7 +3436,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseNoFrames❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseNoFrames❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3441,7 +3450,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseOptGroup❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseOptGroup❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3455,7 +3464,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParsePre❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParsePre❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3469,7 +3478,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseRowGroup❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseRowGroup❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3483,7 +3492,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseRow❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseRow❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3497,7 +3506,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseScript❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseScript❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3511,7 +3520,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseSelect❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseSelect❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3525,7 +3534,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseTableTag❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseTableTag❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3539,7 +3548,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseText❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseText❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3553,7 +3562,7 @@ Placeholder for all xml tags. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#ga00cd7c0fa7a152114231acf02ca30fa6">Parser</a> TY_❪ParseTitle❫</td>
+          <td class="memname"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685">Parser</a> TY_❪ParseTitle❫</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3565,7 +3574,7 @@ Placeholder for all xml tags. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jul 23 2021 09:39:07 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 29 2021 06:30:15 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

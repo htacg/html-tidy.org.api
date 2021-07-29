@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['tidyattr_2925',['TidyAttr',['../group__Opaque.html#structTidyAttr',1,'']]],
-  ['tidyconfigimpl_2926',['TidyConfigImpl',['../group__configuration__options.html#structTidyConfigImpl',1,'']]],
-  ['tidydoc_2927',['TidyDoc',['../group__Opaque.html#structTidyDoc',1,'']]],
-  ['tidyindent_2928',['TidyIndent',['../pprint_8h.html#structTidyIndent',1,'']]],
-  ['tidyinputsource_2929',['TidyInputSource',['../group__IO.html#structTidyInputSource',1,'']]],
-  ['tidylocalemapitem_2930',['tidyLocaleMapItem',['../group__Localization.html#structtidyLocaleMapItem',1,'']]],
-  ['tidylocalemapitemimpl_2931',['tidyLocaleMapItemImpl',['../language_8h.html#structtidyLocaleMapItemImpl',1,'']]],
-  ['tidymessage_2932',['TidyMessage',['../group__Opaque.html#structTidyMessage',1,'']]],
-  ['tidymessageargument_2933',['TidyMessageArgument',['../group__Opaque.html#structTidyMessageArgument',1,'']]],
-  ['tidymutedmessages_2934',['TidyMutedMessages',['../group__message__mutinging.html#structTidyMutedMessages',1,'']]],
-  ['tidynode_2935',['TidyNode',['../group__Opaque.html#structTidyNode',1,'']]],
-  ['tidyoption_2936',['TidyOption',['../group__Opaque.html#structTidyOption',1,'']]],
-  ['tidyoptiondoc_2937',['TidyOptionDoc',['../group__configuration__options.html#structTidyOptionDoc',1,'']]],
-  ['tidyoptionvalue_2938',['TidyOptionValue',['../group__configuration__options.html#unionTidyOptionValue',1,'']]],
-  ['tidyoutputsink_2939',['TidyOutputSink',['../group__IO.html#structTidyOutputSink',1,'']]],
-  ['tidyprintimpl_2940',['TidyPrintImpl',['../pprint_8h.html#structTidyPrintImpl',1,'']]],
-  ['tidytagimpl_2941',['TidyTagImpl',['../group__tags__h.html#structTidyTagImpl',1,'']]]
+  ['stack_2962',['Stack',['../group__lexer__h.html#structStack',1,'']]]
 ];
