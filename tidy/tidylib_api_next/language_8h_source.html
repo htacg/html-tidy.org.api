@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.9.4</span>
+   &#160;<span id="projectnumber">5.9.8</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -255,69 +255,76 @@ $(document).ready(function(){initNavTree('language_8h_source.html',''); initResi
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> *  Provides a string given `messageType` in the default</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> *  localization (which is `en`).</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> *  localization (which is `en`), for the given quantity.</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="language_8h.html#a35930f4f250460a15b1fef5fa4dfe8ee">  160</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga6806f7cd3e5e6a1124c80e776e7357ff">tidyDefaultString</a>)( <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType );</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> *  Initializes the TidyIterator to point to the first item</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> *  in Tidy&#39;s list of localization string keys. Note that</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> *  these are provided for documentation generation purposes</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> *  and probably aren&#39;t useful for LibTidy implementors.</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="language_8h.html#ad2dda97b0cf9a533a24bb9e30eae5de1">  168</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyIterator <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5">getStringKeyList</a>)(void);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> *  Provides the next key value in Tidy&#39;s list of localized</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> *  strings. Note that these are provided for documentation</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> *  generation purposes and probably aren&#39;t useful to</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> *  libtidy implementors.</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="language_8h.html#aeb621402469740eb07ed2ac1e1d0bd67">  176</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd">getNextStringKey</a>)( TidyIterator* iter );</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> *  Initializes the TidyIterator to point to the first item</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> *  in Tidy&#39;s structure of Windows&lt;-&gt;POSIX local mapping.</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> *  Items can be retrieved with getNextWindowsLanguage();</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="language_8h.html#a6f8f0920ec3d65716a31097c067dfd39">  183</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyIterator <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#gad02a58a776e155f05476551afff61732">getWindowsLanguageList</a>)(void);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *  Returns the next record of type `localeMapItem` in</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> *  Tidy&#39;s structure of Windows&lt;-&gt;POSIX local mapping.</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="language_8h.html#ae9055b8c4bc4dcaa6f36140f5a4a7e9f">  160</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga062f6d1d541fd0ad1fd9c4ddc89de5b1">tidyDefaultStringN</a>)( <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType, <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> quantity );</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> *  Provides a string given `messageType` in the default</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> *  localization (which is `en`).</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="language_8h.html#a35930f4f250460a15b1fef5fa4dfe8ee">  166</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga6806f7cd3e5e6a1124c80e776e7357ff">tidyDefaultString</a>)( <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType );</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> *  Initializes the TidyIterator to point to the first item</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> *  in Tidy&#39;s list of localization string keys. Note that</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> *  these are provided for documentation generation purposes</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> *  and probably aren&#39;t useful for LibTidy implementors.</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="language_8h.html#ad2dda97b0cf9a533a24bb9e30eae5de1">  174</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyIterator <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5">getStringKeyList</a>)(void);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> *  Provides the next key value in Tidy&#39;s list of localized</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> *  strings. Note that these are provided for documentation</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> *  generation purposes and probably aren&#39;t useful to</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> *  libtidy implementors.</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="language_8h.html#aeb621402469740eb07ed2ac1e1d0bd67">  182</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd">getNextStringKey</a>)( TidyIterator* iter );</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> *  Initializes the TidyIterator to point to the first item</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *  in Tidy&#39;s structure of Windows&lt;-&gt;POSIX local mapping.</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> *  Items can be retrieved with getNextWindowsLanguage();</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="language_8h.html#a3236929b37d5af7a3d0b93ba1165bd80">  189</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keyword">const</span> <a class="code" href="language_8h.html#structtidyLocaleMapItemImpl">tidyLocaleMapItemImpl</a> *<a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#gaf7772accde794b1ca1c60796944faf5a">getNextWindowsLanguage</a>)( TidyIterator* iter );</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="language_8h.html#a6f8f0920ec3d65716a31097c067dfd39">  189</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyIterator <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#gad02a58a776e155f05476551afff61732">getWindowsLanguageList</a>)(void);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> *  Given a `tidyLocaleMapItemImpl, return the Windows name.</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="language_8h.html#a21212b684d7f101ac9bceeb0700f82ae">  194</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga531933cbebaef5fdbe002a7723ddab37">TidyLangWindowsName</a>)( <span class="keyword">const</span> <a class="code" href="language_8h.html#structtidyLocaleMapItemImpl">tidyLocaleMapItemImpl</a> *item );</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"> *  Given a `tidyLocaleMapItemImpl, return the POSIX name.</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="language_8h.html#a96df0bc7179ced3580fbc9f2ccb0c6ca">  199</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#gaa3dd344833861536e725d64bd70a2c16">TidyLangPosixName</a>)( <span class="keyword">const</span> <a class="code" href="language_8h.html#structtidyLocaleMapItemImpl">tidyLocaleMapItemImpl</a> *item );</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> *  Initializes the TidyIterator to point to the first item</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> *  in Tidy&#39;s list of installed language codes.</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> *  Items can be retrieved with getNextInstalledLanguage();</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="language_8h.html#a14f6087744dbbf10850e5595b2e426d5">  206</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyIterator <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga6c4038820b68a1e5994faed07c23e136">getInstalledLanguageList</a>)(void);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> *  Returns the next installed language.</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="language_8h.html#a0179d097d9cee66f85cc5d321ed501e5">  211</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc">getNextInstalledLanguage</a>)( TidyIterator* iter );</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> *  Returns the next record of type `localeMapItem` in</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> *  Tidy&#39;s structure of Windows&lt;-&gt;POSIX local mapping.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="language_8h.html#a3236929b37d5af7a3d0b93ba1165bd80">  195</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <span class="keyword">const</span> <a class="code" href="language_8h.html#structtidyLocaleMapItemImpl">tidyLocaleMapItemImpl</a> *<a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#gaf7772accde794b1ca1c60796944faf5a">getNextWindowsLanguage</a>)( TidyIterator* iter );</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> *  Given a `tidyLocaleMapItemImpl, return the Windows name.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="language_8h.html#a21212b684d7f101ac9bceeb0700f82ae">  200</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga531933cbebaef5fdbe002a7723ddab37">TidyLangWindowsName</a>)( <span class="keyword">const</span> <a class="code" href="language_8h.html#structtidyLocaleMapItemImpl">tidyLocaleMapItemImpl</a> *item );</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> *  Given a `tidyLocaleMapItemImpl, return the POSIX name.</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="language_8h.html#a96df0bc7179ced3580fbc9f2ccb0c6ca">  205</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#gaa3dd344833861536e725d64bd70a2c16">TidyLangPosixName</a>)( <span class="keyword">const</span> <a class="code" href="language_8h.html#structtidyLocaleMapItemImpl">tidyLocaleMapItemImpl</a> *item );</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> *  Initializes the TidyIterator to point to the first item</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> *  in Tidy&#39;s list of installed language codes.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> *  Items can be retrieved with getNextInstalledLanguage();</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="language_8h.html#a14f6087744dbbf10850e5595b2e426d5">  212</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> TidyIterator <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga6c4038820b68a1e5994faed07c23e136">getInstalledLanguageList</a>)(void);</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">/** @} */</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* language_h */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"> *  Returns the next installed language.</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="language_8h.html#a0179d097d9cee66f85cc5d321ed501e5">  217</a></span>&#160;<a class="code" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a>(<a class="code" href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc">getNextInstalledLanguage</a>)( TidyIterator* iter );</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">/** @} */</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* language_h */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aforward_8h_html"><div class="ttname"><a href="forward_8h.html">forward.h</a></div></div>
 <div class="ttc" id="aforward_8h_html_ac106c51e7d00e7491634ad74c10db0de"><div class="ttname"><a href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a></div><div class="ttdeci">#define TY_PRIVATE</div><div class="ttdef"><b>Definition:</b> forward.h:29</div></div>
 <div class="ttc" id="aforward_8h_html_afe4399ce3d59fdbba5127cb28fd18ef8"><div class="ttname"><a href="forward_8h.html#afe4399ce3d59fdbba5127cb28fd18ef8">TY_</a></div><div class="ttdeci">#define TY_(str)</div><div class="ttdef"><b>Definition:</b> forward.h:23</div></div>
 <div class="ttc" id="agroup__Localization_html_ga0520bc1e7b5fc0b500f99b9ccd0090cc"><div class="ttname"><a href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc">getNextInstalledLanguage</a></div><div class="ttdeci">ctmbstr TIDY_CALL getNextInstalledLanguage(TidyIterator *iter)</div><div class="ttdoc">Given a valid TidyIterator initiated with getInstalledLanguageList(), returns a string representing a...</div></div>
+<div class="ttc" id="agroup__Localization_html_ga062f6d1d541fd0ad1fd9c4ddc89de5b1"><div class="ttname"><a href="group__Localization.html#ga062f6d1d541fd0ad1fd9c4ddc89de5b1">tidyDefaultStringN</a></div><div class="ttdeci">ctmbstr TIDY_CALL tidyDefaultStringN(uint messageType, uint quantity)</div><div class="ttdoc">Provides a string given messageType in the default localization for quantity.</div></div>
 <div class="ttc" id="agroup__Localization_html_ga2af3b049691ff790e99ae6bc9bfd6cc5"><div class="ttname"><a href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5">getStringKeyList</a></div><div class="ttdeci">TidyIterator TIDY_CALL getStringKeyList(void)</div><div class="ttdoc">Initiates an iterator for a list of string key codes available in Tidy.</div></div>
 <div class="ttc" id="agroup__Localization_html_ga3b1ffd42b71e28881de8dea41d6930f2"><div class="ttname"><a href="group__Localization.html#ga3b1ffd42b71e28881de8dea41d6930f2">tidyLocalizedString</a></div><div class="ttdeci">ctmbstr TIDY_CALL tidyLocalizedString(uint messageType)</div><div class="ttdoc">Provides a string given messageType in the current localization for the single case.</div></div>
 <div class="ttc" id="agroup__Localization_html_ga531933cbebaef5fdbe002a7723ddab37"><div class="ttname"><a href="group__Localization.html#ga531933cbebaef5fdbe002a7723ddab37">TidyLangWindowsName</a></div><div class="ttdeci">ctmbstr TIDY_CALL TidyLangWindowsName(const tidyLocaleMapItem *item)</div><div class="ttdoc">Given a tidyLocaleMapItem, return the Windows name.</div></div>
@@ -354,7 +361,7 @@ $(document).ready(function(){initNavTree('language_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="language_8h.html">language.h</a></li>
-    <li class="footer">Generated on Thu Jul 29 2021 06:30:15 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 31 2021 10:21:57 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

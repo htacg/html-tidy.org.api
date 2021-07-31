@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.9.4</span>
+   &#160;<span id="projectnumber">5.9.8</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -2225,89 +2225,99 @@ $(document).ready(function(){initNavTree('tidy_8h_source.html',''); initResizabl
 <div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l02126"></a><span class="lineno"><a class="line" href="group__Localization.html#ga3b1ffd42b71e28881de8dea41d6930f2"> 2126</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga3b1ffd42b71e28881de8dea41d6930f2">tidyLocalizedString</a>( <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType );</div>
 <div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;<span class="comment">/** Provides a string given `messageType` in the default localization (which</span></div>
-<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;<span class="comment"> ** is `en`).</span></div>
-<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;<span class="comment"> ** @param messageType The message type.</span></div>
-<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;<span class="comment"> ** @result Returns the desired string.</span></div>
-<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l02133"></a><span class="lineno"><a class="line" href="group__Localization.html#ga6806f7cd3e5e6a1124c80e776e7357ff"> 2133</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga6806f7cd3e5e6a1124c80e776e7357ff">tidyDefaultString</a>( <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType );</div>
-<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;<span class="comment">/** Initiates an iterator for a list of string key codes available in Tidy.</span></div>
-<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;<span class="comment"> ** This iterator allows you to iterate through all of the codes. In order to</span></div>
-<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;<span class="comment"> ** iterate through the codes, initiate the iterator with this function, and</span></div>
-<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;<span class="comment"> ** then use getNextStringKey() to retrieve the first and subsequent codes.</span></div>
-<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;<span class="comment"> ** For example:</span></div>
-<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;<span class="comment"> ** @code{.c}</span></div>
-<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;<span class="comment"> **   TidyIterator itKey = getErrorCodeList();</span></div>
-<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;<span class="comment"> **   while ( itKey ) {</span></div>
-<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;<span class="comment"> **     uint code = getNextStringKey( &amp;itKey );</span></div>
-<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;<span class="comment"> **     // do something with the code, such as lookup a string.</span></div>
-<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;<span class="comment"> **   }</span></div>
-<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;<span class="comment"> ** @endcode</span></div>
-<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;<span class="comment"> ** @remark These are provided for documentation generation purposes, and</span></div>
-<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;<span class="comment"> **         probably aren&#39;t of much use to the average LibTidy implementor.</span></div>
-<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;<span class="comment"> ** @result Returns a TidyIterator, which is a token used to represent the</span></div>
-<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;<span class="comment"> **         current position in a list within LibTidy.</span></div>
-<div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l02152"></a><span class="lineno"><a class="line" href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5"> 2152</a></span>&#160;TIDY_EXPORT TidyIterator <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5">getStringKeyList</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l02153"></a><span class="lineno"> 2153</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;<span class="comment">/** Given a valid TidyIterator initiated with getStringKeyList(), returns</span></div>
-<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;<span class="comment"> ** an unsigned integer representing the next key value.</span></div>
-<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;<span class="comment"> ** @remark These are provided for documentation generation purposes, and</span></div>
-<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;<span class="comment"> **         probably aren&#39;t of much use to the average LibTidy implementor.</span></div>
-<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;<span class="comment"> ** @param iter The TidyIterator (initiated with getStringKeyList()) token.</span></div>
-<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;<span class="comment"> ** @result Returns a message code.</span></div>
-<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l02161"></a><span class="lineno"><a class="line" href="group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd"> 2161</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd">getNextStringKey</a>( TidyIterator* iter );</div>
-<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;<span class="comment">/** @}</span></div>
-<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;<span class="comment"> ** @name Available Languages</span></div>
-<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;<span class="comment"> ** @{</span></div>
-<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;<span class="comment">/** Initiates an iterator for a list of Tidy&#39;s installed languages. This</span></div>
-<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;<span class="comment"> ** iterator allows you to iterate through this list. In order to iterate</span></div>
-<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;<span class="comment"> ** through the list, initiate the iterator with this function, and then use</span></div>
-<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;<span class="comment"> ** use getNextInstalledLanguage() to retrieve the first and subsequent strings.</span></div>
-<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;<span class="comment"> ** For example:</span></div>
-<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;<span class="comment"> ** @code{.c}</span></div>
-<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;<span class="comment"> **   TidyIterator itList = getInstalledLanguageList();</span></div>
-<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;<span class="comment"> **   while ( itList ) {</span></div>
-<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;<span class="comment"> **     printf(&quot;%s&quot;,  getNextInstalledLanguage( &amp;itList ));</span></div>
-<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;<span class="comment"> **   }</span></div>
-<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;<span class="comment"> ** @endcode</span></div>
-<div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;<span class="comment"> ** @result Returns a TidyIterator, which is a token used to represent the</span></div>
-<div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;<span class="comment"> **         current position in a list within LibTidy.</span></div>
-<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l02182"></a><span class="lineno"><a class="line" href="group__Localization.html#ga6c4038820b68a1e5994faed07c23e136"> 2182</a></span>&#160;TIDY_EXPORT TidyIterator <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga6c4038820b68a1e5994faed07c23e136">getInstalledLanguageList</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;<span class="comment">/** Given a valid TidyIterator initiated with getInstalledLanguageList(),</span></div>
-<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;<span class="comment"> ** returns a string representing a language name that is installed in Tidy.</span></div>
-<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;<span class="comment"> ** @param iter The TidyIterator (initiated with getInstalledLanguageList())</span></div>
-<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;<span class="comment"> **        token.</span></div>
-<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;<span class="comment"> ** @result Returns a string indicating the installed language.</span></div>
-<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l02190"></a><span class="lineno"><a class="line" href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc"> 2190</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc">getNextInstalledLanguage</a>( TidyIterator* iter );</div>
-<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;<span class="comment">/** @} */</span></div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;<span class="comment">/** Provides a string given `messageType` in the default localization for</span></div>
+<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;<span class="comment"> ** `quantity`. Some strings have one or more plural forms, and this function</span></div>
+<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;<span class="comment"> ** will ensure that the correct singular or plural form is returned for the</span></div>
+<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;<span class="comment"> ** specified quantity.</span></div>
+<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;<span class="comment"> ** @result Returns the desired string.</span></div>
+<div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02134"></a><span class="lineno"><a class="line" href="group__Localization.html#ga062f6d1d541fd0ad1fd9c4ddc89de5b1"> 2134</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga062f6d1d541fd0ad1fd9c4ddc89de5b1">tidyDefaultStringN</a>(<a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType, <span class="comment">/**&lt; The message type. */</span></div>
+<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;                                                 <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> quantity     <span class="comment">/**&lt; The quantity. */</span></div>
+<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;                                                 );</div>
+<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;<span class="comment">/** Provides a string given `messageType` in the default localization (which</span></div>
+<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;<span class="comment"> ** is `en`).</span></div>
+<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;<span class="comment"> ** @param messageType The message type.</span></div>
+<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;<span class="comment"> ** @result Returns the desired string.</span></div>
+<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02143"></a><span class="lineno"><a class="line" href="group__Localization.html#ga6806f7cd3e5e6a1124c80e776e7357ff"> 2143</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga6806f7cd3e5e6a1124c80e776e7357ff">tidyDefaultString</a>( <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> messageType );</div>
+<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;<span class="comment">/** Initiates an iterator for a list of string key codes available in Tidy.</span></div>
+<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;<span class="comment"> ** This iterator allows you to iterate through all of the codes. In order to</span></div>
+<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;<span class="comment"> ** iterate through the codes, initiate the iterator with this function, and</span></div>
+<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;<span class="comment"> ** then use getNextStringKey() to retrieve the first and subsequent codes.</span></div>
+<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;<span class="comment"> ** For example:</span></div>
+<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;<span class="comment"> ** @code{.c}</span></div>
+<div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;<span class="comment"> **   TidyIterator itKey = getErrorCodeList();</span></div>
+<div class="line"><a name="l02152"></a><span class="lineno"> 2152</span>&#160;<span class="comment"> **   while ( itKey ) {</span></div>
+<div class="line"><a name="l02153"></a><span class="lineno"> 2153</span>&#160;<span class="comment"> **     uint code = getNextStringKey( &amp;itKey );</span></div>
+<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;<span class="comment"> **     // do something with the code, such as lookup a string.</span></div>
+<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;<span class="comment"> **   }</span></div>
+<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;<span class="comment"> ** @endcode</span></div>
+<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;<span class="comment"> ** @remark These are provided for documentation generation purposes, and</span></div>
+<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;<span class="comment"> **         probably aren&#39;t of much use to the average LibTidy implementor.</span></div>
+<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;<span class="comment"> ** @result Returns a TidyIterator, which is a token used to represent the</span></div>
+<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;<span class="comment"> **         current position in a list within LibTidy.</span></div>
+<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02162"></a><span class="lineno"><a class="line" href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5"> 2162</a></span>&#160;TIDY_EXPORT TidyIterator <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5">getStringKeyList</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;<span class="comment">/** Given a valid TidyIterator initiated with getStringKeyList(), returns</span></div>
+<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;<span class="comment"> ** an unsigned integer representing the next key value.</span></div>
+<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;<span class="comment"> ** @remark These are provided for documentation generation purposes, and</span></div>
+<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;<span class="comment"> **         probably aren&#39;t of much use to the average LibTidy implementor.</span></div>
+<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;<span class="comment"> ** @param iter The TidyIterator (initiated with getStringKeyList()) token.</span></div>
+<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;<span class="comment"> ** @result Returns a message code.</span></div>
+<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02171"></a><span class="lineno"><a class="line" href="group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd"> 2171</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga754a9e3a6d8d6fd1ce59a408e30e00cd">getNextStringKey</a>( TidyIterator* iter );</div>
+<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;<span class="comment">/** @}</span></div>
+<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;<span class="comment"> ** @name Available Languages</span></div>
+<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;<span class="comment"> ** @{</span></div>
+<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;<span class="comment">/** Initiates an iterator for a list of Tidy&#39;s installed languages. This</span></div>
+<div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;<span class="comment"> ** iterator allows you to iterate through this list. In order to iterate</span></div>
+<div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;<span class="comment"> ** through the list, initiate the iterator with this function, and then use</span></div>
+<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;<span class="comment"> ** use getNextInstalledLanguage() to retrieve the first and subsequent strings.</span></div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;<span class="comment"> ** For example:</span></div>
+<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;<span class="comment"> ** @code{.c}</span></div>
+<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;<span class="comment"> **   TidyIterator itList = getInstalledLanguageList();</span></div>
+<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;<span class="comment"> **   while ( itList ) {</span></div>
+<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;<span class="comment"> **     printf(&quot;%s&quot;,  getNextInstalledLanguage( &amp;itList ));</span></div>
+<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;<span class="comment"> **   }</span></div>
+<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;<span class="comment"> ** @endcode</span></div>
+<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;<span class="comment"> ** @result Returns a TidyIterator, which is a token used to represent the</span></div>
+<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;<span class="comment"> **         current position in a list within LibTidy.</span></div>
+<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02192"></a><span class="lineno"><a class="line" href="group__Localization.html#ga6c4038820b68a1e5994faed07c23e136"> 2192</a></span>&#160;TIDY_EXPORT TidyIterator <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga6c4038820b68a1e5994faed07c23e136">getInstalledLanguageList</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;<span class="comment">/** @} end MessagesKeys group */</span><span class="comment"></span></div>
-<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;<span class="comment">/** @} end public_api group */</span></div>
-<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160; </div>
-<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160; </div>
-<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;}  <span class="comment">/* extern &quot;C&quot; */</span></div>
-<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __TIDY_H__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160; </div>
-<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;<span class="comment"> * local variables:</span></div>
-<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;<span class="comment"> * mode: c</span></div>
-<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;<span class="comment"> * indent-tabs-mode: nil</span></div>
-<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;<span class="comment"> * c-basic-offset: 4</span></div>
-<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;<span class="comment"> * eval: (c-set-offset &#39;substatement-open 0)</span></div>
-<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;<span class="comment"> * end:</span></div>
-<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;<span class="comment">/** Given a valid TidyIterator initiated with getInstalledLanguageList(),</span></div>
+<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;<span class="comment"> ** returns a string representing a language name that is installed in Tidy.</span></div>
+<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;<span class="comment"> ** @param iter The TidyIterator (initiated with getInstalledLanguageList())</span></div>
+<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;<span class="comment"> **        token.</span></div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;<span class="comment"> ** @result Returns a string indicating the installed language.</span></div>
+<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l02200"></a><span class="lineno"><a class="line" href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc"> 2200</a></span>&#160;TIDY_EXPORT <a class="code" href="tidyplatform_8h.html#ab79be1eeb8c1b64feac28be54d28ba70">ctmbstr</a> <a class="code" href="tidyplatform_8h.html#a8d6cbd2c86fd90a688bf906914033ba0">TIDY_CALL</a> <a class="code" href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc">getNextInstalledLanguage</a>( TidyIterator* iter );</div>
+<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;<span class="comment">/** @} */</span></div>
+<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;<span class="comment">/** @} end MessagesKeys group */</span><span class="comment"></span></div>
+<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;<span class="comment">/** @} end public_api group */</span></div>
+<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160; </div>
+<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160; </div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;}  <span class="comment">/* extern &quot;C&quot; */</span></div>
+<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __TIDY_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160; </div>
+<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;<span class="comment"> * local variables:</span></div>
+<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;<span class="comment"> * mode: c</span></div>
+<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;<span class="comment"> * indent-tabs-mode: nil</span></div>
+<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;<span class="comment"> * c-basic-offset: 4</span></div>
+<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;<span class="comment"> * eval: (c-set-offset &#39;substatement-open 0)</span></div>
+<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;<span class="comment"> * end:</span></div>
+<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;<span class="comment"> */</span></div>
 <div class="ttc" id="agroup__Basic_html_ga05203a9193542a67b8396cf6ca8acf59"><div class="ttname"><a href="group__Basic.html#ga05203a9193542a67b8396cf6ca8acf59">tidySetInCharEncoding</a></div><div class="ttdeci">int TIDY_CALL tidySetInCharEncoding(TidyDoc tdoc, ctmbstr encnam)</div><div class="ttdoc">Set the input encoding for parsing markup.</div></div>
 <div class="ttc" id="agroup__Basic_html_ga1319c9757d4f8c596615e0fdcfcf2504"><div class="ttname"><a href="group__Basic.html#ga1319c9757d4f8c596615e0fdcfcf2504">tidyGetAppData</a></div><div class="ttdeci">void *TIDY_CALL tidyGetAppData(TidyDoc tdoc)</div><div class="ttdoc">Returns the data previously stored with tidySetAppData().</div></div>
 <div class="ttc" id="agroup__Basic_html_ga2612e184472c2a59ca822a37d030e9af"><div class="ttname"><a href="group__Basic.html#ga2612e184472c2a59ca822a37d030e9af">tidySetCharEncoding</a></div><div class="ttdeci">int TIDY_CALL tidySetCharEncoding(TidyDoc tdoc, ctmbstr encnam)</div><div class="ttdoc">Set the input/output character encoding for parsing markup.</div></div>
@@ -2440,6 +2450,7 @@ $(document).ready(function(){initNavTree('tidy_8h_source.html',''); initResizabl
 <div class="ttc" id="agroup__IO_html_structTidyOutputSink"><div class="ttname"><a href="group__IO.html#structTidyOutputSink">TidyOutputSink</a></div><div class="ttdoc">This type defines an output destination capable of accepting raw bytes of output.</div><div class="ttdef"><b>Definition:</b> tidy.h:1129</div></div>
 <div class="ttc" id="agroup__IO_html_struct__TidyBuffer"><div class="ttname"><a href="group__IO.html#struct__TidyBuffer">_TidyBuffer</a></div><div class="ttdoc">A TidyBuffer is chunk of memory that can be used for multiple I/O purposes within Tidy.</div><div class="ttdef"><b>Definition:</b> tidybuffio.h:37</div></div>
 <div class="ttc" id="agroup__Localization_html_ga0520bc1e7b5fc0b500f99b9ccd0090cc"><div class="ttname"><a href="group__Localization.html#ga0520bc1e7b5fc0b500f99b9ccd0090cc">getNextInstalledLanguage</a></div><div class="ttdeci">ctmbstr TIDY_CALL getNextInstalledLanguage(TidyIterator *iter)</div><div class="ttdoc">Given a valid TidyIterator initiated with getInstalledLanguageList(), returns a string representing a...</div></div>
+<div class="ttc" id="agroup__Localization_html_ga062f6d1d541fd0ad1fd9c4ddc89de5b1"><div class="ttname"><a href="group__Localization.html#ga062f6d1d541fd0ad1fd9c4ddc89de5b1">tidyDefaultStringN</a></div><div class="ttdeci">ctmbstr TIDY_CALL tidyDefaultStringN(uint messageType, uint quantity)</div><div class="ttdoc">Provides a string given messageType in the default localization for quantity.</div></div>
 <div class="ttc" id="agroup__Localization_html_ga2af3b049691ff790e99ae6bc9bfd6cc5"><div class="ttname"><a href="group__Localization.html#ga2af3b049691ff790e99ae6bc9bfd6cc5">getStringKeyList</a></div><div class="ttdeci">TidyIterator TIDY_CALL getStringKeyList(void)</div><div class="ttdoc">Initiates an iterator for a list of string key codes available in Tidy.</div></div>
 <div class="ttc" id="agroup__Localization_html_ga3b1ffd42b71e28881de8dea41d6930f2"><div class="ttname"><a href="group__Localization.html#ga3b1ffd42b71e28881de8dea41d6930f2">tidyLocalizedString</a></div><div class="ttdeci">ctmbstr TIDY_CALL tidyLocalizedString(uint messageType)</div><div class="ttdoc">Provides a string given messageType in the current localization for the single case.</div></div>
 <div class="ttc" id="agroup__Localization_html_ga531933cbebaef5fdbe002a7723ddab37"><div class="ttname"><a href="group__Localization.html#ga531933cbebaef5fdbe002a7723ddab37">TidyLangWindowsName</a></div><div class="ttdeci">ctmbstr TIDY_CALL TidyLangWindowsName(const tidyLocaleMapItem *item)</div><div class="ttdoc">Given a tidyLocaleMapItem, return the Windows name.</div></div>
@@ -2541,7 +2552,7 @@ $(document).ready(function(){initNavTree('tidy_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_347ffb9558b54b31166949a03b842226.html">include</a></li><li class="navelem"><a class="el" href="tidy_8h.html">tidy.h</a></li>
-    <li class="footer">Generated on Thu Jul 29 2021 06:30:15 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 31 2021 10:21:57 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

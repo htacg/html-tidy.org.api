@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ad4eff0d00f337e8e0da9cffde79610d9":[9,0,11,13,73],
 "group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ad59a66b777c972a2dd8043d375993bbb":[9,0,11,13,78],
 "group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ad62f153f10f8bf53be8129f04b0c0479":[9,0,11,13,132],
 "group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ad6c980ff564c0e4d3fc05098120d12ec":[9,0,11,13,84],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "group__tags__h.html#structDictHash":[9,1,1,1],
 "group__tags__h.html#structTidyTagImpl":[9,1,1,2],
 "group__tags__h.html#struct__Dict":[9,1,1,0],
-"group__utilities__cli__options.html":[9,2,1],
-"group__utilities__cli__options.html#a1d9ba7326d4c70689fa7f05c292c124e":[9,2,1,0,0]
+"group__utilities__cli__options.html":[9,2,1]
 };
