@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['win1252_5621',['WIN1252',['../streamio_8h.html#a733809de81b13d53a582269f3da0610d',1,'streamio.h']]]
+  ['win1252_5616',['WIN1252',['../streamio_8h.html#a733809de81b13d53a582269f3da0610d',1,'streamio.h']]]
 ];

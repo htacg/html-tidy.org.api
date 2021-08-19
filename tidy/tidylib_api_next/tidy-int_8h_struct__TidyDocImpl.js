@@ -18,6 +18,7 @@ var tidy_int_8h_struct__TidyDocImpl =
     [ "footnotes", "tidy-int_8h.html#a58ef293e504e28829e7f7f7f2acf29a8", null ],
     [ "givenDoctype", "tidy-int_8h.html#a9108a290b63ae569d7332c76d7adf44c", null ],
     [ "HTML5Mode", "tidy-int_8h.html#aa1b6bc3c811bef0f1bf3feedf18ab89d", null ],
+    [ "indent_char", "tidy-int_8h.html#a5e852f18223c102cd2f93a3d3c74cc77", null ],
     [ "infoMessages", "tidy-int_8h.html#acfe2546b4f4ca8ac7c818f52ed7d6ce8", null ],
     [ "inputHadBOM", "tidy-int_8h.html#aca5f4e217bb5cd8486974c6d18d6fceb", null ],
     [ "lexer", "tidy-int_8h.html#af49cfd254ef2d555a0cc3ddcf0d8153d", null ],

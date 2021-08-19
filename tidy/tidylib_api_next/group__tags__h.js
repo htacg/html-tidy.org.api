@@ -104,6 +104,7 @@ var group__tags__h =
     [ "nodeIsSVG", "group__tags__h.html#gac5dc5d2781916692d840cb77ebd27207", null ],
     [ "nodeIsTABLE", "group__tags__h.html#gac86c0cb51d61b1d1f0011f6ea1ef2f6d", null ],
     [ "nodeIsTD", "group__tags__h.html#gaffb384e9af6b3758894f25f2c5f20306", null ],
+    [ "nodeIsTEMPLATE", "group__tags__h.html#ga66fb838b18f182c2c9436ea2d3e1f9a9", null ],
     [ "nodeIsTEXTAREA", "group__tags__h.html#ga593948868d4c8db2ba36d1d5849013a1", null ],
     [ "nodeIsTH", "group__tags__h.html#ga51354c4b2634a599ad74c2cae791670c", null ],
     [ "nodeIsTITLE", "group__tags__h.html#ga755a89bd033ed952dee0b27e9e844e1c", null ],
@@ -117,7 +118,7 @@ var group__tags__h =
     [ "TagId", "group__tags__h.html#gae9d08a10fb905116124f7c6d6c9eb3f0", null ],
     [ "TagIsId", "group__tags__h.html#ga221ed9a58fd80a9f9eee7282c77b35b0", null ],
     [ "CheckAttribs", "group__tags__h.html#gaf735453806f98129ef76caa554e72343", null ],
-    [ "Parser", "group__tags__h.html#gaf5e7cf70d2e1a7c6eefbb173b3a3d685", [
+    [ "Parser", "group__tags__h.html#ga24a741206b3cf1fe8400d17c30bda1d6", [
       [ "ELEMENT_HASH_SIZE", "group__tags__h.html#ggadc29c2ff13d900c2f185ee95427fb06caa14bd6942754bdb79bc76b521e89c1a1", null ]
     ] ],
     [ "UserTagType", "group__tags__h.html#gaf3b32897f6ec5fdf2bc8bdc5f7e61d47", [

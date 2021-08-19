@@ -84,7 +84,7 @@ var NAVTREE =
     [ "TidyAttr", "group__Opaque.html#structTidyAttr", null ],
     [ "TidyConfigImpl", "group__configuration__options.html#structTidyConfigImpl", "group__configuration__options_structTidyConfigImpl" ],
     [ "TidyDoc", "group__Opaque.html#structTidyDoc", null ],
-    [ "TidyIndent", "pprint_8h.html#structTidyIndent", "pprint_8h_structTidyIndent" ],
+    [ "TidyIndent", "group__print__h.html#structTidyIndent", "group__print__h_structTidyIndent" ],
     [ "TidyInputSource", "group__IO.html#structTidyInputSource", "group__IO_structTidyInputSource" ],
     [ "tidyLocaleMapItem", "group__Localization.html#structtidyLocaleMapItem", null ],
     [ "tidyLocaleMapItemImpl", "language_8h.html#structtidyLocaleMapItemImpl", "language_8h_structtidyLocaleMapItemImpl" ],
@@ -98,7 +98,7 @@ var NAVTREE =
     [ "TidyOutputSink", "group__IO.html#structTidyOutputSink", "group__IO_structTidyOutputSink" ],
     [ "TidyParserMemory", "group__parser__h.html#structTidyParserMemory", "group__parser__h_structTidyParserMemory" ],
     [ "TidyParserStack", "group__parser__h.html#structTidyParserStack", "group__parser__h_structTidyParserStack" ],
-    [ "TidyPrintImpl", "pprint_8h.html#structTidyPrintImpl", "pprint_8h_structTidyPrintImpl" ],
+    [ "TidyPrintImpl", "group__print__h.html#structTidyPrintImpl", "group__print__h_structTidyPrintImpl" ],
     [ "TidyTagImpl", "group__tags__h.html#structTidyTagImpl", "group__tags__h_structTidyTagImpl" ]
   ] ]
 ];
@@ -107,13 +107,13 @@ var NAVTREEINDEX =
 [
 "api_namespace.html",
 "group__Tree.html#gae539f5031bd1e039458a7fffb07a2b7a",
-"group__lexer__h.html#gac3515e1a6a23116a60c43bd1f97f1f31",
-"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00a01df5e602f898c2719b13757e825c7ee",
-"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00abf02b221b40b37187dc696d0319d545c",
-"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1a06771488fa77a7bebf6e8606a9d5603c",
-"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1abd30668bc2bd013f9544c403dc99da97",
-"group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ad4eff0d00f337e8e0da9cffde79610d9",
-"group__utilities__cli__options.html#a1d9ba7326d4c70689fa7f05c292c124e"
+"group__lexer__h.html#gac1f2c1b3cfb80dc4032dd520afb1c357",
+"group__public__enum__gen.html#gad3c968aa80c47fb619f8a668151af882",
+"group__public__enumerations.html#gga1686318b9a8c2aa6e60e341af7145c00ab209a68f524b96343d97a32aef376c17",
+"group__public__enumerations.html#gga43f1adcf856d4da325284770e707ef91acf168817bc2e1571feff4ca37cbfc2f3",
+"group__public__enumerations.html#gga4cbfcbf234421459e736d62cfdd4c3e1aadeb0179d8994b0bac2b32e10adadc83",
+"group__public__enumerations.html#ggae5b597c0999422ff383f08ab595ef5e8ab26e51f181ac3df64ada1ed61510cfcb",
+"group__tags__h.html#gaf28a914bf1ec00c49e6be886d97a7f82"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -4,6 +4,7 @@ var group__internal__api =
     [ "HTML Tags", "group__tags__h.html", "group__tags__h" ],
     [ "HTML and XML Lexing", "group__lexer__h.html", "group__lexer__h" ],
     [ "HTML and XML Parsing", "group__parser__h.html", "group__parser__h" ],
+    [ "HTML and XML Pretty Printing", "group__print__h.html", "group__print__h" ],
     [ "Key Discovery", "group__message__keydiscovery.html", "group__message__keydiscovery" ],
     [ "Message Creation and Releasing", "group__messageobj__instantiation.html", "group__messageobj__instantiation" ],
     [ "Message Muting", "group__message__mutinging.html", "group__message__mutinging" ],

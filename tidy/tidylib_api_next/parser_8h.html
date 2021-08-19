@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HTML Tidy
-   &#160;<span id="projectnumber">5.9.8</span>
+   &#160;<span id="projectnumber">5.9.15</span>
    </div>
    <div id="projectbrief">The HTACG Tidy HTML Project</div>
   </td>
@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('parser_8h.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">parser.h File Reference</div>  </div>
@@ -121,39 +120,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structTidyParserStack"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#structTidyParserStack">TidyParserStack</a></td></tr>
 <tr class="memdesc:structTidyParserStack"><td class="mdescLeft">&#160;</td><td class="mdescRight">This typedef represents a stack of parserState.  <a href="group__parser__h.html#structTidyParserStack">More...</a><br /></td></tr>
 <tr class="separator:structTidyParserStack"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga0f9e5ee5629b44e256b64500b749ba4e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga0f9e5ee5629b44e256b64500b749ba4e">parserState</a> { <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea24ac4e25affdf1bcda765d59e6cabcfd">STATE_INITIAL</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea79ae1582c50ffdc26c332345ede75d7c">STATE_COMPLETE</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ead96070eca9a9de35e377a4829802712e">STATE_PARSE_TAG</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea2b24add18bf3d4d09878f22028c2d479">STATE_PARSE_TAG_DONE</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4eae43bbf8d98636b00f4b7d7e60f14c047">STATE_PRE_HEAD</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea2a6f0bb3bab54e6814083dd1fac1d935">STATE_PRE_BODY</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea8862d2f969a870b0f294886fd11d544a">STATE_PARSE_BODY</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea8b4f078cfcd43cffab103144751aaffa">STATE_PARSE_HEAD</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea53cf13e2a9eaefc9f01a407c8a2e1278">STATE_PARSE_HEAD_DONE</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea007c4a0b44f833aa91bd892534a81843">STATE_PARSE_NOFRAMES</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4eafdfd44f943ff884337f6027767ded4bc">STATE_PARSE_NOFRAMES_DONE</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea8b178f181615bcb7491d06da4b3e1e02">STATE_PARSE_FRAMESET</a>
-, <br />
-&#160;&#160;<a class="el" href="group__parser__h.html#gga0f9e5ee5629b44e256b64500b749ba4ea71f6894c9a4f1e4095306663b9a925d0">STATE_PARSE_FRAMESET_DONE</a>
-<br />
- }</td></tr>
-<tr class="memdesc:ga0f9e5ee5629b44e256b64500b749ba4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parsers keeps track of their states with the states defined here, and use these symbols when pushing to the stack so that they can later recreate their environments when re-entered.  <a href="group__parser__h.html#ga0f9e5ee5629b44e256b64500b749ba4e">More...</a><br /></td></tr>
-<tr class="separator:ga0f9e5ee5629b44e256b64500b749ba4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -190,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga74559ab68214650f4694cf4117194cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga74559ab68214650f4694cf4117194cf5">TY_❪IsBlank❫</a> (Lexer *lexer, Node *node)</td></tr>
 <tr class="memdesc:ga74559ab68214650f4694cf4117194cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a text node is blank, meaning that it consists of nothing, or a single space.  <a href="group__parser__h.html#ga74559ab68214650f4694cf4117194cf5">More...</a><br /></td></tr>
 <tr class="separator:ga74559ab68214650f4694cf4117194cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8d2e9ee8ef904994fdd0160d0a3ceb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gaf8d2e9ee8ef904994fdd0160d0a3ceb7">TY_❪isEmptyParserStack❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gaf8d2e9ee8ef904994fdd0160d0a3ceb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the stack is empty.  <a href="group__parser__h.html#gaf8d2e9ee8ef904994fdd0160d0a3ceb7">More...</a><br /></td></tr>
+<tr class="separator:gaf8d2e9ee8ef904994fdd0160d0a3ceb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6248adad81233d0a837c2d438759a174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> <a class="el" href="tidyplatform_8h.html#a39db6982619d623273fad8a383489309">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga6248adad81233d0a837c2d438759a174">TY_❪IsJavaScript❫</a> (Node *node)</td></tr>
 <tr class="memdesc:ga6248adad81233d0a837c2d438759a174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not a node is declared as containing javascript code.  <a href="group__parser__h.html#ga6248adad81233d0a837c2d438759a174">More...</a><br /></td></tr>
 <tr class="separator:ga6248adad81233d0a837c2d438759a174"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +171,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gac794fbd9a8fa9815e434fc60e12cfeb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gac794fbd9a8fa9815e434fc60e12cfeb1">TY_❪ParseXMLDocument❫</a> (TidyDocImpl *doc)</td></tr>
 <tr class="memdesc:gac794fbd9a8fa9815e434fc60e12cfeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a document after lexing using the XML parser.  <a href="group__parser__h.html#gac794fbd9a8fa9815e434fc60e12cfeb1">More...</a><br /></td></tr>
 <tr class="separator:gac794fbd9a8fa9815e434fc60e12cfeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae92cc4975572d0b729665bed1c0de2a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__tags__h.html#ga24a741206b3cf1fe8400d17c30bda1d6">Parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gae92cc4975572d0b729665bed1c0de2a1">TY_❪peekMemoryIdentity❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gae92cc4975572d0b729665bed1c0de2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek at the parser memory "identity" field.  <a href="group__parser__h.html#gae92cc4975572d0b729665bed1c0de2a1">More...</a><br /></td></tr>
+<tr class="separator:gae92cc4975572d0b729665bed1c0de2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8ebf5011c39a6e97711b49f80871361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lexer__h.html#ga773211207be5e4e64a26c06c69b21ad5">GetTokenMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gac8ebf5011c39a6e97711b49f80871361">TY_❪peekMemoryMode❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:gac8ebf5011c39a6e97711b49f80871361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek at the parser memory "mode" field.  <a href="group__parser__h.html#gac8ebf5011c39a6e97711b49f80871361">More...</a><br /></td></tr>
+<tr class="separator:gac8ebf5011c39a6e97711b49f80871361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4787d43de9ae488d016322f09f6ceee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__parser__h.html#structTidyParserMemory">TidyParserMemory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga4787d43de9ae488d016322f09f6ceee2">TY_❪peekMemory❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga4787d43de9ae488d016322f09f6ceee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek at the parser memory.  <a href="group__parser__h.html#ga4787d43de9ae488d016322f09f6ceee2">More...</a><br /></td></tr>
+<tr class="separator:ga4787d43de9ae488d016322f09f6ceee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga139c68ebacc78d4031b51143079eb1d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__parser__h.html#structTidyParserMemory">TidyParserMemory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga139c68ebacc78d4031b51143079eb1d8">TY_❪popMemory❫</a> (TidyDocImpl *doc)</td></tr>
+<tr class="memdesc:ga139c68ebacc78d4031b51143079eb1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop out a parser memory.  <a href="group__parser__h.html#ga139c68ebacc78d4031b51143079eb1d8">More...</a><br /></td></tr>
+<tr class="separator:ga139c68ebacc78d4031b51143079eb1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d6419e55257477fa018960523b3f612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#ga6d6419e55257477fa018960523b3f612">TY_❪pushMemory❫</a> (TidyDocImpl *doc, <a class="el" href="group__parser__h.html#structTidyParserMemory">TidyParserMemory</a> data)</td></tr>
+<tr class="memdesc:ga6d6419e55257477fa018960523b3f612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push the parser memory to the stack.  <a href="group__parser__h.html#ga6d6419e55257477fa018960523b3f612">More...</a><br /></td></tr>
+<tr class="separator:ga6d6419e55257477fa018960523b3f612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad7fbea2d1071f0ec9b254e1aabb06db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forward_8h.html#ac106c51e7d00e7491634ad74c10db0de">TY_PRIVATE</a> Node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser__h.html#gad7fbea2d1071f0ec9b254e1aabb06db6">TY_❪RemoveNode❫</a> (Node *node)</td></tr>
 <tr class="memdesc:gad7fbea2d1071f0ec9b254e1aabb06db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a node and its children from a markup tree.  <a href="group__parser__h.html#gad7fbea2d1071f0ec9b254e1aabb06db6">More...</a><br /></td></tr>
 <tr class="separator:gad7fbea2d1071f0ec9b254e1aabb06db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +205,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5cc7a49a5510cf542c3931d74d4dbf29.html">tidy-html5</a></li><li class="navelem"><a class="el" href="dir_b3394dceacda1338c4f4b31dd9dfed5d.html">src</a></li><li class="navelem"><a class="el" href="parser_8h.html">parser.h</a></li>
-    <li class="footer">Generated on Sat Jul 31 2021 10:21:57 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 19 2021 18:27:21 for HTML Tidy by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
